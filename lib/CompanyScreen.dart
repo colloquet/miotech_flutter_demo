@@ -8,7 +8,7 @@ var _secondaryChartColor = charts.Color(
     b: _secondary.blue,
     a: _secondary.alpha);
 
-List<charts.Series<OrdinalSales, String>> _createSampleData() {
+List<charts.Series<OrdinalSales, String>> _createSampleData(company) {
   final data = [
     new OrdinalSales('2014', 5),
     new OrdinalSales('2015', 25),
@@ -86,7 +86,7 @@ class CompanyScreen extends StatelessWidget {
                 SizedBox(
                   height: 200.0,
                   child: SimpleBarChart(
-                    _createSampleData(),
+                    _createSampleData(company),
                     animate: false,
                   ),
                 ),

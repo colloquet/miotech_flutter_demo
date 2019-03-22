@@ -12,6 +12,7 @@ class MiotechDemo extends StatelessWidget {
         primaryColor: Color(0xff1e2534),
         accentColor: Color(0xff8ca0b3),
         scaffoldBackgroundColor: Color(0xff171e2d),
+        canvasColor: Color(0xff171e2d),
         splashColor: Color(0xff1e2534),
         highlightColor: Color(0xff1e2534),
         primaryIconTheme: IconThemeData(
@@ -22,7 +23,7 @@ class MiotechDemo extends StatelessWidget {
           body2: TextStyle(color: Color(0xff8ca0b3)),
         ),
       ),
-      home: HomeScreen(title: 'MioTech Demo'),
+      home: HomeScreen(title: 'MioTech Demo3'),
     );
   }
 }
