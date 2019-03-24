@@ -24,9 +24,9 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container (
+            Container(
               child: Column(
-                children: List.generate(4, (int index){
+                children: List.generate(4, (int index) {
                   return ListTile(
                     title: Text('List Item'),
                     leading: Icon(Icons.info, color: Color(0xff8ca0b3)),
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
 
           var data = json.decode(snapshot.data.toString());
           return RefreshIndicator(
-            onRefresh: () {},
+            onRefresh: () => Future.delayed(Duration(seconds: 5)),
             child: ListView.builder(
               itemCount: data == null ? 0 : data.length,
               itemBuilder: (BuildContext context, int index) {
@@ -64,39 +64,57 @@ class HomeScreen extends StatelessWidget {
                           builder: (context) => CompanyScreen(company)),
                     );
                   },
-                  child: Container(
-                    decoration: isLast
-                        ? null
-                        : BoxDecoration(
-                            border: Border(
-                              bottom: BorderSide(
-                                color: Color(0xff2d3446),
-                                width: 1.0,
+                  child: Column(
+                    children: <Widget>[
+                      Dismissible(
+                        onDismissed: (direction) {
+                          var companyName = company['name'];
+                          Scaffold.of(context).showSnackBar(SnackBar(content: Text("$companyName removed")));
+                        },
+                        direction: DismissDirection.endToStart,
+                        background: Container(
+                          color: Color(0xff1e2534),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Icon(Icons.delete, color: Color(0xff8ca0b3)),
                               ),
-                            ),
+                            ],
                           ),
-                    padding: EdgeInsets.all(16.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        Text(
-                          company['name'],
-                          style: TextStyle(fontSize: 16.0),
                         ),
-                        SizedBox(height: 8.0),
-                        Text(
-                          company['type'],
-                          style: TextStyle(color: Color(0xff8ca0b3)),
+                        key: ValueKey(company['globalId']),
+                        child: Container(
+                          padding: EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: <Widget>[
+                              Text(
+                                company['name'],
+                                style: TextStyle(fontSize: 16.0),
+                              ),
+                              SizedBox(height: 8.0),
+                              Text(
+                                company['type'] + ' | ' + company['industry'],
+                                style: TextStyle(color: Color(0xff8ca0b3)),
+                              ),
+                              SizedBox(height: 8.0),
+                              Text(
+                                company['description'].substring(1, 200),
+                                maxLines: 3,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(color: Color(0x998ca0b3)),
+                              ),
+                            ],
+                          ),
                         ),
-                        SizedBox(height: 8.0),
-                        Text(
-                          company['description'],
-                          maxLines: 3,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(color: Color(0x998ca0b3)),
-                        ),
-                      ],
-                    ),
+                      ),
+                      Divider(
+                        height: 0,
+                        color: Color(0xff2d3446),
+                      ),
+                    ],
                   ),
                 );
               },
