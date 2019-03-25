@@ -1,0 +1,1236 @@
+[
+  {
+    "entityId": "0ea1b4767f1b4de42eb562cbce9f2fa0",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook password mess alarms body",
+      "content": "Liboro criticized the company over the issue, saying the storage of passwords in plain text needlessly exposed people to risk.<br><br>“Passwords that are stored in plain text are more easily and readily stolen by those who intend harm; they may even be compromised by accident,” Liboro said.<br><br>“Even if there is no evidence of abuse, there is little comfort in knowing that the world’s largest repository of personal data practices such lax internal controls. In a 2018 study, the Ponemon Institute (a global information security think tank) found that 60 percent of businesses indicated that their data breaches come from negligent employees or contractors,” he added.<br><br>Liboro urged those affected to change their passwords immediately and enable multi-factor authentication.<br><br>Facebook’s vice president for engineering, security and privacy Pedro Canahuati said they discovered the matter during a routine security review in January.<br><br>“This caught our attention because our login systems are designed to mask passwords using techniques that make them unreadable,” he said.<br><br>“We have fixed these issues and as a precaution we will be notifying everyone whose password we have found were stored in this way,” he added.<br><br>Canahuati maintained the passwords were never visible to anyone outside of the company and that they have found no evidence that anyone internally abused or improperly accessed them.<br><br>Nevertheless, they will still notify “hundreds of millions of Facebook Lite users, tens of millions of other Facebook users and tens of thousands of Instagram users” whose passwords were stored in the said format, he said.<br><br>Canahuati recommended users should take precautions to secure their accounts, including changing their passwords.<br><br>He recommended avoiding reusing passwords across different services and picking strong and complex passwords with the help of password manager applications.<br><br>“Consider enabling a security key or two-factor authentication to protect your Facebook account using codes from a third-party authentication app,” he said.<br><br>“When you log in with your password, we will ask for a security code or to tap your security key to verify that it is you,” he added.<br><br>The Facebook official maintained there is nothing more important to them than protecting user information, vowing to continue making improvements as part of their ongoing security efforts.<br><br>“In line with security best practices, Facebook masks people’s passwords when they create an account so that no one at the company can see them,” he said.<br><br>Canahuati added they have various security measures in place to help protect people’s accounts.<br><br>Among these measures are the use of signals to detect suspicious activities on accounts, as well as a system that enables users to register a physical security key to an account.<br><br>“Knowing some people reuse passwords across different services, we keep a close eye on data breach announcements from other organizations and publicly posted databases of stolen credentials,” Canahuati said.<br><br>“We check if stolen email and password combinations match the same credentials being used on Facebook. If we find a match, we’ll notify you next time you login and guide you through changing your password,” he added.<br><br>Privacy commissioner Raymund Liboro said on Friday he has raised the matter with Arianne Jimenez, Facebook’s privacy and public policy manager for Asia Pacific, who maintained that the data were not internally abused or improperly accessed.",
+      "tags": [
+        "NPC",
+        "Arianne Jimenez"
+      ],
+      "type": "",
+      "timestamp": "1553385600000",
+      "sentiment": "",
+      "author": "Janvic Mateo",
+      "relatedEntityIds": [
+        "a8a17f131d4925d32a5b938fc26b39a3"
+      ],
+      "globalId": "0ea1b4767f1b4de42eb562cbce9f2fa0",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "PHSTAR0020190323ef3o00006",
+      "source": "The Philippine Star",
+      "significance": 0,
+      "abstract": "MANILA, Philippines — The National Privacy Commission (NPC) has expressed displeasure over the latest controversy involving social media company Facebook, which revealed on Thursday the discovery that millions of passwords were stored in readable format.\n\nPrivacy commissioner Raymund Liboro said on Friday he has raised the matter with Arianne Jimenez, Facebook’s privacy and public policy manager for Asia Pacific, who maintained that the data were not internally abused or improperly accessed.",
+      "significantTag": [
+        "NPC",
+        "Arianne Jimenez"
+      ],
+      "label": "",
+      "sentimentScore": -0.23520393087317004,
+      "entities": [
+        "NPC",
+        "Arianne Jimenez"
+      ],
+      "locations": [],
+      "sourceCountry": "Philippine",
+      "sourceCountryCode": "PHL",
+      "companyIds": [
+        "a8a17f131d4925d32a5b938fc26b39a3"
+      ],
+      "nerCompanies": [
+        "NPC"
+      ],
+      "nerPeople": [
+        "Arianne Jimenez"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 32,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Capital Markets"
+      ],
+      "companySectors": [
+        "Financials"
+      ],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "9a65cc5528e86c7476416dfa54620922",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "German minister on Facebook password glitch: Didn't expect such frightening unprofessionalism",
+      "content": "The passwords, stored in readable format within Facebook's internal systems, were accessible to as many as 20,000 Facebook employees and dated back as early as 2012, cyber security blog KrebsOnSecurity, which first reported the issue, said in a report on Thursday.<br><br>(Reporting by Riham Alkousaa; Editing by Tassilo Hummel) ",
+      "tags": [
+        "FACEBOOK",
+        "Katarina Barley"
+      ],
+      "type": "",
+      "timestamp": "1553253451000",
+      "sentiment": "",
+      "author": "",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "9a65cc5528e86c7476416dfa54620922",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "LBA0000020190322ef3m01xit",
+      "source": "Reuters News",
+      "significance": 0,
+      "abstract": "BERLIN (Reuters) - Germany's Justice Minister on Friday said she would hardly have expected such \"frightening unprofessionalism\" from Facebook after the company acknowledged a glitch that exposed passwords of millions of users to its employees.\n\n\"My experience is: Facebook only takes responsibility when it's forced to do so,\" Katarina Barley said in a statement, adding that the company must inform all affected users about the glitch.",
+      "significantTag": [
+        "FACEBOOK",
+        "Katarina Barley"
+      ],
+      "label": "",
+      "sentimentScore": 0.007142450554589398,
+      "entities": [
+        "FACEBOOK",
+        "Katarina Barley"
+      ],
+      "locations": [],
+      "sourceCountry": "United Kingdom",
+      "sourceCountryCode": "GBR",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "FACEBOOK"
+      ],
+      "nerPeople": [
+        "Katarina Barley"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "56b8d5f16efc301696a79ad99243790b",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "The World’s Billionaires: United States",
+      "content": "Billionaires: 2<br><br>Total net worth: $4.9 BIL (-$600 MIL VS. 2018)<br><br>Juan Carlos Escotet DOWN<br><br>$3.8 BIL #546 banking<br><br>Gustavo Cisneros DOWN<br><br>$1.1 BIL #1941 media<br><br>VIETNAM GDP: $245.4 BIL<br><br>Population: 96 Mil<br><br>Billionaires: 5 (+1 VS. 2018)<br><br>Total net worth: $13.6 BIL (+3.1 BIL VS. 2018)<br><br>Pham Nhat Vuong UP<br><br>$6.6 BIL #239 diversified<br><br>Nguyen Thi Phuong Thao DOWN<br><br>$2.3 BIL #1008 airlines<br><br>Ho Hung Anh NEW<br><br>$1.7 BIL #1349 consumer products, banking<br><br>Tran Ba Duong DOWN<br><br>$1.7 BIL #1349 automobiles<br><br>Nguyen Dang Quang NEW<br><br>$1.3 BIL #1717 consumer products, banking<br><br>ZIMBABWE GDP: $19.8 BIL<br><br>Population: 17 Mil<br><br>Billionaires: 1<br><br>Total net worth: $2.5 BIL (+1.1 BIL VS. 2018)<br><br>Strive Masiyiwa UP<br><br>$2.5 BIL #916 telecom<br><br>METHODOLOGY<br><br>The Forbes World's Billionaires list is a snapshot of wealth using stock prices and exchange rates from February 8. Some people become richer or poorer within days of publication. For example, the fortune of Tsuyoshi Matsushita of Japan ($1.3 billion on our list) fell by nearly $600 million by February 18, as shares of his fitness and beauty-products firm, MTG, tumbled. We list individuals rather than multigenerational families who share fortunes, though we include wealth belonging to a billionaire's spouse and children if that person is the founder of the fortune. In some cases we list siblings or couples together if the ownership breakdown among them isn't clear, but here an estimated net worth of $1 billion per person is needed to make the cut. We value a variety of assets, including private companies, real estate, art and more. We don't pretend to know each billionaire's private balance sheet (though some provide it). When documentation isn't supplied or available, we discount fortunes. For daily updates of net worths, go to forbes.com/real-time-billionaires.<br><br>UNITED STATES<br><br>GDP: $20.5 TRIL<br><br>Population: 328 Mil<br><br>Billionaires: 607 (+22 VS. 2018)<br><br>Total net worth: $3.1 TRIL (+14.3 BIL VS. 2018)<br><br>Jeff Bezos UP<br><br>$131 BIL #1 Amazon<br><br>Bill Gates UP<br><br>$96.5 BIL #2 Microsoft<br><br>Warren Buffett DOWN<br><br>$82.5 BIL #3 Berkshire Hathaway<br><br>Larry Ellison UP<br><br>$62.5 BIL #7 software<br><br>Mark Zuckerberg DOWN<br><br>$62.3 BIL #8 Facebook<br><br>Michael Bloomberg UP<br><br>$55.5 BIL #9 Bloomberg LP<br><br>Larry Page UP<br><br>$50.8 BIL #10 Google<br><br>Charles Koch DOWN<br><br>$50.5 BIL #11 Koch Industries<br><br>David Koch DOWN<br><br>$50.5 BIL #11 Koch Industries<br><br>Sergey Brin UP<br><br>$49.8 BIL #14 Google<br><br>Jim Walton DOWN<br><br>$44.6 BIL #16 Walmart<br><br>Alice Walton DOWN<br><br>$44.4 BIL #17 Walmart<br><br>Rob Walton DOWN<br><br>$44.3 BIL #18 Walmart<br><br>Steve Ballmer UP<br><br>$41.2 BIL #19 Microsoft<br><br>Sheldon Adelson DOWN<br><br>$35.1 BIL #24 casinos<br><br>Michael Dell UP<br><br>$34.3 BIL #25 Dell computers<br><br>Phil Knight UP<br><br>$33.4 BIL #26 Nike<br><br>Jacqueline Mars UP<br><br>$23.9 BIL #33 candy, pet food<br><br>John Mars UP<br><br>$23.9 BIL #33 candy, pet food<br><br>Elon Musk UP<br><br>$22.3 BIL #40 Tesla Motors, SpaceX<br><br>Jim Simons UP<br><br>$21.5 BIL #44 hedge funds<br><br>Rupert Murdoch UP<br><br>$19.4 BIL #52 newspapers, TV networks<br><br>Laurene Powell Jobs DOWN<br><br>$18.6 BIL #54 Apple, Disney<br><br>Ray Dalio UP<br><br>$18.4 BIL #57 hedge funds<br><br>Len Blavatnik DOWN<br><br>$17.7 BIL #59 diversified<br><br>Carl Icahn UP<br><br>$17.4 BIL #61 investments<br><br>Thomas Peterffy DOWN<br><br>$17.1 BIL #63 discount brokerage<br><br>Donald Bren UP<br><br>$16.4 BIL #68 real estate<br><br>Abigail Johnson DOWN<br><br>$15.6 BIL #71 money management<br><br>Lukas Walton DOWN<br><br>$15.2 BIL #75 Walmart<br><br>Leonard Lauder UP<br><br>$14.6 BIL #82 Estee Lauder<br><br>Stephen Schwarzman UP<br><br>$13.2 BIL #100 investments<br><br>Steve Cohen DOWN<br><br>$12.9 BIL #101 hedge funds<br><br>Eric Schmidt DOWN<br><br>$12.9 BIL #101 Google<br><br>Harold Hamm DOWN<br><br>$12.7 BIL #105 oil & gas<br><br>Thomas Frist Jr. UP<br><br>$12.4 BIL #107 hospitals<br><br>David Duffield UP<br><br>$11.8 BIL #114 business software<br><br>Donald Newhouse DOWN<br><br>$11.8 BIL #114 media<br><br>Ken Griffin DOWN<br><br>$11.7 BIL #117 hedge funds<br><br>David Tepper DOWN<br><br>$11.6 BIL #118 hedge funds<br><br>Pierre Omidyar UP<br><br>$11.4 BIL #120 eBay<br><br>Dustin Moskovitz DOWN<br><br>$11.1 BIL #122 Facebook<br><br>Philip Anschutz DOWN<br><br>$10.9 BIL #128 investments<br><br>John Menard DOWN<br><br>$10.5 BIL #133 home improvement stores<br><br>Gordon Moore UP<br><br>$9.7 BIL #140 Intel<br><br>Charles Ergen DOWN<br><br>$9.6 BIL #143 satellite TV<br><br>Jan Koum UP<br><br>$9.6 BIL #143 WhatsApp<br><br>Ronald Perelman DOWN<br><br>$9.4 BIL #149 leveraged buyouts<br><br>Jim Kennedy DOWN<br><br>$9.3 BIL #153 media, automotive<br><br>Blair Parry-Okeden DOWN<br><br>$9.3 BIL #153 media, automotive<br><br>Andrew Beal DOWN<br><br>$9.1 BIL #158 banks, real estate<br><br>Sun Hongbin UP<br><br>$9 BIL #160 real estate<br><br>Micky Arison DOWN<br><br>$8.9 BIL #162 Carnival Cruises<br><br>James Goodnight DOWN<br><br>$8.9 BIL #162 software<br><br>Stanley Kroenke UP<br><br>$8.7 BIL #167 sports, real estate<br><br>Carl Cook UP<br><br>$8.3 BIL #178 medical devices<br><br>Charles Schwab DOWN<br><br>$8.3 BIL #178 discount brokerage<br><br>George Soros UP $8.3 BIL<br><br>#178 hedge funds<br><br>David Geffen DOWN<br><br>$7.8 BIL #187 movies, record labels<br><br>Edward Johnson III DOWN<br><br>$7.8 BIL #187 money management<br><br>George Kaiser DOWN<br><br>$7.6 BIL #191 oil & gas, banking<br><br>Stephen Ross UNCHANGED<br><br>$7.6 BIL #191 real estate<br><br>Herbert Kohler DOWN<br><br>$7.3 BIL #200 plumbing fixtures<br><br>John Malone DOWN<br><br>$7.2 BIL #203 cable television<br><br>Christy Walton DOWN<br><br>$7.2 BIL #203 Walmart<br><br>David Green UP<br><br>$7 BIL #209 retail<br><br>Tom & Judy Love UP<br><br>$7 BIL #209 truck stops<br><br>David Shaw UP<br><br>$7 BIL #209 hedge fundsUP<br><br>Patrick Soon-Shiong DOWN<br><br>$7 BIL #209 pharmaceuticals<br><br>John Doerr DOWN<br><br>$6.9 BIL #215 venture capital<br><br>Pauline MacMillan Keinath DOWN<br><br>$6.9 BIL #215 Cargill<br><br>Ralph Lauren UP<br><br>$6.9 BIL #215 Ralph Lauren<br><br>Robert Pera UP<br><br>$6.9 BIL #215 wireless networking gear<br><br>Jerry Jones UP<br><br>$6.8 BIL #224 Dallas Cowboys<br><br>Shahid Khan DOWN<br><br>$6.8 BIL #224 auto parts<br><br>Hank & Doug Meijer UNCHANGED<br><br>$6.8 BIL #224 supermarkets<br><br>Eli Broad DOWN<br><br>$6.7 BIL #233 investments<br><br>Daniel Gilbert UP<br><br>$6.7 BIL #233 Quicken Loans<br><br>Marc Benioff UP<br><br>$6.6 BIL #239 business software<br><br>Richard Kinder UP<br><br>$6.6 BIL #239 pipelines<br><br>Robert Kraft UP<br><br>$6.5 BIL #244 New England Patriots<br><br>Ann Walton Kroenke DOWN<br><br>$6.5 BIL #244 Walmart<br><br>John A. Sobrato UP<br><br>$6.5 BIL #244 real estate<br><br>Leon Black DOWN<br><br>$6.4 BIL #252 private equity<br><br>Israel Englander UP<br><br>$6.4 BIL #252 hedge funds<br><br>Diane Hendricks UP<br><br>$6.3 BIL #257 roofing<br><br>James Chambers DOWN<br><br>$6.2 BIL #261 media, automotive<br><br>Katharine Rayner DOWN<br><br>$6.2 BIL #261 media, automotive<br><br>Margaretta Taylor DOWN<br><br>$6.2 BIL #261 media, automotive<br><br>John Overdeck UP<br><br>$6.1 BIL #267 hedge funds<br><br>David Siegel UP<br><br>$6.1 BIL #267 hedge funds<br><br>Bubba Cathy UP<br><br>$6 BIL #272 Chick-fil-A<br><br>Dan Cathy UP<br><br>$6 BIL #272 Chick-fil-A<br><br>Richard LeFrak UP<br><br>$6 BIL #272 real estate<br><br>Marijke Mars UP<br><br>$6 BIL #272 candy, pet food<br><br>Pamela Mars UP<br><br>$6 BIL #272 candy, pet food<br><br>Valerie Mars UP<br><br>$6 BIL #272 candy, pet food<br><br>Victoria Mars UP<br><br>$6 BIL #272 candy, pet food<br><br>Steven Rales UP<br><br>$6 BIL #272 manufacturing<br><br>Reinhold Schmieding UP<br><br>$6 BIL #272 medical devices<br><br>Dannine Avara UP<br><br>$5.9 BIL #290 pipelines<br><br>Scott Duncan UP<br><br>$5.9 BIL #290 pipelines<br><br>Milane Frantz UP<br><br>$5.9 BIL #290 pipelines<br><br>Dennis Washington UP<br><br>$5.9 BIL #290 construction, mining<br><br>Randa Williams UP<br><br>$5.9 BIL #290 pipelines<br><br>Travis Kalanick UP<br><br>$5.8 BIL #298 Uber<br><br>Ronda Stryker UP<br><br>$5.8 BIL #298 medical equipment<br><br>Nancy Walton Laurie DOWN<br><br>$5.7 BIL #303 Walmart<br><br>John Morris UP<br><br>$5.7 BIL #303 sporting goods retail<br><br>Jim Davis UP<br><br>$5.6 BIL #311 New Balance<br><br>Whitney MacMillan DOWN<br><br>$5.6 BIL #311 Cargill<br><br>Stewart & Lynda Resnick UP<br><br>$5.6 BIL #311 agriculture, water<br><br>Charles Dolan UP<br><br>$5.5 BIL #317 cable television<br><br>Henry Kravis UP<br><br>$5.5 BIL #317 private equity<br><br>George Roberts UP<br><br>$5.5 BIL #317 private equity<br><br>Sam Zell UP<br><br>$5.5 BIL #317 real estate, private equity<br><br>George Lucas UP<br><br>$5.4 BIL #325 Star Wars<br><br>Edward Roski UNCHANGED<br><br>$5.4 BIL #325 real estate<br><br>Robert Rowling DOWN<br><br>$5.3 BIL #334 hotels, investments<br><br>Bruce Kovner UNCHANGED<br><br>$5.2 BIL #337 hedge funds<br><br>Bernard Marcus UP<br><br>$5.2 BIL #337 Home Depot<br><br>Sheldon Solow UP<br><br>$5.2 BIL #337 real estate<br><br>Jack Dorsey UP<br><br>$5.1 BIL #343 Twitter, Square<br><br>Paul Tudor Jones II UP<br><br>$5.1 BIL #343 hedge funds<br><br>Martha Ingram UNCHANGED<br><br>$5 BIL #355 book distribution, transportation<br><br>Charles Johnson DOWN<br><br>$5 BIL #355 money management<br><br>John Paulson DOWN<br><br>$5 BIL #355 hedge funds<br><br>Robert Smith UP<br><br>$5 BIL #355 private equity<br><br>Robert Bass UNCHANGED<br><br>$4.9 BIL #365 oil, investments<br><br>Ted Lerner UP<br><br>$4.9 BIL #365 real estate<br><br>J. Christopher Reyes UP<br><br>$4.9 BIL #365 food distribution<br><br>Jude Reyes UP<br><br>$4.9 BIL #365 food distribution<br><br>David Filo DOWN<br><br>$4.8 BIL #379 Yahoo<br><br>Karen Pritzker DOWN<br><br>$4.8 BIL #379 hotels, investments<br><br>Robert Rich DOWN<br><br>$4.8 BIL #379 frozen foods<br><br>Leonard Stern UP<br><br>$4.8 BIL #379 real estate<br><br>Daniel Ziff UNCHANGED<br><br>$4.8 BIL #379 investments<br><br>Dirk Ziff UNCHANGED<br><br>$4.8 BIL #379 investments<br><br>Robert Ziff UNCHANGED<br><br>$4.8 BIL #379 investments<br><br>Arthur Blank UP<br><br>$4.7 BIL #394 Home Depot<br><br>Tilman Fertitta UP<br><br>$4.7 BIL #394 Houston Rockets, entertainment<br><br>Ray Lee Hunt DOWN<br><br>$4.7 BIL #394 oil, real estate<br><br>Jeff Skoll DOWN<br><br>$4.7 BIL #394 eBay<br><br>David Sun DOWN<br><br>$4.7 BIL #394 computer hardware<br><br>John Tu DOWN<br><br>$4.7 BIL #394 computer hardware<br><br>Stanley Druckenmiller DOWN<br><br>$4.6 BIL #413 hedge funds<br><br>Tamara Gustavson UP<br><br>$4.6 BIL #413 self-storage<br><br>Sumner Redstone DOWN<br><br>$4.6 BIL #413 media<br><br>Les Wexner DOWN<br><br>$4.6 BIL #413 retail<br><br>Rocco Commisso UP<br><br>$4.5 BIL #424 telecom<br><br>Terrence Pegula UP<br><br>$4.5 BIL #424 natural gas<br><br>Walter Scott UP<br><br>$4.5 BIL #424 utilities, telecom<br><br>John Sall DOWN<br><br>$4.4 BIL #436 software<br><br>Gwendolyn Sontheim Meyer DOWN<br><br>$4.3 BIL #452 Cargill<br><br>Isaac Perlmutter UP<br><br>$4.3 BIL #452 Marvel comics<br><br>Trevor Rees-Jones DOWN<br><br>$4.3 BIL #452 oil & gas<br><br>Julian Robertson UP<br><br>$4.3 BIL #452 hedge funds<br><br>Gary Rollins UNCHANGED<br><br>$4.3 BIL #452 pest control<br><br>Henry Samueli UP<br><br>$4.3 BIL #452 semiconductors<br><br>Jeff Sutton UP<br><br>$4.3 BIL #452 real estate<br><br>Stephen Bisciotti UNCHANGED<br><br>$4.2 BIL #472 staffing, Baltimore Ravens<br><br>Rupert Johnson Jr. DOWN<br><br>$4.2 BIL #472 money management<br><br>Frank VanderSloot UP<br><br>$4.2 BIL #472 nutrition, wellness products<br><br>Mark Cuban UP<br><br>$4.1 BIL #478 online media<br><br>Dagmar Dolby UP<br><br>$4.1 BIL #478 sound technology<br><br>Marian Ilitch DOWN<br><br>$4.1 BIL #478 Little Caesars<br><br>Jeremy Jacobs DOWN<br><br>$4.1 BIL #478 food service<br><br>Ross Perot UNCHANGED<br><br>$4.1 BIL #478 computer services, real estate<br><br>Thomas Pritzker UNCHANGED<br><br>$4.1 BIL #478 hotels, investments<br><br>Randall Rollins DOWN<br><br>$4.1 BIL #478 pest control<br><br>Fred Smith DOWN<br><br>$4.1 BIL #478 FedEx<br><br>Kelcy Warren UNCHANGED<br><br>$4.1 BIL #478 pipelines<br><br>Russ Weiner DOWN<br><br>$4.1 BIL #478 energy drinks<br><br>Ben Ashkenazy UNCHANGED<br><br>$4 BIL #504 real estate<br><br>Bert Beveridge UP<br><br>$4 BIL #504 vodka<br><br>Neil Bluhm UP<br><br>$4 BIL #504 real estate<br><br>Austen Cargill II DOWN<br><br>$4 BIL #504 Cargill<br><br>James Cargill II DOWN<br><br>$4 BIL #504 Cargill<br><br>Rick Caruso UP<br><br>$4 BIL #504 real estate<br><br>Jack Dangermond DOWN<br><br>$4 BIL #504 mapping software<br><br>Dan Friedkin UNCHANGED<br><br>$4 BIL #504 Toyota dealerships<br><br>Tom Gores UP<br><br>$4 BIL #504 private equity<br><br>Reed Hastings UP<br><br>$4 BIL #504 Netflix<br><br>James Leprino UP<br><br>$4 BIL #504 cheese<br><br>Marianne Liebmann DOWN<br><br>$4 BIL #504 Cargill<br><br>Igor Olenicoff DOWN<br><br>$4 BIL #504 real estate<br><br>Jerry Speyer UP<br><br>$4 BIL #504 real estate<br><br>John Brown UP<br><br>$3.9 BIL #529 medical equipment<br><br>Ronald Lauder DOWN<br><br>$3.9 BIL #529 Estee Lauder<br><br>Gabe Newell DOWN<br><br>$3.9 BIL #529 video games<br><br>Harry Stine UNCHANGED<br><br>$3.9 BIL #529 agribusiness<br><br>Steven Udvar-Hazy UNCHANGED<br><br>$3.9 BIL #529 aircraft leasing<br><br>Archie Aldis Emmerson DOWN<br><br>$3.8 BIL #546 timberland, lumber mills<br><br>Jensen Huang DOWN<br><br>$3.8 BIL #546 semiconductors<br><br>H. Fisk Johnson UP<br><br>$3.8 BIL #546 cleaning products<br><br>S. Curtis Johnson UP<br><br>$3.8 BIL #546 cleaning products<br><br>Helen Johnson-Leipold UP<br><br>$3.8 BIL #546 cleaning products<br><br>Winifred Johnson-Marquart UP<br><br>$3.8 BIL #546 cleaning products<br><br>Janice McNair NEW<br><br>$3.8 BIL #546 energy, sports<br><br>Henry Nicholas III UP<br><br>$3.8 BIL #546 semiconductors<br><br>Ira Rennert UNCHANGED<br><br>$3.8 BIL #546 investments<br><br>Roger Wang DOWN<br><br>$3.8 BIL #546 retail<br><br>Nathan Blecharczyk DOWN<br><br>$3.7 BIL #568 Airbnb<br><br>Brian Chesky DOWN<br><br>$3.7 BIL #568 Airbnb<br><br>Barry Diller UP<br><br>$3.7 BIL #568 online media<br><br>Joe Gebbia DOWN<br><br>$3.7 BIL #568 Airbnb<br><br>Douglas Leone UP<br><br>$3.7 BIL #568 venture capital<br><br>Richard Schulze DOWN<br><br>$3.7 BIL #568 Best Buy<br><br>Steven Spielberg UP<br><br>$3.7 BIL #568 Movies<br><br>Brian Acton DOWN<br><br>$3.6 BIL #597 WhatsApp<br><br>Judy Faulkner UP<br><br>$3.6 BIL #597 health IT<br><br>Lin Bin RETURNEE<br><br>$3.6 BIL #597 smartphones<br><br>Michael Milken DOWN<br><br>$3.6 BIL #597 investments<br><br>Mitchell Rales UP<br><br>$3.6 BIL #597 manufacturing, investments<br><br>Bernard Saul II UP<br><br>$3.6 BIL #597 banking, real estate<br><br>Donald Sterling UP<br><br>$3.6 BIL #597 real estate<br><br>Scott Cook UP<br><br>$3.5 BIL #617 software<br><br>Ken Fisher DOWN<br><br>$3.5 BIL #617money management<br><br>Tom Golisano UP<br><br>$3.5 BIL #617 payroll services<br><br>Joshua Harris UNCHANGED<br><br>$3.5 BIL #617 private equity<br><br>Edward Johnson IV DOWN<br><br>$3.5 BIL #617 money management<br><br>Elizabeth Johnson DOWN<br><br>$3.5 BIL #617 money management<br><br>Min Kao UP<br><br>$3.5 BIL #617 navigation equipment<br><br>Li Ge UP<br><br>$3.5 BIL #617 biotech<br><br>Daniel Och UP<br><br>$3.5 BIL #617 hedge funds<br><br>Howard Schultz UP<br><br>$3.5 BIL #617 Starbucks<br><br>Charles Cohen UP<br><br>$3.4 BIL #645 real estate<br><br>Jeff Greene DOWN<br><br>$3.4 BIL #645 real estate, investments<br><br>Peter Kellogg DOWN<br><br>$3.4 BIL #645 investments<br><br>Ken Langone UP<br><br>$3.4 BIL #645 investments<br><br>Rodger Riney DOWN<br><br>$3.4 BIL #645 discount brokerage<br><br>Alejandro Santo Domingo DOWN<br><br>$3.4 BIL #645 beer<br><br>Andres Santo Domingo DOWN<br><br>$3.4 BIL #645 beer<br><br>Herb Simon UP<br><br>$3.4 BIL #645 real estate<br><br>Jon Stryker UP<br><br>$3.4 BIL #645 medical equipment<br><br>Meg Whitman UP<br><br>$3.4 BIL #645 eBay<br><br>John Arnold UNCHANGED<br><br>$3.3 BIL #667 hedge funds<br><br>David Bonderman UP<br><br>$3.3 BIL #667 private equity<br><br>Allan Goldman UP<br><br>$3.3 BIL #667 real estate<br><br>Jane Goldman UP<br><br>$3.3 BIL #667 real estate<br><br>Amy Goldman Fowler UP<br><br>$3.3 BIL #667 real estate<br><br>Amos Hostetter Jr. UNCHANGED<br><br>$3.3 BIL #667 cable television<br><br>Diane Kemper UP<br><br>$3.3 BIL #667 real estate<br><br>Joe Mansueto UP<br><br>$3.3 BIL #667investment research<br><br>Michael Moritz DOWN<br><br>$3.3 BIL #667 venture capital<br><br>Jay Paul UP<br><br>$3.3 BIL #667 real estate<br><br>Anthony Pritzker DOWN<br><br>$3.3 BIL #667 hotels, investments<br><br>Romesh T. Wadhwani UP<br><br>$3.3 BIL<br><br>#667 software<br><br>Sid Bass DOWN<br><br>$3.2 BIL #691 oil, investments<br><br>Ernest Garcia II UP<br><br>$3.2 BIL #691 used cars<br><br>Jane Lauder UP<br><br>$3.2 BIL #691 estee lauder<br><br>Vincent McMahon UP<br><br>$3.2 BIL #691 Entertainment<br><br>J.B. Pritzker DOWN<br><br>$3.2 BIL #691 hotels, investments<br><br>Lynn Schusterman UNCHANGED<br><br>$3.2 BIL #691 oil & gas, investments<br><br>Mark Shoen UNCHANGED<br><br>$3.2 BIL #691 U-Haul<br><br>Paul Singer UP<br><br>$3.2 BIL #691 hedge funds<br><br>Clifford Asness UP<br><br>$3.1 BIL #715 money Management<br><br>John Catsimatidis UNCHANGED<br><br>$3.1 BIL #715 oil, real estate<br><br>Chase Coleman UP<br><br>$3.1 BIL #715 hedge fund<br><br>Don Hankey UP<br><br>$3.1 BIL #715 auto loans<br><br>John Middleton UP<br><br>$3.1 BIL #715 tobacco<br><br>Jean (Gigi) Pritzker UP<br><br>$3.1 BIL #715 hotels, investments<br><br>Donald Trump UNCHANGED<br><br>$3.1 BIL #715 television, real estate<br><br>Don Vultaggio UP<br><br>$3.1 BIL #715 AriZona Beverages<br><br>Mark Walter UP<br><br>$3.1 BIL #715 finance<br><br>Jim Breyer UNCHANGED<br><br>$3 BIL #745 venture capital<br><br>Do Won & Jin Sook Chang DOWN<br><br>$3 BIL #745 fashion retail<br><br>Leon G. Cooperman DOWN<br><br>$3 BIL #745 hedge funds<br><br>Jeffery Hildebrand DOWN<br><br>$3 BIL #745 oil<br><br>James Jannard DOWN<br><br>$3 BIL #745 sunglasses<br><br>Joseph Liemandt NEW<br><br>$3 BIL #745 Software<br><br>Arturo Moreno UP<br><br>$3 BIL #745 billboards, Anaheim Angels<br><br>Marc Rowan DOWN<br><br>$3 BIL #745 private equity<br><br>Michael Rubin UNCHANGED<br><br>$3 BIL #745 online retail<br><br>Patrick Ryan UP<br><br>$3 BIL #745 insurance<br><br>Lynsi Snyder UP<br><br>$3 BIL #745 In-N-Out Burger<br><br>David Steward NEW<br><br>$3 BIL #745 IT provider<br><br>Steve Wynn DOWN<br><br>$3 BIL #745 casinos, hotels<br><br>Gayle Benson NEW<br><br>$2.9 BIL #775 pro sports teams<br><br>Timothy Boyle UP<br><br>$2.9 BIL #775 Columbia Sportswear<br><br>Nick Caporella DOWN<br><br>$2.9 BIL #775 beverages<br><br>Edward DeBartolo Jr. UP<br><br>$2.9 BIL #775 shopping centers<br><br>Rakesh Gangwal DOWN<br><br>$2.9 BIL #775 airline<br><br>Miguel McKelvey UP<br><br>$2.9 BIL #775 WeWork<br><br>Thomas Siebel UNCHANGED<br><br>$2.9 BIL #775 business software<br><br>Charles Simonyi UP<br><br>$2.9 BIL #775 Microsoft<br><br>Mortimer Zuckerman UP<br><br>$2.9 BIL #775 real estate, media<br><br>Jim Davis UNCHANGED<br><br>$2.8 BIL #804 staffing & recruiting<br><br>Jonathan Gray UP<br><br>$2.8 BIL #804 investments<br><br>Thomas Hagen UP<br><br>$2.8 BIL #804 insurance<br><br>B. Wayne Hughes UP<br><br>$2.8 BIL #804 self-storage<br><br>Johnelle Hunt DOWN<br><br>$2.8 BIL #804 trucking<br><br>Daniel Loeb DOWN<br><br>$2.8 BIL #804 hedge funds<br><br>Mary Alice Dorrance Malone DOWN<br><br>$2.8 BIL #804 Campbell Soup<br><br>Richard Peery UP<br><br>$2.8 BIL #804 real estate<br><br>J. Joe Ricketts UP<br><br>$2.8 BIL #804 TD Ameritrade<br><br>Haim Saban DOWN<br><br>$2.8 BIL #804 TV network, investments<br><br>Thomas Secunda UP<br><br>$2.8 BIL #804 Bloomberg LP<br><br>Glen Taylor UP<br><br>$2.8 BIL #804 printing<br><br>William Wrigley Jr. UNCHANGED<br><br>$2.8 BIL #804 chewing gum<br><br>Riley Bechtel Jr. DOWN<br><br>$2.7 BIL #838 engineering, construction<br><br>Stephen Bechtel Jr. DOWN<br><br>$2.7 BIL #838engineering, construction<br><br>Andrew & Peggy Cherng DOWN<br><br>$2.7 BIL #838 restaurants<br><br>William Conway Jr. DOWN<br><br>$2.7 BIL #838 private equity<br><br>Daniel D'Aniello DOWN<br><br>$2.7 BIL #838 private equity<br><br>Gerald Ford DOWN<br><br>$2.7 BIL #838 banking<br><br>Jimmy Haslam DOWN<br><br>$2.7 BIL #838 gas stations, retail<br><br>John Henry UP<br><br>$2.7 BIL #838 sports<br><br>James Irsay UNCHANGED<br><br>$2.7 BIL #838 Indianapolis Colts<br><br>Jeff Rothschild DOWN<br><br>$2.7 BIL #838 Facebook<br><br>David Rubenstein DOWN<br><br>$2.7 BIL #838 private equity<br><br>Phil Ruffin UNCHANGED<br><br>$2.7 BIL #838 casinos, real estate<br><br>Richard Sands DOWN<br><br>$2.7 BIL #838 Food & Beverage<br><br>Robert Sands DOWN<br><br>$2.7 BIL #838 Food & Beverage<br><br>E. Joe Shoen UNCHANGED<br><br>$2.7 BIL #838 U-Haul<br><br>Eric Smidt UP<br><br>$2.7 BIL #838 hardware stores<br><br>Vincent Viola DOWN<br><br>$2.7 BIL #838 electronic trading<br><br>Doris Fisher DOWN<br><br>$2.6 BIL #877 Gap<br><br>John Fisher DOWN<br><br>$2.6 BIL #877 Gap<br><br>Noam Gottesman UP<br><br>$2.6 BIL #877 hedge funds<br><br>Randal Kirk DOWN<br><br>$2.6 BIL #877 pharmaceuticals<br><br>Sean Parker UNCHANGED<br><br>$2.6 BIL #877 Facebook<br><br>Jorge Perez DOWN<br><br>$2.6 BIL #877 real estate<br><br>John Pritzker UP<br><br>$2.6 BIL #877 hotels, investments<br><br>Penny Pritzker DOWN<br><br>$2.6 BIL #877 hotels, investments<br><br>T. Denny Sanford UP<br><br>$2.6 BIL #877 banking, credit cards<br><br>Ty Warner DOWN<br><br>$2.6 BIL #877 real estate, plush toys<br><br>Jerry Yang UNCHANGED<br><br>$2.6 BIL #877 Yahoo<br><br>George Argyros UP<br><br>$2.5 BIL #916 real estate, investments<br><br>John Arrillaga UP<br><br>$2.5 BIL #916 real estate<br><br>Bill Austin UP<br><br>$2.5 BIL #916 hearing aids<br><br>John Paul DeJoria DOWN<br><br>$2.5 BIL #916 hair products, tequila<br><br>Joseph Grendys DOWN<br><br>$2.5 BIL #916 poultry processing<br><br>Aerin Lauder UNCHANGED<br><br>$2.5 BIL #916 estee lauder<br><br>Eric Lefkofsky UP<br><br>$2.5 BIL #916 Groupon<br><br>Bob Parsons DOWN<br><br>$2.5 BIL #916 web hosting<br><br>Warren Stephens DOWN<br><br>$2.5 BIL #916 investment banking<br><br>Peter Thiel UNCHANGED<br><br>$2.5 BIL #916 Facebook, investments<br><br>Oprah Winfrey DOWN<br><br>$2.5 BIL #916 TV shows<br><br>Denise York UNCHANGED<br><br>$2.5 BIL #916 San Francisco 49ers<br><br>Aneel Bhusri UP<br><br>$2.4 BIL #962 business software<br><br>Norman Braman DOWN<br><br>$2.4 BIL #962 art, car dealerships<br><br>Chuck Bundrant DOWN<br><br>$2.4 BIL #962 fishing<br><br>Ray Davis DOWN<br><br>$2.4 BIL #962 pipelines<br><br>Kenneth Feld DOWN<br><br>$2.4 BIL #962 live entertainment<br><br>Stephen Mandel Jr. DOWN<br><br>$2.4 BIL #962 hedge funds<br><br>C. Dean Metropoulos DOWN<br><br>$2.4 BIL #962 investments<br><br>Mark Stevens DOWN<br><br>$2.4 BIL #962 venture capital<br><br>Pat Stryker DOWN<br><br>$2.4 BIL #962 medical equipment<br><br>David Walentas UP<br><br>$2.4 BIL #962 real estate<br><br>Herbert Wertheim NEW<br><br>$2.4 BIL #962 investments<br><br>Anita Zucker DOWN<br><br>$2.4 BIL #962 chemicals<br><br>Lee Bass DOWN<br><br>$2.3 BIL #1008 oil, investments<br><br>George Bishop DOWN<br><br>$2.3 BIL #1008 oil & gas<br><br>Bennett Dorrance DOWN<br><br>$2.3 BIL #1008 Campbell Soup<br><br>David Gottesman UNCHANGED<br><br>$2.3 BIL #1008 investments<br><br>Drew Houston UP<br><br>$2.3 BIL #1008 cloud storage service<br><br>Brad Kelley UNCHANGED<br><br>$2.3 BIL #1008 tobacco<br><br>Drayton McLane DOWN<br><br>$2.3 BIL #1008 Walmart, logistics<br><br>Ross Perot Jr. UP<br><br>$2.3 BIL #1008 real estate<br><br>Daniel Pritzker DOWN<br><br>$2.3 BIL #1008 hotels, investments<br><br>Stewart Rahr UP<br><br>$2.3 BIL #1008 drug distribution<br><br>Alan Trefler UP<br><br>$2.3 BIL #1008 software<br><br>William Young UP<br><br>$2.3 BIL #1008 plastics<br><br>Ron Baron UNCHANGED<br><br>$2.2 BIL #1057 money management<br><br>Edward Bass DOWN<br><br>$2.2 BIL #1057 oil, investments<br><br>Todd Christopher UP<br><br>$2.2 BIL #1057 hair care products<br><br>Jim Coulter UNCHANGED<br><br>$2.2 BIL #1057 private equity<br><br>James Dinan UP<br><br>$2.2 BIL #1057 hedge funds<br><br>Alec Gores UP<br><br>$2.2 BIL #1057 private equity<br><br>Clayton Mathile DOWN<br><br>$2.2 BIL #1057 pet food<br><br>Phillip T. (Terry) Ragon UNCHANGED<br><br>$2.2 BIL #1057 health IT<br><br>Brian Sheth UP<br><br>$2.2 BIL #1057 investments<br><br>Dan Snyder DOWN<br><br>$2.2 BIL #1057 Washington Redskins<br><br>Ted Turner UNCHANGED<br><br>$2.2 BIL #1057 cable television<br><br>Jon Yarbrough UP<br><br>$2.2 BIL #1057 video games<br><br>Charles Zegar UP<br><br>$2.2 BIL #1057 Bloomberg LP<br><br>Ben Chestnut NEW<br><br>$2.1 BIL #1116 email marketing<br><br>James Clark UP<br><br>$2.1 BIL #1116 Netscape, investments<br><br>Gordon Getty UNCHANGED<br><br>$2.1 BIL #1116 Getty Oil<br><br>Vinod Khosla DOWN<br><br>$2.1 BIL #1116 venture capital<br><br>Osman Kibar DOWN<br><br>$2.1 BIL #1116 biotech<br><br>Dan Kurzius NEW<br><br>$2.1 BIL #1116 email marketing<br><br>Thai Lee UP<br><br>$2.1 BIL #1116 IT provider<br><br>Jeffrey Lurie UP<br><br>$2.1 BIL #1116 Philadelphia Eagles<br><br>Bobby Murphy DOWN<br><br>$2.1 BIL #1116 Snapchat<br><br>Antony Ressler UP<br><br>$2.1 BIL #1116 finance<br><br>Kavitark Ram Shriram UNCHANGED<br><br>$2.1 BIL #1116 venture capital, Google<br><br>Evan Spiegel DOWN<br><br>$2.1 BIL #1116 Snapchat<br><br>Elaine Wynn DOWN<br><br>$2.1 BIL #1116 casinos, hotels<br><br>S. Daniel Abraham UNCHANGED<br><br>$2 BIL #1168 Slim-Fast<br><br>Leslie Alexander DOWN<br><br>$2 BIL #1168 sports team<br><br>Herbert Allen UP<br><br>$2 BIL #1168 investment banking<br><br>Steve Conine UP<br><br>$2 BIL #1168 online retail<br><br>Glenn Dubin UNCHANGED<br><br>$2 BIL #1168 hedge funds<br><br>Frank Fertitta III DOWN<br><br>$2 BIL #1168 casinos, mixed martial arts<br><br>Lorenzo Fertitta DOWN<br><br>$2 BIL #1168 casinos, mixed martial arts<br><br>Phillip Frost DOWN<br><br>$2 BIL #1168 pharmaceuticals<br><br>Jeffrey Gundlach UP<br><br>$2 BIL #1168 investments<br><br>W. Herbert Hunt DOWN<br><br>$2 BIL #1168 oil<br><br>Bruce Karsh UNCHANGED<br><br>$2 BIL #1168 private equity<br><br>Henry Laufer UNCHANGED<br><br>$2 BIL #1168 hedge funds<br><br>Thomas Lee DOWN<br><br>$2 BIL #1168 private equity<br><br>Howard Marks UNCHANGED<br><br>$2 BIL #1168 private equity<br><br>Nicholas Pritzker II UP<br><br>$2 BIL #1168 hotels, investments<br><br>Niraj Shah UP<br><br>$2 BIL #1168 online retail<br><br>Tim Sweeney NEW<br><br>$2 BIL #1168 video games<br><br>Alexandra Daitch DOWN<br><br>$1.9 BIL #1227 Cargill<br><br>Stewart Horejsi UP<br><br>$1.9 BIL #1227 Berkshire Hathaway<br><br>Stanley Hubbard DOWN<br><br>$1.9 BIL #1227 DirecTV<br><br>Jim Kavanaugh NEW<br><br>$1.9 BIL #1227 IT provider<br><br>Chris Larsen DOWN<br><br>$1.9 BIL #1227 cryptocurrency<br><br>William Lauder UP<br><br>$1.9 BIL #1227 Estee Lauder<br><br>Sarah MacMillan DOWN<br><br>$1.9 BIL #1227 Cargill<br><br>David Murdock DOWN<br><br>$1.9 BIL #1227 Dole, real estate<br><br>Kevin Plank UP<br><br>$1.9 BIL #1227 Under Armour<br><br>Jennifer Pritzker UNCHANGED<br><br>$1.9 BIL #1227 hotels, investments<br><br>Linda Pritzker UP<br><br>$1.9 BIL #1227 hotels, investments<br><br>Larry Robbins DOWN<br><br>$1.9 BIL #1227 hedge funds<br><br>Rodney Sacks DOWN<br><br>$1.9 BIL #1227 energy drinks<br><br>Lucy Stitzer DOWN<br><br>$1.9 BIL #1227 Cargill<br><br>William Stone UP<br><br>$1.9 BIL #1227 software<br><br>Katherine Tanner DOWN<br><br>$1.9 BIL #1227 Cargill<br><br>John Tyson DOWN<br><br>$1.9 BIL #1227 food processing<br><br>Amy Wyss DOWN<br><br>$1.9 BIL #1227 medical equipment<br><br>David Zalik DOWN<br><br>$1.9 BIL #1227 financial technology<br><br>Carol Jenkins Barnett UP<br><br>$1.8 BIL #1281 Publix supermarkets<br><br>William Berkley UP<br><br>$1.8 BIL #1281 insurance<br><br>Christopher Cline DOWN<br><br>$1.8 BIL #1281 coal<br><br>Robert Duggan DOWN<br><br>$1.8 BIL #1281 pharmaceuticals<br><br>John Farber UP<br><br>$1.8 BIL #1281 chemicals<br><br>James France UNCHNAGED<br><br>$1.8 BIL #1281 Nascar<br><br>Valentin Gapontsev DOWN<br><br>$1.8 BIL #1281 lasers<br><br>Bill Haslam DOWN<br><br>$1.8 BIL #1281 truck stops<br><br>Michael Jordan UP<br><br>$1.8 BIL #1281 Charlotte Hornets, endorsements<br><br>William Koch UP<br><br>$1.8 BIL #1281 oil, investments<br><br>Marc Lasry UP<br><br>$1.8 BIL #1281 hedge funds<br><br>David Lichtenstein UP<br><br>$1.8 BIL #1281 real estate<br><br>Craig McCaw UP<br><br>$1.8 BIL #1281 telecom<br><br>Manuel Moroun UP<br><br>$1.8 BIL #1281 transportation<br><br>Jonathan Nelson DOWN<br><br>$1.8 BIL #1281 private equity<br><br>Brian Roberts UNCHANGED<br><br>$1.8 BIL #1281 Comcast<br><br>Leonard Schleifer UP<br><br>$1.8 BIL #1281 pharmaceuticals<br><br>Todd Wagner UP<br><br>$1.8 BIL #1281 online media<br><br>Ronald Wanek DOWN<br><br>$1.8 BIL #1281 furniture<br><br>David Booth UP<br><br>$1.7 BIL #1349 mutual funds<br><br>Paul Foster UP<br><br>$1.7 BIL #1349 oil refining<br><br>Mario Gabelli UP<br><br>$1.7 BIL #1349 money management<br><br>Peter Gassner NEW<br><br>$1.7 BIL #1349 software<br><br>Reid Hoffman DOWN<br><br>$1.7 BIL #1349 LinkedIn<br><br>Bradley Jacobs DOWN<br><br>$1.7 BIL #1349 logistics<br><br>Jimmy John Liautaud NEW<br><br>$1.7 BIL #1349 sandwich chain<br><br>Catherine Lozick DOWN<br><br>$1.7 BIL #1349 valve manufacturing<br><br>Gary Michelson UNCHANGED<br><br>$1.7 BIL #1349 medical patents<br><br>Tor Peterson DOWN<br><br>$1.7 BIL #1349 commodities<br><br>Julio Mario Santo Domingo III DOWN<br><br>$1.7 BIL #1349 beer<br><br>Henry Swieca UNCHANGED<br><br>$1.7 BIL #1349 hedge funds<br><br>Jeffrey Talpins NEW<br><br>$1.7 BIL #1349 hedge funds<br><br>Bill Alfond UP<br><br>$1.6 BIL #1425 shoes<br><br>Susan Alfond UP<br><br>$1.6 BIL #1425 shoes<br><br>Ted Alfond UP<br><br>$1.6 BIL #1425 shoes<br><br>Nicolas Berggruen DOWN<br><br>$1.6 BIL #1425 investments<br><br>O. Francis Biondi UNCHANGED<br><br>$1.6 BIL #1425 hedge funds<br><br>Peter Buck DOWN<br><br>$1.6 BIL #1425 Subway sandwich shops<br><br>Christopher Goldsbury UNCHANGED<br><br>$1.6 BIL #1425 salsa<br><br>Ryan Graves UP<br><br>$1.6 BIL #1425 uber<br><br>Brian Higgins UNCHANGED<br><br>$1.6 BIL #1425 hedge funds<br><br>George Joseph UP<br><br>$1.6 BIL #1425 insurance<br><br>Charles Munger DOWN<br><br>$1.6 BIL #1425 Berkshire Hathaway<br><br>Craig Newmark UP<br><br>$1.6 BIL #1425 Craigslist<br><br>Nelson Peltz DOWN<br><br>$1.6 BIL #1425 investments<br><br>Jerry Reinsdorf UP<br><br>$1.6 BIL #1425 sports teams<br><br>Sheryl Sandberg UNCHANGED<br><br>$1.6 BIL #1425 Facebook<br><br>Ben Silbermann UNCHANGED<br><br>$1.6 BIL #1425 Pinterest<br><br>Thomas Steyer UNCHANGED<br><br>$1.6 BIL #1425 hedge funds<br><br>Jim Thompson UP<br><br>$1.6 BIL #1425 logistics<br><br>Evan Williams DOWN<br><br>$1.6 BIL #1425 Twitter<br><br>Louis Bacon DOWN<br><br>$1.5 BIL #1511 hedge funds<br><br>Ron Burkle DOWN<br><br>$1.5 BIL #1511 supermarkets, investments<br><br>Yvon Chouinard UP<br><br>$1.5 BIL #1511 Patagonia<br><br>Stephen Feinberg DOWN<br><br>$1.5 BIL #1511 private equity<br><br>Kathy Fields NEW<br><br>$1.5 BIL #1511 skin care products<br><br>Bill Gross DOWN<br><br>$1.5 BIL #1511 investments<br><br>Timothy Headington DOWN<br><br>$1.5 BIL #1511 oil & gas, investments<br><br>Hamilton James DOWN<br><br>$1.5 BIL #1511 investments<br><br>Jim Justice II DOWN<br><br>$1.5 BIL #1511 coal<br><br>Seth Klarman UNCHANGED<br><br>$1.5 BIL #1511 investments<br><br>Jeffrey Lorberbaum DOWN<br><br>$1.5 BIL #1511 flooring<br><br>Daniel Lubetzky NEW<br><br>$1.5 BIL #1511 KIND Snacks<br><br>Billy Joe (Red) McCombs DOWN<br><br>$1.5 BIL #1511 diversified<br><br>Jim McKelvey NEW<br><br>$1.5 BIL #1511 mobile payments<br><br>Roger Penske DOWN<br><br>$1.5 BIL #1511 automobiles<br><br>Forrest Preston UP<br><br>$1.5 BIL #1511 health care<br><br>Chad Richison NEW<br><br>$1.5 BIL #1511 payroll processing<br><br>Katie Rodan NEW<br><br>$1.5 BIL #1511 skin care products<br><br>Martin Selig UP<br><br>$1.5 BIL #1511 real estate<br><br>Evgeny (Eugene) Shvidler UP<br><br>$1.5 BIL #1511oil & gas, investments<br><br>Kenneth Tuchman UNCHANGED<br><br>$1.5 BIL #1511 outsourcing<br><br>Stephen Winn UP<br><br>$1.5 BIL #1511 real estate services<br><br>Edmund Ansin UP<br><br>$1.4 BIL #1605 television<br><br>Herb Chambers UNCHANGED<br><br>$1.4 BIL #1605 car dealerships<br><br>Bharat Desai UP<br><br>$1.4 BIL #1605 IT consulting<br><br>John Edson UNCHANGED<br><br>$1.4 BIL #1605 boats<br><br>Robert Fisher DOWN<br><br>$1.4 BIL #1605 Gap<br><br>William Fisher DOWN<br><br>$1.4 BIL #1605 Gap<br><br>Martha Ford DOWN<br><br>$1.4 BIL #1605 Ford Motor<br><br>Alan Gerry UNCHANGED<br><br>$1.4 BIL #1605 cable television<br><br>J. Tomilson Hill UNCHANGED<br><br>$1.4 BIL #1605 investments<br><br>B. Wayne Hughes Jr. UP<br><br>$1.4 BIL #1605 self-storage<br><br>Michael Krasny UNCHANGED<br><br>$1.4 BIL #1605 retail<br><br>Philippe Laffont NEW<br><br>$1.4 BIL #1605 hedge funds<br><br>James Leininger UNCHANGED<br><br>$1.4 BIL #1605 medical products<br><br>George Marcus UP<br><br>$1.4 BIL #1605 real estate<br><br>Gail Miller UP<br><br>$1.4 BIL #1605 car dealerships<br><br>Fayez Sarofim DOWN<br><br>$1.4 BIL #1605 money management<br><br>Peter Sperling UNCHANGED<br><br>$1.4 BIL #1605 education<br><br>Kevin Systrom DOWN<br><br>$1.4 BIL #1605 Instagram<br><br>Jonathan Tisch DOWN<br><br>$1.4 BIL #1605 insurance, ny giants<br><br>Wilma Tisch UP<br><br>$1.4 BIL #1605 diversified<br><br>Kenny Troutt UNCHANGED<br><br>$1.4 BIL #1605 telecom<br><br>Chris Wanstrath NEW<br><br>$1.4 BIL #1605 collaborative software<br><br>Charlotte Colket Weber DOWN<br><br>$1.4 BIL #1605 Campbell Soup<br><br>Dan Wilks UNCHANGED<br><br>$1.4 BIL #1605 natural gas<br><br>Farris Wilks UNCHANGED<br><br>$1.4 BIL #1605 natural gas<br><br>Marc Andreessen UP<br><br>$1.3 BIL #1717 venture capital<br><br>Brian Armstrong NEW<br><br>$1.3 BIL #1717 cryptocurrency<br><br>Steve Case UNCHANGED<br><br>$1.3 BIL #1717 AOL<br><br>Henry Davis UP<br><br>$1.3 BIL #1717 beef processing V<br><br>Darwin Deason UNCHANGED<br><br>$1.3 BIL #1717 Xerox<br><br>Jamie Dimon UNCHANGED<br><br>$1.3 BIL #1717 banking<br><br>Donald Foss UP<br><br>$1.3 BIL #1717 auto loans V<br><br>Anne Gittinger UNCHANGED<br><br>$1.3 BIL #1717 Nordstrom department stores<br><br>Sue Gross NEW<br><br>$1.3 BIL #1717 investments<br><br>Mitchell Jacobson UNCHANGED<br><br>$1.3 BIL #1717industrial equipment<br><br>Alexander Karp UNCHANGED<br><br>$1.3 BIL #1717 software<br><br>Sidney Kimmel UNCHANGED<br><br>$1.3 BIL #1717 retail<br><br>Cargill MacMillan III UNCHANGED<br><br>$1.3 BIL #1717 Cargill<br><br>John MacMillan UNCHANGED<br><br>$1.3 BIL #1717 Cargill<br><br>Martha MacMillan UNCHANGED<br><br>$1.3 BIL #1717 Cargill<br><br>William MacMillan UNCHANGED<br><br>$1.3 BIL #1717 Cargill<br><br>Gary Magness DOWN<br><br>$1.3 BIL #1717 cable TV, investments<br><br>Alexander Rovt ● UNCHANGED<br><br>$1.3 BIL #1717 fertilizer, real estate<br><br>Steven Sarowitz NEW<br><br>$1.3 BIL #1717 payroll software<br><br>Thomas Bailey UNCHANGED<br><br>$1.2 BIL #1818 money management<br><br>J. Hyatt Brown UP<br><br>$1.2 BIL #1818 insurance<br><br>James Duff NEW<br><br>$1.2 BIL #1818 tires, diversified<br><br>Thomas Duff NEW<br><br>$1.2 BIL #1818 tires, diversified<br><br>Joseph Edelman UP<br><br>$1.2 BIL #1818 hedge funds<br><br>Henry Engelhardt UNCHANGED<br><br>$1.2 BIL #1818 insurance<br><br>J. Christopher Flowers UP<br><br>$1.2 BIL #1818 investments<br><br>Donald Friese UNCHANGED<br><br>$1.2 BIL #1818 manufacturing<br><br>Richard Hayne DOWN<br><br>$1.2 BIL #1818 Urban Outfitters<br><br>Irwin Jacobs DOWN<br><br>$1.2 BIL #1818 semiconductors<br><br>Thomas James UNCHANGED<br><br>$1.2 BIL #1818 finance<br><br>Frank Laukien UP<br><br>$1.2 BIL #1818 scientific equipment<br><br>John Martin UP<br><br>$1.2 BIL #1818 pharmaceuticals<br><br>Jerry Moyes DOWN<br><br>$1.2 BIL #1818 transportation<br><br>Bruce Nordstrom DOWN<br><br>$1.2 BIL #1818 Nordstrom department stores<br><br>Eren Ozmen DOWN<br><br>$1.2 BIL #1818 aerospace<br><br>Fatih Ozmen DOWN<br><br>$1.2 BIL #1818 aerospace<br><br>David Paul NEW<br><br>$1.2 BIL #1818 medical devices<br><br>Mark Pincus DOWN<br><br>$1.2 BIL #1818 online games<br><br>Tom Preston-Werner NEW<br><br>$1.2 BIL #1818 collaborative software<br><br>Thomas Tull UNCHANGED<br><br>$1.2 BIL #1818 movies, investments<br><br>Jayshree Ullal DOWN<br><br>$1.2 BIL #1818 computer networking<br><br>George Yancopoulos NEW<br><br>$1.2 BIL #1818 pharmaceuticals<br><br>Richard Yuengling Jr. DOWN<br><br>$1.2 BIL #1818 beer<br><br>William Ackman UNCHANGED<br><br>$1.1 BIL #1941 hedge funds<br><br>Sara Blakely UP<br><br>$1.1 BIL #1941 Spanx<br><br>Adam Bowen NEW<br><br>$1.1 BIL #1941 e-cigarettes<br><br>Paul Fireman UNCHANGED<br><br>$1.1 BIL #1941 Reebok<br><br>Jeff Green NEW<br><br>$1.1 BIL #1941 digital advertising<br><br>Richard Kayne UNCHANGED<br><br>$1.1 BIL #1941 investments<br><br>Jim Koch RETURNEE<br><br>$1.1 BIL #1941 beer<br><br>Theodore Leonsis UP<br><br>$1.1 BIL #1941 sports teams<br><br>Nancy Lerner UNCHANGED<br><br>$1.1 BIL #1941 banking, credit cards<br><br>Norma Lerner UNCHANGED<br><br>$1.1 BIL #1941 banking, credit cards<br><br>Randolph Lerner UNCHANGED<br><br>$1.1 BIL #1941 banking, credit cards<br><br>Frederic Luddy NEW<br><br>$1.1 BIL #1941 software<br><br>William Macaulay UNCHANGED<br><br>$1.1 BIL #1941 energy investments<br><br>Duncan MacMillan UP<br><br>$1.1 BIL #1941 Bloomberg LP<br><br>James Monsees NEW<br><br>$1.1 BIL #1941 e-cigarettes<br><br>Michael Price DOWN<br><br>$1.1 BIL #1941 investments<br><br>Steven Roth RETURNEE<br><br>$1.1 BIL #1941 real estate<br><br>Chris Sacca UNCHANGED<br><br>$1.1 BIL #1941 venture capital<br><br>Alice Schwartz UP<br><br>$1.1 BIL #1941 biotech<br><br>Michael Steinhardt UNCHANGED<br><br>$1.1 BIL #1941 hedge funds<br><br>Anthony Wood NEW<br><br>$1.1 BIL #1941 Roku<br><br>Matthew Calkins NEW<br><br>$1 BIL #2057 software<br><br>Safra Catz NEW<br><br>$1 BIL #2057 software<br><br>Robert Friedland DOWN<br><br>$1 BIL #2057 mining<br><br>John Goff NEW<br><br>$1 BIL #2057 real estate<br><br>Mimi Haas NEW<br><br>$1 BIL #2057 Levi's jeans<br><br>David Hall UNCHANGED<br><br>$1 BIL #2057 automotive technology<br><br>Donald Horton RETURNEE<br><br>$1 BIL #2057 home building<br><br>Kylie Jenner NEW<br><br>$1 BIL #2057 cosmetics<br><br>David Kabiller UNCHANGED<br><br>$1 BIL #2057 money Management<br><br>Leo Koguan NEW<br><br>$1 BIL #2057 IT provider<br><br>Edward Lampert DOWN<br><br>$1 BIL #2057 Sears<br><br>John Liew UNCHANGED<br><br>$1 BIL #2057 money Management<br><br>Lowell Milken UNCHANGED<br><br>$1 BIL #2057 investments<br><br>Carolyn Rafaelian UNCHANGED<br><br>$1 BIL #2057 jewelry<br><br>Evan Sharp UNCHANGED<br><br>$1 BIL #2057 Pinterest<br><br>Anastasia Soare NEW<br><br>$1 BIL #2057 cosmetics<br><br>Axel Stawski UNCHANGED<br><br>$1 BIL #2057 real estate<br><br>James Truchard DOWN<br><br>$1 BIL #2057 software<br><br>Sandy Weill UNCHANGED<br><br>$1 BIL #2057 Citigroup<br><br>NEWSMAKER<br><br>Howard Schultz<br><br>NET WORTH $3.5 BIL<br><br>The coffee mogul sparked heated reactions in January when he announced he is seriously considering a 2020 presidential run as an independent candidate. Angry Democrats attacked the former Starbucks CEO as potentially dividing the anti-Trump constituency, while others bemoaned yet another billionaire entering politics. Despite being worth $3.5 billion--a sum made up largely of Starbucks shares--Schultz has pushed back against the influence of wealth in politics, saying he should pay more in taxes and vowing to reveal his tax returns if elected. He also said he's willing to spend hundreds of millions of his own money on his campaign.<br><br>NEWCOMER<br><br>Katie Rodan and Kathy Fields<br><br>NET WORTH $1.5 BIL (EACH)<br><br>Dermatologists Rodan (left) and Fields have tapped into the lucrative skin care market with their ­multilevel marketing firm Rodan + Fields, which has $1.5 billion in sales and 300,000 independent \"consultants\" selling antiaging creams and more. In February, they launched a new teen acne line, a throwback to their first claim to fame, acne product Proactiv, whose royalty rights they sold in 2016. In May 2018, private equity firm TPG Capital invested a reported $1 billion for a 25% stake in Rodan + Fields. That pushed the dermatologists--who teach part-time at Stanford and still see patients--into the three-com ma club.<br><br>NEWCOMER<br><br>Jim Kavanaugh<br><br>NET WORTH $1.9 BIL<br><br>The son of a bricklayer, Kavanaugh went to college on a soccer scholarship and was on the 1984 U.S. Olympic team. After he hung up his cleats, he sold electronics and later joined David Steward to help start a computer reseller. \"Leaving his job to come to work for a small startup required considerable faith,\" Steward wrote of Kavanaugh. \"Back in the early 1990s, it was unusual for a young white male to join an African-American owned company.\" Today Kavanaugh is CEO and Steward is chairman of $11.2 billion (sales) IT provider World Wide Technology, which helps companies like JPMorgan Chase, Lowe's and Verizon buy their technology.<br><br>NEWCOMER<br><br>Jim McKelvey<br><br>NET WORTH $1.5 BIL<br><br>Ten years ago, McKelvey, a glassblower, founded payments firm Square with Jack Dorsey (No. 343). He still owns a 4% stake, which soared 86% in the past year, and has netted nearly $270 million from earlier sales. In January, Washington University in St. Louis renamed its school of engineering and applied science after McKelvey, who committed $15 million to his alma mater in 2016.<br><br>NEWCOMER<br><br>Safra Catz<br><br>NET WORTH $1 BIL<br><br>The co-CEO of software behemoth Oracle owns less than 1% of the company but debuts on the list because of new options grants, which form the bulk of her compensation. The Israeli-American joined Oracle as a senior vice president in 1999 after working as an investment banker for more than a decade. In November she was appointed to the National Security Commission on Artificial Intelligence.",
+      "tags": [
+        "Net Worth",
+        "Gustavo Cisneros Down"
+      ],
+      "type": "",
+      "timestamp": "1553990400000",
+      "sentiment": "",
+      "author": "Forbes Staff",
+      "relatedEntityIds": [],
+      "globalId": "56b8d5f16efc301696a79ad99243790b",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "FB00000020190312ef3v0000e",
+      "source": "Forbes",
+      "significance": 0,
+      "abstract": "VENEZUELA GDP: $12.1 BIL\n\nPopulation: 32 Mil",
+      "significantTag": [
+        "Net Worth",
+        "Gustavo Cisneros Down"
+      ],
+      "label": "",
+      "sentimentScore": 0.7302702691003421,
+      "entities": [
+        "Net Worth",
+        "Gustavo Cisneros Down"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [],
+      "nerCompanies": [],
+      "nerPeople": [
+        "Net Worth",
+        "Gustavo Cisneros Down"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [],
+      "companySectors": [],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "298f563eac9782ab6984cec9779a7c9e",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "REIMAGINING CAPITALISM",
+      "content": "Sitting in a modest room in New York's ­immodest Peninsula Hotel, the richest person in the world for most of the past 20 years ponders an existential question suddenly in vogue among the left's confiscatory set: Should he even exist? \"It is fascinating,\" says Bill Gates, \"that for the first time in my life, people are saying, 'Okay, should you have billionaires?' \"<br><br>Dispassionately, he begins to unpack that thesis. \"I'm afraid if you really implemented something like that, that the amount you would gain would be much less than the amount you would lose. Now, that sounds self-interested, so who's the neutral witness on this one? … We need somebody who's not wealthy to say that in some cases allowing people to be wealthy is okay.\"<br><br>Allow me to raise my hand. For the past year, I've had one-on-one discussions with no fewer than two dozen billionaires, including face-to-face meetings with the three richest people in the world—Jeff Bezos, Gates and Warren Buffett—touching on various aspects of capitalism's future. It comes at an urgent moment: You'd have to go back to the 1960s, or maybe even the 1930s, to find a time when the primacy of the free market system was so widely questioned.<br><br>Just 56% of Americans say they have a positive image of capitalism, according to a Gallup poll last summer, compared with 37% who said the same thing about socialism. In a Fox News poll during the same period, 36% of adults approved of a shift in the U.S. \"away from capitalism and more toward socialism\"—a huge increase from 2012, when just 20% said so.<br><br>Among Millennials and Gen Z, free market skepticism is actually the majority view. In Gallup's poll, 51% of those 18 to 29 had a positive view of socialism—albeit the largely fuzzy Scandinavian/Bernie Sanders version rather than the Soviet/Berlin Wall hard stuff—compared with 45% for capitalism. That finding was echoed by a Harvard survey of young adults in which 51% said they did not support capitalism and only 19% said they \"identify as a capitalist.\" These sentiments come amid an economy that by all traditional measures is booming, with full employment and 3% growth.<br><br>So far, 2019 has offered only reinforcement of these views, as tech companies have continued to bleed credibility, Howard Schultz turned himself into a cartoon and a slew of tax-the-very-rich proposals garnered surprisingly high support. \"This has been brewing for years, accelerating in the last few months and again in the last few weeks,\" says Steve Case, the AOL founder who now runs an investment firm, Revolution. The hedge fund titan Paul Tudor Jones adds: \"I think we need to acknowledge that we're at a crossroads, with massive social fissures.\"<br><br>And those were just some of the billionaires willing to speak on the record. Virtually everyone I talked to acknowledged the need for change. Some incremental and many systemic; some spoke in whispers, many in full-throated pleas for \"reform\" or \"a reboot.\" The rock star Bono had perhaps the most poetic suggestion: a reimagination .<br><br>If such a term conjures Steve Jobs or Walt Disney, two of capitalism's visionary saints, so be it. Entrepreneurial capitalism remains, objectively, the best system ever invented to create and distribute prosperity, and if you look at the billion-plus people in China, India and elsewhere who were lifted from extreme poverty in the past two decades, it remains easy to sing its praises. The dynamism remains true in the U.S., too. Of The Forbes 400 list of richest Americans, 67% are self-made and 11% are immigrants. \"America works, and it works now better than it ever worked,\" Buffett says.<br><br>Since too many Americans don't feel that way, the time is ripe to reimagine a system that addresses them. Pick the brains of some of the greatest-ever manifestations of the American Dream, and an AAA-version of capitalism<br><br>emerges, one more authentic , accessible and accountable —and perhaps, in an age of uncertainty, one that's built to last. The stakes couldn't be higher, as forces gather to threaten the greatest prosperity engine ever built.<br><br>REIMAGINING CAPITALISM AS ... AUTHENTIC<br><br>the French nobleman Alexis de Tocqueville's travels across America in the 1830s coincided with the emergence of socialist theory back in Europe, a movement he presciently and stridently criticized. For Tocqueville, the balanced capitalism he witnessed compared favorably to the options back home, such as ceding power to the government or a more feudal system \"managed by a few rich and powerful individuals.\" \"The inhabitants of the United States almost always manage to combine their own advantage with that of their fellow citizens,\" he observed. Tocqueville's musings inspired Friedrich Hayek's Road to Serfdom and filtered into the very first issue of Forbes, printed during Russia's Revolution, when the magazine's founder, B.C. Forbes, famously declared that \"business was originated to produce happiness, not to pile up millions.\"<br><br>Milton Friedman was another 20th-century admirer of Tocqueville, particularly for his focus on political equality as a driver of prosperity. But Friedman famously held that among all the constituents of business—the customer, the employees, the community—just one ultimately mattered, the shareholder. The only social responsibility of business, he declared, was to maximize profits. If shareholders wanted to spend their profits on altruistic projects, great, but that was at their sole discretion, with the assumption they were buying something of value—perhaps social approbation or the assuaging of guilt.<br><br>This maxim gave us LBOs, private equity deals and employee buyouts. And to many of the world's most successful capitalists, it also created many of the current ills. \"How wrong I was about Milton Friedman—most of us were,\" says Jones, who built a $5 billion fortune exploiting market opportunities, including shorting the 1987 market crash. \"It came at great cost to other corporate stakeholders and eroded the trust on which companies, and civil society, depends.\"<br><br>In an era when consumers crave authenticity, the Tocque­ville version, which sees profits as a by-product of business rather than its singular mission, offers a natural strain of capitalism that's already hugely popular, especially among younger Americans. For Millennials, according to a massive Deloitte survey in 2018, the bottom three priorities for a business should be profits, efficiency and sales. The top three? Generating jobs, improving society and innovation.<br><br>Authenticity explains why Americans, while disliking Wall Street and big business, continue to love entrepreneurs (87% approval, per Gallup) and small business (96%). And why purpose-driven companies like Patagonia and Warby Parker are wreathed in halos, no matter what they're selling or how rich the founders get.<br><br>\"When we're acquiring companies, one of the things I look at very closely is 'Are the founders of a company missionaries or mercenaries?' \" Jeff Bezos told me several months ago, before revealing the answer with his famous braying laugh. \"It's actually very easy to tell—missionaries make better products and ser­vices.\" They also engender the one authentic trait that's ultimately the most profitable: trust. That word, says Bezos, \"is what allows you to expand the business.\"<br><br>Of course, trust is a double-edged sword. As Facebook treats user data as a chit rather than a covenant, the company's reputation—and Zuckerberg's—has tanked. (In the realm of extremely unlikely outcomes, it's now easier to envision him in the Big House than in the White House.) It's also why Wall Street remains about as popular as big tobacco.<br><br>But even in finance, roots of authenticity shoot up. Impact investing, long dismissed as a niche for do-gooders, has emerged as a growth area, with some $35 billion committed in 2018 to fund businesses that carry societal benefits without sacrificing returns. \"We're talking about solving problems using innovation and entrepreneurship,\" says Nancy Pfund, who founded DBL Partners and has raised $625 million in three venture funds. Her flagship, with investments in Tesla and SolarCity, has ranked in the top performance quartile across this decade. \"When you just look at the super-short-term shareholder, you're not taking advantage of innovation—and you're cheating the future.\"<br><br>The numbers are getting larger: Breakthrough Energy Ventures, backed by a consortium of billionaires such as Gates, Bezos, Michael Bloomberg, Richard Branson and Jack Ma, has pledged $1 billion for startups that promise radical solutions to carbon emissions. A similarly platinum-plated tycoon cohort, including Bono, Laurene Powell Jobs and Jeff Skoll, has backed the Rise Fund, an arm of private equity giant TPG that has deployed $1.8 billion in 25 investments they think will have significant impact on society. \"People are rightfully asking, 'Is the system working?' \" says Bill McGlashan, the CEO of the Rise Fund. \"We believe that capitalism is a better servant than master.\"<br><br>REIMAGINING CAPITALISM AS ... ACCESSIBLE<br><br>For those who rightly still believe in America as the land of opportunity, a Fox News survey from just a few weeks ago should offer pause: 42% of Americans do not think \"the way capitalism works in the U.S. these days\" gives them \"a fair shot.\" Even more troubling: In a country that has always held true to the premise that you could make it through hard work—or at least your children could—18% thought that the American Dream is out of reach for their family.<br><br>And there are ample stats to back up the sentiment. In the U.S. the top 1% of workers, collectively, earn vastly more than the bottom 50%. \"The market system as it gets more specialized pushes more money to the top,\" Buffett explains. \"The natural function of a more specialized market economy is to divert more and more of the rewards to the top. That's something I don't think we've fully addressed in this country.\"<br><br>But the situation is actually far worse than yawning income disparity. Americans have historically viewed the superrich as heroes, not villains, for a simple reason: \"We all thought we could be like them,\" Jones says. It's the accelerating lack of upward mobility that's fueling much of this populist anger. For all the anecdotal success stories, if you're born in the wrong Zip code, to the wrong parents, the road to The Forbes 400 has never looked longer or narrower.<br><br>Take venture capital, the clearest starting point to a billion-dollar fortune over the past 20 years—a door the vast majority of Americans have no way of opening. Just 15% of VC money goes to women founders, 1% to black entrepreneurs and less than a quarter to anyone who lives outside California, New York and Massachusetts. Yes, a far more global, diverse pool now has access to those funding meccas, but that's little comfort to a parent whose kid goes to a so-so public school in a city or region that's been left behind.<br><br>\"It needs to be a national priority to level the playing field,\" says Case, who for the past few years has conducted a Rise of the Rest bus tour, traveling the country and putting millions into more than 100 companies that aren't in Boston, New York or the San Francisco Bay Area. To Case, it's both civic duty and opportunity, as brilliant minds lie fallow in low-cost areas desperate for high-growth hope.<br><br>Pfund actually counts women leaders before investing in a firm—almost two thirds of the companies in her funds have a woman at the CFO level or higher. She also pushes her portfolio to spread the opportunity, through profit-sharing plans, living-wage commitments and encouragement to hire in underserved areas.<br><br>All these efforts are on the margin, short of a commitment to create educational opportunities for those with ambition and then a track for them going forward. \"We will have the resources,\" Buffett says. \"The question is, will we in effect pull everybody in who's able-bodied and willing to work 40 hours a week so they can make a decent living, raise a family?\"<br><br>REIMAGINING CAPITALISM AS ... ACCOUNTABLE<br><br>Something unusual happened a few hours after my sit-down with Bill Gates. Fresh off pondering the future of billionaires, he went on Stephen Colbert's eponymous show with his wife, Melinda, to a crescendo of cheers. In accepting his new role as the world's second-richest person, he quipped, \"We're trying to give it away faster\"—and the audience swooned. From their call for higher taxes on the superrich to the obligations of the successful to the empowerment of women, the applause kept coming. By the end, Colbert was playfully goading the Gateses to run for political office.<br><br>Compare that with the Bronx cheer that echoed through New York later that week, when Amazon announced it was pulling out from its HQ2 plan in Queens. The math-challenged politicians who killed the deal took justifiable heat from pretty much everyone except their base. But Bezos was bloodied just as badly. He's worth over $130 billion (at least until his divorce settles), and Amazon is worth $800 billion. Why extract a measly $3 billion in corporate welfare from New York? In the truest Friedman sense: because he has shareholders—and he could.<br><br>The dueling reactions underscore an American truth as timeless as Astor and Cooper and Rockefeller: Americans expect their meritocratic royalty to remain accountable to the public that helped create them.<br><br>Traditionally, that means philanthropy, an aspect of extreme success (there are now 137 deca-billionaires in the world) that no longer feels optional, albeit one that still engenders cynicism. Says Gates: \"The attack that 'Why should you even have a say in setting the agenda?' That has a certain resonance to it.\"<br><br>For Gates, who within our lifetime will likely be regarded as the greatest philanthropist ever, accountability starts with framing the role: \"picking novel ideas\" or \"off-the-wall theories,\" as he says, and then proving that the concepts work, or don't, taking the kinds of risks that no taxpayer-funded government—or shareholder-dependent corporation—could justify.<br><br>But in this era, Gates also recognizes that motives will be questioned. \"If we come and improve math class,\" Gates says, \"then people are like, 'Hey, you didn't do the band.' \" For this reason, Gates tries to hold himself publicly accountable through transparency, including a public letter from the foundation that he and Melinda write each year. It's also the driving reason for the Giving Pledge, in which 189 of the world's wealthiest people have affirmed, for all to see, that they will give away at least half of their fortunes, most much more.<br><br>A Giving Pledge signatory, Salesforce founder Marc Ben­i­off has similarly shifted from anonymous giving to putting his name on two hospitals, in part to be a role model for emerging tech billionaires and in part because \"it sent a message that we're supporting the community in a tangible way.\" And he does the same thing with his company, which pioneered a<br><br>\"1, 1, 1\" model that placed 1% of the company's equity in a trust, along with a pledge to donate 1% of its software products and 1% of his 35,000 employees' time to volunteer work. It's a combination that's generated $260 million in grants and 3.8 million hours for civic causes.<br><br>Rather than rely on such voluntary munificence, Jones, who cut his philanthropic teeth founding the innovative Robin Hood Foundation in New York, has focused for the past several years on holding corporate America directly accountable for better capitalism. He founded Just Capital, which has surveyed more than 80,000 Americans in order to get a precisely calibrated take on what makes a good corporate citizen. America's older workers, it turns out, aren't so different from its youngest, desiring companies to pay and treat their employees well, put out good products that have integrity, and care about the environment and the community.<br><br>Just Capital ranks every major public company across its 36 criteria, from best to worst, proffering a Good Housekeeping-like seal to the top companies, in order to spur better corporate citizenry. (Disclosure: I'm on the Just Capital board, and Forbes publishes the annual Just 100 list each fall.) \"You can't manage what you can't measure,\" says Jones, who also helped Just launch a $200 million ETF in June 2018 that has so far outperformed the S&P 500.<br><br>Measurement has also been driving McGlashan at the Rise Fund, which has a hard time justifying billions in investments in social good when no one can define what \"good\" is. To that end, Rise incubated and then recently spun out Y Analytics, a firm devoted to measuring this impact—a key step in making capitalism still more solutions-oriented.<br><br>Such remedies are urgent. \"Unless we find a market-based solution to the exponential growth in inequality, we will end up with populist legislation that creates a hammer to go after every nail,\" Jones says. He's right. Alexandria Ocasio-­Cortez's much-touted 70% income tax bracket displays a stark lack of understanding how fortunes in this country are built—through ownership, not earnings. Elizabeth Warren's wealth surcharge would require an army of appraisers. \"Here's the problem with all of those,\" says the venture capitalist Vinod Khosla. \"There is international mobility.\"<br><br>Virtually every billionaire I spoke with acknowledged that higher taxes on the billionaire set are inevitable; most even saw them as beneficial, if correctly applied. According to Gates, Buffett, Khosla and others, the correct way to levy taxes on the superrich is at a transaction point. Either an estate tax without the loopholes that currently render it useless or a higher capital gains tax applied only on extreme fortunes, to avoid suppressing growth.<br><br>And better yet, the tax code can be refined to encourage growth and spread it around more evenly. The launch of opportunity zones, engineered by the Facebook and Spotify billionaire Sean Parker, has already been put in motion, offering tantalizing tax breaks in needy areas of all 50 states. Adjusting corporate tax rates based on jobs created—more jobs, lower taxes—is another worthy idea.<br><br>The eternal beauty of the free market is its ability to evolve. Leave it to the most admired capitalist in the world, Warren Buffett, who has lived through more than one third of this country's history and who bought his first stock in 1942, at a moment when it was conceivable the U.S. could lose World War II, to make a prediction: \"The luckiest person that will ever be born in the world to date will be a baby being born in the United States today.\" Bet against Buffett, and capitalism, at your peril.",
+      "tags": [
+        "Randall Lane",
+        "Bill Gates",
+        "AUTHENTIC",
+        "GATES"
+      ],
+      "type": "",
+      "timestamp": "1553990400000",
+      "sentiment": "",
+      "author": "Randall Lane",
+      "relatedEntityIds": [
+        "e63e0ef74c0cf6493f9c5cfc087de43e",
+        "623046a7c503c43027004bbf88fd0be4"
+      ],
+      "globalId": "298f563eac9782ab6984cec9779a7c9e",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "FB00000020190312ef3v00003",
+      "source": "Forbes",
+      "significance": 0,
+      "abstract": "Billionaires have become this year's punching bag, as too many folks see a system stacked against them. Here's our blueprint to make the greatest economic engine ever invented more authentic, accessible and accountable.\n\nBy Randall Lane",
+      "significantTag": [
+        "Randall Lane",
+        "Bill Gates",
+        "AUTHENTIC"
+      ],
+      "label": "",
+      "sentimentScore": 7.785251804046848e-11,
+      "entities": [
+        "Randall Lane",
+        "Bill Gates",
+        "AUTHENTIC",
+        "GATES"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "623046a7c503c43027004bbf88fd0be4",
+        "e63e0ef74c0cf6493f9c5cfc087de43e"
+      ],
+      "nerCompanies": [
+        "GATES",
+        "AUTHENTIC"
+      ],
+      "nerPeople": [
+        "Randall Lane",
+        "Bill Gates"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A",
+        "Distributors"
+      ],
+      "companySectors": [
+        "Consumer Discretionary",
+        "others"
+      ],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "1c0fbdacbaa462fcb3900b274be362c2",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Guilt, Jealousy, Empathy: Your Dog Has the Same Emotions You Do",
+      "content": "''I think animal intelligence and emotions are completely intertwined,'' de Waal said recently on the Times Book Review podcast. ''Also in humans, I think, you cannot separate the two. You can barely think without emotions, and you can barely have emotions if there's not some cognition involved.'' He explained, ''Emotions are bodily states. When you get emotional, your heart rate goes up, your blood pressure increases. ... These changes are very much the same in humans and animals. For example, we say we get 'cold feet' when we're afraid, and that's literally true, we've tested it. It's true for rats, too -- they get cold feet, and their tails get cold, when they are scared. What fear does is draw the blood from the extremities.''<br><br>De Waal says that ''animals that are close to us,'' like apes, express emotions the way we do. Animals that aren't similar express emotions with different bodily reactions: ''The octopus changes color, for example -- for fear, for camouflage.''<br><br>Finding Her Voice<br><br>Laurie Halse Anderson's landmark 1999 Y.A. novel, ''Speak'' -- about a high school freshman struggling in the aftermath of a rape -- was one of the first to address sexual violence. Last year Anderson told The Times that as she toured schools, talking about ''Speak,'' students asked her, ''Did this happen to you?''<br><br>[ 'Dracula' ''freaked me out so much I threw it under my bed, then became slightly hysterical,'' Laurie Halse Anderson said in a recent By the Book interview. ]<br><br>It had -- Anderson was raped when she was 13. Now, 20 years later, she's written a memoir in verse, ''Shout,'' which debuts this week at No. 4. In it, she describes her post-rape trauma, her sometimes rough childhood (both her parents drank too much, and her father, a veteran, had PTSD) and the solace she found in reading: ''the only thing that helped me breathe / was opening a book.''<br><br>Follow New York Times Books on Facebook, Twitter and Instagram, s ign up for our newsletter or our literary calendar . And listen to us on the Book Review podcast .<br><br>This is a more complete version of the story than the one that appeared in print.",
+      "tags": [
+        "Frans De Waal",
+        "Last Hug",
+        "De Waal"
+      ],
+      "type": "",
+      "timestamp": "1553990400000",
+      "sentiment": "",
+      "author": "TINA JORDAN",
+      "relatedEntityIds": [],
+      "globalId": "1c0fbdacbaa462fcb3900b274be362c2",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "NYTF000020190324ef3v00041",
+      "source": "The New York Times",
+      "significance": 0,
+      "abstract": "Have you watched the heartbreaking viral video of Mama, a dying elderly chimpanzee, as she says goodbye to a scientist who was part of her life for many years? (If you haven't seen it, you should -- just lay in a supply of Kleenex first.) The Dutch-born primatologist Frans de Waal believes that Mama's tender caresses show that animal emotions are the same as our own.\n\n''We like to see ourselves as special, but whatever the difference between humans and animals may be, it is unlikely to be found in the emotional domain,'' he wrote in a Times Op-Ed. His new book, ''Mama's Last Hug: Animal Emotions and What They Tell Us About Ourselves,'' enters the list at No. 4.",
+      "significantTag": [
+        "Frans De Waal",
+        "Last Hug",
+        "De Waal"
+      ],
+      "label": "",
+      "sentimentScore": 0.04788206261700376,
+      "entities": [
+        "Frans De Waal",
+        "Last Hug",
+        "De Waal"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [],
+      "nerCompanies": [],
+      "nerPeople": [
+        "Frans De Waal",
+        "Last Hug",
+        "De Waal"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [],
+      "companySectors": [],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "ddf51fa082e2ffc963d463594090723e",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "CHEAP THRILLS",
+      "content": "\"Forty-one percent of U.S. households don't have $400 worth of liquidity,\" Szulczewski says, referring to the Fed's latest estimate. He says customers of his ultra-bargain shopping site have their credit cards declined most often right before payday, rattling off statistics as he easily mounts another flight of stairs, his legs conditioned by decades of weight lifting (he says it helps him relax). The 37-year-old Polish-born former Google engineer is obsessed with ordinary folks' finances and has used that obsession to tailor an e-commerce marketplace just for them, filled with no-name merchandise shipped directly from Chinese merchants.<br><br>Wish was the most downloaded shopping app worldwide in 2018 and is now the third-biggest e-commerce marketplace in the U.S. by sales . Globally, some 90 million people use it at least once a month. Taking a 15% cut of their purchases, Wish doubled its revenue last year, to $1.9 billion. As of its last fund­raising round, it was valued at more than $8.7 billion, and Szulczewski's 18% stake makes him a billionaire. (His cofounder, Danny Zhang, owns just 4.2%.) Szulczewski says investors should expect an IPO in the next year or two.<br><br>Wish is hardly the first e-commerce app to track every customer click—Amazon built a $200 billion annual sales colossus on precisely this sort of data. And Wish is competing with both Alibaba's AliExpress and Amazon in offering shoppers a never-ending stream of Chinese-made items from third-party sellers. But while Amazon keeps adding features like streaming video and two-hour delivery to yoke customers to its Prime membership service, Szulczewski (pronounced sull-CHESS-key) doesn't worry much about quick delivery or quality. Wish sweaters cost $2 plus $2 shipping, Apple Watch knockoffs go for $9 (plus $3 shipping) and Android smartphones list for $27. Products can take weeks to arrive. Shoppers scroll through an average 600 to 700 items, hypnotized by a pixelated parade of weird and wacky products that scratches the same visual itch as an Instagram feed. Around 80% of Wish's first-time customers will return to buy a second time.<br><br>Shipping is cheap thanks in part to an agreement between China Post and the U.S. Postal Service that allows goods that weigh 4.4 pounds or less to be shipped at low rates. About 15% of Wish's shipments qualify. It can now be cheaper to ship a package from Beijing to New York than from South Carolina to New York. That's important because many Chinese merchants can't afford to use big shipping companies like FedEx or DHL or store their goods in out-of-the-way ware­houses as they might with Amazon, says Zhang, who's based in Shanghai.<br><br>Wish is losing about $190 million annually, but it claims it could be profitable if it stopped spending so much on marketing. It has run big campaigns on Pandora and Snapchat, and it's one of the biggest advertisers on Facebook. In 2017 Wish signed a three-year, $30 million deal to sponsor the NBA's Los Angeles Lakers, who are popular in China. Los Angeles is also one of Wish's biggest metropolitan markets by revenue.<br><br>Given the competitive landscape, it's probably money well spent. Mark Zuckerberg recently talked of making it easier to sell stuff on Instagram, meaning Facebook could become a competitor. Amazon's third-party marketplace accounts for half of all the products it sells (by volume, but not revenue), up from 30% a decade ago. Taking dead aim at Wish, Amazon recently launched a \"Bargain Finds\" section. Meanwhile, in his efforts to throw heat at China, Donald Trump could upend the deal that makes shipping for some Wish merchants so cheap.<br><br>A more existential problem: Lots of the stuff on Wish is trashy, shoddy, even fraudulent. There are hundreds of negative reviews for Wish on review sites like Trustpilot and HighYa. Customers are unhappy about unresponsive customer service, merchants who don't send their orders and poor-quality goods. Szulczewski has hired Connie Chang, a former community manager at Facebook, to fix the problem. In an act of thrifty opportunism that would impress Jeff Bezos himself, she's organizing roughly 10,000 Wish users to help the company weed out shady merchants in exchange for free goods and discounts. But Szulczewski seems unfazed by the quality-control challenge, pointing out that sometimes customers themselves are the problem. \"We sell 5 million contact lenses a year,\" he says. \"Someone's going to sleep in them.\"<br><br>THE MAN WHO HAS 300 MILLION products for sale grew up surrounded by empty store shelves in 1980s communist Poland, on the third floor of a bland, six-story apartment block in Warsaw. He was 11 when the Soviet Union collapsed and his parents moved to Waterloo, Canada, which is about 70 miles west of Toronto and home to an excellent research university. He attended the University of Waterloo, which also counts the founders of Kik Interactive and Instacart as former students. In Szulczewski's math and computer science classes he met another immigrant, Danny Zhang. The two played soccer together—Zhang was so good he had briefly considered turning pro—and became friends.<br><br>In 2004, just before he graduated at 23, ­Szulczewski started a four-month internship at Google, which then had less than 1,000 employees and was gearing up for its IPO. He lived in a three-bedroom house in Palo Alto with three other interns, churning out code by day and pumping iron at night. \"You always got the sense that he didn't have time for, you know, messing around,\" says former Googler Brian Singerman, now a partner at the venture firm Founders Fund and an investor in Wish. Once he became a full-time Google employee, Szulczewski wrote the prototype algorithms for keyword expansion, a feature Google sold to early advertisers to help them expand the number of search terms they could show their ads against. A company selling running shoes, for instance, might forget to ask Google to target searches for \"sneakers,\" but Szulczewski's code silently added those keywords so they didn't have to. Advertisers spent more, and the feature added roughly $100 million to Google's annual revenue, Szulczewski claims.<br><br>In June 2007, Szulczewski transferred to Google's new office in South Korea and got a lesson in tech outside the Silicon Valley bubble. Koreans preferred search portals that were busy and crowded with information over clean, minimalist home pages like Google's. Former Google colleague Mark Rabkin remembers debating the point with Szulczewski when he visited. \"I could tell he was starting to think like a local,\" says Rabkin, who's now an ad executive at Facebook. The experience would help shape Szulczewski's strategy for Wish: He learned to focus on building something people wanted rather than what Silicon Valley thought they should want.<br><br>Szulczewski left Google in 2009 with enough savings to see him through the next two years. He spent six months at his home computer writing code for software that could predict someone's interests, such as running or gardening, based on their browsing behavior and match that to a potential product or advertisement, calling the system ContextLogic.<br><br>In September 2010, investors put $1.7 million into ContextLogic, the wheels greased by introductions from a friend of Szulczewski's, Yelp CEO Jeremy Stoppelman. \"Their business plan was to go compete with Google on AdWords, in Korea, or some crazy thing,\" remembers Jerry Yang, the billionaire cofounder of Yahoo, who invested in Wish through his angel fund, AME Cloud Ventures. But, he adds, \"their technology was really good.\"<br><br>The following May, in 2011, Szulczewski invited his old college friend Zhang, then at YellowPages.com, to join him as a cofounder. They toyed with building an ad business, then had lunch in San Francisco with Yang and the venture capital investor Joe Lonsdale to brainstorm bigger business ideas. E-commerce and mobile kept coming up. More people were using smartphones, but few were shopping on them. ­Szulczewski became convinced he just needed to apply the \"Google methodology\" of tracking every interaction, scroll and tap of a customer. Yang was skeptical. Amazon was already 17 years old and well established. \"I remember walking out and thinking, 'Man, this is a hard pivot,' \" Yang says.<br><br>Then things almost ended. In 2011 Facebook got wind of Szulczewski's recommendation engine and offered $20 million to integrate ContextLogic into its own ad system or, potentially, the software that ranked stories and posts on Facebook's news feed. When Szulczewski didn't take the money, one of his investors stormed into the startup's new office on Pine Street to chew him out. \"Go work for someone that's good at business,\" the investor told him.<br><br>Instead, Szulczewski kept tinkering. In late 2011 he and Zhang launched Wish's predecessor, Wishwall.me. Using ads on Facebook, they invited people to come and browse a collection of products curated by Wish. Wish didn't actually sell any of these products—other sites did that—but people could \"wish\" for things they wanted and create wish lists, say, for bicycling or home decorating. \"Some people are just into that,\" says Szulczewski.<br><br>As visitors \"liked\" the bathroom towels and bike speedometers, they earned rewards such as free items and discounts, so they stuck around. Wish amassed tens of thousands of users, and then started matchmaking. It sent emails to dozens of merchants who were actually selling these products on eBay and Amazon. Wish promised to introduce them to a pool of ready buyers, but only if the merchant knocked 10% to 20% off the price they were displaying elsewhere. To prioritize growth early on, Wish didn't take a commission. If the merchants agreed, Wish pinged its users to say the product they liked was now available for a discount on Wish.<br><br>When Hans Tung, an investor with GGV Capital in Menlo Park, California, met Szulczewski in October 2013 he was struck by a heat map. It showed that most of Wish's sales were coming not from New York and California but from Florida, Texas and the heartland of America. Tung immediately saw parallels with TaoBao, a peer-to-peer marketplace owned by Alibaba that was on track to become the world's biggest e-commerce site. TaoBao had shown there was an underserved, global market for cheap, unbranded goods but had stayed focused on China. \"Wish was TaoBao, on mobile, for the rest of the world,\" Tung says.<br><br>IN 2016 SZULCZEWSKI WALKED away from another bidder, this time his idol. An executive close to Jeff Bezos had reached out and invited Szulczewski to Seattle to meet the Amazon founder. Before the meeting, Szulczewski wrote to Bezos' executive assistant to clarify that he had no intention of selling his business. \"But he still wanted to meet,\" Szulczewski remembers. So he took the two-hour flight north for a full day of meetings at Amazon's headquarters. Citing a nondisclosure agreement that he signed, Szulczewski is reluctant to say much about what went on but says Bezos \"wasn't super-direct\" about making an acquisition offer. Amazon's corporate development attorneys were in the room, though, Szulczewski recalls, as they normally are in acquisition talks. \"There was an agenda,\" he says. (For its part, Amazon refuses to comment on \"speculation.\")<br><br>Wish's open-door policy meant that sales were taking off, but so were quality-control problems—which is somewhat inevitable when you have one million registered merchants, of whom 125,000 are active on Wish each month. By way of context, Amazon hosts an estimated 2.5 million active third-party merchants, while Walmart has roughly 21,000, according to Marketplace Pulse, a New York-based e-commerce intelligence firm.<br><br>\"I underestimated how challenging [quality control] is,\" says Szulczewski. As he walks through the open-plan floor of his San Francisco office, filled with social media staff, he gestures at the symbol of his biggest problem: a collection of cardboard boxes stacked to the ceiling. They're the site's most popular products that week, set to be riffled through by staff members for quality checks.<br><br>\"These merchants will do very interesting things,\" Szulczewski says, arching his eyebrows to suggest he has some stories to tell. Here's one: A merchant once offered tablet computers on Wish for 70 bucks, but customers got a small stand in the mail with a \"mostly English\" note saying the tablet was coming. It wasn't. Wish was criticized in press reports last year when makeup on the site was blamed for causing pinkeye. Some merchants have set up more than 1,000 accounts to evade policing. Another trick is to sell a product to great reviews, then source a different, cheaper version and keep showing the old reviews.<br><br>To tackle this, Wish automatically culls about 8 million products over a week, or close to 3% of all products available on the site. Most are cut because visitors have scrolled past an item at least 1,000 times and haven't tapped on it once. Wish also culls products from merchants who've received bad reviews or put up fake reviews. To automatically detect the fakes, Wish's engineers trained its software on reviews that were obviously made up. One example: \"Did not expect so soon, the owner of service enthusiasm.\" Now the software can identify reviews with similar nonsensical phrases.<br><br>Overall, there is a set of roughly 60 rules. If Wish's algorithms see that a merchant has listed counterfeit products or shipped an order with a fake tracking number, they'll be \"fined\" $500. Shipping a package with no product spells a potential $10,000 fine. Wish collects around $3 million a month in fines, and it can do that by simply withholding payments from merchants, says Szulczewski. Merchants can also get kicked off the platform, he adds. On the flip side, good reviews can lead to faster payments or a higher ranking in search.<br><br>Zhang, who is 6,000 miles away, overseeing operations in three locations in China with 150 staff members, is just as paranoid about being gamed. \"Merchants definitely care about making money first,\" Zhang says. The rules and monitoring software don't always go down well. \"The merchants look at Wish's platform as very robotic,\" he says, meaning there's no way for merchants to negotiate a better deal by cultivating personal relationships with Wish staff.<br><br>\"It'll never be perfect,\" admits Tung, the GGV investor. \"You get what you pay for.\" But Szulczewski paints a rosier picture. The flywheel of customer data going into Wish will mean more reviews, smarter targeting software and, eventually, better-quality items. Those unbranded smartphones will get better every year, he says, \"just like our iPhones.\"",
+      "tags": [
+        "AME",
+        "DJ"
+      ],
+      "type": "",
+      "timestamp": "1553990400000",
+      "sentiment": "",
+      "author": "Parmy Olson",
+      "relatedEntityIds": [
+        "09f532c6352a528fd76934c43a61af4d",
+        "1dc396673d02a33e34dfa38433c3108a"
+      ],
+      "globalId": "ddf51fa082e2ffc963d463594090723e",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "FB00000020190312ef3v0000t",
+      "source": "Forbes",
+      "significance": 0,
+      "abstract": "On a sun-filled San Francisco afternoon, Peter Szulczewski is climbing the stairs to the top of a Sansome Street skyscraper, past floors filled with Wish data scientists and engineers, pool tables and DJ equipment. Large windows give way to a stunning view of the city. But most of Szulczewski's customers don't work in offices like this or live in Northern California coastal enclaves. In fact, most of them don't have much money at all. Wish's customers are typically working-class Americans from places like the Florida Panhandle or East Texas, Dollar Store shoppers who find Amazon Prime's $120 annual membership too rich for their blood.",
+      "significantTag": [
+        "AME",
+        "DJ"
+      ],
+      "label": "",
+      "sentimentScore": 0.7804453182493023,
+      "entities": [
+        "AME",
+        "DJ"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "1dc396673d02a33e34dfa38433c3108a",
+        "09f532c6352a528fd76934c43a61af4d"
+      ],
+      "nerCompanies": [
+        "DJ",
+        "AME"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A"
+      ],
+      "companySectors": [
+        "others"
+      ],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "7db8b210f0cd52caec641bc6ed23d4f4",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "The World’s Billionaires: Mexico, Monaco, Morocco, Nepal, New Zealand, Nigeria, Norway",
+      "content": "Population: 125 Mil<br><br>Billionaires: 17 (+1 vs. 2018)<br><br>Total net worth: $132.5 BIL (–$8.5 BIL VS. 2018)<br><br>Carlos Slim Helu DOWN<br><br>$64 BIL #5 telecom<br><br>German Larrea Mota Velasco DOWN<br><br>$13.3 BIL #98 mining<br><br>Ricardo Salinas Pliego UP<br><br>$11.1 BIL #122 retail, media<br><br>Alberto Bailleres Gonzalez DOWN<br><br>$7.4 BIL #198 mining<br><br>Eva Gonda de Rivera DOWN<br><br>$6.7 BIL #233 beverages<br><br>Maria Asuncion Aramburuzabala DOWN<br><br>$5.6 BIL #311 beer, investments<br><br>Jeronimo Arango UNCHANGED<br><br>$4.3 BIL #452 retail<br><br>Juan Francisco Beckmann Vidal DOWN<br><br>$4.3 BIL #452 tequila<br><br>Antonio Del Valle Ruiz DOWN<br><br>$3.2 BIL #691 chemicals<br><br>Jose and Francisco Jose Calderon Rojas DOWN<br><br>$2.2 BIL #1057 beverages<br><br>Carlos Hank Rhon UP<br><br>$2.2 BIL #1057 banking<br><br>Roberto Hernandez Ramirez DOWN<br><br>$1.8 BIL #1281 banking<br><br>Fernando Chico Pardo NEW<br><br>$1.5 BIL #1511 airport management<br><br>Rufino Vigil Gonzalez DOWN<br><br>$1.3 BIL #1717 steel<br><br>Emilio Azcarraga Jean DOWN<br><br>$1.2 BIL #1818 TV broadcasting<br><br>Alfredo Harp Helu UNCHANGED<br><br>$1.2 BIL #1818 banking<br><br>David Penaloza Alanis DOWN<br><br>$1.2 BIL #1818 toll roads<br><br>Newsmaker<br><br>Carlos Slim Helú<br><br>NET WORTH $64 BIL<br><br>Mexico's new president, Andrés Manuel López Obrador, was elected just last summer, and already he's going after Slim. In October, López Obrador canceled a planned $13 billion airport in Mexico City, where a Slim-owned company was building one of the terminals. In February, he criticized Slim's Carso Energy, saying its contracts to build gas pipelines for the government are too lucrative. Carso Energy said construction was repeatedly interrupted, which has increased costs.<br><br>MONACO<br><br>GDP: $6.8 BIL<br><br>Population: 38,900<br><br>Billionaires: 4<br><br>Total net worth: $6.3 BIL (–$600 MIL VS. 2018)<br><br>David Nahmad DOWN<br><br>$1.8 BIL #1281 art collection<br><br>Tatiana Casiraghi DOWN<br><br>$1.7 BIL #1349 beer<br><br>Ezra Nahmad UNCHANGED<br><br>$1.5 BIL #1511 art<br><br>Lily Safra UNCHANGED<br><br>$1.3 BIL #1717 banking<br><br>MOROCCO<br><br>GDP: $118.1 BIL<br><br>Population: 36 Mil<br><br>Billionaires: 2<br><br>Total net worth: $3.8 BIL (no change VS. 2018)<br><br>Aziz Akhannouch DOWN<br><br>$2 BIL #1168 petroleum, diversified<br><br>Othman Benjelloun UP<br><br>$1.8 BIL #1281 banking, insurance<br><br>NEPAL<br><br>GDP: $27 BIL<br><br>Population: 30 Mil<br><br>Billionaires: 1<br><br>Total net worth: $1.7 BIL (+$200 mIL VS. 2018)<br><br>Binod Chaudhary UP<br><br>$1.7 BIL #1349 diversified<br><br>NETHERLANDS<br><br>GDP: $911.5 BIL<br><br>Population: 17 Mil<br><br>Billionaires: 10 (+1 vs. 2018)<br><br>Total net worth: $30.7 BIL (–$4.8 BIL VS. 2018)<br><br>Charlene de Carvalho-Heineken DOWN<br><br>$14.2 BIL #89 Heineken<br><br>Frits Goldschmeding DOWN<br><br>$4.2 BIL #472 temp agency<br><br>Hans Melchers DOWN<br><br>$2.5 BIL #916 chemicals, investments<br><br>John de Mol DOWN<br><br>$1.8 BIL #1281 television<br><br>Kommer Damen DOWN<br><br>$1.7 BIL #1349 shipbuilding<br><br>Lesley Bamberger DOWN<br><br>$1.4 BIL #1605 real estate<br><br>Arnout Schuijff NEW<br><br>$1.4 BIL #1605 payments software<br><br>Wim van der Leegte DOWN<br><br>$1.3 BIL #1717 manufacturing<br><br>Steven Schuurman NEW<br><br>$1.1 BIL #1941 software<br><br>Pieter van der Does NEW<br><br>$1.1 BIL #1941 payments software<br><br>Newcomer<br><br>Pieter van der Does<br><br>NET WORTH $1.1 BIL<br><br>Shares of Adyen, the e-payments firm he cofounded in 2006, have nearly tripled since it went public in June, catapulting Van der Does and his cofounder, Arnout Schuijff, into the billionaire ranks. Adyen, which is Surinamese for new beginning, handles more than 250 payment methods and 187 currencies for customers such as Facebook, Uber, Netflix and Spotify. It processed $82 billion in transactions in the first half of 2018. The cofounders met nearly two decades ago at e-payment firm Bibit, which Schuijff cofounded; it was sold in 2004. Van der Does, who is CEO of Adyen, still bikes to headquarters in Amsterdam.<br><br>NEW ZEALAND<br><br>GDP: $197 BIL<br><br>Population: 5 Mil<br><br>Billionaires: 2<br><br>Total net worth: $12.2 BIL<br><br>Graeme Hart DOWN<br><br>$9.1 BIL #158 investments<br><br>Richard Chandler UP<br><br>$3.1 BIL #715 investments<br><br>NIGERIA<br><br>GDP: $419.8 BIL<br><br>Population: 196 Mil<br><br>Billionaires: 4 (+1 vs. 2018)<br><br>Total net worth: $22.3 BIL (+$1.4 bil VS. 2018)<br><br>Aliko Dangote DOWN<br><br>$10.4 BIL #136 cement, sugar, flour<br><br>Mike Adenuga UP<br><br>$9.2 BIL #156 telecom, oil<br><br>Abdulsamad Rabiu RETURNEE<br><br>$1.6 BIL #1425 cement, sugar<br><br>Folorunsho Alakija DOWN<br><br>$1.1 BIL #1941 oil<br><br>Newsmaker<br><br>Aliko Dangote<br><br>NET WORTH $10.4 BIL<br><br>Africa's richest man is working on his biggest project yet: Dangote Refinery, which has been under construction for three years and is expected to be one of the world's largest oil refineries. The project, which will cost between $12 billion and $14 billion, is scheduled for completion by 2020, but some analysts believe it'll be closer to 2022. When it does open, the refinery could transform Nigeria, which has to import gasoline to meet demand because of low production capacity at existing refining operations.<br><br>NORWAY<br><br>GDP: $438.6 BIL<br><br>Population: 5 Mil<br><br>Billionaires: 15<br><br>Total net worth: $36.3 BIL (–$2.8 BIL VS. 2018)<br><br>Odd Reitan DOWN<br><br>$6.1 BIL #267 retail, real estate<br><br>Kjell Inge Rokke UP<br><br>$4.3 BIL #452 shipping, seafood<br><br>Andreas Halvorsen UNCHANGED<br><br>$3.7 BIL #568 hedge funds<br><br>Arne Wilhelmsen DOWN<br><br>$3.4 BIL #645 cruise ships<br><br>Gustav Magnar Witzoe UP<br><br>$3 BIL #745 fish farming<br><br>Torstein Hagen UP<br><br>$2.4 BIL #962 cruises<br><br>Stein Erik Hagen DOWN<br><br>$2.3 BIL #1008 consumer goods<br><br>Caroline Hagen Kjos DOWN<br><br>$2.1 BIL #1116 diversified<br><br>Ivar Tollefsen UP<br><br>$1.7 BIL #1349 real estate<br><br>Alexandra Andresen UNCHANGED<br><br>$1.4 BIL #1605 investments<br><br>Katharina Andresen UNCHANGED<br><br>$1.4 BIL #1605 investments<br><br>Petter Stordalen DOWN<br><br>$1.4 BIL #1605 hotels<br><br>Svein Stole UNCHANGED<br><br>$1.1 BIL #1941 investments<br><br>Johan Johannson DOWN<br><br>$1 BIL #2057 grocery stores<br><br>Alexander Vik UNCHANGED<br><br>$1 BIL #2057 investments",
+      "tags": [
+        "MOROCCO",
+        "NEPAL",
+        "NIGERIA",
+        "Alberto Bailleres Gonzalez"
+      ],
+      "type": "",
+      "timestamp": "1553990400000",
+      "sentiment": "",
+      "author": "Forbes Staff",
+      "relatedEntityIds": [
+        "1f865df8fcbb270d40788bb42f15a65f",
+        "300ec4e05d7b1152aab4fcaf15672692",
+        "c1da53db62b50569cb852d00cd42e829"
+      ],
+      "globalId": "7db8b210f0cd52caec641bc6ed23d4f4",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "FB00000020190312ef3v0000o",
+      "source": "Forbes",
+      "significance": 0,
+      "abstract": "MEXICO\n\nGDP: $1.2 TRIL",
+      "significantTag": [
+        "MOROCCO",
+        "NEPAL",
+        "NIGERIA"
+      ],
+      "label": "",
+      "sentimentScore": 0.7524992327283327,
+      "entities": [
+        "MOROCCO",
+        "NEPAL",
+        "NIGERIA",
+        "Alberto Bailleres Gonzalez"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "300ec4e05d7b1152aab4fcaf15672692",
+        "c1da53db62b50569cb852d00cd42e829",
+        "1f865df8fcbb270d40788bb42f15a65f"
+      ],
+      "nerCompanies": [
+        "NEPAL",
+        "NIGERIA",
+        "MOROCCO"
+      ],
+      "nerPeople": [
+        "Alberto Bailleres Gonzalez"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A",
+        "Commercial Services and Supplies"
+      ],
+      "companySectors": [
+        "Industrials",
+        "others"
+      ],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "25933007bae903fccb26438a921d7f48",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook Stored Users' Passwords Improperly",
+      "content": "Facebook estimated it will notify \"hundreds of millions of Facebook Lite users, tens of millions of other Facebook users, and tens of thousands of Instagram users,\" wrote Pedro Canahuati, the company's vice president of engineering, security and privacy, in a blog post Thursday.<br><br>Facebook Lite is a stripped-down version of the product for use by people without access to reliable internet service.<br><br>The breach appears similar to others that have occurred at tech companies, including Twitter Inc., which asked 331 million users to change their passwords in May after discovering that one of its internal systems logged users' unencrypted passwords.<br><br>Because so many people reuse their passwords, they have emerged as a major security problem for tech companies. Password databases have become a prime target for cyber thieves, and hackers will often try a user's stolen password to break into new sites. Most companies, including Facebook, monitor the internet for publicly released databases of passwords.<br><br>\"Passwords are extremely sensitive data,\" said Deirdre K. Mulligan, an associate professor at University of California Berkeley, who specializes in data privacy. \"If passwords are being stored in the clear, accessible by thousands of employees, one can only imagine how poorly other data is being managed,\" she said.<br><br>Facebook's data-security lapse attracted more attention than similar stumbles elsewhere given persistent criticism of how the company collects, stores and deploys its users' data.<br><br>It also contradicts at least some of the company's previous assurances on the matter. In a 2014 post about password security, Facebook's then-security engineer Chris Long wrote that \"no one here has your plain text password.\"<br><br>Facebook identified that it did log plain-text passwords as part of a security review in January, Mr. Canahuati said.<br><br>During the review, Facebook has been looking for ways it stores some information, such as access tokens, and have fixed problems as they were discovered, he said. While Facebook will notify users whose passwords were stored insecurely \"as a precaution,\" there is no current plan to require users to change their passwords.<br><br>The security lapse follows a data breach six months ago in which Facebook said attackers managed to extract data such as name, gender and hometown for around 50 million users.<br><br>It also comes amid a wide-ranging Federal Trade Commission review of Facebook's privacy policies and handling of user data. Though that probe began following a scandal over how political consulting firm Cambridge Analytica obtained Facebook user data, Facebook has said it kept the FTC abreast of other privacy and data-handling lapses.<br><br>Storing passwords in an encrypted format is \"not just best practice, it's something that industry should always do,\" said Jennifer Granick, a lawyer with the American Civil Liberties Union.<br><br>\"Facebook's failure to do that will really upset the FTC,\" Ms. Granick said.<br><br>The internal exposure of passwords was reported by krebsonsecurity.com on Thursday.<br><br>Citing an unnamed senior Facebook executive, independent security researcher Brian Krebs wrote that as many as 600 million passwords were exposed, with some being improperly stored as far back as 2012. According to Mr. Krebs's report, the files containing the passwords were accessible to as many as 20,000 Facebook employees, and about 2,000 company developers and engineers interacted with the system that contained them.<br><br>Facebook's hashing algorithm, known internally as \"the onion,\" is made up of a series of cryptographic techniques that evolved over time and are used internally to obfuscate data such as user passwords.<br><br>Mr. Canahuati's post didn't explain why a vast quantity of login information had not been treated in that fashion in this instance, and Facebook didn't respond to a request for additional information about what purpose the logged data served.<br><br>The risk of mistakes like Facebook's are greater within large companies because teams of engineers are often working on unrelated projects with different goals, said Chris Vickery, a security researcher for Upguard.<br><br>\"This was logs of the passwords arriving, data in transit,\" Mr. Vickery said. \"Whoever designed the logging system didn't have passwords in mind. Whoever designed the database that stored passwords probably didn't know this existed.\"<br><br>Even if no users were harmed by the mistake, Mr. Vickery said, the sloppiness in handling user data is \"another example of bad data governance as a culture at Facebook.\"<br><br>Facebook has been under fire for much of the past year over data-security issues and concerns over how it monitors the platform.<br><br>Even against that backdrop, the past week has been a difficult one for the Menlo Park, Calif., company. Last week the company's chief product officer and the head of its WhatsApp division resigned unexpectedly, a move seen as reflective of intense debate within the company over its direction.<br><br>This week the company has had to answer questions about its response to the video of the Christchurch, New Zealand, shooting, which was live-streamed on Facebook and remained on the site for half an hour after a user brought it to the company's attention.<br><br>The company also announced the settlement of a lawsuit alleging that it had discriminated against some users by allowing housing, employment and credit-related ads to be targeted according to gender, age and ZIP Code. Facebook paid less than $5 million and agreed to end the practice.<br><br>License this article from Dow Jones Reprint Service",
+      "tags": [
+        "Facebook Lite"
+      ],
+      "type": "",
+      "timestamp": "1553212800000",
+      "sentiment": "",
+      "author": "Jeff Horwitz and Robert McMillan",
+      "relatedEntityIds": [],
+      "globalId": "25933007bae903fccb26438a921d7f48",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "J000000020190322ef3m0002h",
+      "source": "The Wall Street Journal",
+      "significance": 0,
+      "abstract": "Facebook Inc. for years stored hundreds of millions of user passwords in a format that was accessible to its employees, in yet another privacy snafu for the social-media giant.\n\nThe incident disclosed by the company Thursday involved a wide swath of its users, though Facebook said no passwords were exposed externally, and it hasn't found evidence of the information being abused.",
+      "significantTag": [
+        "Facebook Lite"
+      ],
+      "label": "",
+      "sentimentScore": 0.16712933795298815,
+      "entities": [
+        "Facebook Lite"
+      ],
+      "locations": [
+        "Facebook Lite"
+      ],
+      "sourceCountry": "United States",
+      "sourceCountryCode": "USA",
+      "companyIds": [],
+      "nerCompanies": [],
+      "nerPeople": [
+        "Facebook Lite"
+      ],
+      "nerLocations": [
+        "Facebook Lite"
+      ],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 5,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [],
+      "companySectors": [],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "9a045cffebf2d02c76faf69f1f69ff7e",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "On Facebook",
+      "content": "Muhammad Fazuli Abdul Samad<br><br>It's easy to blame FAS and draw comparisons with overseas leagues, when the true solution lies in everyone and their love for local football. With numbers and support, FAS will have a much easier time creating an ideal football league, and Singapore football can be revived. So why not go down to the next local football game as a start?<br><br>Yanagisawa Kenshi<br><br>This would not work because most players are on a one-year contract and if their club got relegated, they would simply just move to another club. Even if they were loyal and stayed on, they would most likely have to take a huge pay cut as the relegated club would not have as much funding and this would still force the player to look for another club.<br><br>Andrew Pek Junxian<br><br>Not enough fans. Not enough money. Don't pay players enough. Not enough serious teams. Not enough sponsors. I could go on.<br><br>Lim Foong Fee<br><br>Should students who cannot endure carrying a backpack while hiking take part in Outward Bound Singapore?<br><br>If they want to use trolleys, they shouldn't go to OBS. Might as well camp inside an air-conditioned room.<br><br>Jun Cai<br><br>Actually, there is nothing wrong with playing smart. They use trolleys now so they will have more energy to enjoy activities later. Even in war, those who play smart are more likely to win than those who exhaust themselves before they reach their enemy.<br><br>Gintobi Ju<br><br>I am in my late 50s. I am old-school. As much as I think the OBS trolley is a silly thing, I am ready to accept times are changing. The younger generation think that if they can do things the easier way and conserve their energy for other activities, why not? Let's accept that things and times are changing.<br><br>Ang Teck Huat<br><br>They should carry their own backpack. It is part of physical and character building - endurance perseverance.<br><br>Elisha Chandler<br><br>There needs to be a balance between implementing new gear and making sure the main objectives of OBS are not lost.<br><br>By using those trolleys, hiking is made to look like it is very simple. But it removes the danger of heat stroke and other dangers associated with carrying a heavy bag in our humid climate.<br><br>Do outdoor activities mean we need to go back to being primitive?<br><br>Personally, I think it is okay to use the trolley as long as the spirit of OBS is not lost.<br><br>Darryl Kang",
+      "tags": [],
+      "type": "",
+      "timestamp": "1553299200000",
+      "sentiment": "",
+      "author": "",
+      "relatedEntityIds": [],
+      "globalId": "9a045cffebf2d02c76faf69f1f69ff7e",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "STIMES0020190322ef3n004z8",
+      "source": "The Straits Times",
+      "significance": 0,
+      "abstract": "Should the Singapore Premier League adopt a promotion and relegation system?\n\nWe don't have enough teams or stadiums for promotion and relegation.",
+      "significantTag": [],
+      "label": "",
+      "sentimentScore": 0.3958619835455796,
+      "entities": [],
+      "locations": [],
+      "sourceCountry": "Singapore",
+      "sourceCountryCode": "SGP",
+      "companyIds": [],
+      "nerCompanies": [],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 2,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [],
+      "companySectors": [],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "b822c112cb610e91d84fddfd6514aafc",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook admits New Zealand shooting video reveals gaps in its AI but pushes back on time-delay policy; Video wasn’t prioritized for accelerated review once it was flagged due to lack of comparable examples",
+      "content": "Guy Rosen, Facebook’s(FB, US)  vice president for integrity, said in comments posted late Wednesday that the company’s artificial intelligence tools initially failed to catch the shooter’s live video of the terrorist attack Christchurch mosques last week that killed 50 people.<br><br>Rosen said the video wasn’t prioritized for accelerated review once it was flagged by a user because its accelerated reviews are largely focused on reports of suicide attempts.<br><br>Read:Founder of 8chan expresses regret in wake of New Zealand massacre<br><br>“Many people have asked why artificial intelligence (AI) didn’t detect the video from last week’s attack automatically. AI has made massive progress over the years and in many areas, which has enabled us to proactively detect the vast majority of the content we remove. But it’s not perfect,” Rosen said.<br><br>“AI systems are based on ‘training data,’ which means you need many thousands of examples of content in order to train a system that can detect certain types of text, imagery or video,” he said.<br><br>“This approach has worked very well for areas such as nudity, terrorist propaganda and also graphic violence where there is a large number of examples we can use to train our systems. However, this particular video did not trigger our automatic detection systems,” Rosen said in the post, adding that no users reported the video during the live broadcast.<br><br>Facebook took down the video after being alerted by New Zealand authorities. By then, however, the video, which shows men, women and children being gunned down during Friday prayers, had been viewed about 4,000 times on the site, Facebook said, and copied on other sites.<br><br>Still, the company has doubled down on AI as a solution, in addition to using about 15,000 content reviewers.<br><br>Criticism after the attack has focused on Facebook’s live broadcast tool. Some critics have called on the site to impose a time delay during which videos could be checked. Rosen said in the post that a delay would be swamped by the millions of live videos broadcast daily and would actually slow flags sent by users.<br><br>Facebook shares are up about 26% in the year to date.<br><br>Meanwhile, New Zealand’s Prime Minister Jacinda Ardern announced an immediate ban Thursday on semi-automatic and automatic weapons like the ones used in the attacks on two mosques in Christchurch that killed 50 worshippers.",
+      "tags": [
+        "VIDEO",
+        "Facebook Inc",
+        "Guy Rosen"
+      ],
+      "type": "",
+      "timestamp": "1553150580000",
+      "sentiment": "",
+      "author": "Rachel Koning Beals",
+      "relatedEntityIds": [
+        "fe1c8887ad9cb67ac743cdeb02c57d83",
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "b822c112cb610e91d84fddfd6514aafc",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "MRKWC00020190321ef3l00105",
+      "source": "MarketWatch",
+      "significance": 0,
+      "abstract": "Video wasn’t prioritized for accelerated review once it was flagged due to lack of comparable examples\n\nStreaming of the live Facebook Inc. video of the New Zealand mosque shootings revealed shortcomings in its technology, the social media giant conceded, at the same time that the company pushed back against implementing a time delay for video.",
+      "significantTag": [
+        "VIDEO",
+        "Facebook Inc",
+        "Guy Rosen"
+      ],
+      "label": "",
+      "sentimentScore": 0.38369216090934805,
+      "entities": [
+        "VIDEO",
+        "Facebook Inc",
+        "Guy Rosen"
+      ],
+      "locations": [],
+      "sourceCountry": "United States",
+      "sourceCountryCode": "USA",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a",
+        "fe1c8887ad9cb67ac743cdeb02c57d83"
+      ],
+      "nerCompanies": [
+        "VIDEO",
+        "Facebook Inc"
+      ],
+      "nerPeople": [
+        "Guy Rosen"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 1,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A",
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology",
+        "others"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "12c841b7e9332762d046f37292c7158f",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook crumbles around its lonely king; Shareholders gave Mark Zuckerberg all the power, and now watch as top executives walk away from his iron-fisted rule",
+      "content": "He can, of course, do what he wants, because the company is truly a Mark Zuckerberg production, and because he has always had what Silicon Valley founders crave: founder control of his company. As more executives depart, Facebook appears to be heading further under Zuckerberg’s total rule.<br><br>Facebook (FB, US) has suffered seemingly endless controversies, including the most recent, hosting a live stream of mass shootings in two mosques in New Zealand. Facebook was alerted by the police in Christchurch to remove the video, which was not found by any of Facebook’s AI engines or humans searching for violent content, contrary to Zuckerberg’s explanation to Congress a year ago about how its systems are getting better at finding harmful content. Facebook said in a blog post this week that in the first 24 hours of the shootings, it removed about 1.5 million videos of the attack globally, with more than 1.2 million of those videos blocked at upload.<br><br>The massacres happened two days after a massive outage and a day after a top executive left amid reported unhappiness with Zuckerberg’s new direction, outlined in a manifesto that was long on words while being short on detail. It appears Zuckerberg has dug himself into a foxhole, where he is following his inner instincts and intuition for the company he started up with his roommates at Harvard 15 years ago. Needham & Co. analyst Laura Martin, citing recent events plus a looming threat of regulation, said the combined risks are creating a negative network effect for Facebook.<br><br>Investors who may be unhappy with the continued chaos know their hands are tied even if they don’t agree with how Zuckerberg is ruling over his kingdom. Zuckerberg still controls about 60% of Facebook’s votes. The departure of a key lieutenant — longtime product chief Chris Cox — on top of the loss of the founders of Instagram and WhatsApp, signal growing internal turmoil, with a CEO more alone at the top.<br><br>Read more about Silicon Valley’s poor corporate governance through its embrace of founder control<br><br>“There have been some significant high-level departures that have raised a lot of concerns,” said Jonas Kron, who leads shareholder advocacy efforts at Trillium Asset Management, an employee-owned investment-management firm based in Boston. “Then you top it off with New Zealand, and a 12-hour outage, it’s sort of hard to keep up.”<br><br>Last October, Trillium submitted a shareholder proposal with the backing of several state treasurers, representing about 5 million shares, asking Facebook’s board to appoint an independent chairman.<br><br>“There is a lot going on, and the company would greatly benefit from having Mark Zuckerberg focus on management and execution, and have an independent board chair focusing on the board and relations with investors and board oversight,” he said.<br><br>Throughout the many crises that the company has endured following the U.S. elections in 2016, Zuckerberg has appeared to listen to no one but possibly Chief Operating Officer Sheryl Sandberg. The New York Times reported late last year that Zuckerberg and Sandberg ignored repeated warning signs of some of the many problems that have bedeviled Facebook.<br><br>There have been anecdotal reports about some Facebook employees looking for new jobs or not feeling comfortable giving dissenting opinions amid Zuckerberg’s tight control. In January, CNBC reported on the company’s cult-like culture and how the fear among some employees to give honest feedback may have contributed to the scandals that have enveloped the company.<br><br>Two weeks ago, Zuckerberg surprised investors and users with a more-than-3,000-word pledge to improve privacy, admitting, in the understatement of the year, that Facebook “does not have a strong reputation for privacy.” Facebook now plans to work on a single encrypted-messaging platform, a move that Cox obviously disagreed with by his resignation.<br><br>Cox was not the only key executive to depart in the past few months. Last fall, co-founders of both WhatsApp and Instagram left in disagreements over the directions Zuckerberg wanted to take their platforms, a few years after their acquisitions by Facebook. He had initially promised to leave the companies alone, running them as subsidiaries. In Martin’s note, in which the Needham analyst also downgraded the stock to a hold, she highlighted 11 senior executive departures over the past several months.<br><br>“A Negative Network Effect suggests that departures will continue, and since we believe that people are a key competitive advantage of FAANG companies, this implies accelerating value destruction until senior executive turnover ends,” Martin wrote. ‘We prefer to move to the sidelines until we see senior employee turnover stabilize.”<br><br>The pressure to produce continued revenue growth as well as generate revenue at its other properties, Instagram and WhatsApp, even as user growth at Facebook declines, have led Zuckerberg to make some severe decisions. Those decisions could just lead to more controversies, however.<br><br>After his privacy manifesto, which talked about encrypting all messages, many worried that Facebook would be increasingly used for more evil means, and that the company would not be able to police abuses on its network or to help law enforcement. Roger McNamee, an early Facebook investor and co-founder of Elevation Partners, believes that even with encryption of messages, the company’s core business model remains intact. Messaging is “a tiny fraction of the data and metadata that matters,” for Facebook’s business model, he said, because it can continue to glean information about its users for targeted advertising through newsfeed and story activity.<br><br>“The manifesto leaves FB’s business model unchanged. That is not acceptable,” McNamee said in an email. “The business model amplifies hate speech, disinformation, and conspiracy theories, with increasingly severe consequences, such as the terrorism in New Zealand.”<br><br>Read about McNamee’s new book, which talks about the problems at Facebook and his solutions<br><br>Whether Zuckerberg’s decisions and instincts are correct or not, Facebook investors have to trust him. Because he still has voting control, the company’s board and its investors just have to agree or vote with their feet, since they don’t technically have any real say. Some day, Zuckerberg may end up as a poster child for the concept of the gradual elimination of founder control and dual-class shares, a proposal that some officials at the Securities and Exchange Commission support, which would put some sort of time limit on founder control of a company.<br><br>Jonas of Trillium believes that is an imperfect solution.<br><br>“The better approach is just not to have dual-class at all,” he said. “One share, one vote.”<br><br>But while more investors are speaking out against dual-class stock and founder control in public companies, the concept is becoming even more popular as a new wave of major IPOs starts to hit U.S. markets. Ride-hailing app developer Lyft’s prospectus revealed it is going to go public with dual-class stock, with its two founders, Logan Green and John Zimmer, expected to have control. That’s after rival Uber Technology Inc.’s well-documented problems with its controlling co-founder, Travis Kalanick. A D.A. Davidson analyst wrote in a note this week that Lyft gained riders after the spate of scandals at Uber, ranging from a culture of widespread sexual harassment to software used to deceive regulators, that ultimately led to Kalanick’s ouster.<br><br>At Facebook’s next annual meeting, likely to be held in May, shareholders will have an opportunity to voice their displeasure with some of Zuckerberg’s recent decisions and his reign in general. But with Zuckerberg’s control and the votes stacked against them, why would they even bother?<br><br>“The goal is to give investors the opportunity to express an opinion about whether an independent board chair is a good idea or not and to give the board that information,” Jonas said. “If a majority of outside shareholders agree to that, even if its only 40%, that’s an opinion that I think everyone would agree should be taken seriously.”<br><br>Investors need to remember that at founder-controlled companies, when the going gets tough, they don’t really have much say. They can try to send messages to management and the board, through things like shareholder resolutions, but the founder/controlling shareholder always has the final say.",
+      "tags": [
+        "Mark Zuckerberg"
+      ],
+      "type": "",
+      "timestamp": "1553238000000",
+      "sentiment": "",
+      "author": "Therese Poletti, MarketWatch",
+      "relatedEntityIds": [],
+      "globalId": "12c841b7e9332762d046f37292c7158f",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "MRKWC00020190322ef3m0012x",
+      "source": "MarketWatch",
+      "significance": 0,
+      "abstract": "Shareholders gave Mark Zuckerberg all the power, and now watch as top executives walk away from his iron-fisted rule\n\nMark Zuckerberg seems increasingly alone at the top of Facebook Inc., with executives streaming out the doors as he promises a new direction that seems antithetical to all he has said about the company’s plans for years.",
+      "significantTag": [
+        "Mark Zuckerberg"
+      ],
+      "label": "",
+      "sentimentScore": 0.019719570346559395,
+      "entities": [
+        "Mark Zuckerberg"
+      ],
+      "locations": [],
+      "sourceCountry": "United States",
+      "sourceCountryCode": "USA",
+      "companyIds": [],
+      "nerCompanies": [],
+      "nerPeople": [
+        "Mark Zuckerberg"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 1,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [],
+      "companySectors": [],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "98de52801c5fece32cc086e496070e87",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook admits storing unencrypted user passwords on its server, says issue fixed",
+      "content": "Facebook also said it has fixed the issue, which was first reported by cyber security blog KrebsOnSecurity, which said passwords from as early as 2012 were stored in readable format by Facebook.",
+      "tags": [
+        "AFP"
+      ],
+      "type": "",
+      "timestamp": "1553212800000",
+      "sentiment": "",
+      "author": "",
+      "relatedEntityIds": [
+        "4ced1b09067d644047d198160795f696"
+      ],
+      "globalId": "98de52801c5fece32cc086e496070e87",
+      "assetIds": [],
+      "eventType": "Media Reports",
+      "externalRef": "STIMES0020190321ef3m004h5",
+      "source": "The Straits Times",
+      "significance": 0,
+      "abstract": "SAN FRANCISCO (AFP, REUTERS) - Facebook on Thursday (March 21) admitted that millions of passwords were stored in plain text on its internal servers, a security slip that left them readable by the social networking giant's employees.\n\n\"To be clear, these passwords were never visible to anyone outside of Facebook and we have found no evidence to date that anyone internally abused or improperly accessed them,\" vice president of engineering, security, and privacy Pedro Canahuati said in a blog post.",
+      "significantTag": [
+        "AFP"
+      ],
+      "label": "",
+      "sentimentScore": 0.6285668071831818,
+      "entities": [
+        "AFP"
+      ],
+      "locations": [],
+      "sourceCountry": "Singapore",
+      "sourceCountryCode": "SGP",
+      "companyIds": [
+        "4ced1b09067d644047d198160795f696"
+      ],
+      "nerCompanies": [
+        "AFP"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 2,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A"
+      ],
+      "companySectors": [
+        "others"
+      ],
+      "marketSectors": []
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "4ea10d3bbbde7b29dccf70e43cdf3faf",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook Says Millions of Users' Passwords Were Improperly Stored in Internal Systems; Facebook estimated it will notify hundreds of millions of Facebook Lite users, tens of millions of other Facebook users, and tens of thousands of Instagram users",
+      "content": "Facebook estimated it will notify hundreds of millions of Facebook Lite users, tens of millions of other Facebook users, and tens of thousands of Instagram users, the company's vice president of engineering, security and privacy Pedro Canahuati said in a blog post Thursday.",
+      "tags": [
+        "FACEBOOK",
+        "Breaking News"
+      ],
+      "type": "",
+      "timestamp": "1553186940000",
+      "sentiment": "",
+      "author": "Aisha Al-Muslim",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "4ea10d3bbbde7b29dccf70e43cdf3faf",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l005bp",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Breaking News:\n\nFacebook Inc. will notify hundreds of millions of users that some passwords were stored in a readable format that was accessible to its employees within its internal data storage systems.",
+      "significantTag": [
+        "FACEBOOK",
+        "Breaking News"
+      ],
+      "label": "",
+      "sentimentScore": -0.29233333844174814,
+      "entities": [
+        "FACEBOOK",
+        "Breaking News"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "FACEBOOK"
+      ],
+      "nerPeople": [
+        "Breaking News"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "56d882e862356f1880605e153801ffb4",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook: Our AI Tools Failed to Catch New Zealand Attack Video; Social media giant pushes back on the idea of time delays for live videos, but says it will re-examine its procedures and expand the categories for accelerated review",
+      "content": "Mr. Rosen also said the video wasn't prioritized for an expedited review when it was flagged by a user. That is because the user flagged the video after it ended, not during the live broadcast. In those cases, Facebook accelerates its reviews only if there is a report of a suicide attempt.<br><br>Facebook ultimately took down the video after being alerted by New Zealand authorities. By then the video had been viewed 4,000 times on the site, Facebook said, and copied on other sites beyond Facebook's control.<br><br>\"We recognize that the immediacy of Facebook Live brings unique challenges,\" Mr. Rosen said in the post.<br><br>The shooter, Brenton Tarrant, has been charged in New Zealand with murder. He hasn't entered a plea.<br><br>The details of the way in which the video was uploaded, spread and detected show the limitations of Facebook's efforts to police its platform. Critics say the site has expanded aggressively for years and offered new features without putting adequate safeguards in place. The social media giant has come under fire in many parts of the world—from Myanmar to Sri Lanka—for failing to take action against hate speech, fake news and misinformation.<br><br>The company says it is doing more to better moderate the large numbers of posts that go online. It has doubled down on AI as a solution, in addition to using some 15,000 human content reviewers. But failure of its systems to catch the video of the New Zealand massacre as it was being streamed and for many minutes afterward has underscored the major gaps in its strategies.<br><br>Criticism after the attack has focused on Facebook's live broadcast tool. Australian Prime Minister Scott Morrison asked over the weekend whether Facebook should be allowed to offer such services if it can't control them.<br><br>Some critics have called on the site to impose a time delay during which videos could be checked. Mr. Rosen said a delay would be swamped by the millions of live videos broadcast daily. He also said it would slow reports by users that could help authorities provide help on the ground.<br><br>Facebook has touted the success of its technical tools in tackling some kinds of terrorist content. The company said last year that Facebook itself—not its users—was identifying nearly all of the material related to Islamic State and al Qaeda that it removed. But the platform, accessed each month by some 2 billion users posting in more than 80 languages, hasn't had that success with other kinds of extremist content.<br><br>In his post, Mr. Rosen said artificial intelligence has worked well to identify nudity and terrorist propaganda, because there are many examples of such content to train the machines. But the AI didn't have enough material to learn to recognize content like the mosque massacre, he said, because \"these events are thankfully rare.\"<br><br>A user flagged the Christchurch video to Facebook 12 minutes after it ended, Mr. Rosen said. The social media site accelerates its review of any live video flagged by users while it is being broadcast. The policy also applies to videos that have recently ended, but only in the case of suicide reports. The Christchurch video wasn't reported as a suicide and as a result wasn't prioritized.<br><br>The company will re-examine its procedures and expand the categories for accelerated review, Mr. Rosen said.<br><br>Facebook's systems caught 1.2 million videos of the attack as they were being uploaded in the first 24 hours; another 300,000 made it to the site and were removed afterward. But users were able to make copies of the video on other sites to keep it alive.<br><br>Mr. Rosen said a user of the website 8chan, which is often home to white supremacist and anti-Muslim content, posted a link to a copy of the video on a file-sharing site from where it spread more broadly.<br><br>Facebook struggled to keep the video from reappearing on its own site, he said, because a \"core community of bad actors\" worked to continually re-upload edited versions to defeat the company's detection tools. Facebook found and blocked more than 800 variants of the video that were circulating, he said.<br><br>Related Coverage<br><br>* New Zealand to Impose Sweeping Gun Ban After Christchurch Mosque Killings<br><br>* Houses of Worship Upgrade Security After Shootings<br><br>* After New Zealand Shooting, Founder of 8chan Expresses Regrets<br><br>* As Funerals Begin, Families of New Zealand Attack Victims Wait in Anguish<br><br>* New Zealand Mosque Shooter Was En Route to Third Target, Police Say<br><br>* Mosque Shooter's Radical Views Fed by Trips to Christian-Muslim Battlegrounds<br><br>Write to Niharika Mandhana at niharika.mandhana@wsj.com",
+      "tags": [
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553165220000",
+      "sentiment": "",
+      "author": "Niharika Mandhana",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "56d882e862356f1880605e153801ffb4",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l000p1",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. acknowledged that the gruesome video of the New Zealand mosque shootings revealed gaps in its handling of live broadcasts by users, but pushed back against the idea of setting up a time delay.\n\nGuy Rosen, Facebook's vice president for integrity, said in a post late Wednesday that the company's artificial intelligence tools had failed to catch the video of the terrorist attack in Christchurch last week that was aired live on the social media platform by the shooter. The 17-minute video shows men, women and children being gunned down in a mosque.",
+      "significantTag": [
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": 0.967846329251232,
+      "entities": [
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "Facebook Inc"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "470998ea0c18376ee848b95937bd938b",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook: Our AI Tools Failed to Catch New Zealand Attack Video; Company pushes back on the idea of time delays for live video",
+      "content": "Mr. Rosen also said the video wasn't prioritized for accelerated review once it was flagged by a user because its accelerated reviews are focused on reports of suicide attempts.<br><br>Facebook ultimately took down the video after being alerted by New Zealand authorities. By then, however, the video, which shows men, women and children being gunned down during Friday prayers, had been viewed about 4,000 times on the site, Facebook said, and copied on other sites beyond Facebook's control.<br><br>\"This particular video did not trigger our automatic detection systems,\" Mr. Rosen said in the post.<br><br>The shooter, Brenton Tarrant, has been charged in New Zealand with murder. He hasn't entered a plea.<br><br>The details of the way in which the video was uploaded, spread and detected show the limitations of Facebook's efforts to police its platform and remove bad content. The site has come under fire in many parts of the world—from Myanmar to Sri Lanka—for failing to take action against hate speech, fake news and misinformation.<br><br>The company says it is doing more to better moderate content. It has doubled down on AI as a solution, in addition to using about 15,000 content reviewers. But its failure to catch the violent 17-minute video as it was being streamed and for many minutes afterward have underscored major gaps in its strategies.<br><br>Criticism after the attack has focused on Facebook's live broadcast tool. Some critics have called on the site to impose a time delay during which videos could be checked. Mr. Rosen said a delay would be swamped by the millions of live videos broadcast daily and would slow reports by users.<br><br>Write to Niharika Mandhana at niharika.mandhana@wsj.com",
+      "tags": [
+        "Guy Rosen",
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553156100000",
+      "sentiment": "",
+      "author": "Niharika Mandhana",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "470998ea0c18376ee848b95937bd938b",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l000p1",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. said the gruesome video of the New Zealand mosque shootings revealed gaps in its handling of live broadcasts by users, but pushed back against the idea of setting up a time delay.\n\nGuy Rosen, Facebook's vice president for integrity, said in comments posted late Wednesday that the company's artificial intelligence tools failed to catch a video of the terrorist attack in Christchurch last week that was aired live on the social media platform by the shooter. In an attack on two mosques, 50 people died.",
+      "significantTag": [
+        "Guy Rosen",
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": 0.643049537708033,
+      "entities": [
+        "Guy Rosen",
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "Facebook Inc"
+      ],
+      "nerPeople": [
+        "Guy Rosen"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "2c8a7920c31fc93a9b5ab11ae9ff25fc",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "UPDATE 1-Facebook fixes glitch that exposed millions of user passwords to employees",
+      "content": "The passwords were accessible to as many as 20,000 Facebook employees and dated back as early as 2012, cyber security blog KrebsOnSecurity, which first reported https://krebsonsecurity.com/2019/03/facebook-stored-hundreds-of-millions-of-user-passwords-in-plain-text-for-years the issue, said in its report.<br><br>\"These passwords were never visible to anyone outside of Facebook and we have found no evidence to date that anyone internally abused or improperly accessed them,\" the company said.<br><br>KrebsOnSecurity, citing a senior Facebook employee, said the an internal investigation by the company so far indicates that between 200 million and 600 million Facebook users may have had their account passwords stored in plain text.<br><br>Facebook said the issue was discovered in January as part of a routine security review. Majority of the affected were users of Facebook Lite, a version of the social media app largely used by people in regions with lower connectivity.<br><br>The social network is also probing the causes of a series of security failures, in which employees built applications that logged unencrypted password data for Facebook users, the report said.<br><br>\"We estimate that we will notify hundreds of millions of Facebook Lite users, tens of millions of other Facebook users, and tens of thousands of Instagram users,\" the company said. (Reporting by Shariq Khan and Munsif Vengattil in Bengaluru; Editing by Arun Koyyur) ",
+      "tags": [
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553185395000",
+      "sentiment": "",
+      "author": "",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "2c8a7920c31fc93a9b5ab11ae9ff25fc",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "LBA0000020190321ef3l030sp",
+      "source": "Reuters News",
+      "significance": 0,
+      "abstract": "(Adds details from Facebook blog)\n\nMarch 21 (Reuters) - Facebook Inc said on Thursday it has resolved a glitch that exposed passwords of millions of users stored in readable format within its internal systems to its employees.",
+      "significantTag": [
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": -0.7896059262724885,
+      "entities": [
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "United Kingdom",
+      "sourceCountryCode": "GBR",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "Facebook Inc"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "cd1d0a1f8e9df1de3daee9922bf8eeab",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook Says Millions of Users' Passwords Were Improperly Stored in Internal Systems; Facebook identified the issue as part of a routine security review in January",
+      "content": "Mr. Canahuati said the company has fixed these issues and that \"no passwords were exposed externally and we didn't find any evidence of abuse to date.\"<br><br>Facebook identified the issue as part of a routine security review in January, Mr. Canahuati said. The password exposure was first reported by krebsonsecurity.com earlier Thursday.<br><br>Facebook's login systems are designed to mask passwords, Mr. Canahuati said. During the review, Facebook has been looking for ways it stores some information, such as access tokens, and have fixed problems as they were discovered, he said.<br><br>Write to Aisha Al-Muslim at aisha.al-muslim@wsj.com",
+      "tags": [
+        "Internal Systems",
+        "Pedro Canahuati",
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553187540000",
+      "sentiment": "",
+      "author": "Aisha Al-Muslim",
+      "relatedEntityIds": [
+        "bcc6d0df77f64a31b72f74901596c547",
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "cd1d0a1f8e9df1de3daee9922bf8eeab",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l005bp",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. will notify hundreds of millions of users that some passwords were stored in a readable format that was accessible to its employees within its internal data storage systems.\n\nFacebook estimated it will notify hundreds of millions of Facebook Lite users, tens of millions of other Facebook users, and tens of thousands of Instagram users, the company's vice president of engineering, security and privacy Pedro Canahuati said in a blog post Thursday.",
+      "significantTag": [
+        "Internal Systems",
+        "Pedro Canahuati",
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": -0.9960259244222835,
+      "entities": [
+        "Internal Systems",
+        "Pedro Canahuati",
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a",
+        "bcc6d0df77f64a31b72f74901596c547"
+      ],
+      "nerCompanies": [
+        "Internal Systems",
+        "Facebook Inc"
+      ],
+      "nerPeople": [
+        "Pedro Canahuati"
+      ],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "N/A",
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology",
+        "others"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "c2e24e4781d720f33214e989c62e83f7",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook: Our AI Tools Failed to Catch New Zealand Attack Video; Company pushes back on the idea of time delays for live video",
+      "content": "Mr. Rosen also said the video wasn't prioritized for an expedited review when it was flagged by a user. That is because the user flagged the video after it ended, not during the live broadcast. In those cases, Facebook accelerates its reviews only if there is a report of a suicide attempt.<br><br>Facebook ultimately took down the video after being alerted by New Zealand authorities. By then the video had been viewed 4,000 times on the site, Facebook said, and copied on other sites beyond Facebook's control.<br><br>\"We recognize that the immediacy of Facebook Live brings unique challenges,\" Mr. Rosen said in the post.<br><br>The shooter, Brenton Tarrant, has been charged in New Zealand with murder. He hasn't entered a plea.<br><br>The details of the way in which the video was uploaded, spread and detected show the limitations of Facebook's efforts to police its platform. Critics say the site has expanded aggressively for years and offered new features without putting adequate safeguards in place. The social media giant has come under fire in many parts of the world—from Myanmar to Sri Lanka—for failing to take action against hate speech, fake news and misinformation.<br><br>The company says it is doing more to better moderate the large numbers of posts that go online. It has doubled down on AI as a solution, in addition to using some 15,000 human content reviewers. But failure of its systems to catch the video of the New Zealand massacre as it was being streamed and for many minutes afterward has underscored the major gaps in its strategies.<br><br>Criticism after the attack has focused on Facebook's live broadcast tool. Australian Prime Minister Scott Morrison asked over the weekend whether Facebook should be allowed to offer such services if it can't control them.<br><br>Some critics have called on the site to impose a time delay during which videos could be checked. Mr. Rosen said a delay would be swamped by the millions of live videos broadcast daily. He also said it would slow reports by users that could help authorities provide help on the ground.<br><br>Facebook has touted the success of its technical tools in tackling some kinds of terrorist content. The company said last year that Facebook itself—not its users—was identifying nearly all of the material related to Islamic State and al Qaeda that it removed. But the platform, accessed each month by some 2 billion users posting in more than 80 languages, hasn't had that success with other kinds of extremist content.<br><br>In his post, Mr. Rosen said artificial intelligence has worked well to identify nudity and terrorist propaganda, because there are many examples of such content to train the machines. But the AI didn't have enough material to learn to recognize content like the mosque massacre, he said, because \"these events are thankfully rare.\"<br><br>A user flagged the Christchurch video to Facebook 12 minutes after it ended, Mr. Rosen said. The social media site accelerates its review of any live video flagged by users while it is being broadcast. The policy also applies to videos that have recently ended, but only in the case of suicide reports. The Christchurch video wasn't reported as a suicide and as a result wasn't prioritized.<br><br>The company will re-examine its procedures and expand the categories for accelerated review, Mr. Rosen said.<br><br>Facebook's systems caught 1.2 million videos of the attack as they were being uploaded in the first 24 hours; another 300,000 made it to the site and were removed afterward. But users were able to make copies of the video on other sites to keep it alive.<br><br>Mr. Rosen said a user of the website 8chan, which is often home to white supremacist and anti-Muslim content, posted a link to a copy of the video on a file-sharing site from where it spread more broadly.<br><br>Facebook struggled to keep the video from reappearing on its own site, he said, because a \"core community of bad actors\" worked to continually re-upload edited versions to defeat the company's detection tools. Facebook found and blocked more than 800 variants of the video that were circulating, he said.<br><br>Write to Niharika Mandhana at niharika.mandhana@wsj.com",
+      "tags": [
+        "FACEBOOK"
+      ],
+      "type": "",
+      "timestamp": "1553165220000",
+      "sentiment": "",
+      "author": "Niharika Mandhana",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "c2e24e4781d720f33214e989c62e83f7",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l000p1",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. acknowledged that the gruesome video of the New Zealand mosque shootings revealed gaps in its handling of live broadcasts by users, but pushed back against the idea of setting up a time delay.\n\nGuy Rosen, Facebook's vice president for integrity, said in a post late Wednesday that the company's artificial intelligence tools had failed to catch the video of the terrorist attack in Christchurch last week that was aired live on the social media platform by the shooter. The 17-minute video shows men, women and children being gunned down in a mosque.",
+      "significantTag": [
+        "FACEBOOK"
+      ],
+      "label": "",
+      "sentimentScore": 0.643049537708033,
+      "entities": [
+        "FACEBOOK"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "FACEBOOK"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "90a8fbf297cbc8708abf3b21a47fb9d2",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook Left Up Video of New Zealand Shootings for an Hour; The 17-minute broadcast started at around 1:33 p.m. and police alerted Facebook to the video at 2:29 p.m. The company took it down minutes later.",
+      "content": "The live-streaming video was taken by the shooter as he began<br><br>a rampage that left 50 people dead Friday afternoon. The broadcast began on Facebook at around 1:33 p.m. and ended 17 minutes later at approximately 1:50 p.m. A Facebook user flagged the post to the company 12 minutes after that, Facebook said. The social media team of the New Zealand police alerted Facebook to the video at 2:29 p.m., police told the Journal. Facebook said it took the video down within minutes thereafter.<br><br>New Zealand police said the timeline was approximately correct. Facebook declined to comment.<br><br>The delay was the result of a string of gaps in systems Facebook has set up to stop violent videos and other objectionable content from appearing on its platform. Artificial intelligence programs the company relies upon to block bad content failed to catch the video during its live broadcast and afterward. Then the alert from the user, who flagged the video after the broadcast ended, wasn't fast-tracked, because Facebook prioritizes warnings about suicide attempts in such cases.<br><br>By the time the video was taken down, it had been viewed 4,000 times on the site, Facebook said. It was copied millions of times on Facebook and other sites beyond Facebook's control.<br><br>Hany Farid, a professor of computer science at Dartmouth College, said the company for years focused on expanding aggressively and unleashing potent new products without putting the necessary protections in place beforehand.<br><br>\"The problem is that there are just no safeguards,\" Mr. Farid said. \"The company can't say these are unintended or unforeseen consequences. These were foreseeable.\"<br><br>Facebook has said it is doing more to moderate the large numbers of posts that go online. It has doubled down on AI as a solution, in addition to using some 15,000 human content reviewers. In a post on the company's website Wednesday, Guy Rosen, Facebook's vice president for integrity, acknowledged limitations in the company's handling of live broadcasts and said the company's artificial intelligence tools hadn't been able to catch the video.<br><br>\"We recognize that the immediacy of Facebook Live brings unique challenges,\" he wrote in his post on the company's website.<br><br>The killings last week left New Zealand reeling. Police have charged Australian Brenton Tarrant with murder in the case, saying he mowed down worshipers who had gathered for Friday prayers at two mosques. He hasn't entered a plea.<br><br>The social media giant has come under fire in many parts of the world—from Myanmar to Sri Lanka—for failing to take sufficient action against hate speech, fake news and misinformation on its site. The problems are amplified with Facebook Live, the video broadcast tool it introduced in 2016. Facebook said users post millions of live videos a day. In the past, they have included live beatings and murders.<br><br>Australian Prime Minister Scott Morrison asked over the weekend whether Facebook should be allowed to offer services such as live videos if it can't control them.<br><br>Some critics have called on the site to impose a time delay during which videos could be checked. Mr. Rosen said a delay would be swamped by the high volume of live videos broadcast daily. He also said it would slow reports by users that could enable authorities to provide help on the ground.<br><br>Facebook has touted the success of its technical tools in tackling some kinds of terrorist content. The company said last year that Facebook itself—not its users—was identifying nearly all of the material related to Islamic State and al Qaeda that it removed. But the platform, accessed each month by some 2 billion users posting in more than 80 languages, hasn't had that success with other kinds of extremist content.<br><br>In his post, Mr. Rosen said artificial intelligence has worked well to identify nudity and terrorist propaganda, because there are lots of examples of such content to train the machines. But the AI didn't have enough material to learn to recognize content like the mosque massacre, he said, because \"these events are thankfully rare.\"<br><br>Once the video was flagged by a user, it appeared to get stuck in queue to be reviewed. Mr. Rosen said the social media site accelerates its review of all live videos that are flagged by users while they are still being broadcast. The policy also applies to videos that have recently ended, but only in the case of suicide reports. The Christchurch video wasn't reported as a suicide and as a result wasn't prioritized.<br><br>The company will re-examine its procedures and expand the categories for accelerated review, Mr. Rosen said.<br><br>Mr. Farid, the Dartmouth professor, said the delay in taking the video down even after it was flagged by a user shows Facebook's legions of content checkers aren't enough for a platform of Facebook's size.<br><br>Some of New Zealand's largest advertisers, including ASB Bank, suspended advertising on Facebook and Google after the shooter's video was posted.<br><br>Lindsay Mouat, the CEO of the Association of New Zealand Advertisers, said New Zealand corporations \"are just appalled with the way that live video streaming of what happened could actually get up and occur in Facebook Live without any moderation.\"<br><br>Facebook's systems caught 1.2 million videos of the attack as they were being uploaded in the first 24 hours; another 300,000 made it to the site and were removed afterward. But users were able to make copies of the video on other sites to keep it alive.<br><br>Mr. Rosen said a user of the website 8chan, which is often home to white supremacist and anti-Muslim content, posted a link to a copy of the video on a file-sharing site from where it spread more broadly.<br><br>Facebook struggled to keep the video from reappearing on its own site, he said, because a \"core community of bad actors\" worked to continually re-upload edited versions to defeat the company's detection tools. Facebook found and blocked more than 800 variants of the video that were circulating, he said.<br><br>Related Coverage<br><br>* New Zealand Models Guns Clampdown on Australian Experience<br><br>* New Zealand to Impose Sweeping Gun Ban After Christchurch Mosque Killings<br><br>* Houses of Worship Upgrade Security After Shootings<br><br>* After New Zealand Shooting, Founder of 8chan Expresses Regrets<br><br>* As Funerals Begin, Families of New Zealand Attack Victims Wait in Anguish<br><br>* New Zealand Mosque Shooter Was En Route to Third Target, Police Say<br><br>* Mosque Shooter's Radical Views Fed by Trips to Christian-Muslim Battlegrounds<br><br>Write to Niharika Mandhana at niharika.mandhana@wsj.com and Rhiannon Hoyle at rhiannon.hoyle@wsj.com",
+      "tags": [
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553179560000",
+      "sentiment": "",
+      "author": "Niharika Mandhana and Rhiannon Hoyle",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "90a8fbf297cbc8708abf3b21a47fb9d2",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l000p1",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. left a gruesome video of shootings at a New Zealand mosque up on its site for half an hour after a user brought it to the company's attention, a previously unreported delay that highlights the social media company's difficulty in controlling violent content on its platform.\n\nThe timetable, based on times supplied overnight by Facebook and the New Zealand police, means the video showing men, women and children being gunned down at a mosque in Christchurch was available on Facebook's site for an hour from the time it started rolling to the time it was ultimately removed.",
+      "significantTag": [
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": 0.7686577107509198,
+      "entities": [
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "Facebook Inc"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  },
+  {
+    "entityId": "3c09dd6f485f1416b20a3a05c217022e",
+    "entityType": "SEARCH_ELEMENT_TYPE_NEWS",
+    "narrative": {
+      "title": "Facebook Left Up Video of New Zealand Shootings for an Hour; The 17-minute broadcast started at around 1:33 p.m. A user flagged the post 12 minutes after it ended. Police alerted Facebook to the video at 2:29 p.m. The company took it down minutes later.",
+      "content": "The live-streaming video was taken by the shooter as he began<br><br>a rampage that left 50 people dead Friday afternoon. The broadcast began on Facebook at around 1:33 p.m. and ended 17 minutes later at approximately 1:50 p.m. A Facebook user flagged the post to the company 12 minutes after that, Facebook said. The social media team of the New Zealand police alerted Facebook to the video at 2:29 p.m., police told the Journal. Facebook said it took the video down within minutes thereafter.<br><br>New Zealand police said the timeline was approximately correct. Facebook declined to comment.<br><br>The delay was the result of a string of gaps in systems Facebook has set up to stop violent videos and other objectionable content from appearing and remaining on its platform. Artificial intelligence programs the company relies upon to block bad content failed to catch the video during its live broadcast and afterward. Then the alert from the user, who flagged the video after the broadcast ended, wasn't fast-tracked, because Facebook prioritizes warnings about suicide attempts in such cases.<br><br>By the time the video was taken down, it had been viewed 4,000 times on the site, Facebook said. It was copied millions of times on Facebook and other sites beyond Facebook's control.<br><br>Hany Farid, a professor of computer science at Dartmouth College, said the company for years focused on expanding aggressively and unleashing potent new products without putting the necessary protections in place beforehand.<br><br>\"The problem is that there are just no safeguards,\" Mr. Farid said. \"The company can't say these are unintended or unforeseen consequences. These were foreseeable.\"<br><br>Facebook has said it is doing more to moderate the large numbers of posts that go online. It has doubled down on AI as a solution, in addition to using some 15,000 human content reviewers. In a post on the company's website Wednesday, Guy Rosen, Facebook's vice president for integrity, acknowledged limitations in the company's handling of live broadcasts and said the company's artificial intelligence tools hadn't been able to catch the video.<br><br>\"We recognize that the immediacy of Facebook Live brings unique challenges,\" he wrote in his post on the company's website.<br><br>The killings last week left New Zealand reeling. Police have charged Australian Brenton Tarrant with murder in the case, saying he mowed down worshipers who had gathered for Friday prayers at two mosques. He hasn't entered a plea.<br><br>The social media giant has come under fire in many parts of the world—from Myanmar to Sri Lanka—for failing to take sufficient action against hate speech, fake news and misinformation on its site. The problems are amplified with Facebook Live, the video broadcast tool it introduced in 2016. Facebook said users post millions of live videos a day. In the past, they have included live beatings and murders.<br><br>Australian Prime Minister Scott Morrison asked over the weekend whether Facebook should be allowed to offer services such as live videos if it can't control them.<br><br>Some critics have called on the site to impose a time delay during which videos could be checked. Mr. Rosen said a delay would be swamped by the high volume of live videos broadcast daily. He also said it would slow reports by users that could enable authorities to provide help on the ground.<br><br>Facebook has touted the success of its technical tools in tackling some kinds of terrorist content. The company said last year that Facebook itself—not its users—was identifying nearly all of the material related to Islamic State and al Qaeda that it removed. But the platform, accessed each month by some 2 billion users posting in more than 80 languages, hasn't had that success with other kinds of extremist content.<br><br>In his post, Mr. Rosen said artificial intelligence has worked well to identify nudity and terrorist propaganda, because there are lots of examples of such content to train the machines. But the AI didn't have enough material to learn to recognize content like the mosque massacre, he said, because \"these events are thankfully rare.\"<br><br>Once the video was flagged by a user, it appeared to get stuck in queue to be reviewed. Mr. Rosen said the social media site accelerates its review of all live videos that are flagged by users while they are still being broadcast. The policy also applies to videos that have recently ended, but only in the case of suicide reports. The Christchurch video wasn't reported as a suicide and as a result wasn't prioritized.<br><br>The company will re-examine its procedures and expand the categories for accelerated review, Mr. Rosen said.<br><br>Mr. Farid, the Dartmouth professor, said the delay in taking the video down even after it was flagged by a user shows Facebook's legions of content checkers aren't enough for a platform of Facebook's size. Artificial intelligence, meanwhile, isn't good at tackling content it isn't already familiar with. And if even a seemingly small percentage of content slips through its system, that could amount to a large number of harmful posts given Facebook's volumes.<br><br>\"AI is actually pretty dumb,\" Mr. Farid said. \"You feed it lots of things and it starts to identify patterns, but it doesn't understand terrorism or hate speech per se. Anything new or different is a problem.\"<br><br>Some of New Zealand's largest advertisers, including ASB Bank, suspended advertising on Facebook and Google after the shooter's video was posted.<br><br>Lindsay Mouat, the CEO of the Association of New Zealand Advertisers, said New Zealand corporations \"are just appalled with the way that live video streaming of what happened could actually get up and occur in Facebook Live without any moderation.\"<br><br>Facebook's systems caught 1.2 million videos of the attack as they were being uploaded in the first 24 hours; another 300,000 made it to the site and were removed afterward. But users were able to make copies of the video on other sites to keep it alive.<br><br>Mr. Rosen said a user of the website 8chan, which is often home to white supremacist and anti-Muslim content, posted a link to a copy of the video on a file-sharing site from where it spread more broadly.<br><br>Facebook struggled to keep the video from reappearing on its own site, he said, because a \"core community of bad actors\" worked to continually re-upload edited versions to defeat the company's detection tools. Facebook found and blocked more than 800 variants of the video that were circulating, he said.<br><br>Related Coverage<br><br>* New Zealand Models Guns Clampdown on Australian Experience<br><br>* New Zealand to Impose Sweeping Gun Ban After Christchurch Mosque Killings<br><br>* Houses of Worship Upgrade Security After Shootings<br><br>* After New Zealand Shooting, Founder of 8chan Expresses Regrets<br><br>* As Funerals Begin, Families of New Zealand Attack Victims Wait in Anguish<br><br>* New Zealand Mosque Shooter Was En Route to Third Target, Police Say<br><br>* Mosque Shooter's Radical Views Fed by Trips to Christian-Muslim Battlegrounds<br><br>Write to Niharika Mandhana at niharika.mandhana@wsj.com and Rhiannon Hoyle at rhiannon.hoyle@wsj.com",
+      "tags": [
+        "Facebook Inc"
+      ],
+      "type": "",
+      "timestamp": "1553179560000",
+      "sentiment": "",
+      "author": "Niharika Mandhana and Rhiannon Hoyle",
+      "relatedEntityIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "globalId": "3c09dd6f485f1416b20a3a05c217022e",
+      "assetIds": [
+        "6183"
+      ],
+      "eventType": "Media Reports",
+      "externalRef": "WSJO000020190321ef3l000p1",
+      "source": "The Wall Street Journal Online",
+      "significance": 0,
+      "abstract": "Facebook Inc. left a gruesome video of shootings at a New Zealand mosque up on its site for half an hour after a user brought it to the company's attention, a previously unreported delay that highlights the social media giant's difficulty in controlling violent content on its platform.\n\nThe timetable, based on times supplied overnight by Facebook and the New Zealand police, means the video showing men, women and children being gunned down at a mosque in Christchurch was available on Facebook's site for an hour from the time it started rolling to the time it was ultimately removed.",
+      "significantTag": [
+        "Facebook Inc"
+      ],
+      "label": "",
+      "sentimentScore": 0.338781447150987,
+      "entities": [
+        "Facebook Inc"
+      ],
+      "locations": [],
+      "sourceCountry": "",
+      "sourceCountryCode": "",
+      "companyIds": [
+        "29fa8d1eb5c6951812eeac8a8930064a"
+      ],
+      "nerCompanies": [
+        "Facebook Inc"
+      ],
+      "nerPeople": [],
+      "nerLocations": [],
+      "nerIndustries": [],
+      "nerSubjects": [],
+      "peopleIds": [],
+      "sourceWeight": 20.58974358974359,
+      "language": "SEARCH_LANGUAGE_ENGLISH",
+      "companyIndustries": [
+        "Interactive Media and Services"
+      ],
+      "companySectors": [
+        "Information Technology"
+      ],
+      "marketSectors": [
+        "EQUITY"
+      ]
+    },
+    "dataType": "MIO_DATA_ELEMENT_TYPE_NARRATIVE"
+  }
+]
