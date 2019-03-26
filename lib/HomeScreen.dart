@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'CompanyList.dart';
 import 'NewsList.dart';
-import 'MessageScreen.dart';
+import 'MessageListScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   final String title;
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: {
         'company': CompanyList(),
         'news': NewsList(),
-        'message': MessageScreen(),
+        'message': MessageListScreen(),
       }[currentTab],
     );
   }

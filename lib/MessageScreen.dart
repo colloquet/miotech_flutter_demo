@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MessageScreen extends StatefulWidget {
+  final conversation;
+  MessageScreen({this.conversation});
+
   @override
   _MessageScreenState createState() => _MessageScreenState();
 }
@@ -26,72 +29,77 @@ class _MessageScreenState extends State<MessageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Flexible(
-          child: GestureDetector(
-            onTap: () {
-              focusNode.unfocus();
-            },
-            child: ListView(
-              padding: EdgeInsets.all(16.0),
-              reverse: true,
-              children: messages.map((message) {
-                return MessageItem(text: message['text'], isSelf: message['isSelf']);
-              }).toList(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.conversation['from']),
+      ),
+      body: Column(
+        children: <Widget>[
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                focusNode.unfocus();
+              },
+              child: ListView(
+                padding: EdgeInsets.all(16.0),
+                reverse: true,
+                children: messages.map((message) {
+                  return MessageItem(text: message['text'], isSelf: message['isSelf']);
+                }).toList(),
+              ),
             ),
           ),
-        ),
-        Container(
-          color: Color(0xff1e2534),
-          padding:
-              EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
-          child: Container(
-            margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
-            child: Row(
-              children: <Widget>[
-                Icon(
-                  Icons.add_circle_outline,
-                  color: Color(0xff8ca0b3),
-                  size: 24.0,
-                ),
-                Flexible(
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Color(0xff1e2534),
-                        borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                    padding: EdgeInsets.symmetric(horizontal: 16.0),
-                    child: TextField(
-                      controller: textEditingController,
-                      focusNode: focusNode,
-                      autofocus: true,
-                      maxLines: 1,
-                      textInputAction: TextInputAction.send,
-                      onSubmitted: (text) {
-                        setState(() {
-                          messages.insert(0, {
-                            'text': text,
-                            'isSelf': true,
+          Container(
+            color: Color(0xff1e2534),
+            padding:
+                EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.add_circle_outline,
+                    color: Color(0xff8ca0b3),
+                    size: 24.0,
+                  ),
+                  Flexible(
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Color(0xff1e2534),
+                          borderRadius: BorderRadius.all(Radius.circular(4.0))),
+                      padding: EdgeInsets.symmetric(horizontal: 16.0),
+                      child: TextField(
+                        controller: textEditingController,
+                        focusNode: focusNode,
+                        autofocus: true,
+                        maxLines: 1,
+                        textInputAction: TextInputAction.send,
+                        onSubmitted: (text) {
+                          setState(() {
+                            messages.insert(0, {
+                              'text': text,
+                              'isSelf': true,
+                            });
                           });
-                        });
-                        textEditingController.clear();
-                        FocusScope.of(context).requestFocus(focusNode);
-                      },
-                      cursorColor: Color(0xff8ca0b3),
-                      style: TextStyle(color: Color(0xffe7e7e7)),
+                          textEditingController.clear();
+                          FocusScope.of(context).requestFocus(focusNode);
+                        },
+                        cursorColor: Color(0xff8ca0b3),
+                        style: TextStyle(color: Color(0xffe7e7e7)),
+                      ),
                     ),
                   ),
-                ),
-                Icon(
-                  Icons.send,
-                  color: Color(0xff8ca0b3),
-                  size: 24.0,
-                ),
-              ],
+                  Icon(
+                    Icons.send,
+                    color: Color(0xff8ca0b3),
+                    size: 24.0,
+                  ),
+                ],
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
