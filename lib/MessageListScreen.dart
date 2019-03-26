@@ -29,11 +29,11 @@ var backgroundColors = [
 
 class MessageListScreen extends StatelessWidget {
   var conversations = List.generate(
-      10,
+      20,
       (index) => {
             'id': index,
-            'from': names[index],
-            'color': backgroundColors[index],
+            'from': names[index % 10],
+            'color': backgroundColors[index % 10],
             'latestMessage':
                 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, et. Obcaecati, neque nostrum natus amet vero odit nihil hic labore tempora sapiente unde quo aliquam facilis at minima reprehenderit atque.',
           });
@@ -55,7 +55,8 @@ class MessageListScreen extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => MessageScreen(conversation: conversation)),
+                  builder: (context) =>
+                      MessageScreen(conversation: conversation)),
             );
           },
           child: Container(
@@ -68,8 +69,10 @@ class MessageListScreen extends StatelessWidget {
                   width: 48.0,
                   child: CircleAvatar(
                     backgroundColor: conversation['color'],
-                    child: Text(name.split(' ').map((string) => string[0]).join(),
-                        style: TextStyle(fontSize: 20.0)),
+                    child: Text(
+                        name.split(' ').map((string) => string[0]).join(),
+                        style: TextStyle(
+                            fontSize: 20.0, color: Color(0xffe7e7e7))),
                   ),
                 ),
                 SizedBox(width: 16.0),
@@ -77,13 +80,15 @@ class MessageListScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(conversation['from']),
-                      SizedBox(height: 8.0),
+                      Text(conversation['from'],
+                          style: TextStyle(fontSize: 16.0)),
+                      SizedBox(height: 4.0),
                       Text(
                         conversation['latestMessage'],
-                        maxLines: 1,
+                        maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(color: Color(0xff8ca0b3)),
+                        style:
+                            TextStyle(color: Color(0xff8ca0b3), fontSize: 12.0),
                       ),
                     ],
                   ),

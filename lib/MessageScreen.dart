@@ -60,7 +60,7 @@ class _MessageScreenState extends State<MessageScreen> {
                   Icon(
                     Icons.add_circle_outline,
                     color: Color(0xff8ca0b3),
-                    size: 24.0,
+                    size: 28.0,
                   ),
                   Flexible(
                     child: Container(
@@ -69,30 +69,51 @@ class _MessageScreenState extends State<MessageScreen> {
                           borderRadius: BorderRadius.all(Radius.circular(4.0))),
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: TextField(
+                        decoration: new InputDecoration(
+                            border: InputBorder.none,
+                            hintText: 'Message',
+                          hintStyle: TextStyle(color: Color(0x998ca0b3)),
+                        ),
                         controller: textEditingController,
                         focusNode: focusNode,
                         autofocus: true,
                         maxLines: 1,
                         textInputAction: TextInputAction.send,
                         onSubmitted: (text) {
-                          setState(() {
-                            messages.insert(0, {
-                              'text': text,
-                              'isSelf': true,
+                          if (text.trim() != '') {
+                            setState(() {
+                              messages.insert(0, {
+                                'text': text,
+                                'isSelf': true,
+                              });
                             });
-                          });
-                          textEditingController.clear();
+                            textEditingController.clear();
+                          }
                           FocusScope.of(context).requestFocus(focusNode);
                         },
                         cursorColor: Color(0xff8ca0b3),
-                        style: TextStyle(color: Color(0xffe7e7e7)),
+                        style: TextStyle(color: Color(0xffe7e7e7), fontSize: 18.0),
                       ),
                     ),
                   ),
-                  Icon(
-                    Icons.send,
-                    color: Color(0xff8ca0b3),
-                    size: 24.0,
+                  GestureDetector(
+                    onTap: () {
+                      if (textEditingController.text.trim() != '') {
+                        setState(() {
+                          messages.insert(0, {
+                            'text': textEditingController.text,
+                            'isSelf': true,
+                          });
+                        });
+                        textEditingController.clear();
+                      }
+                      FocusScope.of(context).requestFocus(focusNode);
+                    },
+                    child: Icon(
+                      Icons.send,
+                      color: Color(0xff8ca0b3),
+                      size: 28.0,
+                    ),
                   ),
                 ],
               ),

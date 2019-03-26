@@ -15,71 +15,94 @@ class CompanyItem extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-              builder: (context) => CompanyScreen(company)),
+          MaterialPageRoute(builder: (context) => CompanyScreen(company)),
         );
       },
-      child: Container(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Text(
-              company['name'],
-              style: TextStyle(fontSize: 18.0),
-            ),
-            SizedBox(height: 8.0),
-            Row(
+      child: Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Text(
-                  company['type'],
-                  style: TextStyle(color: Color(0xffcfb162)),
+                  company['name'],
+                  style: TextStyle(fontSize: 18.0),
                 ),
-                SizedBox(
-                  width: 16.0,
+                SizedBox(height: 8.0),
+                Row(
+                  children: <Widget>[
+                    Text(
+                      company['type'],
+                      style: TextStyle(color: Color(0xffcfb162)),
+                    ),
+                    SizedBox(
+                      width: 16.0,
+                    ),
+                    Flexible(
+                      child: Text(
+                        company['industry'],
+                        style: TextStyle(color: Color(0xff8ca0b3)),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
                 ),
-                Flexible(
-                  child: Text(
-                    company['industry'],
-                    style: TextStyle(color: Color(0xff8ca0b3)),
-                    overflow: TextOverflow.ellipsis,
-                  ),
+                SizedBox(height: 8.0),
+                Text(
+                  company['description'].replaceAll('\n', ' ').substring(0, 200),
+                  maxLines: 3,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(color: Color(0x998ca0b3)),
                 ),
               ],
             ),
-            SizedBox(height: 8.0),
-            Text(
-              company['description'].substring(0, 200),
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(color: Color(0x998ca0b3)),
+          ),
+          SizedBox(
+            height: 32.0,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                SizedBox(
+                  width: 16.0,
+                ),
+                Relationship(type: 'Competitor'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Shareholder'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Investor'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Supplier'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Investee'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Branch'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Board member'),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Relationship(type: 'Key executive'),
+                SizedBox(
+                  width: 16.0,
+                ),
+              ],
             ),
-            SizedBox(height: 8.0),
-            SizedBox(
-              height: 40.0,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  Relationship(type: 'Competitor'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Shareholder'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Investor'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Supplier'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Investee'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Branch'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Board member'),
-                  SizedBox(width: 8.0,),
-                  Relationship(type: 'Key executive'),
-                ],
-              ),
-            )
-          ],
-        ),
+          ),
+          SizedBox(height: 16.0,)
+        ],
       ),
     );
   }

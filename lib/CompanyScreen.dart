@@ -13,57 +13,52 @@ class CompanyScreen extends StatelessWidget {
         title: Text(company['name']),
       ),
       body: SingleChildScrollView(
+        child: SafeArea(
           child: Container(
             padding: EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Type',
-                  style: Theme.of(context).textTheme.body2,
-                ),
-                SizedBox(
-                  height: 8.0,
-                ),
-                Text(
-                  company['type'],
-                  style: TextStyle(fontSize: 16.0),
+                  company['name'],
+                  style: TextStyle(fontSize: 24.0),
                 ),
                 SizedBox(
                   height: 16.0,
                 ),
-                Text(
-                  'Industry',
-                  style: Theme.of(context).textTheme.body2,
-                ),
-                SizedBox(
-                  height: 8.0,
-                ),
-                Text(
-                  company['industry'],
-                  style: TextStyle(fontSize: 16.0),
+                Row(
+                  children: <Widget>[
+                    Text(
+                      company['type'],
+                      style: TextStyle(color: Color(0xffcfb162)),
+                    ),
+                    SizedBox(
+                      width: 16.0,
+                    ),
+                    Flexible(
+                      child: Text(
+                        company['industry'],
+                        style: TextStyle(color: Color(0xff8ca0b3)),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(
                   height: 16.0,
-                ),
-                Text(
-                  'Description',
-                  style: Theme.of(context).textTheme.body2,
-                ),
-                SizedBox(
-                  height: 8.0,
                 ),
                 Text(
                   company['description'],
                   style: TextStyle(
                     height: 1.2,
-                    fontSize: 16.0,
+                    // color: Color(0xff8ca0b3),
                   ),
                 ),
               ],
             ),
           ),
         ),
+      ),
     );
   }
 }

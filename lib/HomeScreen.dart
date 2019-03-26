@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: 48.0,
                     child: CircleAvatar(
                       backgroundColor: Color(0xff12918b),
-                      child: Text('MT', style: TextStyle(fontSize: 20.0)),
+                      child: Text('MT', style: TextStyle(fontSize: 20.0, color: Color(0xffe7e7e7))),
                     ),
                   ),
                   SizedBox(
@@ -55,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   ListTile(
+                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
                     title: Text(
                       'Company',
                       style: TextStyle(
@@ -74,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                   ),
                   ListTile(
+                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
                     title: Text(
                       'News',
                       style: TextStyle(
@@ -93,6 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                   ),
                   ListTile(
+                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
                     title: Text(
                       'Message',
                       style: TextStyle(

@@ -22,6 +22,7 @@ class MiotechDemo extends StatelessWidget {
           body1: TextStyle(color: Color(0xffe7e7e7)),
           body2: TextStyle(color: Color(0xff8ca0b3)),
         ),
+        brightness: Brightness.dark,
       ),
       home: HomeScreen(title: 'MioTech Demo'),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'NewsScreen.dart';
+import 'SentimentBar.dart';
 
 class NewsItem extends StatelessWidget {
   const NewsItem({
@@ -11,7 +13,12 @@ class NewsItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => NewsScreen(narrative)),
+        );
+      },
       child: Container(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -40,13 +47,15 @@ class NewsItem extends StatelessWidget {
             ),
             Text(
               narrative['title'],
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 18.0),
             ),
             SizedBox(
               height: 8.0,
             ),
             Text(
-              narrative['abstract'],
+              narrative['abstract'].replaceAll('\n', ' '),
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: Color(0x998ca0b3)),
@@ -54,47 +63,7 @@ class NewsItem extends StatelessWidget {
             SizedBox(
               height: 8.0,
             ),
-            Row(
-              children: <Widget>[
-                Text(
-                  'Sentiment',
-                  style: TextStyle(color: Color(0xff8ca0b3)),
-                ),
-                SizedBox(
-                  width: 8.0,
-                ),
-                Container(
-                  height: 10.0,
-                  width: 76.0,
-                  decoration: BoxDecoration(
-                    color: Color(0xff2d3446),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(2.0),
-                    ),
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      Container(
-                        height: 10.0,
-                        width: narrative['sentimentScore'].abs() * 76.0,
-                        decoration: BoxDecoration(
-                          color: narrative['sentimentScore'] < 0
-                              ? Color(0x66ff6336)
-                              : Color(0x669ac646),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(2.0),
-                          ),
-                          border: Border.all(
-                              color: narrative['sentimentScore'] < 0
-                                  ? Color(0xffff6336)
-                                  : Color(0xff9ac646)),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            )
+            SentimentBar(narrative: narrative),
           ],
         ),
       ),
