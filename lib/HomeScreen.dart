@@ -101,7 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
       //   'message': MessageListScreen(),
       // }[currentTab],
       body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 200),
+        duration: const Duration(milliseconds: 300),
         transitionBuilder: (Widget child, Animation<double> animation) {
           return FadeTransition(
             child: child,

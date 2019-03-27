@@ -47,7 +47,7 @@ class NewsScreen extends StatelessWidget {
                 SizedBox(
                   height: 16.0,
                 ),
-                new SentimentBar(narrative: narrative),
+                SentimentBar(narrative: narrative),
                 SizedBox(
                   height: 16.0,
                 ),

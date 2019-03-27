@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'package:image_picker/image_picker.dart';
+import 'package:photo_view/photo_view.dart';
 
 class MessageScreen extends StatefulWidget {
   final conversation;
+
   MessageScreen({this.conversation});
 
   @override
@@ -11,18 +15,85 @@ class MessageScreen extends StatefulWidget {
 class _MessageScreenState extends State<MessageScreen> {
   var messages = [
     {
+      'text': 'Me too!',
+      'isSelf': false,
+      'type': 'text',
+    },
+    {
+      'image': AssetImage('assets/bg.jpg'),
+      'isSelf': false,
+      'type': 'image',
+    },
+    {
       'text': 'I love MioTech!',
       'isSelf': true,
+      'type': 'text',
     },
     {
       'text': 'Hi',
       'isSelf': false,
+      'type': 'text',
     },
     {
       'text': 'Hi',
       'isSelf': true,
+      'type': 'text',
     },
   ];
+
+  int imageId = 0;
+
+  Future sendImageFromGallery() async {
+    try {
+      var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+      if (image != null) {
+        setState(() {
+          messages.insert(0, {
+            'id': imageId++,
+            'image': FileImage(image),
+            'isSelf': true,
+            'type': 'image',
+          });
+        });
+      }
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  Future sendImageFromCamera() async {
+    try {
+      var image = await ImagePicker.pickImage(source: ImageSource.camera);
+
+      if (image != null) {
+        setState(() {
+          messages.insert(0, {
+            'id': imageId++,
+            'image': FileImage(image),
+            'isSelf': true,
+            'type': 'image',
+          });
+        });
+      }
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  sendMessage(text) {
+    if (text.trim() != '') {
+      setState(() {
+        messages.insert(0, {
+          'text': text,
+          'isSelf': true,
+          'type': 'text',
+        });
+      });
+      textEditingController.clear();
+    }
+    FocusScope.of(context).requestFocus(focusNode);
+  }
 
   final FocusNode focusNode = new FocusNode();
   final TextEditingController textEditingController =
@@ -30,19 +101,6 @@ class _MessageScreenState extends State<MessageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    var sendMessage = (text) {
-      if (text.trim() != '') {
-        setState(() {
-          messages.insert(0, {
-            'text': text,
-            'isSelf': true,
-          });
-        });
-        textEditingController.clear();
-      }
-      FocusScope.of(context).requestFocus(focusNode);
-    };
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.conversation['from']),
@@ -59,7 +117,7 @@ class _MessageScreenState extends State<MessageScreen> {
                 reverse: true,
                 children: messages.map((message) {
                   return MessageItem(
-                      text: message['text'], isSelf: message['isSelf']);
+                      message: message, isSelf: message['isSelf']);
                 }).toList(),
               ),
             ),
@@ -72,10 +130,43 @@ class _MessageScreenState extends State<MessageScreen> {
               margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
               child: Row(
                 children: <Widget>[
-                  Icon(
-                    Icons.add_circle_outline,
-                    color: Color(0xff8ca0b3),
-                    size: 28.0,
+                  GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return Container(
+                            padding: EdgeInsets.only(
+                                bottom: MediaQuery.of(context).padding.bottom),
+                            child: new Wrap(
+                              children: <Widget>[
+                                new ListTile(
+                                  leading: new Icon(Icons.image),
+                                  title: new Text('Photo album'),
+                                  onTap: () {
+                                    sendImageFromGallery();
+                                    Navigator.pop(context);
+                                  },
+                                ),
+                                new ListTile(
+                                  leading: new Icon(Icons.camera_alt),
+                                  title: new Text('Camera'),
+                                  onTap: () {
+                                    sendImageFromCamera();
+                                    Navigator.pop(context);
+                                  },
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      );
+                    },
+                    child: Icon(
+                      Icons.add_circle_outline,
+                      color: Color(0xff8ca0b3),
+                      size: 28.0,
+                    ),
                   ),
                   Flexible(
                     child: Container(
@@ -122,14 +213,17 @@ class _MessageScreenState extends State<MessageScreen> {
 }
 
 class MessageItem extends StatelessWidget {
-  const MessageItem({Key key, this.isSelf, this.text}) : super(key: key);
-  final String text;
+  const MessageItem({Key key, this.isSelf, this.message}) : super(key: key);
+  final Map message;
   final bool isSelf;
 
   @override
   Widget build(BuildContext context) {
     var _backgroundColor = isSelf ? Color(0xffe7e7e7) : Color(0xff1e2534);
     var _textColor = isSelf ? Color(0xff121927) : Color(0xffe7e7e7);
+    var _padding = message['type'] == 'image'
+        ? EdgeInsets.all(8.0)
+        : EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0);
 
     return Row(
       mainAxisAlignment:
@@ -140,10 +234,37 @@ class MessageItem extends StatelessWidget {
             color: _backgroundColor,
             borderRadius: BorderRadius.all(Radius.circular(4.0)),
           ),
-          padding: EdgeInsets.all(8.0),
+          padding: _padding,
           margin: EdgeInsets.symmetric(vertical: 4.0),
-          child:
-              Text(text, style: TextStyle(color: _textColor, fontSize: 16.0)),
+          child: message['type'] == 'image'
+              ? GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return PhotoView(
+                            transitionOnUserGestures: true,
+                            imageProvider: message['image'],
+                            heroTag: 'image-' + message['id'].toString(),
+                            minScale: PhotoViewComputedScale.contained,
+                            maxScale: PhotoViewComputedScale.covered,
+                          );
+                        },
+                      ),
+                    );
+                  },
+                  child: SizedBox(
+                    width: 150.0,
+                    child: Hero(
+                      tag: 'image-' + message['id'].toString(),
+                      child: Image(image: message['image']),
+                    ),
+                  ))
+              : Text(
+                  message['text'],
+                  style: TextStyle(color: _textColor, fontSize: 16.0),
+                ),
         ),
       ],
     );
