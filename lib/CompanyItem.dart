@@ -50,7 +50,9 @@ class CompanyItem extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  company['description'].replaceAll('\n', ' ').substring(0, 200),
+                  company['description']
+                      .replaceAll('\n', ' ')
+                      .substring(0, 200),
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(color: Color(0x998ca0b3)),
@@ -63,45 +65,29 @@ class CompanyItem extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
-                SizedBox(
-                  width: 16.0,
-                ),
+                SizedBox(width: 16.0),
                 Relationship(type: 'Competitor'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Shareholder'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Investor'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Supplier'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Investee'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Branch'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Board member'),
-                SizedBox(
-                  width: 8.0,
-                ),
+                SizedBox(width: 8.0),
                 Relationship(type: 'Key executive'),
-                SizedBox(
-                  width: 16.0,
-                ),
+                SizedBox(width: 16.0),
               ],
             ),
           ),
-          SizedBox(height: 16.0,)
+          SizedBox(
+            height: 16.0,
+          )
         ],
       ),
     );

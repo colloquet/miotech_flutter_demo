@@ -17,6 +17,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var handleTabChange = (tabKey) {
+      setState(() {
+        currentTab = tabKey;
+      });
+    };
+
     return Scaffold(
       appBar: AppBar(
         title: Text(currentTab[0].toUpperCase() + currentTab.substring(1)),
@@ -34,7 +40,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: 48.0,
                     child: CircleAvatar(
                       backgroundColor: Color(0xff12918b),
-                      child: Text('MT', style: TextStyle(fontSize: 20.0, color: Color(0xffe7e7e7))),
+                      child: Text(
+                        'MT',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Color(0xffe7e7e7),
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -44,8 +56,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text('MioTech', style: TextStyle(fontSize: 16.0)),
-                      Text('info@miotech.com',
-                          style: TextStyle(color: Color(0xff8ca0b3))),
+                      Text(
+                        'info@miotech.com',
+                        style: TextStyle(color: Color(0xff8ca0b3)),
+                      ),
                     ],
                   )
                 ],
@@ -54,65 +68,26 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               child: Column(
                 children: [
-                  ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
-                    title: Text(
-                      'Company',
-                      style: TextStyle(
-                          color: currentTab == 'company'
-                              ? Color(0xffe7e7e7)
-                              : Color(0xff8ca0b3)),
-                    ),
-                    leading: Icon(Icons.business,
-                        color: currentTab == 'company'
-                            ? Color(0xffe7e7e7)
-                            : Color(0xff8ca0b3)),
-                    onTap: () {
-                      setState(() {
-                        currentTab = 'company';
-                      });
-                      Navigator.pop(context);
-                    },
+                  DrawerItem(
+                    isActive: currentTab == 'company',
+                    tabKey: 'company',
+                    title: 'Company',
+                    icon: Icons.business,
+                    onTap: handleTabChange,
                   ),
-                  ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
-                    title: Text(
-                      'News',
-                      style: TextStyle(
-                          color: currentTab == 'news'
-                              ? Color(0xffe7e7e7)
-                              : Color(0xff8ca0b3)),
-                    ),
-                    leading: Icon(Icons.library_books,
-                        color: currentTab == 'news'
-                            ? Color(0xffe7e7e7)
-                            : Color(0xff8ca0b3)),
-                    onTap: () {
-                      setState(() {
-                        currentTab = 'news';
-                      });
-                      Navigator.pop(context);
-                    },
+                  DrawerItem(
+                    isActive: currentTab == 'news',
+                    tabKey: 'news',
+                    title: 'News',
+                    icon: Icons.library_books,
+                    onTap: handleTabChange,
                   ),
-                  ListTile(
-                    contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
-                    title: Text(
-                      'Message',
-                      style: TextStyle(
-                          color: currentTab == 'message'
-                              ? Color(0xffe7e7e7)
-                              : Color(0xff8ca0b3)),
-                    ),
-                    leading: Icon(Icons.message,
-                        color: currentTab == 'message'
-                            ? Color(0xffe7e7e7)
-                            : Color(0xff8ca0b3)),
-                    onTap: () {
-                      setState(() {
-                        currentTab = 'message';
-                      });
-                      Navigator.pop(context);
-                    },
+                  DrawerItem(
+                    isActive: currentTab == 'message',
+                    tabKey: 'message',
+                    title: 'Message',
+                    icon: Icons.message,
+                    onTap: handleTabChange,
                   ),
                 ],
               ),
@@ -120,11 +95,59 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: {
-        'company': CompanyList(),
-        'news': NewsList(),
-        'message': MessageListScreen(),
-      }[currentTab],
+      // body: {
+      //   'company': CompanyList(),
+      //   'news': NewsList(),
+      //   'message': MessageListScreen(),
+      // }[currentTab],
+      body: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 500),
+        transitionBuilder: (Widget child, Animation<double> animation) {
+          return FadeTransition(
+            child: child,
+            opacity: animation,
+          );
+        },
+        child: {
+          'company': CompanyList(),
+          'news': NewsList(),
+          'message': MessageListScreen(),
+        }[currentTab],
+      ),
+    );
+  }
+}
+
+class DrawerItem extends StatelessWidget {
+  const DrawerItem({
+    this.isActive,
+    this.tabKey,
+    this.title,
+    this.onTap,
+    this.icon,
+  });
+
+  final bool isActive;
+  final String tabKey;
+  final String title;
+  final Function onTap;
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
+      title: Text(
+        title,
+        style:
+            TextStyle(color: isActive ? Color(0xffe7e7e7) : Color(0xff8ca0b3)),
+      ),
+      leading:
+          Icon(icon, color: isActive ? Color(0xffe7e7e7) : Color(0xff8ca0b3)),
+      onTap: () {
+        onTap(tabKey);
+        Navigator.pop(context);
+      },
     );
   }
 }
