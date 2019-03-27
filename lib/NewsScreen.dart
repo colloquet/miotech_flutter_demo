@@ -53,13 +53,22 @@ class NewsScreen extends StatelessWidget {
                 ),
                 Text(
                   narrative['abstract'],
-                  style: TextStyle(color: Color(0xff8ca0b3), fontStyle: FontStyle.italic),
+                  style: TextStyle(
+                    color: Color(0xff8ca0b3),
+                    fontStyle: FontStyle.italic,
+                    height: 1.2,
+                    fontSize: 16.0,
+                  ),
                 ),
                 SizedBox(
                   height: 16.0,
                 ),
                 Text(
                   narrative['content'].replaceAll('<br>', '\n'),
+                  style: TextStyle(
+                    height: 1.2,
+                    fontSize: 16.0,
+                  ),
                 ),
               ],
             ),

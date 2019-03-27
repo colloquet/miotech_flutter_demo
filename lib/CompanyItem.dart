@@ -37,7 +37,7 @@ class CompanyItem extends StatelessWidget {
                       style: TextStyle(color: Color(0xffcfb162)),
                     ),
                     SizedBox(
-                      width: 16.0,
+                      width: 8.0,
                     ),
                     Flexible(
                       child: Text(

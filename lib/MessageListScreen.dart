@@ -81,14 +81,14 @@ class MessageListScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(conversation['from'],
-                          style: TextStyle(fontSize: 16.0)),
+                          style: TextStyle(fontSize: 18.0)),
                       SizedBox(height: 4.0),
                       Text(
                         conversation['latestMessage'],
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style:
-                            TextStyle(color: Color(0xff8ca0b3), fontSize: 12.0),
+                            TextStyle(color: Color(0xff8ca0b3), fontSize: 14.0),
                       ),
                     ],
                   ),

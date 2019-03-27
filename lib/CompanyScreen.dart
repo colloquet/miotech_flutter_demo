@@ -51,6 +51,7 @@ class CompanyScreen extends StatelessWidget {
                   company['description'],
                   style: TextStyle(
                     height: 1.2,
+                    fontSize: 16.0,
                     // color: Color(0xff8ca0b3),
                   ),
                 ),
