@@ -25,10 +25,24 @@ class _MessageScreenState extends State<MessageScreen> {
   ];
 
   final FocusNode focusNode = new FocusNode();
-  final TextEditingController textEditingController = new TextEditingController();
+  final TextEditingController textEditingController =
+      new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    var sendMessage = (text) {
+      if (text.trim() != '') {
+        setState(() {
+          messages.insert(0, {
+            'text': text,
+            'isSelf': true,
+          });
+        });
+        textEditingController.clear();
+      }
+      FocusScope.of(context).requestFocus(focusNode);
+    };
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.conversation['from']),
@@ -44,7 +58,8 @@ class _MessageScreenState extends State<MessageScreen> {
                 padding: EdgeInsets.all(16.0),
                 reverse: true,
                 children: messages.map((message) {
-                  return MessageItem(text: message['text'], isSelf: message['isSelf']);
+                  return MessageItem(
+                      text: message['text'], isSelf: message['isSelf']);
                 }).toList(),
               ),
             ),
@@ -70,8 +85,8 @@ class _MessageScreenState extends State<MessageScreen> {
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: TextField(
                         decoration: new InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'Message',
+                          border: InputBorder.none,
+                          hintText: 'Message',
                           hintStyle: TextStyle(color: Color(0x998ca0b3)),
                         ),
                         controller: textEditingController,
@@ -79,35 +94,16 @@ class _MessageScreenState extends State<MessageScreen> {
                         autofocus: true,
                         maxLines: 1,
                         textInputAction: TextInputAction.send,
-                        onSubmitted: (text) {
-                          if (text.trim() != '') {
-                            setState(() {
-                              messages.insert(0, {
-                                'text': text,
-                                'isSelf': true,
-                              });
-                            });
-                            textEditingController.clear();
-                          }
-                          FocusScope.of(context).requestFocus(focusNode);
-                        },
+                        onSubmitted: sendMessage,
                         cursorColor: Color(0xff8ca0b3),
-                        style: TextStyle(color: Color(0xffe7e7e7), fontSize: 18.0),
+                        style:
+                            TextStyle(color: Color(0xffe7e7e7), fontSize: 18.0),
                       ),
                     ),
                   ),
                   GestureDetector(
                     onTap: () {
-                      if (textEditingController.text.trim() != '') {
-                        setState(() {
-                          messages.insert(0, {
-                            'text': textEditingController.text,
-                            'isSelf': true,
-                          });
-                        });
-                        textEditingController.clear();
-                      }
-                      FocusScope.of(context).requestFocus(focusNode);
+                      sendMessage(textEditingController.text);
                     },
                     child: Icon(
                       Icons.send,
@@ -146,7 +142,8 @@ class MessageItem extends StatelessWidget {
           ),
           padding: EdgeInsets.all(8.0),
           margin: EdgeInsets.symmetric(vertical: 4.0),
-          child: Text(text, style: TextStyle(color: _textColor, fontSize: 16.0)),
+          child:
+              Text(text, style: TextStyle(color: _textColor, fontSize: 16.0)),
         ),
       ],
     );

@@ -106,24 +106,11 @@ class Relationship extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        showDialog(
-          context: context,
-          builder: (context) {
-            return AlertDialog(
-              title: new Text("Alert"),
-              content: new Text("You clicked on $type"),
-              actions: <Widget>[
-                // usually buttons at the bottom of the dialog
-                new FlatButton(
-                  child: new Text("Close"),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                ),
-              ],
-            );
-          },
-        );
+        Scaffold.of(context).showSnackBar(SnackBar(
+          backgroundColor: Color(0xff2d3446),
+          duration: Duration(seconds: 1),
+          content: Text("You clicked on $type"),
+        ));
       },
       child: Chip(
         backgroundColor: Color(0xff2d3446),
