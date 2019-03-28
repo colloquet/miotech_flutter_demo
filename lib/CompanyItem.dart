@@ -18,6 +18,31 @@ class CompanyItem extends StatelessWidget {
           MaterialPageRoute(builder: (context) => CompanyScreen(company)),
         );
       },
+      onLongPress: () {
+        showModalBottomSheet(
+          context: context,
+          builder: (BuildContext context) {
+            return Container(
+              padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).padding.bottom),
+              child: Wrap(
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.playlist_add),
+                    title: Text('Add to Monitor Board'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.star),
+                    title: Text('Favourite'),
+                    onTap: () {},
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      },
       child: Column(
         children: <Widget>[
           Container(

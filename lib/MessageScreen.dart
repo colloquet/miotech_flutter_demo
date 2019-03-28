@@ -219,10 +219,10 @@ class MessageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _backgroundColor = isSelf ? Color(0xffe7e7e7) : Color(0xff1e2534);
+    var _backgroundColor = isSelf && message['type'] != 'image' ? Color(0xffe7e7e7) : Color(0xff1e2534);
     var _textColor = isSelf ? Color(0xff121927) : Color(0xffe7e7e7);
     var _padding = message['type'] == 'image'
-        ? EdgeInsets.all(8.0)
+        ? EdgeInsets.all(0.0)
         : EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0);
 
     return Row(
@@ -232,7 +232,7 @@ class MessageItem extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             color: _backgroundColor,
-            borderRadius: BorderRadius.all(Radius.circular(4.0)),
+            borderRadius: BorderRadius.circular(4.0),
           ),
           padding: _padding,
           margin: EdgeInsets.symmetric(vertical: 4.0),
@@ -266,7 +266,10 @@ class MessageItem extends StatelessWidget {
                     width: 150.0,
                     child: Hero(
                       tag: 'image-' + message['id'].toString(),
-                      child: Image(image: message['image']),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(4.0),
+                        child: Image(image: message['image']),
+                      ),
                     ),
                   ))
               : Text(
