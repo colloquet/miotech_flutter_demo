@@ -163,9 +163,9 @@ class _MessageScreenState extends State<MessageScreen> {
                       );
                     },
                     child: Icon(
-                      Icons.add_circle_outline,
+                      Icons.add,
                       color: Color(0xff8ca0b3),
-                      size: 28.0,
+                      size: 30.0,
                     ),
                   ),
                   Flexible(
