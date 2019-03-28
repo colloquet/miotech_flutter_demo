@@ -138,19 +138,19 @@ class _MessageScreenState extends State<MessageScreen> {
                           return Container(
                             padding: EdgeInsets.only(
                                 bottom: MediaQuery.of(context).padding.bottom),
-                            child: new Wrap(
+                            child: Wrap(
                               children: <Widget>[
-                                new ListTile(
-                                  leading: new Icon(Icons.image),
-                                  title: new Text('Photo album'),
+                                ListTile(
+                                  leading: Icon(Icons.image),
+                                  title: Text('Photo album'),
                                   onTap: () {
                                     sendImageFromGallery();
                                     Navigator.pop(context);
                                   },
                                 ),
-                                new ListTile(
-                                  leading: new Icon(Icons.camera_alt),
-                                  title: new Text('Camera'),
+                                ListTile(
+                                  leading: Icon(Icons.camera_alt),
+                                  title: Text('Camera'),
                                   onTap: () {
                                     sendImageFromCamera();
                                     Navigator.pop(context);
@@ -241,14 +241,22 @@ class MessageItem extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return PhotoView(
-                            transitionOnUserGestures: true,
-                            imageProvider: message['image'],
-                            heroTag: 'image-' + message['id'].toString(),
-                            minScale: PhotoViewComputedScale.contained,
-                            maxScale: PhotoViewComputedScale.covered,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondAnimation) {
+                          return FadeTransition(
+                            opacity: animation,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.pop(context);
+                              },
+                              child: PhotoView(
+                                transitionOnUserGestures: true,
+                                imageProvider: message['image'],
+                                heroTag: 'image-' + message['id'].toString(),
+                                minScale: PhotoViewComputedScale.contained,
+                                maxScale: PhotoViewComputedScale.covered,
+                              ),
+                            ),
                           );
                         },
                       ),
