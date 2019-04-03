@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timeago/timeago.dart' as timeago;
 import 'SentimentBar.dart';
 
 class NewsScreen extends StatelessWidget {
@@ -28,12 +29,17 @@ class NewsScreen extends StatelessWidget {
                     SizedBox(
                       width: 16.0,
                     ),
-                    Flexible(
+                    Expanded(
                       child: Text(
                         narrative['source'],
                         style: TextStyle(color: Color(0xff8ca0b3)),
                         overflow: TextOverflow.ellipsis,
                       ),
+                    ),
+                    SizedBox(width: 16.0),
+                    Text(
+                      timeago.format(DateTime.fromMillisecondsSinceEpoch(int.parse(narrative['timestamp']))),
+                      style: TextStyle(color: Color(0xff8ca0b3)),
                     ),
                   ],
                 ),

@@ -95,11 +95,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      // body: {
-      //   'company': CompanyList(),
-      //   'news': NewsList(),
-      //   'message': MessageListScreen(),
-      // }[currentTab],
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
         transitionBuilder: (Widget child, Animation<double> animation) {

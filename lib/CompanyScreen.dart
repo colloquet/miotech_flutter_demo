@@ -26,23 +26,9 @@ class CompanyScreen extends StatelessWidget {
                 SizedBox(
                   height: 16.0,
                 ),
-                Row(
-                  children: <Widget>[
-                    Text(
-                      company['type'],
-                      style: TextStyle(color: Color(0xffcfb162)),
-                    ),
-                    SizedBox(
-                      width: 16.0,
-                    ),
-                    Flexible(
-                      child: Text(
-                        company['industry'],
-                        style: TextStyle(color: Color(0xff8ca0b3)),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ],
+                Text(
+                  [company['sector'], company['industryGroup'], company['industry']].where((i) => i != null).join(' | '),
+                  style: TextStyle(color: Color(0xff8ca0b3)),
                 ),
                 SizedBox(
                   height: 16.0,
