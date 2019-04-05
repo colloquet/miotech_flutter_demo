@@ -27,6 +27,7 @@ dependencies:
   image_picker: ^0.5.0+9
   photo_view: ^0.2.2
   timeago: ^2.0.13
+  charts_flutter: ^0.6.0
 
 dev_dependencies:
   flutter_test:
@@ -47,9 +48,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/companies.json
+    - assets/people.json
     - assets/news.json
+    - assets/securities.json
     - assets/bg.jpg
     - assets/logo.jpg
+    - assets/logo-text.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
