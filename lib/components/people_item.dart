@@ -4,7 +4,7 @@ import 'package:miotech_flutter_demo/components/relationship.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class PeopleItem extends StatelessWidget {
-  const PeopleItem({
+  PeopleItem({
     Key key,
     @required this.people,
   }) : super(key: key);

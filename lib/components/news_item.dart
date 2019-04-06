@@ -5,7 +5,7 @@ import 'package:miotech_flutter_demo/components/sentiment_bar.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class NewsItem extends StatelessWidget {
-  const NewsItem({
+  NewsItem({
     Key key,
     @required this.narrative,
   }) : super(key: key);

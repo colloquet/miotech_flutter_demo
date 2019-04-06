@@ -5,7 +5,7 @@ import 'package:miotech_flutter_demo/components/balance_sheet_chart.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class SecurityTabs extends StatefulWidget {
-  const SecurityTabs({
+  SecurityTabs({
     Key key,
   }) : super(key: key);
 
@@ -36,9 +36,10 @@ class _SecurityTabsState extends State<SecurityTabs> {
     return Column(
       children: <Widget>[
         Container(
-          color: MioColors.fifth,
+          color: MioColors.base,
           child: TabBar(
             controller: _tabController,
+            unselectedLabelColor: MioColors.secondary,
             tabs: [
               Tab(text: 'Financials'),
               Tab(text: 'Events'),
@@ -50,12 +51,12 @@ class _SecurityTabsState extends State<SecurityTabs> {
             ? Column(
                 children: <Widget>[
                   Container(
-                    color: MioColors.fifth,
+                    color: MioColors.base,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: EdgeInsets.all(16.0),
                           child: Text(
                             'Income Statement',
                             style: TextStyle(fontSize: 18.0),
@@ -63,7 +64,7 @@ class _SecurityTabsState extends State<SecurityTabs> {
                         ),
                         Divider(height: 0),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: SizedBox(
                             height: 200.0,
                             child: IncomeStatementChart.withSampleData(),
@@ -74,12 +75,12 @@ class _SecurityTabsState extends State<SecurityTabs> {
                   ),
                   SizedBox(height: 8.0),
                   Container(
-                    color: MioColors.fifth,
+                    color: MioColors.base,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: EdgeInsets.all(16.0),
                           child: Text(
                             'Balance Sheet',
                             style: TextStyle(fontSize: 18.0),
@@ -87,7 +88,7 @@ class _SecurityTabsState extends State<SecurityTabs> {
                         ),
                         Divider(height: 0),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: SizedBox(
                             height: 200.0,
                             child: BalanceSheetChart.withSampleData(),
@@ -99,12 +100,12 @@ class _SecurityTabsState extends State<SecurityTabs> {
                 ],
               )
             : Container(
-                color: MioColors.fifth,
+                color: MioColors.base,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.all(16.0),
+                      padding: EdgeInsets.all(16.0),
                       child: Text(
                         'Earning History',
                         style: TextStyle(fontSize: 18.0),
@@ -112,7 +113,7 @@ class _SecurityTabsState extends State<SecurityTabs> {
                     ),
                     Divider(height: 0),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: EarningHistoryTable(),
                     ),
                   ],

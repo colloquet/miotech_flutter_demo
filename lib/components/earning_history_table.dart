@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class EarningHistoryTable extends StatelessWidget {
-  const EarningHistoryTable({
+  EarningHistoryTable({
     Key key,
   }) : super(key: key);
 
@@ -16,8 +16,7 @@ class EarningHistoryTable extends StatelessWidget {
           TableRow(
             decoration: BoxDecoration(
               border: Border(
-                bottom: BorderSide(
-                    color: MioColors.fourth, width: 1),
+                bottom: BorderSide(color: MioColors.fourth, width: 1),
               ),
             ),
             children: [
@@ -72,9 +71,7 @@ class EarningHistoryTable extends StatelessWidget {
               color: MioColors.background,
             ),
             children: [
-              Cell(
-                  text:
-                      'Earnings Significantly Beat Consensus'),
+              Cell(text: 'Earnings Significantly Beat Consensus'),
               Cell(text: '2', right: true),
               Cell(text: '2013-10-29', right: true),
               Cell(
@@ -198,9 +195,7 @@ class EarningHistoryTable extends StatelessWidget {
               color: MioColors.background,
             ),
             children: [
-              Cell(
-                  text:
-                      'Earnings Significantly Miss Consensus'),
+              Cell(text: 'Earnings Significantly Miss Consensus'),
               Cell(text: '0', right: true),
               Cell(text: '-', right: true),
               Cell(text: '-', right: true),
@@ -218,7 +213,7 @@ class EarningHistoryTable extends StatelessWidget {
 }
 
 class Cell extends StatelessWidget {
-  const Cell({
+  Cell({
     Key key,
     this.text,
     this.right = false,

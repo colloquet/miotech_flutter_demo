@@ -3,7 +3,6 @@ import 'package:miotech_flutter_demo/colors.dart';
 
 class PeopleScreen extends StatelessWidget {
   PeopleScreen(this.people);
-
   final people;
 
   @override

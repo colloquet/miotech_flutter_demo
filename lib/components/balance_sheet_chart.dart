@@ -11,7 +11,7 @@ class BalanceSheetChart extends StatefulWidget {
 
   /// Creates a [BarChart] with sample data and no transition.
   factory BalanceSheetChart.withSampleData() {
-    return new BalanceSheetChart(
+    return BalanceSheetChart(
       _createSampleData(),
       // Disable animations for image tests.
       animate: false,
@@ -24,34 +24,34 @@ class BalanceSheetChart extends StatefulWidget {
   /// Create one series with sample hard coded data.
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
-      new OrdinalSales('2013', 20),
-      new OrdinalSales('2014', 25),
-      new OrdinalSales('2015', 35),
-      new OrdinalSales('2016', 30),
-      new OrdinalSales('2017', 40),
-      new OrdinalSales('2018', 45),
-      new OrdinalSales('2019', 75),
+      OrdinalSales('2013', 20),
+      OrdinalSales('2014', 25),
+      OrdinalSales('2015', 35),
+      OrdinalSales('2016', 30),
+      OrdinalSales('2017', 40),
+      OrdinalSales('2018', 45),
+      OrdinalSales('2019', 75),
     ];
 
     final data1 = [
-      new OrdinalSales('2013', 10),
-      new OrdinalSales('2014', 15),
-      new OrdinalSales('2015', 25),
-      new OrdinalSales('2016', 20),
-      new OrdinalSales('2017', 30),
-      new OrdinalSales('2018', 35),
-      new OrdinalSales('2019', 65),
+      OrdinalSales('2013', 10),
+      OrdinalSales('2014', 15),
+      OrdinalSales('2015', 25),
+      OrdinalSales('2016', 20),
+      OrdinalSales('2017', 30),
+      OrdinalSales('2018', 35),
+      OrdinalSales('2019', 65),
     ];
 
     return [
-      new charts.Series<OrdinalSales, String>(
+      charts.Series<OrdinalSales, String>(
         id: 'Sales',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(MioColors.brand),
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: data,
       ),
-      new charts.Series<OrdinalSales, String>(
+      charts.Series<OrdinalSales, String>(
         id: 'Sales',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color(0xb350baf3)),
         domainFn: (OrdinalSales sales, _) => sales.year,
@@ -68,7 +68,7 @@ class _BalanceSheetChartState extends State<BalanceSheetChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 3), () {
       setState(() {
         isLoading = false;
       });
@@ -78,7 +78,7 @@ class _BalanceSheetChartState extends State<BalanceSheetChart> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 100),
+      duration: Duration(milliseconds: 100),
       transitionBuilder: (Widget child, Animation<double> animation) {
         return FadeTransition(
           child: child,

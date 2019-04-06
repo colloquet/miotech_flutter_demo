@@ -39,7 +39,6 @@ class CompanyScreen extends StatelessWidget {
                   style: TextStyle(
                     height: 1.2,
                     fontSize: 16.0,
-                    // color: MioColors.secondary,
                   ),
                 ),
               ],

@@ -5,7 +5,6 @@ import 'package:miotech_flutter_demo/colors.dart';
 
 class NewsScreen extends StatelessWidget {
   NewsScreen(this.narrative);
-
   final narrative;
 
   @override

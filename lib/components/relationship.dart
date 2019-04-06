@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class Relationship extends StatelessWidget {
-  final String type;
-
-  const Relationship({
+  Relationship({
     Key key,
     this.type,
   }) : super(key: key);
+  final String type;
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +19,10 @@ class Relationship extends StatelessWidget {
         ));
       },
       child: Chip(
-        backgroundColor: MioColors.fourth,
+        backgroundColor: MioColors.fifth,
         label: Text(type),
         padding: EdgeInsets.all(0.0),
-        labelStyle: TextStyle(color: MioColors.primary),
+        labelStyle: TextStyle(color: MioColors.secondary),
       ),
     );
   }

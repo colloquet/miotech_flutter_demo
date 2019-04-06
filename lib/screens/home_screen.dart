@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/components/all_list.dart';
 import 'package:miotech_flutter_demo/components/company_list.dart';
 import 'package:miotech_flutter_demo/components/people_list.dart';
 import 'package:miotech_flutter_demo/components/news_list.dart';
@@ -7,30 +8,71 @@ import 'package:miotech_flutter_demo/components/security_list.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class HomeScreen extends StatefulWidget {
+  HomeScreen({
+    this.companyData,
+    this.peopleData,
+    this.newsData,
+    this.securityData,
+  });
+  final companyData;
+  final peopleData;
+  final newsData;
+  final securityData;
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  String _currentTab = 'company';
+  String _currentTab = 'ami';
+  TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController =
+        TabController(vsync: ScrollableState(), initialIndex: 0, length: 5);
+  }
+
+  _handleTabChange(int index) {
+    _tabController.index = index;
+  }
+
+  _handleDrawTabChange(tabKey) {
+    setState(() {
+      _currentTab = tabKey;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    final _handleTabChange = (tabKey) {
-      setState(() {
-        _currentTab = tabKey;
-      });
-    };
-
     return Scaffold(
       appBar: AppBar(
-        title: Text(_currentTab[0].toUpperCase() + _currentTab.substring(1)),
+        title: Text('AMI'),
+        bottom: _currentTab == 'ami'
+            ? TabBar(
+                controller: _tabController,
+                isScrollable: true,
+                unselectedLabelColor: MioColors.secondary,
+                tabs: <Widget>[
+                  Tab(text: 'All'),
+                  Tab(text: 'Company'),
+                  Tab(text: 'People'),
+                  Tab(text: 'News'),
+                  Tab(text: 'Security'),
+                ],
+              )
+            : null,
       ),
       drawer: Drawer(
         child: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 20.0, top: 24.0 + MediaQuery.of(context).padding.top),
+              padding: EdgeInsets.only(
+                  left: 16.0,
+                  right: 16.0,
+                  bottom: 20.0,
+                  top: 24.0 + MediaQuery.of(context).padding.top),
               color: MioColors.fifth,
               child: Row(
                 children: <Widget>[
@@ -67,39 +109,18 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   DrawerItem(
-                    isActive: _currentTab == 'company',
-                    tabKey: 'company',
-                    title: 'Company',
-                    icon: Icons.business,
-                    onTap: _handleTabChange,
-                  ),
-                  DrawerItem(
-                    isActive: _currentTab == 'people',
-                    tabKey: 'people',
-                    title: 'People',
-                    icon: Icons.people,
-                    onTap: _handleTabChange,
-                  ),
-                  DrawerItem(
-                    isActive: _currentTab == 'news',
-                    tabKey: 'news',
-                    title: 'News',
-                    icon: Icons.library_books,
-                    onTap: _handleTabChange,
-                  ),
-                  DrawerItem(
-                    isActive: _currentTab == 'security',
-                    tabKey: 'security',
-                    title: 'Security',
-                    icon: Icons.show_chart,
-                    onTap: _handleTabChange,
+                    isActive: _currentTab == 'ami',
+                    tabKey: 'ami',
+                    title: 'AMI',
+                    icon: Icons.home,
+                    onTap: _handleDrawTabChange,
                   ),
                   DrawerItem(
                     isActive: _currentTab == 'message',
                     tabKey: 'message',
                     title: 'Message',
                     icon: Icons.message,
-                    onTap: _handleTabChange,
+                    onTap: _handleDrawTabChange,
                   ),
                 ],
               ),
@@ -107,35 +128,36 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 300),
-        transitionBuilder: (Widget child, Animation<double> animation) {
-          return FadeTransition(
-            child: child,
-            opacity: animation,
-          );
-        },
-        child: {
-          'company': CompanyList(),
-          'people': PeopleList(),
-          'news': NewsList(),
-          'security': SecurityList(),
-          'message': MessageList(),
-        }[_currentTab],
-      ),
+      body: {
+        'ami': TabBarView(
+          controller: _tabController,
+          children: <Widget>[
+            AllList(
+                companyData: widget.companyData,
+                peopleData: widget.peopleData,
+                newsData: widget.newsData,
+                securityData: widget.securityData,
+                onTabChange: _handleTabChange),
+            CompanyList(data: widget.companyData),
+            PeopleList(data: widget.peopleData),
+            NewsList(data: widget.newsData),
+            SecurityList(data: widget.securityData),
+          ],
+        ),
+        'message': MessageList(),
+      }[_currentTab],
     );
   }
 }
 
 class DrawerItem extends StatelessWidget {
-  const DrawerItem({
+  DrawerItem({
     this.isActive,
     this.tabKey,
     this.title,
     this.onTap,
     this.icon,
   });
-
   final bool isActive;
   final String tabKey;
   final String title;
@@ -148,8 +170,8 @@ class DrawerItem extends StatelessWidget {
       contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
       title: Text(
         title,
-        style:
-            TextStyle(color: isActive ? MioColors.primary : MioColors.secondary),
+        style: TextStyle(
+            color: isActive ? MioColors.primary : MioColors.secondary),
       ),
       leading:
           Icon(icon, color: isActive ? MioColors.primary : MioColors.secondary),

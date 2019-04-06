@@ -4,11 +4,10 @@ import 'package:miotech_flutter_demo/components/relationship.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class CompanyItem extends StatelessWidget {
-  const CompanyItem({
+  CompanyItem({
     Key key,
     @required this.company,
   }) : super(key: key);
-
   final company;
 
   @override
@@ -63,9 +62,7 @@ class CompanyItem extends StatelessWidget {
                       company['type'],
                       style: TextStyle(color: MioColors.brand),
                     ),
-                    SizedBox(
-                      width: 8.0,
-                    ),
+                    SizedBox(width: 8.0),
                     Flexible(
                       child: Text(
                         company['industry'],
@@ -120,7 +117,10 @@ class CompanyItem extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       stops: [0, 1],
-                      colors: <Color>[MioColors.base, MioColors.base.withOpacity(0.0)],
+                      colors: <Color>[
+                        MioColors.base,
+                        MioColors.base.withOpacity(0.0)
+                      ],
                     ),
                   ),
                   height: 32.0,
@@ -135,7 +135,10 @@ class CompanyItem extends StatelessWidget {
                       begin: Alignment.centerRight,
                       end: Alignment.centerLeft,
                       stops: [0, 1],
-                      colors: <Color>[MioColors.base, MioColors.base.withOpacity(0.0)],
+                      colors: <Color>[
+                        MioColors.base,
+                        MioColors.base.withOpacity(0.0)
+                      ],
                     ),
                   ),
                   height: 32.0,
@@ -144,9 +147,7 @@ class CompanyItem extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
-            height: 16.0,
-          )
+          SizedBox(height: 16.0)
         ],
       ),
     );

@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 class SecurityScreen extends StatelessWidget {
   SecurityScreen(this.security);
   final security;
-  final formatter = new DateFormat('yyyy-MM-dd HH:mm:ss');
+  final formatter = DateFormat('yyyy-MM-dd HH:mm:ss');
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class SecurityScreen extends StatelessWidget {
             children: <Widget>[
               SizedBox(height: 8.0),
               Container(
-                color: MioColors.fifth,
+                color: MioColors.base,
                 padding: EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -166,7 +166,7 @@ class SecurityScreen extends StatelessWidget {
               ),
               SizedBox(height: 8.0),
               Container(
-                color: MioColors.fifth,
+                color: MioColors.base,
                 child: Column(
                   children: <Widget>[
                     Stack(
@@ -186,6 +186,7 @@ class SecurityScreen extends StatelessWidget {
                         DefaultTabController(
                           length: 6,
                           child: TabBar(
+                            unselectedLabelColor: MioColors.secondary,
                             tabs: [
                               Tab(text: '1m'),
                               Tab(text: '3m'),
@@ -199,7 +200,7 @@ class SecurityScreen extends StatelessWidget {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: SizedBox(
                         height: 200.0,
                         child: MarketSeriesChart.withSampleData(),

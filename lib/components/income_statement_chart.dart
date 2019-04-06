@@ -11,7 +11,7 @@ class IncomeStatementChart extends StatefulWidget {
 
   /// Creates a [BarChart] with sample data and no transition.
   factory IncomeStatementChart.withSampleData() {
-    return new IncomeStatementChart(
+    return IncomeStatementChart(
       _createSampleData(),
       // Disable animations for image tests.
       animate: false,
@@ -24,17 +24,17 @@ class IncomeStatementChart extends StatefulWidget {
   /// Create one series with sample hard coded data.
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
-      new OrdinalSales('2013', 20),
-      new OrdinalSales('2014', 25),
-      new OrdinalSales('2015', 35),
-      new OrdinalSales('2016', 30),
-      new OrdinalSales('2017', 40),
-      new OrdinalSales('2018', 45),
-      new OrdinalSales('2019', 75),
+      OrdinalSales('2013', 20),
+      OrdinalSales('2014', 25),
+      OrdinalSales('2015', 35),
+      OrdinalSales('2016', 30),
+      OrdinalSales('2017', 40),
+      OrdinalSales('2018', 45),
+      OrdinalSales('2019', 75),
     ];
 
     return [
-      new charts.Series<OrdinalSales, String>(
+      charts.Series<OrdinalSales, String>(
         id: 'Sales',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(MioColors.brand),
         domainFn: (OrdinalSales sales, _) => sales.year,
@@ -51,7 +51,7 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 2), () {
       setState(() {
         isLoading = false;
       });
@@ -61,7 +61,7 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 100),
+      duration: Duration(milliseconds: 100),
       transitionBuilder: (Widget child, Animation<double> animation) {
         return FadeTransition(
           child: child,

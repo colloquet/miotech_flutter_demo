@@ -3,11 +3,10 @@ import 'package:miotech_flutter_demo/colors.dart';
 import 'package:miotech_flutter_demo/screens/security_screen.dart';
 
 class SecurityItem extends StatelessWidget {
-  const SecurityItem({
+  SecurityItem({
     Key key,
     @required this.security,
   }) : super(key: key);
-
   final security;
 
   @override
@@ -35,12 +34,13 @@ class SecurityItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Text(
-                    security['assetIDGroup']['ticker'],
-                    style: TextStyle(fontSize: 18.0),
+                    security['assetIDGroup']['name'],
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(fontSize: 16.0),
                   ),
                   SizedBox(height: 4.0),
                   Text(
-                    security['assetIDGroup']['name'],
+                    security['assetIDGroup']['ticker'],
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(color: MioColors.secondary),
                   ),
