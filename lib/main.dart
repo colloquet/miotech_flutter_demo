@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/login_screen.dart';
 import 'package:miotech_flutter_demo/screens/home_screen.dart';
 import 'package:miotech_flutter_demo/colors.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MiotechDemo());
+void main() async {
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+
+  runApp(MiotechDemo());
+}
 
 class MiotechDemo extends StatefulWidget {
   @override

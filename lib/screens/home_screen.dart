@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 20.0, top: 24.0 + MediaQuery.of(context).padding.bottom),
+              padding: EdgeInsets.only(left: 16.0, right: 16.0, bottom: 20.0, top: 24.0 + MediaQuery.of(context).padding.top),
               color: MioColors.fifth,
               child: Row(
                 children: <Widget>[

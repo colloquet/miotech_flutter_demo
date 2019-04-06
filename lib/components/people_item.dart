@@ -60,18 +60,56 @@ class PeopleItem extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            height: 32.0,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                SizedBox(width: 16.0),
-                Relationship(type: 'Company (As Key Executive)'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Company (As Board Member)'),
-                SizedBox(width: 16.0),
-              ],
-            ),
+          Stack(
+            children: <Widget>[
+              SizedBox(
+                height: 32.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    SizedBox(width: 16.0),
+                    Relationship(type: 'Company (As Key Executive)'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Company (As Board Member)'),
+                    SizedBox(width: 16.0),
+                  ],
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      stops: [0, 1],
+                      colors: <Color>[
+                        MioColors.base,
+                        MioColors.base.withOpacity(0.0)
+                      ],
+                    ),
+                  ),
+                  height: 32.0,
+                  width: 16.0,
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
+                      stops: [0, 1],
+                      colors: <Color>[
+                        MioColors.base,
+                        MioColors.base.withOpacity(0.0)
+                      ],
+                    ),
+                  ),
+                  height: 32.0,
+                  width: 16.0,
+                ),
+              ),
+            ],
           ),
           SizedBox(height: 16.0)
         ],

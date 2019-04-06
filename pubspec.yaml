@@ -28,10 +28,19 @@ dependencies:
   photo_view: ^0.2.2
   timeago: ^2.0.13
   charts_flutter: ^0.6.0
+  flutter_launcher_icons: "^0.7.0"
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: true 
+  ios: true
+  image_path_ios: "assets/ami-logo.png"
+  image_path_android: "assets/ami.png"
+  adaptive_icon_background: "#131926"
+  adaptive_icon_foreground: "assets/ami-logo-android.png"
 
 
 # For information on the generic Dart part of this file, see the
@@ -52,7 +61,6 @@ flutter:
     - assets/news.json
     - assets/securities.json
     - assets/bg.jpg
-    - assets/logo.jpg
     - assets/logo-text.png
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg

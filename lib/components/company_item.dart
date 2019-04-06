@@ -87,30 +87,62 @@ class CompanyItem extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            height: 32.0,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                SizedBox(width: 16.0),
-                Relationship(type: 'Competitor'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Shareholder'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Investor'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Supplier'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Investee'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Branch'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Board member'),
-                SizedBox(width: 8.0),
-                Relationship(type: 'Key executive'),
-                SizedBox(width: 16.0),
-              ],
-            ),
+          Stack(
+            children: <Widget>[
+              SizedBox(
+                height: 32.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    SizedBox(width: 16.0),
+                    Relationship(type: 'Competitor'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Shareholder'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Investor'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Supplier'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Investee'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Branch'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Board member'),
+                    SizedBox(width: 8.0),
+                    Relationship(type: 'Key executive'),
+                    SizedBox(width: 16.0),
+                  ],
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      stops: [0, 1],
+                      colors: <Color>[MioColors.base, MioColors.base.withOpacity(0.0)],
+                    ),
+                  ),
+                  height: 32.0,
+                  width: 16.0,
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.centerRight,
+                      end: Alignment.centerLeft,
+                      stops: [0, 1],
+                      colors: <Color>[MioColors.base, MioColors.base.withOpacity(0.0)],
+                    ),
+                  ),
+                  height: 32.0,
+                  width: 16.0,
+                ),
+              ),
+            ],
           ),
           SizedBox(
             height: 16.0,
