@@ -22,7 +22,7 @@ class Relationship extends StatelessWidget {
         backgroundColor: MioColors.fifth,
         label: Text(type),
         padding: EdgeInsets.all(0.0),
-        labelStyle: TextStyle(color: MioColors.secondary),
+        labelStyle: TextStyle(color: MioColors.primary),
       ),
     );
   }

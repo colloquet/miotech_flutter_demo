@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AMI'),
+        title: _currentTab == 'ami' ? Text('AMI') : Text('Messages'),
         bottom: _currentTab == 'ami'
             ? TabBar(
                 controller: _tabController,
@@ -56,10 +56,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 unselectedLabelColor: MioColors.secondary,
                 tabs: <Widget>[
                   Tab(text: 'All'),
-                  Tab(text: 'Company'),
+                  Tab(text: 'Companies'),
                   Tab(text: 'People'),
-                  Tab(text: 'News'),
-                  Tab(text: 'Security'),
+                  Tab(text: 'Narratives'),
+                  Tab(text: 'Securities'),
                 ],
               )
             : null,
