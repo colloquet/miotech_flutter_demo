@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/message_screen.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 var _names = [
   'Zonia Sedlak',

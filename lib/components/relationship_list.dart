@@ -16,7 +16,7 @@ class RelationshipList extends StatelessWidget {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [Colors.transparent, Colors.black],
-        ).createShader(Rect.fromLTWH(0, 0, 16, 32));
+        ).createShader(Rect.fromLTWH(0, 0, 16, rect.height));
       },
       blendMode: BlendMode.dstIn,
       child: ShaderMask(
@@ -25,7 +25,7 @@ class RelationshipList extends StatelessWidget {
             begin: Alignment.centerRight,
             end: Alignment.centerLeft,
             colors: [Colors.transparent, Colors.black],
-          ).createShader(Rect.fromLTWH(rect.width - 16, 0, 16, 32));
+          ).createShader(Rect.fromLTWH(rect.width - 16, 0, 16, rect.height));
         },
         blendMode: BlendMode.dstIn,
         child: SizedBox(

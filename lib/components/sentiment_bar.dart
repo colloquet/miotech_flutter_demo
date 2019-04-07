@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SentimentBar extends StatelessWidget {
   SentimentBar({
@@ -7,6 +7,7 @@ class SentimentBar extends StatelessWidget {
     @required this.narrative,
   }) : super(key: key);
   final narrative;
+  final _width = 76.0;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class SentimentBar extends StatelessWidget {
         SizedBox(width: 8.0),
         Container(
           height: 10.0,
-          width: 76.0,
+          width: _width,
           decoration: BoxDecoration(
             color: MioColors.fourth,
             borderRadius: BorderRadius.circular(2.0),
@@ -33,7 +34,7 @@ class SentimentBar extends StatelessWidget {
             children: <Widget>[
               Container(
                 height: 10.0,
-                width: narrative['sentimentScore'].abs() * 76.0,
+                width: narrative['sentimentScore'].abs() * _width,
                 decoration: BoxDecoration(
                   color: _backgroundColor,
                   borderRadius: BorderRadius.circular(2.0),

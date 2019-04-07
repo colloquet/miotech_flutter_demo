@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/colors.dart';
 import 'dart:math' as math;
+import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   _SliverAppBarDelegate({
@@ -78,8 +78,10 @@ class PeopleScreen extends StatelessWidget {
                   elevation: 4.0,
                   child: Padding(
                     padding: EdgeInsets.all(16.0),
-                    child: Text('Work Experiences',
-                        style: TextStyle(color: MioColors.secondary)),
+                    child: Text(
+                      'Work Experiences',
+                      style: TextStyle(color: MioColors.secondary),
+                    ),
                   ),
                 ),
               ),
@@ -109,10 +111,8 @@ class PeopleScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       border: Border(left: BorderSide(color: _borderColor)),
                       gradient: LinearGradient(
-                        // Where the linear gradient begins and ends
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
-                        // Add one stop for each color. Stops should increase from 0 to 1
                         stops: [0.1, 0.9],
                         colors: _isCurrent
                             ? [

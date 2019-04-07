@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class Message {
   Message({this.id, this.text, this.isSelf, this.type, this.image});

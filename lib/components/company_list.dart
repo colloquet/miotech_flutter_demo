@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/components/company_item.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class CompanyList extends StatelessWidget {
   CompanyList({

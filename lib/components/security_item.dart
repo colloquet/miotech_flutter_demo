@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/screens/security_screen.dart';
 
 class SecurityItem extends StatelessWidget {

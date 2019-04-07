@@ -1,7 +1,7 @@
 /// Bar chart example
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class IncomeStatementChart extends StatefulWidget {
   final List<charts.Series> seriesList;
@@ -9,11 +9,9 @@ class IncomeStatementChart extends StatefulWidget {
 
   IncomeStatementChart(this.seriesList, {this.animate});
 
-  /// Creates a [BarChart] with sample data and no transition.
   factory IncomeStatementChart.withSampleData() {
     return IncomeStatementChart(
       _createSampleData(),
-      // Disable animations for image tests.
       animate: false,
     );
   }
@@ -21,7 +19,6 @@ class IncomeStatementChart extends StatefulWidget {
   @override
   _IncomeStatementChartState createState() => _IncomeStatementChartState();
 
-  /// Create one series with sample hard coded data.
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
       OrdinalSales('2013', 20),
@@ -96,7 +93,6 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
   }
 }
 
-/// Sample ordinal data type.
 class OrdinalSales {
   final String year;
   final int sales;

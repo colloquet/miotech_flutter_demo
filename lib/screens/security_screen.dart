@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/components/market_series_chart.dart';
-import 'package:miotech_flutter_demo/components/security_tabs.dart';
-import 'package:miotech_flutter_demo/colors.dart';
 import 'package:intl/intl.dart';
+import 'package:miotech_flutter_demo/components/charts/market_series_chart.dart';
+import 'package:miotech_flutter_demo/components/security_tabs.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SecurityScreen extends StatelessWidget {
   SecurityScreen(this.security);

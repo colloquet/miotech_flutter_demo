@@ -1,10 +1,9 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class CompanyScreen extends StatelessWidget {
   CompanyScreen(this.company);
-
   final company;
 
   @override

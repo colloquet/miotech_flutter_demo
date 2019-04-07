@@ -1,10 +1,9 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:miotech_flutter_demo/screens/login_screen.dart';
 import 'package:miotech_flutter_demo/screens/home_screen.dart';
-import 'package:miotech_flutter_demo/colors.dart';
-import 'package:flutter/services.dart';
-import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 var _companyData;
 var _peopleData;

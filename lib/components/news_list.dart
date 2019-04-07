@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/components/news_item.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class NewsList extends StatelessWidget {
   NewsList({

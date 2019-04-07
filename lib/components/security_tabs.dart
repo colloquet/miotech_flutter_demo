@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/components/income_statement_chart.dart';
 import 'package:miotech_flutter_demo/components/earning_history_table.dart';
-import 'package:miotech_flutter_demo/components/balance_sheet_chart.dart';
-import 'package:miotech_flutter_demo/components/cashflow_statement_chart.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/components/charts/income_statement_chart.dart';
+import 'package:miotech_flutter_demo/components/charts/balance_sheet_chart.dart';
+import 'package:miotech_flutter_demo/components/charts/cashflow_statement_chart.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SecurityTabs extends StatefulWidget {
   SecurityTabs({
@@ -52,75 +52,80 @@ class _SecurityTabsState extends State<SecurityTabs>
           ),
         ),
         SizedBox(height: 8.0),
-        _currentTabIndex == 0
-            ? Column(
-                children: <Widget>[
-                  Container(
-                    color: MioColors.base,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        PanelHeader(title: 'Income Statement'),
-                        // Divider(height: 0),
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: SizedBox(
-                            height: 200.0,
-                            child: IncomeStatementChart.withSampleData(),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 8.0),
-                  Container(
-                    color: MioColors.base,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        PanelHeader(title: 'Balance Sheet'),
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: SizedBox(
-                            height: 200.0,
-                            child: BalanceSheetChart.withSampleData(),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 8.0),
-                  Container(
-                    color: MioColors.base,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        PanelHeader(title: 'Cashflow Statement'),
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: SizedBox(
-                            height: 200.0,
-                            child: CashflowStatementChart.withSampleData(),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              )
-            : Container(
+        AnimatedCrossFade(
+          duration: Duration(milliseconds: 200),
+          firstChild: Column(
+            children: <Widget>[
+              Container(
                 color: MioColors.base,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    PanelHeader(title: 'Earning History'),
+                    PanelHeader(title: 'Income Statement'),
+                    // Divider(height: 0),
                     Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: EarningHistoryTable(),
+                      child: SizedBox(
+                        height: 200.0,
+                        child: IncomeStatementChart.withSampleData(),
+                      ),
                     ),
                   ],
                 ),
               ),
+              SizedBox(height: 8.0),
+              Container(
+                color: MioColors.base,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    PanelHeader(title: 'Balance Sheet'),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 200.0,
+                        child: BalanceSheetChart.withSampleData(),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 8.0),
+              Container(
+                color: MioColors.base,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    PanelHeader(title: 'Cashflow Statement'),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: 200.0,
+                        child: CashflowStatementChart.withSampleData(),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          secondChild: Container(
+            color: MioColors.base,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                PanelHeader(title: 'Earning History'),
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: EarningHistoryTable(),
+                ),
+              ],
+            ),
+          ),
+          crossFadeState: _currentTabIndex == 0
+              ? CrossFadeState.showFirst
+              : CrossFadeState.showSecond,
+        ),
       ],
     );
   }

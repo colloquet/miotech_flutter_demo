@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:miotech_flutter_demo/components/sentiment_bar.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class NewsScreen extends StatelessWidget {
   NewsScreen(this.narrative);
@@ -26,9 +26,7 @@ class NewsScreen extends StatelessWidget {
                       narrative['eventType'],
                       style: TextStyle(color: MioColors.brand),
                     ),
-                    SizedBox(
-                      width: 16.0,
-                    ),
+                    SizedBox(width: 16.0),
                     Expanded(
                       child: Text(
                         narrative['source'],
@@ -38,25 +36,20 @@ class NewsScreen extends StatelessWidget {
                     ),
                     SizedBox(width: 16.0),
                     Text(
-                      timeago.format(DateTime.fromMillisecondsSinceEpoch(int.parse(narrative['timestamp']))),
+                      timeago.format(DateTime.fromMillisecondsSinceEpoch(
+                          int.parse(narrative['timestamp']))),
                       style: TextStyle(color: MioColors.secondary),
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 Text(
                   narrative['title'],
                   style: TextStyle(fontSize: 24.0),
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 SentimentBar(narrative: narrative),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 Text(
                   narrative['abstract'],
                   style: TextStyle(
@@ -66,9 +59,7 @@ class NewsScreen extends StatelessWidget {
                     fontSize: 16.0,
                   ),
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 Text(
                   narrative['content'].replaceAll('<br>', '\n'),
                   style: TextStyle(

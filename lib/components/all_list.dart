@@ -4,9 +4,9 @@ import 'package:miotech_flutter_demo/components/security_item.dart';
 import 'package:miotech_flutter_demo/components/news_item.dart';
 import 'package:miotech_flutter_demo/components/people_item.dart';
 import 'package:miotech_flutter_demo/components/relationship_list.dart';
-import 'package:miotech_flutter_demo/components/top_card_market_chart.dart';
+import 'package:miotech_flutter_demo/components/charts/top_card_market_chart.dart';
 import 'package:miotech_flutter_demo/screens/company_screen.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class AllList extends StatelessWidget {
   AllList({
@@ -93,17 +93,25 @@ class AllList extends StatelessWidget {
                           Text(
                             'FB',
                             style: TextStyle(
-                                fontSize: 18.0, color: MioColors.secondary),
+                              fontSize: 18.0,
+                              color: MioColors.secondary,
+                            ),
                           ),
                           SizedBox(width: 8.0),
                           Text(
                             'NSQ',
-                            style: TextStyle(color: MioColors.secondary, fontSize: 12.0),
+                            style: TextStyle(
+                              color: MioColors.secondary,
+                              fontSize: 12.0,
+                            ),
                           ),
                           SizedBox(width: 8.0),
                           Text(
                             '2019-04-05 8:00 AM',
-                            style: TextStyle(color: MioColors.secondary, fontSize: 12.0),
+                            style: TextStyle(
+                              color: MioColors.secondary,
+                              fontSize: 12.0,
+                            ),
                           ),
                         ],
                       ),
@@ -144,8 +152,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'Close',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '176.02',
@@ -161,8 +170,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'Open',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '176.88',
@@ -185,8 +195,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'High',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '177.00',
@@ -202,8 +213,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'Low',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '175.10',
@@ -226,8 +238,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'Volume',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '9.59M',
@@ -243,8 +256,9 @@ class AllList extends StatelessWidget {
                                     Text(
                                       'Capital',
                                       style: TextStyle(
-                                          color: MioColors.secondary,
-                                          fontSize: 12.0),
+                                        color: MioColors.secondary,
+                                        fontSize: 12.0,
+                                      ),
                                     ),
                                     Text(
                                       '502.36B',

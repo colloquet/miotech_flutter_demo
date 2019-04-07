@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/company_screen.dart';
 import 'package:miotech_flutter_demo/components/relationship_list.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 var relationships = [
   'Competitor',

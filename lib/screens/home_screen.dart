@@ -5,7 +5,7 @@ import 'package:miotech_flutter_demo/components/people_list.dart';
 import 'package:miotech_flutter_demo/components/news_list.dart';
 import 'package:miotech_flutter_demo/components/message_list.dart';
 import 'package:miotech_flutter_demo/components/security_list.dart';
-import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({
