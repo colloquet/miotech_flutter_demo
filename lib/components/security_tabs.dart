@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/components/income_statement_chart.dart';
 import 'package:miotech_flutter_demo/components/earning_history_table.dart';
 import 'package:miotech_flutter_demo/components/balance_sheet_chart.dart';
+import 'package:miotech_flutter_demo/components/cashflow_statement_chart.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
 class SecurityTabs extends StatefulWidget {
@@ -92,6 +93,30 @@ class _SecurityTabsState extends State<SecurityTabs> {
                           child: SizedBox(
                             height: 200.0,
                             child: BalanceSheetChart.withSampleData(),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 8.0),
+                  Container(
+                    color: MioColors.base,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: Text(
+                            'Cashflow Statement',
+                            style: TextStyle(fontSize: 18.0),
+                          ),
+                        ),
+                        Divider(height: 0),
+                        Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: SizedBox(
+                            height: 200.0,
+                            child: CashflowStatementChart.withSampleData(),
                           ),
                         ),
                       ],

@@ -3,15 +3,15 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
-class BalanceSheetChart extends StatefulWidget {
+class CashflowStatementChart extends StatefulWidget {
   final List<charts.Series> seriesList;
   final bool animate;
 
-  BalanceSheetChart(this.seriesList, {this.animate});
+  CashflowStatementChart(this.seriesList, {this.animate});
 
   /// Creates a [BarChart] with sample data and no transition.
-  factory BalanceSheetChart.withSampleData() {
-    return BalanceSheetChart(
+  factory CashflowStatementChart.withSampleData() {
+    return CashflowStatementChart(
       _createSampleData(),
       // Disable animations for image tests.
       animate: false,
@@ -19,28 +19,18 @@ class BalanceSheetChart extends StatefulWidget {
   }
 
   @override
-  _BalanceSheetChartState createState() => _BalanceSheetChartState();
+  _CashflowStatementChartState createState() => _CashflowStatementChartState();
 
   /// Create one series with sample hard coded data.
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
-      OrdinalSales('2013', 20),
-      OrdinalSales('2014', 25),
-      OrdinalSales('2015', 35),
-      OrdinalSales('2016', 30),
-      OrdinalSales('2017', 40),
-      OrdinalSales('2018', 45),
-      OrdinalSales('2019', 75),
-    ];
-
-    final data1 = [
       OrdinalSales('2013', 10),
       OrdinalSales('2014', 15),
-      OrdinalSales('2015', 25),
-      OrdinalSales('2016', 20),
-      OrdinalSales('2017', 30),
-      OrdinalSales('2018', 35),
-      OrdinalSales('2019', 65),
+      OrdinalSales('2015', 45),
+      OrdinalSales('2016', 35),
+      OrdinalSales('2017', 45),
+      OrdinalSales('2018', 65),
+      OrdinalSales('2019', 70),
     ];
 
     return [
@@ -50,19 +40,12 @@ class BalanceSheetChart extends StatefulWidget {
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: data,
-      ),
-      charts.Series<OrdinalSales, String>(
-        id: 'Sales',
-        colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color(0xb350baf3)),
-        domainFn: (OrdinalSales sales, _) => sales.year,
-        measureFn: (OrdinalSales sales, _) => sales.sales,
-        data: data1,
-      ),
+      )
     ];
   }
 }
 
-class _BalanceSheetChartState extends State<BalanceSheetChart> {
+class _CashflowStatementChartState extends State<CashflowStatementChart> {
   bool isLoading = true;
 
   @override

@@ -35,7 +35,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   _handleTabChange(int index) {
-    _tabController.index = index;
+    // _tabController.index = index;
+    _tabController.animateTo(index);
   }
 
   _handleDrawTabChange(tabKey) {
@@ -69,10 +70,11 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             Container(
               padding: EdgeInsets.only(
-                  left: 16.0,
-                  right: 16.0,
-                  bottom: 20.0,
-                  top: 24.0 + MediaQuery.of(context).padding.top),
+                left: 16.0,
+                right: 16.0,
+                bottom: 20.0,
+                top: 24.0 + MediaQuery.of(context).padding.top,
+              ),
               color: MioColors.fifth,
               child: Row(
                 children: <Widget>[
@@ -133,11 +135,12 @@ class _HomeScreenState extends State<HomeScreen> {
           controller: _tabController,
           children: <Widget>[
             AllList(
-                companyData: widget.companyData,
-                peopleData: widget.peopleData,
-                newsData: widget.newsData,
-                securityData: widget.securityData,
-                onTabChange: _handleTabChange),
+              companyData: widget.companyData,
+              peopleData: widget.peopleData,
+              newsData: widget.newsData,
+              securityData: widget.securityData,
+              onTabChange: _handleTabChange,
+            ),
             CompanyList(data: widget.companyData),
             PeopleList(data: widget.peopleData),
             NewsList(data: widget.newsData),
