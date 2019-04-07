@@ -44,11 +44,11 @@ class _MiotechDemoState extends State<MiotechDemo> {
     return MaterialApp(
         title: 'MioTech Demo',
         theme: ThemeData(
-          primaryColor: MioColors.fifth,
+          primaryColor: MioColors.base,
           accentColor: MioColors.secondary,
           scaffoldBackgroundColor: MioColors.background,
           canvasColor: MioColors.base,
-          splashColor: MioColors.fifth,
+          splashColor: MioColors.fourth,
           highlightColor: MioColors.fifth,
           indicatorColor: MioColors.primary,
           primaryIconTheme: IconThemeData(

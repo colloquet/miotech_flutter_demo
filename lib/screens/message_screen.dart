@@ -4,6 +4,19 @@ import 'package:image_picker/image_picker.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:miotech_flutter_demo/colors.dart';
 
+class Message {
+  Message({this.id, this.text, this.isSelf, this.type, this.image});
+  int id;
+  String text;
+  bool isSelf;
+  String type;
+  ImageProvider image;
+
+  bool get isImage {
+    return type == 'image';
+  }
+}
+
 class MessageScreen extends StatefulWidget {
   MessageScreen({this.conversation});
   final conversation;
@@ -14,66 +27,48 @@ class MessageScreen extends StatefulWidget {
 
 class _MessageScreenState extends State<MessageScreen> {
   final messages = [
-    {
-      'text': 'Me too!',
-      'isSelf': false,
-      'type': 'text',
-    },
-    {
-      'image': AssetImage('assets/bg.jpg'),
-      'isSelf': false,
-      'type': 'image',
-    },
-    {
-      'text': 'I love MioTech!',
-      'isSelf': true,
-      'type': 'text',
-    },
-    {
-      'text': 'Hi',
-      'isSelf': false,
-      'type': 'text',
-    },
-    {
-      'text': 'Hi',
-      'isSelf': true,
-      'type': 'text',
-    },
+    Message(
+      text: 'Me too!',
+      isSelf: false,
+      type: 'text',
+    ),
+    Message(
+      image: AssetImage('assets/bg.jpg'),
+      isSelf: false,
+      type: 'image',
+    ),
+    Message(
+      text: 'I love MioTech!',
+      isSelf: true,
+      type: 'text',
+    ),
+    Message(
+      text: 'Hi',
+      isSelf: false,
+      type: 'text',
+    ),
+    Message(
+      text: 'Hi',
+      isSelf: true,
+      type: 'text',
+    ),
   ];
 
   int imageId = 0;
 
-  Future sendImageFromGallery() async {
+  Future sendImage(source) async {
     try {
-      final image = await ImagePicker.pickImage(source: ImageSource.gallery);
+      final image = await ImagePicker.pickImage(source: source);
 
       if (image != null) {
+        var _message = Message(
+          id: imageId++,
+          image: FileImage(image),
+          isSelf: true,
+          type: 'image',
+        );
         setState(() {
-          messages.insert(0, {
-            'id': imageId++,
-            'image': FileImage(image),
-            'isSelf': true,
-            'type': 'image',
-          });
-        });
-      }
-    } catch (e) {
-      print(e.toString());
-    }
-  }
-
-  Future sendImageFromCamera() async {
-    try {
-      final image = await ImagePicker.pickImage(source: ImageSource.camera);
-
-      if (image != null) {
-        setState(() {
-          messages.insert(0, {
-            'id': imageId++,
-            'image': FileImage(image),
-            'isSelf': true,
-            'type': 'image',
-          });
+          messages.insert(0, _message);
         });
       }
     } catch (e) {
@@ -83,12 +78,13 @@ class _MessageScreenState extends State<MessageScreen> {
 
   sendMessage(text) {
     if (text.trim() != '') {
+      var _message = Message(
+        text: text,
+        isSelf: true,
+        type: 'text',
+      );
       setState(() {
-        messages.insert(0, {
-          'text': text,
-          'isSelf': true,
-          'type': 'text',
-        });
+        messages.insert(0, _message);
       });
       textEditingController.clear();
     }
@@ -117,7 +113,6 @@ class _MessageScreenState extends State<MessageScreen> {
                 children: messages.map((message) {
                   return MessageItem(
                     message: message,
-                    isSelf: message['isSelf'],
                   );
                 }).toList(),
               ),
@@ -145,7 +140,7 @@ class _MessageScreenState extends State<MessageScreen> {
                                   leading: Icon(Icons.image),
                                   title: Text('Photo album'),
                                   onTap: () {
-                                    sendImageFromGallery();
+                                    sendImage(ImageSource.gallery);
                                     Navigator.pop(context);
                                   },
                                 ),
@@ -153,7 +148,7 @@ class _MessageScreenState extends State<MessageScreen> {
                                   leading: Icon(Icons.camera_alt),
                                   title: Text('Camera'),
                                   onTap: () {
-                                    sendImageFromCamera();
+                                    sendImage(ImageSource.camera);
                                     Navigator.pop(context);
                                   },
                                 ),
@@ -217,73 +212,101 @@ class _MessageScreenState extends State<MessageScreen> {
 }
 
 class MessageItem extends StatelessWidget {
-  MessageItem({Key key, this.isSelf, this.message}) : super(key: key);
-  final Map message;
-  final bool isSelf;
+  MessageItem({Key key, this.message}) : super(key: key);
+  final Message message;
 
   @override
   Widget build(BuildContext context) {
-    final _backgroundColor = isSelf && message['type'] != 'image'
-        ? MioColors.primary
-        : MioColors.fifth;
-    final _textColor = isSelf ? MioColors.background : MioColors.primary;
-    final _padding = message['type'] == 'image'
-        ? EdgeInsets.all(0.0)
-        : EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0);
-
     return Row(
       mainAxisAlignment:
-          isSelf ? MainAxisAlignment.end : MainAxisAlignment.start,
+          message.isSelf ? MainAxisAlignment.end : MainAxisAlignment.start,
       children: <Widget>[
-        Container(
-          decoration: BoxDecoration(
-            color: _backgroundColor,
-            borderRadius: BorderRadius.circular(4.0),
-          ),
-          padding: _padding,
-          margin: EdgeInsets.symmetric(vertical: 4.0),
-          child: message['type'] == 'image'
-              ? GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (context, animation, secondAnimation) {
-                          return FadeTransition(
-                            opacity: animation,
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.pop(context);
-                              },
-                              child: PhotoView(
-                                transitionOnUserGestures: true,
-                                imageProvider: message['image'],
-                                heroTag: 'image-' + message['id'].toString(),
-                                minScale: PhotoViewComputedScale.contained,
-                                maxScale: PhotoViewComputedScale.covered,
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    );
-                  },
-                  child: SizedBox(
-                    width: 150.0,
-                    child: Hero(
-                      tag: 'image-' + message['id'].toString(),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(4.0),
-                        child: Image(image: message['image']),
-                      ),
-                    ),
-                  ))
-              : Text(
-                  message['text'],
-                  style: TextStyle(color: _textColor, fontSize: 16.0),
-                ),
-        ),
+        message.isImage
+            ? ImageMessage(message: message)
+            : TextMessage(message: message),
       ],
     );
+  }
+}
+
+class TextMessage extends StatelessWidget {
+  TextMessage({
+    Key key,
+    @required this.message,
+  }) : super(key: key);
+
+  final Message message;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: message.isSelf ? MioColors.primary : MioColors.fifth,
+        borderRadius: BorderRadius.circular(4.0),
+      ),
+      padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+      margin: EdgeInsets.symmetric(vertical: 4.0),
+      child: Text(
+        message.text,
+        style: TextStyle(
+            color: message.isSelf ? MioColors.background : MioColors.primary,
+            fontSize: 16.0),
+      ),
+    );
+  }
+}
+
+class ImageMessage extends StatelessWidget {
+  const ImageMessage({
+    Key key,
+    @required this.message,
+  }) : super(key: key);
+
+  final Message message;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            PageRouteBuilder(
+              pageBuilder: (context, animation, secondAnimation) {
+                return FadeTransition(
+                  opacity: animation,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: PhotoView(
+                      transitionOnUserGestures: true,
+                      imageProvider: message.image,
+                      heroTag: 'image-' + message.id.toString(),
+                      minScale: PhotoViewComputedScale.contained,
+                      maxScale: PhotoViewComputedScale.covered,
+                    ),
+                  ),
+                );
+              },
+            ),
+          );
+        },
+        child: Container(
+          decoration: BoxDecoration(
+            color: MioColors.fifth,
+            borderRadius: BorderRadius.circular(4.0),
+          ),
+          margin: EdgeInsets.symmetric(vertical: 4.0),
+          child: SizedBox(
+            width: 150.0,
+            child: Hero(
+              tag: 'image-' + message.id.toString(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(4.0),
+                child: Image(image: message.image),
+              ),
+            ),
+          ),
+        ));
   }
 }

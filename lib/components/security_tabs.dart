@@ -14,7 +14,8 @@ class SecurityTabs extends StatefulWidget {
   _SecurityTabsState createState() => _SecurityTabsState();
 }
 
-class _SecurityTabsState extends State<SecurityTabs> {
+class _SecurityTabsState extends State<SecurityTabs>
+    with TickerProviderStateMixin {
   TabController _tabController;
   int _currentTabIndex = 0;
 
@@ -22,7 +23,10 @@ class _SecurityTabsState extends State<SecurityTabs> {
   void initState() {
     super.initState();
     _tabController = TabController(
-        vsync: ScrollableState(), initialIndex: _currentTabIndex, length: 2);
+      vsync: this,
+      initialIndex: _currentTabIndex,
+      length: 2,
+    );
     _tabController.addListener(_handleTabChange);
   }
 
@@ -54,16 +58,10 @@ class _SecurityTabsState extends State<SecurityTabs> {
                   Container(
                     color: MioColors.base,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: Text(
-                            'Income Statement',
-                            style: TextStyle(fontSize: 18.0),
-                          ),
-                        ),
-                        Divider(height: 0),
+                        PanelHeader(title: 'Income Statement'),
+                        // Divider(height: 0),
                         Padding(
                           padding: EdgeInsets.all(8.0),
                           child: SizedBox(
@@ -78,16 +76,9 @@ class _SecurityTabsState extends State<SecurityTabs> {
                   Container(
                     color: MioColors.base,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: Text(
-                            'Balance Sheet',
-                            style: TextStyle(fontSize: 18.0),
-                          ),
-                        ),
-                        Divider(height: 0),
+                        PanelHeader(title: 'Balance Sheet'),
                         Padding(
                           padding: EdgeInsets.all(8.0),
                           child: SizedBox(
@@ -102,16 +93,9 @@ class _SecurityTabsState extends State<SecurityTabs> {
                   Container(
                     color: MioColors.base,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: Text(
-                            'Cashflow Statement',
-                            style: TextStyle(fontSize: 18.0),
-                          ),
-                        ),
-                        Divider(height: 0),
+                        PanelHeader(title: 'Cashflow Statement'),
                         Padding(
                           padding: EdgeInsets.all(8.0),
                           child: SizedBox(
@@ -127,16 +111,9 @@ class _SecurityTabsState extends State<SecurityTabs> {
             : Container(
                 color: MioColors.base,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(16.0),
-                      child: Text(
-                        'Earning History',
-                        style: TextStyle(fontSize: 18.0),
-                      ),
-                    ),
-                    Divider(height: 0),
+                    PanelHeader(title: 'Earning History'),
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: EarningHistoryTable(),
@@ -145,6 +122,23 @@ class _SecurityTabsState extends State<SecurityTabs> {
                 ),
               ),
       ],
+    );
+  }
+}
+
+class PanelHeader extends StatelessWidget {
+  PanelHeader({
+    Key key,
+    this.title,
+  }) : super(key: key);
+  final title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(16.0),
+      color: MioColors.base,
+      child: Text(title),
     );
   }
 }

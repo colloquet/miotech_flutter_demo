@@ -51,7 +51,7 @@ class _CashflowStatementChartState extends State<CashflowStatementChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 1), () {
       setState(() {
         isLoading = false;
       });

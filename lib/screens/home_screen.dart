@@ -23,15 +23,14 @@ class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String _currentTab = 'ami';
   TabController _tabController;
 
   @override
   void initState() {
     super.initState();
-    _tabController =
-        TabController(vsync: ScrollableState(), initialIndex: 0, length: 5);
+    _tabController = TabController(vsync: this, initialIndex: 0, length: 5);
   }
 
   _handleTabChange(int index) {
