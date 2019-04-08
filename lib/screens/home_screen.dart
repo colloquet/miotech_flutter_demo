@@ -6,6 +6,7 @@ import 'package:miotech_flutter_demo/components/news_list.dart';
 import 'package:miotech_flutter_demo/components/message_list.dart';
 import 'package:miotech_flutter_demo/components/security_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/ami_icons.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({
@@ -113,14 +114,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     isActive: _currentTab == 'ami',
                     tabKey: 'ami',
                     title: 'AMI',
-                    icon: Icons.home,
+                    icon: AmiIcons.ami_logo,
                     onTap: _handleDrawTabChange,
                   ),
                   DrawerItem(
                     isActive: _currentTab == 'message',
                     tabKey: 'message',
                     title: 'Message',
-                    icon: Icons.message,
+                    icon: Icons.chat_bubble,
                     onTap: _handleDrawTabChange,
                   ),
                 ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:miotech_flutter_demo/components/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class BalanceSheetChart extends StatefulWidget {
@@ -82,7 +83,7 @@ class _BalanceSheetChartState extends State<BalanceSheetChart> {
         );
       },
       child: isLoading
-          ? Center(child: CircularProgressIndicator())
+          ? Center(child: Spinner())
           : charts.BarChart(
               widget.seriesList,
               animate: widget.animate,

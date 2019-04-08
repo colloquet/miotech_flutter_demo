@@ -1,6 +1,7 @@
 /// Bar chart example
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/components/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class IncomeStatementChart extends StatefulWidget {
@@ -66,7 +67,7 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
         );
       },
       child: isLoading
-          ? Center(child: CircularProgressIndicator())
+          ? Center(child: Spinner())
           : charts.BarChart(
               widget.seriesList,
               animate: widget.animate,

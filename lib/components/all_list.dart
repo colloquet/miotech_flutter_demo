@@ -6,6 +6,7 @@ import 'package:miotech_flutter_demo/components/people_item.dart';
 import 'package:miotech_flutter_demo/components/relationship_list.dart';
 import 'package:miotech_flutter_demo/components/charts/top_card_market_chart.dart';
 import 'package:miotech_flutter_demo/screens/company_screen.dart';
+import 'package:miotech_flutter_demo/screens/security_screen.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class AllList extends StatelessWidget {
@@ -35,54 +36,68 @@ class AllList extends StatelessWidget {
             borderRadius: BorderRadius.circular(8.0),
           ),
           color: MioColors.base,
-          child: InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        CompanyScreen(companyData[0]['company'])),
-              );
-            },
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Container(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      Text(
-                        'Facebook',
-                        style: TextStyle(fontSize: 24.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            CompanyScreen(companyData[0]['company'])),
+                  );
+                },
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          Text(
+                            'Facebook',
+                            style: TextStyle(fontSize: 24.0),
+                          ),
+                          SizedBox(height: 8.0),
+                          Text(
+                            'Information Technology | Software and Services | Interactive Media and Services',
+                            style: TextStyle(color: MioColors.secondary),
+                          ),
+                          SizedBox(height: 8.0),
+                          Text(
+                            'Facebook, Inc. engages in building products that enable people to connect and share with friends and family through mobile devices, personal computers, and other surfaces. The company helps people discover and learn about what is going on in the world around them; and enables people to share their opinions, ideas, photos and videos, and other activities...',
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ],
                       ),
-                      SizedBox(height: 8.0),
-                      Text(
-                        'Information Technology | Software and Services | Interactive Media and Services',
-                        style: TextStyle(color: MioColors.secondary),
-                      ),
-                      SizedBox(height: 8.0),
-                      Text(
-                        'Facebook, Inc. engages in building products that enable people to connect and share with friends and family through mobile devices, personal computers, and other surfaces. The company helps people discover and learn about what is going on in the world around them; and enables people to share their opinions, ideas, photos and videos, and other activities...',
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ],
-                  ),
+                    ),
+                    RelationshipList(relationships: [
+                      'Competitor',
+                      'Shareholder',
+                      'Investor',
+                      'Supplier',
+                      'Investee',
+                      'Branch',
+                      'Board member',
+                      'Key executive',
+                    ]),
+                    SizedBox(height: 16.0),
+                  ],
                 ),
-                RelationshipList(relationships: [
-                  'Competitor',
-                  'Shareholder',
-                  'Investor',
-                  'Supplier',
-                  'Investee',
-                  'Branch',
-                  'Board member',
-                  'Key executive',
-                ]),
-                SizedBox(height: 16.0),
-                Divider(height: 1),
-                Padding(
+              ),
+              Divider(height: 1),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            SecurityScreen(securityData[0]['security'])),
+                  );
+                },
+                child: Padding(
                   padding: EdgeInsets.all(16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -278,31 +293,31 @@ class AllList extends StatelessWidget {
                     ],
                   ),
                 ),
-                Divider(height: 1),
-                Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      Text('Competitors'),
-                      SizedBox(height: 8.0),
-                      Row(
-                        children: <Widget>[
-                          Text('Vivendi SA',
-                              style: TextStyle(color: MioColors.brand)),
-                          SizedBox(width: 8.0),
-                          Text('Walmart Inc.',
-                              style: TextStyle(color: MioColors.brand)),
-                          SizedBox(width: 8.0),
-                          Text('EFactor Group Corp.',
-                              style: TextStyle(color: MioColors.brand)),
-                        ],
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
+              ),
+              Divider(height: 1),
+              Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Text('Competitors'),
+                    SizedBox(height: 8.0),
+                    Row(
+                      children: <Widget>[
+                        Text('Vivendi SA',
+                            style: TextStyle(color: MioColors.brand)),
+                        SizedBox(width: 8.0),
+                        Text('Walmart Inc.',
+                            style: TextStyle(color: MioColors.brand)),
+                        SizedBox(width: 8.0),
+                        Text('EFactor Group Corp.',
+                            style: TextStyle(color: MioColors.brand)),
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            ],
           ),
         ),
         Panel(
