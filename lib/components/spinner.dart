@@ -40,12 +40,22 @@ class _SpinnerState extends State<Spinner> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    controller =
-        AnimationController(duration: const Duration(milliseconds: 1800), vsync: this);
-    controller1 =
-        AnimationController(duration: const Duration(milliseconds: 1800), vsync: this);
-    animation = CurvedAnimation(parent: controller, curve: Cubic(0.165, 0.84, 0.44, 1));
-    animation1 = CurvedAnimation(parent: controller1, curve: Cubic(0.165, 0.84, 0.44, 1));
+    controller = AnimationController(
+      duration: Duration(milliseconds: 1800),
+      vsync: this,
+    );
+    controller1 = AnimationController(
+      duration: Duration(milliseconds: 1800),
+      vsync: this,
+    );
+    animation = CurvedAnimation(
+      parent: controller,
+      curve: Cubic(0.165, 0.84, 0.44, 1),
+    );
+    animation1 = CurvedAnimation(
+      parent: controller1,
+      curve: Cubic(0.165, 0.84, 0.44, 1),
+    );
     startAnimation();
   }
 
@@ -57,15 +67,16 @@ class _SpinnerState extends State<Spinner> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) => Stack(
-    children: [
-      AnimatedLogo(animation: animation),
-      AnimatedLogo(animation: animation1)
-    ],
-  );
+        children: [
+          AnimatedLogo(animation: animation),
+          AnimatedLogo(animation: animation1)
+        ],
+      );
 
   @override
   void dispose() {
     controller.dispose();
+    controller1.dispose();
     super.dispose();
   }
 }

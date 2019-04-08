@@ -30,12 +30,13 @@ class MarketSeriesChart extends StatefulWidget {
     }).toList();
 
     final volumn = marketSeriesData.skip(150).map((data) {
-      return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), randomVolumn());
+      return PriceData(
+          DateTime.fromMillisecondsSinceEpoch(data[0]), randomVolumn());
     }).toList();
 
     return [
       charts.Series<PriceData, DateTime>(
-        id: 'Desktop',
+        id: 'marketSeries',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(MioColors.brand),
         domainFn: (PriceData data, _) => data.time,
         measureFn: (PriceData data, _) => data.value,
@@ -43,7 +44,7 @@ class MarketSeriesChart extends StatefulWidget {
         data: marketSeries,
       ),
       charts.Series<PriceData, DateTime>(
-        id: 'Desktop',
+        id: 'volumn',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(MioColors.secondary),
         domainFn: (PriceData data, _) => data.time,
         measureFn: (PriceData data, _) => data.value,
@@ -94,6 +95,12 @@ class _MarketSeriesChartState extends State<MarketSeriesChart> {
                 bottomMarginSpec: charts.MarginSpec.fixedPixel(20),
               ),
               domainAxis: charts.DateTimeAxisSpec(
+                tickFormatterSpec: charts.AutoDateTimeTickFormatterSpec(
+                  month: charts.TimeFormatterSpec(
+                    format: '',
+                    transitionFormat: 'yyyy',
+                  ),
+                ),
                 renderSpec: charts.SmallTickRendererSpec(
                   labelStyle: charts.TextStyleSpec(
                     color: charts.ColorUtil.fromDartColor(MioColors.secondary),

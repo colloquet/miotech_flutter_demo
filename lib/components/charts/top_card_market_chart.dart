@@ -26,7 +26,7 @@ class TopCardMarketChart extends StatefulWidget {
 
     return [
       charts.Series<PriceData, DateTime>(
-        id: 'Desktop',
+        id: 'marketSeries',
         colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color(0xff9FBD6A)),
         domainFn: (PriceData data, _) => data.time,
         measureFn: (PriceData data, _) => data.value,
@@ -41,13 +41,9 @@ class _TopCardMarketChartState extends State<TopCardMarketChart> {
   Widget build(BuildContext context) {
     return charts.TimeSeriesChart(
       widget.seriesList,
+      defaultInteractions: false,
       defaultRenderer: charts.LineRendererConfig(includeArea: true),
       animate: widget.animate,
-      customSeriesRenderers: [
-        charts.BarRendererConfig(
-          customRendererId: 'customBar',
-        ),
-      ],
       layoutConfig: charts.LayoutConfig(
         leftMarginSpec: charts.MarginSpec.fixedPixel(0),
         rightMarginSpec: charts.MarginSpec.fixedPixel(0),
@@ -55,6 +51,12 @@ class _TopCardMarketChartState extends State<TopCardMarketChart> {
         bottomMarginSpec: charts.MarginSpec.fixedPixel(20),
       ),
       domainAxis: charts.DateTimeAxisSpec(
+        tickFormatterSpec: charts.AutoDateTimeTickFormatterSpec(
+          month: charts.TimeFormatterSpec(
+            format: '',
+            transitionFormat: 'yyyy',
+          ),
+        ),
         renderSpec: charts.SmallTickRendererSpec(
           labelStyle: charts.TextStyleSpec(
             color: charts.ColorUtil.fromDartColor(MioColors.secondary),

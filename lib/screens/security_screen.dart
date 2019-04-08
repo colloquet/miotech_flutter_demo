@@ -211,6 +211,7 @@ class SecurityScreen extends StatelessWidget {
               ),
               SizedBox(height: 8.0),
               SecurityTabs(),
+              SizedBox(height: 8.0),
             ],
           ),
         ),
