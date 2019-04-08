@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'dart:math';
 import 'package:miotech_flutter_demo/colors.dart';
+import 'package:miotech_flutter_demo/market_series_data.dart';
 
 class MarketSeriesChart extends StatefulWidget {
   final List<charts.Series> seriesList;
@@ -24,94 +25,15 @@ class MarketSeriesChart extends StatefulWidget {
   /// Create one series with sample hard coded data.
   static List<charts.Series<PriceData, DateTime>> _createSampleData() {
     final _random = Random();
-    int randomMarketPrice() => 50 + _random.nextInt(10);
-    int randomVolumn() => 1 + _random.nextInt(20);
+    double randomVolumn() => 10 + 10 * _random.nextDouble();
 
-    final marketSeries = [
-      PriceData(DateTime(2000, 1, 1), 30),
-      PriceData(DateTime(2000, 7, 1), 32),
-      PriceData(DateTime(2001, 1, 1), 33),
-      PriceData(DateTime(2001, 7, 1), 35),
-      PriceData(DateTime(2002, 1, 1), 34),
-      PriceData(DateTime(2002, 7, 1), 36),
-      PriceData(DateTime(2003, 1, 1), 38),
-      PriceData(DateTime(2003, 7, 1), 37),
-      PriceData(DateTime(2004, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2004, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2005, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2005, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2006, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2006, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2007, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2007, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2008, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2008, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2009, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2009, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2010, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2010, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2011, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2011, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2012, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2012, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2013, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2013, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2014, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2014, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2015, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2015, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2016, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2016, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2017, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2017, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2018, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2018, 7, 1), randomMarketPrice()),
-      PriceData(DateTime(2019, 1, 1), randomMarketPrice()),
-      PriceData(DateTime(2019, 7, 1), randomMarketPrice()),
-    ];
+    final marketSeries = marketSeriesData.skip(150).map((data) {
+      return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), data[1]);
+    }).toList();
 
-    final volumn = [
-      PriceData(DateTime(2000, 1, 1), randomVolumn()),
-      PriceData(DateTime(2000, 7, 1), randomVolumn()),
-      PriceData(DateTime(2001, 1, 1), randomVolumn()),
-      PriceData(DateTime(2001, 7, 1), randomVolumn()),
-      PriceData(DateTime(2002, 1, 1), randomVolumn()),
-      PriceData(DateTime(2002, 7, 1), randomVolumn()),
-      PriceData(DateTime(2003, 1, 1), randomVolumn()),
-      PriceData(DateTime(2003, 7, 1), randomVolumn()),
-      PriceData(DateTime(2004, 1, 1), randomVolumn()),
-      PriceData(DateTime(2004, 7, 1), randomVolumn()),
-      PriceData(DateTime(2005, 1, 1), randomVolumn()),
-      PriceData(DateTime(2005, 7, 1), randomVolumn()),
-      PriceData(DateTime(2006, 1, 1), randomVolumn()),
-      PriceData(DateTime(2006, 7, 1), randomVolumn()),
-      PriceData(DateTime(2007, 1, 1), randomVolumn()),
-      PriceData(DateTime(2007, 7, 1), randomVolumn()),
-      PriceData(DateTime(2008, 1, 1), randomVolumn()),
-      PriceData(DateTime(2008, 7, 1), randomVolumn()),
-      PriceData(DateTime(2009, 1, 1), randomVolumn()),
-      PriceData(DateTime(2009, 7, 1), randomVolumn()),
-      PriceData(DateTime(2010, 1, 1), randomVolumn()),
-      PriceData(DateTime(2010, 7, 1), randomVolumn()),
-      PriceData(DateTime(2011, 1, 1), randomVolumn()),
-      PriceData(DateTime(2011, 7, 1), randomVolumn()),
-      PriceData(DateTime(2012, 1, 1), randomVolumn()),
-      PriceData(DateTime(2012, 7, 1), randomVolumn()),
-      PriceData(DateTime(2013, 1, 1), randomVolumn()),
-      PriceData(DateTime(2013, 7, 1), randomVolumn()),
-      PriceData(DateTime(2014, 1, 1), randomVolumn()),
-      PriceData(DateTime(2014, 7, 1), randomVolumn()),
-      PriceData(DateTime(2015, 1, 1), randomVolumn()),
-      PriceData(DateTime(2015, 7, 1), randomVolumn()),
-      PriceData(DateTime(2016, 1, 1), randomVolumn()),
-      PriceData(DateTime(2016, 7, 1), randomVolumn()),
-      PriceData(DateTime(2017, 1, 1), randomVolumn()),
-      PriceData(DateTime(2017, 7, 1), randomVolumn()),
-      PriceData(DateTime(2018, 1, 1), randomVolumn()),
-      PriceData(DateTime(2018, 7, 1), randomVolumn()),
-      PriceData(DateTime(2019, 1, 1), randomVolumn()),
-      PriceData(DateTime(2019, 7, 1), randomVolumn()),
-    ];
+    final volumn = marketSeriesData.skip(150).map((data) {
+      return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), randomVolumn());
+    }).toList();
 
     return [
       charts.Series<PriceData, DateTime>(
@@ -123,6 +45,7 @@ class MarketSeriesChart extends StatefulWidget {
         // charts.MaterialPalette.blue.shadeDefault.lighter,
         domainFn: (PriceData data, _) => data.time,
         measureFn: (PriceData data, _) => data.value,
+        measureOffsetFn: (_, __) => -100,
         data: marketSeries,
       ),
       charts.Series<PriceData, DateTime>(
@@ -201,7 +124,7 @@ class _MarketSeriesChartState extends State<MarketSeriesChart> {
 /// Sample linear data type.
 class PriceData {
   final DateTime time;
-  final int value;
+  final double value;
 
   PriceData(this.time, this.value);
 }
