@@ -3,6 +3,7 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'dart:math';
 import 'package:miotech_flutter_demo/colors.dart';
 import 'package:miotech_flutter_demo/market_series_data.dart';
+import 'package:miotech_flutter_demo/components/spinner.dart';
 
 class MarketSeriesChart extends StatefulWidget {
   final List<charts.Series> seriesList;
@@ -83,7 +84,7 @@ class _MarketSeriesChartState extends State<MarketSeriesChart> {
         );
       },
       child: isLoading
-          ? Center(child: CircularProgressIndicator())
+          ? Center(child: Spinner())
           : charts.TimeSeriesChart(
               widget.seriesList,
               defaultRenderer: charts.LineRendererConfig(includeArea: true),

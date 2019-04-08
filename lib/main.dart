@@ -68,6 +68,7 @@ class _MiotechDemoState extends State<MiotechDemo> {
               opacity: animation,
             );
           },
+          // child: LogoApp(),
           child: _isLoggedIn
               ? HomeScreen(
                   companyData: _companyData,
