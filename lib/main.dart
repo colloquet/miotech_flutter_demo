@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:miotech_flutter_demo/screens/login_screen.dart';
+import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/screens/home_screen.dart';
+import 'package:miotech_flutter_demo/scoped_models/main.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 var _companyData;
@@ -15,32 +16,34 @@ void main() async {
     DeviceOrientation.portraitUp,
   ]);
 
-  var snapshot = await Future.wait([
+  var mockData = await Future.wait([
     rootBundle.loadString('assets/companies.json'),
     rootBundle.loadString('assets/people.json'),
     rootBundle.loadString('assets/news.json'),
     rootBundle.loadString('assets/securities.json'),
   ]);
 
-  _companyData = json.decode(snapshot[0].toString());
-  _peopleData = json.decode(snapshot[1].toString());
-  _newsData = json.decode(snapshot[2].toString());
-  _securityData = json.decode(snapshot[3].toString());
+  _companyData = json.decode(mockData[0].toString());
+  _peopleData = json.decode(mockData[1].toString());
+  _newsData = json.decode(mockData[2].toString());
+  _securityData = json.decode(mockData[3].toString());
 
   runApp(MiotechDemo());
 }
 
-class MiotechDemo extends StatefulWidget {
-  @override
-  _MiotechDemoState createState() => _MiotechDemoState();
-}
-
-class _MiotechDemoState extends State<MiotechDemo> {
-  bool _isLoggedIn = true;
-
+class MiotechDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final MainModel _model = MainModel(
+      companyData: _companyData,
+      peopleData: _peopleData,
+      newsData: _newsData,
+      securityData: _securityData,
+    );
+
+    return ScopedModel<MainModel>(
+      model: _model,
+      child: MaterialApp(
         title: 'MioTech Demo',
         theme: ThemeData(
           primaryColor: MioColors.base,
@@ -59,29 +62,8 @@ class _MiotechDemoState extends State<MiotechDemo> {
           ),
           brightness: Brightness.dark,
         ),
-        home: AnimatedSwitcher(
-          duration: Duration(milliseconds: 300),
-          transitionBuilder: (Widget child, Animation<double> animation) {
-            return FadeTransition(
-              child: child,
-              opacity: animation,
-            );
-          },
-          // child: LogoApp(),
-          child: _isLoggedIn
-              ? HomeScreen(
-                  companyData: _companyData,
-                  peopleData: _peopleData,
-                  newsData: _newsData,
-                  securityData: _securityData,
-                )
-              : LoginScreen(
-                  onLogin: () {
-                    setState(() {
-                      _isLoggedIn = true;
-                    });
-                  },
-                ),
-        ));
+        home: HomeScreen(),
+      ),
+    );
   }
 }

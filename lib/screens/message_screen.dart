@@ -3,23 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
-
-class Message {
-  Message({this.id, this.text, this.isSelf, this.type, this.image});
-  int id;
-  String text;
-  bool isSelf;
-  String type;
-  ImageProvider image;
-
-  bool get isImage {
-    return type == 'image';
-  }
-}
+import 'package:miotech_flutter_demo/models/conversation.dart';
+import 'package:miotech_flutter_demo/models/message.dart';
 
 class MessageScreen extends StatefulWidget {
   MessageScreen({this.conversation});
-  final conversation;
+  final Conversation conversation;
 
   @override
   _MessageScreenState createState() => _MessageScreenState();
@@ -98,7 +87,7 @@ class _MessageScreenState extends State<MessageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.conversation['from']),
+        title: Text(widget.conversation.from),
       ),
       body: Column(
         children: <Widget>[

@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
+import 'package:miotech_flutter_demo/scoped_models/main.dart';
 import 'package:miotech_flutter_demo/components/company_item.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class CompanyList extends StatelessWidget {
   CompanyList({
     Key key,
-    this.data,
   }) : super(key: key);
-  final data;
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      separatorBuilder: (context, index) => Divider(
-            height: 1.0,
-            color: MioColors.third,
-          ),
-      itemCount: data == null ? 0 : data.length,
-      itemBuilder: (BuildContext context, int index) {
-        var company = data[index]['company'];
-        return CompanyItem(company: company);
+    return ScopedModelDescendant<MainModel>(
+      builder: (BuildContext context, Widget child, MainModel model) {
+        return ListView.separated(
+          separatorBuilder: (context, index) => Divider(
+                height: 1.0,
+                color: MioColors.third,
+              ),
+          itemCount: model.companyData == null ? 0 : model.companyData.length,
+          itemBuilder: (BuildContext context, int index) {
+            var company = model.companyData[index]['company'];
+            return CompanyItem(company: company);
+          },
+        );
       },
     );
   }

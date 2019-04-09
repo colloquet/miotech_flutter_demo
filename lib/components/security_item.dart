@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/screens/security_screen.dart';
 
-class SecurityItem extends StatelessWidget {
+class SecurityItem extends StatefulWidget {
   SecurityItem({
     Key key,
     @required this.security,
@@ -10,20 +10,37 @@ class SecurityItem extends StatelessWidget {
   final security;
 
   @override
-  Widget build(BuildContext context) {
-    final _currentPrice = security['currenctPrice']['adjustedPrice'];
-    final _changeFromPreviousClose = security['equityAsset']
-        ['equityTradingQuote']['changeFromPreviousClose'];
-    final _percentChangeFromPreviousClose = security['equityAsset']
-        ['equityTradingQuote']['percentChangeFromPreviousClose'];
-    final _displayPercentageChange =
+  _SecurityItemState createState() => _SecurityItemState();
+}
+
+class _SecurityItemState extends State<SecurityItem> {
+  double _currentPrice;
+  double _changeFromPreviousClose;
+  double _percentChangeFromPreviousClose;
+  String _displayPercentageChange;
+  bool _isPositive;
+  Color _textColor;
+
+  @override
+  void initState() {
+    super.initState();
+    _currentPrice = widget.security['currenctPrice']['adjustedPrice'].toDouble();
+    _changeFromPreviousClose = widget.security['equityAsset']
+        ['equityTradingQuote']['changeFromPreviousClose'].toDouble();
+    _percentChangeFromPreviousClose = widget.security['equityAsset']
+        ['equityTradingQuote']['percentChangeFromPreviousClose'].toDouble();
+    _displayPercentageChange =
         (_percentChangeFromPreviousClose * 100).toStringAsFixed(2).toString();
-    final _isPositive = _changeFromPreviousClose >= 0;
-    final _textColor = _isPositive ? MioColors.green : MioColors.orange;
+    _isPositive = _changeFromPreviousClose >= 0;
+    _textColor = _isPositive ? MioColors.green : MioColors.orange;
+  }
+
+  @override
+  Widget build(BuildContext context) {
 
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => SecurityScreen(security)));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => SecurityScreen(widget.security)));
       },
       child: Container(
         padding: EdgeInsets.all(16.0),
@@ -34,13 +51,13 @@ class SecurityItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Text(
-                    security['assetIDGroup']['name'],
+                    widget.security['assetIDGroup']['name'],
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 16.0),
                   ),
                   SizedBox(height: 4.0),
                   Text(
-                    security['assetIDGroup']['ticker'],
+                    widget.security['assetIDGroup']['ticker'],
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(color: MioColors.secondary),
                   ),
@@ -55,7 +72,7 @@ class SecurityItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.baseline,
                   textBaseline: TextBaseline.alphabetic,
                   children: <Widget>[
-                    Text(security['currency']),
+                    Text(widget.security['currency']),
                     SizedBox(width: 4.0),
                     Text(
                       _currentPrice.toString(),

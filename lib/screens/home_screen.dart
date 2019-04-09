@@ -9,17 +9,6 @@ import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/ami_icons.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({
-    this.companyData,
-    this.peopleData,
-    this.newsData,
-    this.securityData,
-  });
-  final companyData;
-  final peopleData;
-  final newsData;
-  final securityData;
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -35,7 +24,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   _handleTabChange(int index) {
-    // _tabController.index = index;
     _tabController.animateTo(index);
   }
 
@@ -134,17 +122,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         'ami': TabBarView(
           controller: _tabController,
           children: <Widget>[
-            AllList(
-              companyData: widget.companyData,
-              peopleData: widget.peopleData,
-              newsData: widget.newsData,
-              securityData: widget.securityData,
-              onTabChange: _handleTabChange,
-            ),
-            CompanyList(data: widget.companyData),
-            PeopleList(data: widget.peopleData),
-            NewsList(data: widget.newsData),
-            SecurityList(data: widget.securityData),
+            AllList(onTabChange: _handleTabChange),
+            CompanyList(),
+            PeopleList(),
+            NewsList(),
+            SecurityList(),
           ],
         ),
         'message': MessageList(),

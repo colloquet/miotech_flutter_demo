@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/message_screen.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/models/conversation.dart';
 
 var _names = [
   'Zonia Sedlak',
@@ -31,13 +32,13 @@ var _backgroundColors = [
 class MessageList extends StatelessWidget {
   final _conversations = List.generate(
     20,
-    (index) => {
-          'id': index,
-          'from': _names[index % 10],
-          'color': _backgroundColors[index % 10],
-          'latestMessage':
+    (index) => Conversation(
+          id: index,
+          from: _names[index % 10],
+          color: _backgroundColors[index % 10],
+          latestMessage:
               'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, et. Obcaecati, neque nostrum natus amet vero odit nihil hic labore tempora sapiente unde quo aliquam facilis at minima reprehenderit atque.',
-        },
+        ),
   );
 
   @override
@@ -52,7 +53,7 @@ class MessageList extends StatelessWidget {
       itemCount: _conversations.length,
       itemBuilder: (BuildContext context, int index) {
         final _conversation = _conversations[index];
-        final String _name = _conversation['from'];
+        final String _name = _conversation.from;
         final String _initials =
             _name.split(' ').map((string) => string[0]).join();
 
@@ -68,7 +69,7 @@ class MessageList extends StatelessWidget {
             );
           },
           child: Container(
-            key: ValueKey(_conversation['id']),
+            key: ValueKey(_conversation.id),
             padding: EdgeInsets.all(16.0),
             child: Row(
               children: <Widget>[
@@ -76,7 +77,7 @@ class MessageList extends StatelessWidget {
                   height: 48.0,
                   width: 48.0,
                   child: CircleAvatar(
-                    backgroundColor: _conversation['color'],
+                    backgroundColor: _conversation.color,
                     child: Text(
                       _initials,
                       style: TextStyle(
@@ -92,12 +93,12 @@ class MessageList extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(
-                        _conversation['from'],
+                        _conversation.from,
                         style: TextStyle(fontSize: 18.0),
                       ),
                       SizedBox(height: 4.0),
                       Text(
-                        _conversation['latestMessage'],
+                        _conversation.latestMessage,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(

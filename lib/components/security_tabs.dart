@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/components/earning_history_table.dart';
+import 'package:miotech_flutter_demo/components/panel_header.dart';
 import 'package:miotech_flutter_demo/components/charts/income_statement_chart.dart';
 import 'package:miotech_flutter_demo/components/charts/balance_sheet_chart.dart';
 import 'package:miotech_flutter_demo/components/charts/cashflow_statement_chart.dart';
@@ -61,8 +62,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    PanelHeader(title: 'Income Statement'),
-                    // Divider(height: 0),
+                    PanelHeader(title: 'Income Statement', color: MioColors.base),
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: SizedBox(
@@ -79,7 +79,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    PanelHeader(title: 'Balance Sheet'),
+                    PanelHeader(title: 'Balance Sheet', color: MioColors.base),
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: SizedBox(
@@ -96,7 +96,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    PanelHeader(title: 'Cashflow Statement'),
+                    PanelHeader(title: 'Cashflow Statement', color: MioColors.base),
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: SizedBox(
@@ -114,7 +114,7 @@ class _SecurityTabsState extends State<SecurityTabs>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                PanelHeader(title: 'Earning History'),
+                PanelHeader(title: 'Earning History', color: MioColors.base),
                 Padding(
                   padding: EdgeInsets.all(8.0),
                   child: EarningHistoryTable(),
@@ -127,23 +127,6 @@ class _SecurityTabsState extends State<SecurityTabs>
               : CrossFadeState.showSecond,
         ),
       ],
-    );
-  }
-}
-
-class PanelHeader extends StatelessWidget {
-  PanelHeader({
-    Key key,
-    this.title,
-  }) : super(key: key);
-  final title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(16.0),
-      color: MioColors.base,
-      child: Text(title),
     );
   }
 }
