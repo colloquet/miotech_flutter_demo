@@ -53,8 +53,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 context: context,
                 delegate: _delegate,
               );
-              print(selected);
-              if (selected != null && selected.isNotEmpty &&  selected != _lastQuerySelected) {
+              if (selected != null &&
+                  selected.isNotEmpty &&
+                  selected != _lastQuerySelected) {
                 setState(() {
                   _lastQuerySelected = selected;
                 });

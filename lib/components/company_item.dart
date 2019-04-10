@@ -71,14 +71,15 @@ class CompanyItem extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       company['type'],
-                      style: TextStyle(color: MioColors.brand),
+                      style: TextStyle(color: MioColors.secondary),
                     ),
                     SizedBox(width: 8.0),
                     Flexible(
                       child: Text(
-                        company['industry'],
-                        style: TextStyle(color: MioColors.secondary),
-                        overflow: TextOverflow.ellipsis,
+                        company['assetInfo'].length == 0
+                            ? ''
+                            : company['assetInfo'][0]['ticker'],
+                        style: TextStyle(color: MioColors.brand),
                       ),
                     ),
                   ],
