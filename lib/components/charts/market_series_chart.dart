@@ -23,7 +23,7 @@ class MarketSeriesChart extends StatefulWidget {
 
   static List<charts.Series<PriceData, DateTime>> _createSampleData() {
     final _random = Random();
-    double randomVolumn() => 10 + 10 * _random.nextDouble();
+    double randomVolumn() => 10 + 5 * _random.nextDouble();
 
     final marketSeries = marketSeriesData.skip(150).map((data) {
       return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), data[1]);

@@ -52,7 +52,7 @@ class MiotechDemo extends StatelessWidget {
           canvasColor: MioColors.base,
           splashColor: MioColors.fourth,
           highlightColor: MioColors.fifth,
-          indicatorColor: MioColors.primary,
+          indicatorColor: MioColors.brand,
           primaryIconTheme: IconThemeData(
             color: MioColors.secondary,
           ),

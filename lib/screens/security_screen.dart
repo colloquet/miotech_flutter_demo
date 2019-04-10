@@ -202,7 +202,7 @@ class SecurityScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: SizedBox(
-                        height: 200.0,
+                        height: 300.0,
                         child: MarketSeriesChart.withSampleData(),
                       ),
                     ),

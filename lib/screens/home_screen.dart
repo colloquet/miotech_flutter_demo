@@ -5,6 +5,7 @@ import 'package:miotech_flutter_demo/components/people_list.dart';
 import 'package:miotech_flutter_demo/components/news_list.dart';
 import 'package:miotech_flutter_demo/components/message_list.dart';
 import 'package:miotech_flutter_demo/components/security_list.dart';
+import 'package:miotech_flutter_demo/components/ami_search_delegate/ami_search_delegate.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/ami_icons.dart';
 
@@ -16,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   String _currentTab = 'ami';
   TabController _tabController;
+  final AmiSearchDelegate _delegate = AmiSearchDelegate();
 
   @override
   void initState() {
@@ -33,11 +35,33 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     });
   }
 
+  String _lastQuerySelected;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: _currentTab == 'ami' ? Text('AMI') : Text('Messages'),
+        title: _currentTab == 'ami'
+            ? Text(_lastQuerySelected == null ? 'AMI' : _lastQuerySelected)
+            : Text('Messages'),
+        actions: <Widget>[
+          IconButton(
+            tooltip: 'Search',
+            icon: const Icon(Icons.search),
+            onPressed: () async {
+              final String selected = await showSearch<String>(
+                context: context,
+                delegate: _delegate,
+              );
+              print(selected);
+              if (selected != null && selected.isNotEmpty &&  selected != _lastQuerySelected) {
+                setState(() {
+                  _lastQuerySelected = selected;
+                });
+              }
+            },
+          ),
+        ],
         bottom: _currentTab == 'ami'
             ? TabBar(
                 controller: _tabController,
@@ -106,9 +130,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     onTap: _handleDrawTabChange,
                   ),
                   DrawerItem(
-                    isActive: _currentTab == 'message',
-                    tabKey: 'message',
-                    title: 'Message',
+                    isActive: _currentTab == 'messages',
+                    tabKey: 'messages',
+                    title: 'Messages',
                     icon: Icons.chat_bubble,
                     onTap: _handleDrawTabChange,
                   ),
@@ -129,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             SecurityList(),
           ],
         ),
-        'message': MessageList(),
+        'messages': MessageList(),
       }[_currentTab],
     );
   }
