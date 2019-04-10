@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class AmiSearchDelegate extends SearchDelegate<String> {
   final List<String> _data = <String>[
@@ -91,7 +92,7 @@ class _SuggestionList extends StatelessWidget {
       itemBuilder: (BuildContext context, int i) {
         final String suggestion = suggestions[i];
         return ListTile(
-          leading: query.isEmpty ? const Icon(Icons.history) : const Icon(null),
+          leading: query.isEmpty ? const Icon(Icons.history, color: MioColors.secondary) : const Icon(null),
           title: RichText(
             text: TextSpan(
               text: suggestion.substring(0, query.length),
