@@ -13,11 +13,12 @@ class CompanyList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
+          key: PageStorageKey('company-list'),
           separatorBuilder: (context, index) => Divider(height: 1.0),
           itemCount: model.companyData == null ? 0 : model.companyData.length,
           itemBuilder: (BuildContext context, int index) {
-            var company = model.companyData[index]['company'];
-            return CompanyItem(company: company);
+            var _company = model.companyData[index]['company'];
+            return CompanyItem(key: ValueKey(_company['globalId']), company: _company);
           },
         );
       },

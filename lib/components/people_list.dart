@@ -13,13 +13,12 @@ class PeopleList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
-          separatorBuilder: (context, index) {
-            return Divider(height: 1.0);
-          },
+          key: PageStorageKey('people-list'),
+          separatorBuilder: (context, index) => Divider(height: 1.0),
           itemCount: model.peopleData == null ? 0 : model.peopleData.length,
           itemBuilder: (BuildContext context, int index) {
             final _people = model.peopleData[index]['people'];
-            return PeopleItem(people: _people);
+            return PeopleItem(key: ValueKey(_people['globalId']), people: _people);
           },
         );
       },

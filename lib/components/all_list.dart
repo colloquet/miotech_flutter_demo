@@ -24,6 +24,7 @@ class AllList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView(
+          key: PageStorageKey('all-list'),
           children: <Widget>[
             Card(
               margin: EdgeInsets.all(12.0),
@@ -70,16 +71,19 @@ class AllList extends StatelessWidget {
                             ],
                           ),
                         ),
-                        RelationshipList(relationships: [
-                          'Competitor',
-                          'Shareholder',
-                          'Investor',
-                          'Supplier',
-                          'Investee',
-                          'Branch',
-                          'Board member',
-                          'Key executive',
-                        ]),
+                        RelationshipList(
+                          id: 'exact-relationship',
+                          relationships: [
+                            'Competitor',
+                            'Shareholder',
+                            'Investor',
+                            'Supplier',
+                            'Investee',
+                            'Branch',
+                            'Board member',
+                            'Key executive',
+                          ],
+                        ),
                         SizedBox(height: 16.0),
                       ],
                     ),
@@ -90,8 +94,8 @@ class AllList extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                SecurityScreen(model.securityData[0]['security'])),
+                            builder: (context) => SecurityScreen(
+                                model.securityData[0]['security'])),
                       );
                     },
                     child: Padding(

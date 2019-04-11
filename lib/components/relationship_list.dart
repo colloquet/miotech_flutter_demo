@@ -5,8 +5,10 @@ class RelationshipList extends StatelessWidget {
   const RelationshipList({
     Key key,
     this.relationships,
+    this.id,
   }) : super(key: key);
   final List<String> relationships;
+  final String id;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,7 @@ class RelationshipList extends StatelessWidget {
         child: SizedBox(
           height: 32.0,
           child: ListView.separated(
+            key: PageStorageKey(id),
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             separatorBuilder: (context, index) {
               return SizedBox(width: 8.0);
@@ -39,7 +42,7 @@ class RelationshipList extends StatelessWidget {
             itemCount: relationships.length,
             itemBuilder: (context, index) {
               var _relationship = relationships[index];
-              return Relationship(type: _relationship);
+              return Relationship(key: ValueKey(_relationship), type: _relationship);
             },
           ),
         ),

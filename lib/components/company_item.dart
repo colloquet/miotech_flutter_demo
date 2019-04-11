@@ -96,7 +96,7 @@ class CompanyItem extends StatelessWidget {
               ],
             ),
           ),
-          RelationshipList(relationships: relationships),
+          RelationshipList(id: company['globalId'], relationships: relationships),
           SizedBox(height: 16.0)
         ],
       ),

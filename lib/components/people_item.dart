@@ -66,7 +66,7 @@ class PeopleItem extends StatelessWidget {
               ],
             ),
           ),
-          RelationshipList(relationships: relationships),
+          RelationshipList(id: people['globalId'], relationships: relationships),
           SizedBox(height: 16.0)
         ],
       ),
