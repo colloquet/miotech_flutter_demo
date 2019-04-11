@@ -5,45 +5,31 @@ import 'package:miotech_flutter_demo/components/security_tabs.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SecurityScreen extends StatelessWidget {
-  SecurityScreen(this.security) {
-    _ticker = security['assetIDGroup']['ticker'];
-    _name = security['assetIDGroup']['name'];
-    _lastUpdateTime =
-        security['equityAsset']['equityTradingQuote']['lastUpdateTime'];
-    _currentPrice = security['currenctPrice']['adjustedPrice'];
-    _changeFromPreviousClose = security['equityAsset']
-        ['equityTradingQuote']['changeFromPreviousClose'];
-    _percentChangeFromPreviousClose = security['equityAsset']
-        ['equityTradingQuote']['percentChangeFromPreviousClose'];
-    _previousClose =
-        security['equityAsset']['equityTradingQuote']['previousClose'];
-    _open = security['equityAsset']['equityTradingQuote']['open'];
-    _high = security['equityAsset']['equityTradingQuote']['high'];
-    _low = security['equityAsset']['equityTradingQuote']['low'];
-    _displayPercentageChange =
-        (_percentChangeFromPreviousClose * 100).toStringAsFixed(2).toString();
-    _isPositive = _changeFromPreviousClose >= 0;
-    _textColor = _isPositive ? MioColors.green : MioColors.orange;
-  }
+  SecurityScreen(this.security);
 
-  var _ticker;
-  var _name;
-  var _lastUpdateTime;
-  var _currentPrice;
-  var _changeFromPreviousClose;
-  var _percentChangeFromPreviousClose;
-  var _previousClose;
-  var _open;
-  var _high;
-  var _low;
-  var _displayPercentageChange;
-  var _isPositive;
-  var _textColor;
   final security;
   final formatter = DateFormat('yyyy-MM-dd HH:mm:ss');
 
   @override
   Widget build(BuildContext context) {
+    var _ticker = security['assetIDGroup']['ticker'];
+    var _name = security['assetIDGroup']['name'];
+    var _lastUpdateTime =
+        security['equityAsset']['equityTradingQuote']['lastUpdateTime'];
+    var _currentPrice = security['currenctPrice']['adjustedPrice'];
+    var _changeFromPreviousClose = security['equityAsset']
+        ['equityTradingQuote']['changeFromPreviousClose'];
+    var _percentChangeFromPreviousClose = security['equityAsset']
+        ['equityTradingQuote']['percentChangeFromPreviousClose'];
+    var _previousClose =
+        security['equityAsset']['equityTradingQuote']['previousClose'];
+    var _open = security['equityAsset']['equityTradingQuote']['open'];
+    var _high = security['equityAsset']['equityTradingQuote']['high'];
+    var _low = security['equityAsset']['equityTradingQuote']['low'];
+    var _displayPercentageChange =
+        (_percentChangeFromPreviousClose * 100).toStringAsFixed(2).toString();
+    var _isPositive = _changeFromPreviousClose >= 0;
+    var _textColor = _isPositive ? MioColors.green : MioColors.orange;
 
     return Scaffold(
       appBar: AppBar(

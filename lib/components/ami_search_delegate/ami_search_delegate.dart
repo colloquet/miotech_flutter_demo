@@ -11,6 +11,8 @@ class AmiSearchDelegate extends SearchDelegate<String> {
   ];
   final List<String> _history = <String>[
     'facebook',
+    'artificial intelligence',
+    'esport',
     'google',
     'apple',
     'microsoft',

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
 import 'package:miotech_flutter_demo/components/security_item.dart';
-import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SecurityList extends StatelessWidget {
   SecurityList({
@@ -15,10 +14,7 @@ class SecurityList extends StatelessWidget {
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
           separatorBuilder: (context, index) {
-            return Divider(
-              height: 1.0,
-              color: MioColors.third,
-            );
+            return Divider(height: 1.0);
           },
           itemCount: model.securityData == null ? 0 : model.securityData.length,
           itemBuilder: (BuildContext context, int index) {

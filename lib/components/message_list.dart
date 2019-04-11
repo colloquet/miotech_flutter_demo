@@ -45,10 +45,7 @@ class MessageList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       separatorBuilder: (context, index) {
-        return Divider(
-          height: 1.0,
-          color: MioColors.third,
-        );
+        return Divider(height: 1.0);
       },
       itemCount: _conversations.length,
       itemBuilder: (BuildContext context, int index) {

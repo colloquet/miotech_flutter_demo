@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
 import 'package:miotech_flutter_demo/components/people_item.dart';
-import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class PeopleList extends StatelessWidget {
   PeopleList({
@@ -15,10 +14,7 @@ class PeopleList extends StatelessWidget {
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
           separatorBuilder: (context, index) {
-            return Divider(
-              height: 1.0,
-              color: MioColors.third,
-            );
+            return Divider(height: 1.0);
           },
           itemCount: model.peopleData == null ? 0 : model.peopleData.length,
           itemBuilder: (BuildContext context, int index) {
