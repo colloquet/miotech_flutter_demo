@@ -33,7 +33,6 @@ class RelationshipList extends StatelessWidget {
         child: SizedBox(
           height: 32.0,
           child: ListView.separated(
-            key: PageStorageKey(id),
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             separatorBuilder: (context, index) {
               return SizedBox(width: 8.0);

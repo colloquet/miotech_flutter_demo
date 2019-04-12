@@ -16,7 +16,7 @@ class SecurityTabs extends StatefulWidget {
 }
 
 class _SecurityTabsState extends State<SecurityTabs>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   int _currentTabIndex = 0;
 

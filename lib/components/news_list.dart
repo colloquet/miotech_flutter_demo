@@ -13,7 +13,6 @@ class NewsList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
-          key: PageStorageKey('news-list'),
           separatorBuilder: (context, index) => Divider(height: 1.0),
           itemCount: model.newsData == null ? 0 : model.newsData.length,
           itemBuilder: (BuildContext context, int index) {

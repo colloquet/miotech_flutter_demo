@@ -20,7 +20,7 @@ class TopCardMarketChart extends StatefulWidget {
   _TopCardMarketChartState createState() => _TopCardMarketChartState();
 
   static List<charts.Series<PriceData, DateTime>> _createSampleData() {
-    final marketSeries = marketSeriesData.map((data) {
+    final marketSeries = marketSeriesData.take(50).map((data) {
       return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), data[1]);
     }).toList();
 

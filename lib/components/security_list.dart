@@ -13,7 +13,6 @@ class SecurityList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
-          key: PageStorageKey('security-list'),
           separatorBuilder: (context, index) => Divider(height: 1.0),
           itemCount: model.securityData == null ? 0 : model.securityData.length,
           itemBuilder: (BuildContext context, int index) {

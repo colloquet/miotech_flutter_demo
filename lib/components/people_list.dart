@@ -13,7 +13,6 @@ class PeopleList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
-          key: PageStorageKey('people-list'),
           separatorBuilder: (context, index) => Divider(height: 1.0),
           itemCount: model.peopleData == null ? 0 : model.peopleData.length,
           itemBuilder: (BuildContext context, int index) {

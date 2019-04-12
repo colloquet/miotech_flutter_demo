@@ -24,15 +24,13 @@ class AllList extends StatelessWidget {
     return ScopedModelDescendant<MainModel>(
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView(
-          key: PageStorageKey('all-list'),
           children: <Widget>[
             Card(
               margin: EdgeInsets.all(12.0),
-              elevation: 2.0,
-              clipBehavior: Clip.antiAlias,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0),
               ),
+              elevation: 2.0,
               color: MioColors.base,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -414,11 +412,11 @@ class Panel extends StatelessWidget {
 
     return Card(
       margin: EdgeInsets.all(12.0),
-      elevation: 2.0,
-      clipBehavior: Clip.antiAlias,
+      clipBehavior: Clip.hardEdge,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
       ),
+      elevation: 2.0,
       color: MioColors.base,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
