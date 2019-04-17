@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/components/news_item.dart';
+import 'package:miotech_flutter_demo/widgets/news_item.dart';
 
 class NewsList extends StatelessWidget {
   NewsList({

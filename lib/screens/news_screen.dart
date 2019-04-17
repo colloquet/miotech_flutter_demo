@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:miotech_flutter_demo/components/sentiment_bar.dart';
+import 'package:miotech_flutter_demo/widgets/sentiment_bar.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class NewsScreen extends StatelessWidget {

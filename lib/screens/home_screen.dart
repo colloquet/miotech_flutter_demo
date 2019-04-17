@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/components/mio_drawer.dart';
-import 'package:miotech_flutter_demo/components/all_list.dart';
-import 'package:miotech_flutter_demo/components/company_list.dart';
-import 'package:miotech_flutter_demo/components/people_list.dart';
-import 'package:miotech_flutter_demo/components/news_list.dart';
-import 'package:miotech_flutter_demo/components/message_list.dart';
-import 'package:miotech_flutter_demo/components/security_list.dart';
-import 'package:miotech_flutter_demo/components/ami_search_delegate/ami_search_delegate.dart';
+import 'package:miotech_flutter_demo/widgets/mio_drawer.dart';
+import 'package:miotech_flutter_demo/widgets/all_list.dart';
+import 'package:miotech_flutter_demo/widgets/company_list.dart';
+import 'package:miotech_flutter_demo/widgets/people_list.dart';
+import 'package:miotech_flutter_demo/widgets/news_list.dart';
+import 'package:miotech_flutter_demo/widgets/message_list.dart';
+import 'package:miotech_flutter_demo/widgets/security_list.dart';
+import 'package:miotech_flutter_demo/widgets/ami_search_delegate/ami_search_delegate.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class HomeScreen extends StatefulWidget {

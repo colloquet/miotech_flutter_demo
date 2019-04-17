@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/components/company_item.dart';
+import 'package:miotech_flutter_demo/widgets/security_item.dart';
 
-class CompanyList extends StatelessWidget {
-  CompanyList({
+class SecurityList extends StatelessWidget {
+  SecurityList({
     Key key,
   }) : super(key: key);
 
@@ -14,10 +14,10 @@ class CompanyList extends StatelessWidget {
       builder: (BuildContext context, Widget child, MainModel model) {
         return ListView.separated(
           separatorBuilder: (context, index) => Divider(height: 1.0),
-          itemCount: model.companyData == null ? 0 : model.companyData.length,
+          itemCount: model.securityData == null ? 0 : model.securityData.length,
           itemBuilder: (BuildContext context, int index) {
-            var _company = model.companyData[index]['company'];
-            return CompanyItem(key: ValueKey(_company['globalId']), company: _company);
+            final _security = model.securityData[index]['security'];
+            return SecurityItem(key: ValueKey(_security['globalId']), security: _security);
           },
         );
       },

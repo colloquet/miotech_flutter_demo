@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/components/people_item.dart';
+import 'package:miotech_flutter_demo/widgets/people_item.dart';
 
 class PeopleList extends StatelessWidget {
   PeopleList({

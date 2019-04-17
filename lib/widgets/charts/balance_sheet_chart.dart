@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:miotech_flutter_demo/components/spinner.dart';
+import 'package:miotech_flutter_demo/widgets/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class BalanceSheetChart extends StatefulWidget {

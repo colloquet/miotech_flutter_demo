@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/components/earning_history_table.dart';
-import 'package:miotech_flutter_demo/components/panel_header.dart';
-import 'package:miotech_flutter_demo/components/charts/income_statement_chart.dart';
-import 'package:miotech_flutter_demo/components/charts/balance_sheet_chart.dart';
-import 'package:miotech_flutter_demo/components/charts/cashflow_statement_chart.dart';
+import 'package:miotech_flutter_demo/widgets/earning_history_table.dart';
+import 'package:miotech_flutter_demo/widgets/panel_header.dart';
+import 'package:miotech_flutter_demo/widgets/charts/income_statement_chart.dart';
+import 'package:miotech_flutter_demo/widgets/charts/balance_sheet_chart.dart';
+import 'package:miotech_flutter_demo/widgets/charts/cashflow_statement_chart.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class SecurityTabs extends StatefulWidget {

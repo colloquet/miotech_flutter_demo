@@ -1,33 +1,34 @@
-import 'package:flutter/material.dart';
+/// Bar chart example
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:miotech_flutter_demo/components/spinner.dart';
+import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/widgets/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
-class CashflowStatementChart extends StatefulWidget {
+class IncomeStatementChart extends StatefulWidget {
   final List<charts.Series> seriesList;
   final bool animate;
 
-  CashflowStatementChart(this.seriesList, {this.animate});
+  IncomeStatementChart(this.seriesList, {this.animate});
 
-  factory CashflowStatementChart.withSampleData() {
-    return CashflowStatementChart(
+  factory IncomeStatementChart.withSampleData() {
+    return IncomeStatementChart(
       _createSampleData(),
       animate: false,
     );
   }
 
   @override
-  _CashflowStatementChartState createState() => _CashflowStatementChartState();
+  _IncomeStatementChartState createState() => _IncomeStatementChartState();
 
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final data = [
-      OrdinalSales('2013', 10),
-      OrdinalSales('2014', 15),
-      OrdinalSales('2015', 45),
-      OrdinalSales('2016', 35),
-      OrdinalSales('2017', 45),
-      OrdinalSales('2018', 65),
-      OrdinalSales('2019', 70),
+      OrdinalSales('2013', 20),
+      OrdinalSales('2014', 25),
+      OrdinalSales('2015', 35),
+      OrdinalSales('2016', 30),
+      OrdinalSales('2017', 40),
+      OrdinalSales('2018', 45),
+      OrdinalSales('2019', 75),
     ];
 
     return [
@@ -42,7 +43,7 @@ class CashflowStatementChart extends StatefulWidget {
   }
 }
 
-class _CashflowStatementChartState extends State<CashflowStatementChart> {
+class _IncomeStatementChartState extends State<IncomeStatementChart> {
   bool isLoading = true;
 
   @override

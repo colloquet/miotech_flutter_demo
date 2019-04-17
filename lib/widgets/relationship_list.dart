@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/components/relationship.dart';
+import 'package:miotech_flutter_demo/widgets/relationship.dart';
 
 class RelationshipList extends StatelessWidget {
   const RelationshipList({
