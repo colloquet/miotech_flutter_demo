@@ -47,5 +47,21 @@ class RelationshipList extends StatelessWidget {
         ),
       ),
     );
+    // return SizedBox(
+    //   height: 32.0,
+    //   child: ListView.separated(
+    //     padding: EdgeInsets.symmetric(horizontal: 16.0),
+    //     separatorBuilder: (context, index) {
+    //       return SizedBox(width: 8.0);
+    //     },
+    //     scrollDirection: Axis.horizontal,
+    //     itemCount: relationships.length,
+    //     itemBuilder: (context, index) {
+    //       var _relationship = relationships[index];
+    //       return Relationship(
+    //           key: ValueKey(_relationship), type: _relationship);
+    //     },
+    //   ),
+    // );
   }
 }

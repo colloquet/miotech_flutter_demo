@@ -45,6 +45,7 @@ class MiotechDemo extends StatelessWidget {
       model: _model,
       child: MaterialApp(
         title: 'MioTech Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: MioColors.base,
           accentColor: MioColors.secondary,
