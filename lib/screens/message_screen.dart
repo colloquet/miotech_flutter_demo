@@ -97,7 +97,7 @@ class _MessageScreenState extends State<MessageScreen> {
                 focusNode.unfocus();
               },
               child: ListView(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.symmetric(horizontal: 18.0, vertical: 4.0),
                 reverse: true,
                 children: messages.map((message) {
                   return MessageItem(
@@ -170,7 +170,6 @@ class _MessageScreenState extends State<MessageScreen> {
                         ),
                         controller: textEditingController,
                         focusNode: focusNode,
-                        autofocus: true,
                         maxLines: 1,
                         textInputAction: TextInputAction.send,
                         onSubmitted: sendMessage,
@@ -263,17 +262,15 @@ class ImageMessage extends StatelessWidget {
               pageBuilder: (context, animation, secondAnimation) {
                 return FadeTransition(
                   opacity: animation,
-                  child: GestureDetector(
-                    onTap: () {
+                  child: PhotoView(
+                    transitionOnUserGestures: true,
+                    imageProvider: message.image,
+                    heroTag: 'image-' + message.id.toString(),
+                    minScale: PhotoViewComputedScale.contained,
+                    maxScale: PhotoViewComputedScale.covered,
+                    onTapUp: (context, detail, value) {
                       Navigator.pop(context);
                     },
-                    child: PhotoView(
-                      transitionOnUserGestures: true,
-                      imageProvider: message.image,
-                      heroTag: 'image-' + message.id.toString(),
-                      minScale: PhotoViewComputedScale.contained,
-                      maxScale: PhotoViewComputedScale.covered,
-                    ),
                   ),
                 );
               },

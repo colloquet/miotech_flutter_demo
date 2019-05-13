@@ -1,15 +1,19 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:scoped_model/scoped_model.dart';
+import 'package:provider/provider.dart';
 import 'package:miotech_flutter_demo/screens/home_screen.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/models/company.dart';
+import 'package:miotech_flutter_demo/models/people.dart';
+import 'package:miotech_flutter_demo/models/narrative.dart';
+import 'package:miotech_flutter_demo/models/security.dart';
 
-var _companyData;
-var _peopleData;
-var _newsData;
-var _securityData;
+List<Company> _companyData;
+List<People> _peopleData;
+List<Narrative> _newsData;
+List<Security> _securityData;
 
 void main() async {
   await SystemChrome.setPreferredOrientations([
@@ -23,10 +27,22 @@ void main() async {
     rootBundle.loadString('assets/securities.json'),
   ]);
 
-  _companyData = json.decode(mockData[0].toString());
-  _peopleData = json.decode(mockData[1].toString());
-  _newsData = json.decode(mockData[2].toString());
-  _securityData = json.decode(mockData[3].toString());
+  _companyData = json
+      .decode(mockData[0].toString())
+      .map<Company>((json) => Company.fromJson(json))
+      .toList();
+  _peopleData = json
+      .decode(mockData[1].toString())
+      .map<People>((json) => People.fromJson(json))
+      .toList();
+  _newsData = json
+      .decode(mockData[2].toString())
+      .map<Narrative>((json) => Narrative.fromJson(json))
+      .toList();
+  _securityData = json
+      .decode(mockData[3].toString())
+      .map<Security>((json) => Security.fromJson(json))
+      .toList();
 
   runApp(MiotechDemo());
 }
@@ -34,15 +50,13 @@ void main() async {
 class MiotechDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final MainModel _model = MainModel(
-      companyData: _companyData,
-      peopleData: _peopleData,
-      newsData: _newsData,
-      securityData: _securityData,
-    );
-
-    return ScopedModel<MainModel>(
-      model: _model,
+    return ChangeNotifierProvider<MainModel>(
+      builder: (context) => MainModel(
+            companyData: _companyData,
+            peopleData: _peopleData,
+            newsData: _newsData,
+            securityData: _securityData,
+          ),
       child: MaterialApp(
         title: 'MioTech Demo',
         debugShowCheckedModeBanner: false,

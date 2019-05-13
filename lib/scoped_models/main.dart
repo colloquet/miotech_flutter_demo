@@ -1,14 +1,18 @@
-import 'package:scoped_model/scoped_model.dart';
+import 'package:flutter/material.dart';
+import 'package:miotech_flutter_demo/models/company.dart';
+import 'package:miotech_flutter_demo/models/people.dart';
+import 'package:miotech_flutter_demo/models/narrative.dart';
+import 'package:miotech_flutter_demo/models/security.dart';
 
-class MainModel extends Model {
+class MainModel with ChangeNotifier {
   MainModel({
     this.companyData,
     this.peopleData,
     this.newsData,
     this.securityData,
   });
-  var companyData;
-  var peopleData;
-  var newsData;
-  var securityData;
+  List<Company> companyData;
+  List<People> peopleData;
+  List<Narrative> newsData;
+  List<Security> securityData;
 }

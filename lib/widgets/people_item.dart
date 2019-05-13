@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/people_screen.dart';
 import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/models/people.dart';
 
 var relationships = [
   'Company (As Board Member)',
@@ -15,7 +16,7 @@ class PeopleItem extends StatelessWidget {
     @required this.people,
   }) : super(key: key);
 
-  final people;
+  People people;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +35,7 @@ class PeopleItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Text(
-                  people['name'],
+                  people.name,
                   style: TextStyle(fontSize: 18.0),
                 ),
                 SizedBox(height: 8.0),
@@ -58,7 +59,7 @@ class PeopleItem extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  people['bio'].replaceAll('\n', ' ').substring(0, 200),
+                  people.abstract,
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(color: MioColors.secondary.withOpacity(0.6)),
@@ -66,7 +67,7 @@ class PeopleItem extends StatelessWidget {
               ],
             ),
           ),
-          RelationshipList(id: people['globalId'], relationships: relationships),
+          RelationshipList(id: people.globalId, relationships: relationships),
           SizedBox(height: 16.0)
         ],
       ),

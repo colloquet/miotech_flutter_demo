@@ -43,74 +43,76 @@ class MessageList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      separatorBuilder: (context, index) {
-        return Divider(height: 1.0);
-      },
-      itemCount: _conversations.length,
-      itemBuilder: (BuildContext context, int index) {
-        final _conversation = _conversations[index];
-        final String _name = _conversation.from;
-        final String _initials =
-            _name.split(' ').map((string) => string[0]).join();
+    return Scrollbar(
+      child: ListView.separated(
+        separatorBuilder: (context, index) {
+          return Divider(height: 1.0);
+        },
+        itemCount: _conversations.length,
+        itemBuilder: (BuildContext context, int index) {
+          final _conversation = _conversations[index];
+          final String _name = _conversation.from;
+          final String _initials =
+              _name.split(' ').map((string) => string[0]).join();
 
-        return InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return MessageScreen(conversation: _conversation);
-                },
-              ),
-            );
-          },
-          child: Container(
-            key: ValueKey(_conversation.id),
-            padding: EdgeInsets.all(16.0),
-            child: Row(
-              children: <Widget>[
-                SizedBox(
-                  height: 48.0,
-                  width: 48.0,
-                  child: CircleAvatar(
-                    backgroundColor: _conversation.color,
-                    child: Text(
-                      _initials,
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: MioColors.primary,
+          return InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return MessageScreen(conversation: _conversation);
+                  },
+                ),
+              );
+            },
+            child: Container(
+              key: ValueKey(_conversation.id),
+              padding: EdgeInsets.all(16.0),
+              child: Row(
+                children: <Widget>[
+                  SizedBox(
+                    height: 48.0,
+                    width: 48.0,
+                    child: CircleAvatar(
+                      backgroundColor: _conversation.color,
+                      child: Text(
+                        _initials,
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: MioColors.primary,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(width: 16.0),
-                Flexible(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        _conversation.from,
-                        style: TextStyle(fontSize: 18.0),
-                      ),
-                      SizedBox(height: 4.0),
-                      Text(
-                        _conversation.latestMessage,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          color: MioColors.secondary.withOpacity(0.6),
-                          fontSize: 14.0,
+                  SizedBox(width: 16.0),
+                  Flexible(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          _conversation.from,
+                          style: TextStyle(fontSize: 18.0),
                         ),
-                      ),
-                    ],
+                        SizedBox(height: 4.0),
+                        Text(
+                          _conversation.latestMessage,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: MioColors.secondary.withOpacity(0.6),
+                            fontSize: 14.0,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }

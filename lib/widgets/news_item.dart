@@ -3,6 +3,7 @@ import 'package:timeago/timeago.dart' as timeago;
 import 'package:miotech_flutter_demo/screens/news_screen.dart';
 import 'package:miotech_flutter_demo/widgets/sentiment_bar.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/models/narrative.dart';
 
 class NewsItem extends StatelessWidget {
   NewsItem({
@@ -10,7 +11,7 @@ class NewsItem extends StatelessWidget {
     @required this.narrative,
   }) : super(key: key);
 
-  final narrative;
+  Narrative narrative;
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +30,13 @@ class NewsItem extends StatelessWidget {
             Row(
               children: <Widget>[
                 Text(
-                  narrative['eventType'],
+                  narrative.eventType,
                   style: TextStyle(color: MioColors.brand),
                 ),
                 SizedBox(width: 16.0),
                 Expanded(
                   child: Text(
-                    narrative['source'],
+                    narrative.source,
                     style: TextStyle(color: MioColors.secondary),
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -44,7 +45,7 @@ class NewsItem extends StatelessWidget {
                 Text(
                   timeago.format(
                     DateTime.fromMillisecondsSinceEpoch(
-                      int.parse(narrative['timestamp']),
+                      int.parse(narrative.timestamp),
                     ),
                   ),
                   style: TextStyle(color: MioColors.secondary),
@@ -53,14 +54,14 @@ class NewsItem extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              narrative['title'],
+              narrative.title,
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 18.0),
             ),
             SizedBox(height: 8.0),
             Text(
-              narrative['abstract'].replaceAll('\n', ' '),
+              narrative.abstract.replaceAll('\n', ' '),
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: MioColors.secondary.withOpacity(0.6)),

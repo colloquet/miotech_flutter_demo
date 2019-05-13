@@ -14,7 +14,8 @@ class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
+class _HomeScreenState extends State<HomeScreen>
+    with SingleTickerProviderStateMixin {
   String _currentTab = 'ami';
   TabController _tabController;
   final AmiSearchDelegate _delegate = AmiSearchDelegate();
@@ -47,26 +48,25 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             ? Text(_lastQuerySelected == null ? 'AMI' : _lastQuerySelected)
             : Text('Messages'),
         actions: <Widget>[
-          isAMI
-              ? IconButton(
-                  tooltip: 'Search',
-                  icon: const Icon(Icons.search),
-                  onPressed: () async {
-                    final String selected = await showSearch<String>(
-                      context: context,
-                      delegate: _delegate,
-                    );
-                    if (selected != null &&
-                        selected.isNotEmpty &&
-                        selected != _lastQuerySelected) {
-                      setState(() {
-                        _lastQuerySelected = selected;
-                      });
-                    }
-                  },
-                )
-              : null,
-        ].where((o) => o != null).toList(),
+          if (isAMI)
+            IconButton(
+              tooltip: 'Search',
+              icon: const Icon(Icons.search),
+              onPressed: () async {
+                final String selected = await showSearch<String>(
+                  context: context,
+                  delegate: _delegate,
+                );
+                if (selected != null &&
+                    selected.isNotEmpty &&
+                    selected != _lastQuerySelected) {
+                  setState(() {
+                    _lastQuerySelected = selected;
+                  });
+                }
+              },
+            )
+        ],
         bottom: isAMI
             ? TabBar(
                 controller: _tabController,

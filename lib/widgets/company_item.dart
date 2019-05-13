@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/company_screen.dart';
 import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
+import 'package:miotech_flutter_demo/models/company.dart';
 
 var relationships = [
   'Competitor',
@@ -19,7 +20,7 @@ class CompanyItem extends StatelessWidget {
     Key key,
     @required this.company,
   }) : super(key: key);
-  final company;
+  Company company;
 
   @override
   Widget build(BuildContext context) {
@@ -63,22 +64,20 @@ class CompanyItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Text(
-                  company['name'],
+                  company.name,
                   style: TextStyle(fontSize: 18.0),
                 ),
                 SizedBox(height: 8.0),
                 Row(
                   children: <Widget>[
                     Text(
-                      company['type'],
+                      company.type,
                       style: TextStyle(color: MioColors.secondary),
                     ),
                     SizedBox(width: 8.0),
                     Flexible(
                       child: Text(
-                        company['assetInfo'].length == 0
-                            ? ''
-                            : company['assetInfo'][0]['ticker'],
+                        company.ticker,
                         style: TextStyle(color: MioColors.brand),
                       ),
                     ),
@@ -86,9 +85,7 @@ class CompanyItem extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Text(
-                  company['description']
-                      .replaceAll('\n', ' ')
-                      .substring(0, 200),
+                  company.abstract,
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(color: MioColors.secondary.withOpacity(0.6)),
@@ -96,7 +93,7 @@ class CompanyItem extends StatelessWidget {
               ],
             ),
           ),
-          RelationshipList(id: company['globalId'], relationships: relationships),
+          RelationshipList(id: company.globalId, relationships: relationships),
           SizedBox(height: 16.0)
         ],
       ),
