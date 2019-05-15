@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/widgets/message_list.dart';
+import 'package:miotech_flutter_demo/message/message_list.dart';
 
-class MessagesScreen extends StatelessWidget {
+class MessageListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

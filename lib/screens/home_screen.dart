@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/screens/ami_screen.dart';
-import 'package:miotech_flutter_demo/screens/messages_screen.dart';
+import 'package:miotech_flutter_demo/message/message_list_screen.dart';
 import 'package:miotech_flutter_demo/screens/profile_screen.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/ami_icons.dart';
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
         duration: Duration(milliseconds: 100),
         child: [
           AMIScreen(),
-          MessagesScreen(),
+          MessageListScreen(),
           ProfileScreen(),
         ][_currentBottomTab],
         transitionBuilder: (widget, animation) {

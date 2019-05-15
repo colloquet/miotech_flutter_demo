@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/widgets/security_item.dart';
-import 'package:miotech_flutter_demo/models/security.dart';
+import 'package:miotech_flutter_demo/narrative/narrative_item.dart';
+import 'package:miotech_flutter_demo/models/narrative.dart';
 
-class SecurityList extends StatelessWidget {
-  SecurityList({
+class NarrativeList extends StatelessWidget {
+  NarrativeList({
     Key key,
   }) : super(key: key);
 
@@ -16,12 +16,10 @@ class SecurityList extends StatelessWidget {
         return Scrollbar(
           child: ListView.separated(
             separatorBuilder: (context, index) => Divider(height: 1.0),
-            itemCount:
-                model.securityData == null ? 0 : model.securityData.length,
+            itemCount: model.newsData == null ? 0 : model.newsData.length,
             itemBuilder: (BuildContext context, int index) {
-              Security _security = model.securityData[index];
-              return SecurityItem(
-                  key: ValueKey(_security.globalId), security: _security);
+              Narrative _narrative = model.newsData[index];
+              return NarrativeItem(key: ValueKey(_narrative.globalId), narrative: _narrative);
             },
           ),
         );

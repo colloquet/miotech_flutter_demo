@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/screens/company_screen.dart';
+import 'package:miotech_flutter_demo/company/company_screen.dart';
 import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/company.dart';
@@ -20,7 +20,7 @@ class CompanyItem extends StatelessWidget {
     Key key,
     @required this.company,
   }) : super(key: key);
-  Company company;
+  final Company company;
 
   @override
   Widget build(BuildContext context) {

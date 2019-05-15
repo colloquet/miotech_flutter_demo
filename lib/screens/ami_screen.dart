@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/widgets/all_list.dart';
-import 'package:miotech_flutter_demo/widgets/company_list.dart';
-import 'package:miotech_flutter_demo/widgets/people_list.dart';
-import 'package:miotech_flutter_demo/widgets/news_list.dart';
-import 'package:miotech_flutter_demo/widgets/security_list.dart';
+import 'package:miotech_flutter_demo/company/company_list.dart';
+import 'package:miotech_flutter_demo/people/people_list.dart';
+import 'package:miotech_flutter_demo/narrative/narrative_list.dart';
+import 'package:miotech_flutter_demo/security/security_list.dart';
 import 'package:miotech_flutter_demo/widgets/ami_search_delegate/ami_search_delegate.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
@@ -72,7 +72,7 @@ class _AMIScreenState extends State<AMIScreen>
           AllList(onTabChange: _handleTabChange),
           CompanyList(),
           PeopleList(),
-          NewsList(),
+          NarrativeList(),
           SecurityList(),
         ],
       ),

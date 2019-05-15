@@ -7,8 +7,8 @@ class SentimentBar extends StatelessWidget {
     Key key,
     @required this.narrative,
   }) : super(key: key);
-  Narrative narrative;
-  final _width = 76.0;
+  final Narrative narrative;
+  final double _width = 76.0;
 
   @override
   Widget build(BuildContext context) {

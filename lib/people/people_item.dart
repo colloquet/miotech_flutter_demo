@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/screens/people_screen.dart';
+import 'package:miotech_flutter_demo/people/people_screen.dart';
 import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/people.dart';
@@ -16,7 +16,7 @@ class PeopleItem extends StatelessWidget {
     @required this.people,
   }) : super(key: key);
 
-  People people;
+  final People people;
 
   @override
   Widget build(BuildContext context) {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/widgets/company_item.dart';
-import 'package:miotech_flutter_demo/widgets/security_item.dart';
-import 'package:miotech_flutter_demo/widgets/news_item.dart';
-import 'package:miotech_flutter_demo/widgets/people_item.dart';
+import 'package:miotech_flutter_demo/company/company_item.dart';
+import 'package:miotech_flutter_demo/security/security_item.dart';
+import 'package:miotech_flutter_demo/narrative/narrative_item.dart';
+import 'package:miotech_flutter_demo/people/people_item.dart';
 import 'package:miotech_flutter_demo/widgets/panel_header.dart';
 import 'package:miotech_flutter_demo/widgets/exact_match_top_card.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
@@ -58,11 +58,11 @@ class AllList extends StatelessWidget {
               Panel(
                 title: '3,457,077 Narratives',
                 children: <Widget>[
-                  NewsItem(narrative: model.newsData[0]),
+                  NarrativeItem(narrative: model.newsData[0]),
                   Divider(height: 1),
-                  NewsItem(narrative: model.newsData[1]),
+                  NarrativeItem(narrative: model.newsData[1]),
                   Divider(height: 1),
-                  NewsItem(narrative: model.newsData[2]),
+                  NarrativeItem(narrative: model.newsData[2]),
                   Divider(height: 1),
                 ],
                 onViewMore: () {

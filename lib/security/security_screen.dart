@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:miotech_flutter_demo/widgets/charts/market_series_chart.dart';
-import 'package:miotech_flutter_demo/widgets/security_tabs.dart';
+import 'package:miotech_flutter_demo/security/security_tabs.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/security.dart';
 
 class SecurityScreen extends StatelessWidget {
   SecurityScreen(this.security);
 
-  Security security;
+  final Security security;
   final formatter = DateFormat('yyyy-MM-dd HH:mm:ss');
 
   @override
@@ -51,8 +51,8 @@ class SecurityScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 8.0),
                       Text(
-                        formatter.format(
-                            DateTime.fromMillisecondsSinceEpoch(_lastUpdateTime)),
+                        formatter.format(DateTime.fromMillisecondsSinceEpoch(
+                            _lastUpdateTime)),
                         style: TextStyle(color: MioColors.secondary),
                       ),
                       SizedBox(height: 8.0),
@@ -63,7 +63,8 @@ class SecurityScreen extends StatelessWidget {
                             child: Column(
                               children: <Widget>[
                                 Row(
-                                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.baseline,
                                   textBaseline: TextBaseline.alphabetic,
                                   children: <Widget>[
                                     Text(security.currency),

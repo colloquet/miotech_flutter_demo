@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:miotech_flutter_demo/screens/news_screen.dart';
-import 'package:miotech_flutter_demo/widgets/sentiment_bar.dart';
+import 'package:miotech_flutter_demo/narrative/narrative_screen.dart';
+import 'package:miotech_flutter_demo/narrative/sentiment_bar.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/narrative.dart';
 
-class NewsItem extends StatelessWidget {
-  NewsItem({
+class NarrativeItem extends StatelessWidget {
+  NarrativeItem({
     Key key,
     @required this.narrative,
   }) : super(key: key);
 
-  Narrative narrative;
+  final Narrative narrative;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class NewsItem extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => NewsScreen(narrative)),
+          MaterialPageRoute(builder: (context) => NarrativeScreen(narrative)),
         );
       },
       child: Container(

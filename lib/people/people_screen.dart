@@ -35,7 +35,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
 
 class PeopleScreen extends StatelessWidget {
   PeopleScreen(this.people);
-  People people;
+  final People people;
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
-import 'package:miotech_flutter_demo/screens/security_screen.dart';
+import 'package:miotech_flutter_demo/security/security_screen.dart';
 import 'package:miotech_flutter_demo/models/security.dart';
 
 class SecurityItem extends StatefulWidget {
@@ -8,7 +8,7 @@ class SecurityItem extends StatefulWidget {
     Key key,
     @required this.security,
   }) : super(key: key);
-  Security security;
+  final Security security;
 
   @override
   _SecurityItemState createState() => _SecurityItemState();

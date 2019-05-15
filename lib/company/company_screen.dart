@@ -5,7 +5,7 @@ import 'package:miotech_flutter_demo/models/company.dart';
 
 class CompanyScreen extends StatelessWidget {
   CompanyScreen(this.company);
-  Company company;
+  final Company company;
 
   @override
   Widget build(BuildContext context) {

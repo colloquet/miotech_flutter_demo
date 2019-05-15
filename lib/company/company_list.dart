@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:miotech_flutter_demo/scoped_models/main.dart';
-import 'package:miotech_flutter_demo/widgets/people_item.dart';
+import 'package:miotech_flutter_demo/company/company_item.dart';
+import 'package:miotech_flutter_demo/models/company.dart';
 
-class PeopleList extends StatelessWidget {
-  PeopleList({
+class CompanyList extends StatelessWidget {
+  CompanyList({
     Key key,
   }) : super(key: key);
 
@@ -15,10 +16,10 @@ class PeopleList extends StatelessWidget {
         return Scrollbar(
           child: ListView.separated(
             separatorBuilder: (context, index) => Divider(height: 1.0),
-            itemCount: model.peopleData == null ? 0 : model.peopleData.length,
+            itemCount: model.companyData == null ? 0 : model.companyData.length,
             itemBuilder: (BuildContext context, int index) {
-              final _people = model.peopleData[index];
-              return PeopleItem(key: ValueKey(_people.globalId), people: _people);
+              Company _company = model.companyData[index];
+              return CompanyItem(key: ValueKey(_company.globalId), company: _company);
             },
           ),
         );

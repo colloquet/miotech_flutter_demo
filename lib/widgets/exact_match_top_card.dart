@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/widgets/charts/top_card_market_chart.dart';
-import 'package:miotech_flutter_demo/screens/company_screen.dart';
-import 'package:miotech_flutter_demo/screens/security_screen.dart';
+import 'package:miotech_flutter_demo/company/company_screen.dart';
+import 'package:miotech_flutter_demo/security/security_screen.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/company.dart';
 import 'package:miotech_flutter_demo/models/security.dart';
 
 class ExactMatchTopCard extends StatelessWidget {
   ExactMatchTopCard({this.company, this.security});
-  Company company;
-  Security security;
+  final Company company;
+  final Security security;
 
   @override
   Widget build(BuildContext context) {

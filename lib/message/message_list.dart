@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:miotech_flutter_demo/screens/message_screen.dart';
+import 'package:miotech_flutter_demo/message/message_screen.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/conversation.dart';
 
-var _names = [
+List<String> _names = [
   'Zonia Sedlak',
   'Lisbeth Sinha',
   'Janiece Atterbury',
@@ -16,7 +16,7 @@ var _names = [
   'Jaimie Ferrara',
 ];
 
-var _backgroundColors = [
+List<Color> _backgroundColors = [
   Color(0xff4C7863),
   Color(0xff12918B),
   Color(0xffAF6D40),

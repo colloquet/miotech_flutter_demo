@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
-import 'package:miotech_flutter_demo/widgets/sentiment_bar.dart';
+import 'package:miotech_flutter_demo/narrative/sentiment_bar.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/narrative.dart';
 
-class NewsScreen extends StatelessWidget {
-  NewsScreen(this.narrative);
-  Narrative narrative;
+class NarrativeScreen extends StatelessWidget {
+  NarrativeScreen(this.narrative);
+  final Narrative narrative;
 
   @override
   Widget build(BuildContext context) {
