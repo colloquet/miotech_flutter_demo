@@ -40,11 +40,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      // body: [
-      //   AMIScreen(),
-      //   MessagesScreen(),
-      //   ProfileScreen(),
-      // ][_currentBottomTab],
       body: AnimatedSwitcher(
         duration: Duration(milliseconds: 100),
         child: [

@@ -20,7 +20,7 @@ void main() async {
     DeviceOrientation.portraitUp,
   ]);
 
-  var mockData = await Future.wait([
+  List<String> mockData = await Future.wait([
     rootBundle.loadString('assets/companies.json'),
     rootBundle.loadString('assets/people.json'),
     rootBundle.loadString('assets/news.json'),
@@ -28,19 +28,19 @@ void main() async {
   ]);
 
   _companyData = json
-      .decode(mockData[0].toString())
+      .decode(mockData[0])
       .map<Company>((json) => Company.fromJson(json))
       .toList();
   _peopleData = json
-      .decode(mockData[1].toString())
+      .decode(mockData[1])
       .map<People>((json) => People.fromJson(json))
       .toList();
   _newsData = json
-      .decode(mockData[2].toString())
+      .decode(mockData[2])
       .map<Narrative>((json) => Narrative.fromJson(json))
       .toList();
   _securityData = json
-      .decode(mockData[3].toString())
+      .decode(mockData[3])
       .map<Security>((json) => Security.fromJson(json))
       .toList();
 
