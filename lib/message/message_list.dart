@@ -29,7 +29,12 @@ List<Color> _backgroundColors = [
   Color(0xffAF6D40),
 ];
 
-class MessageList extends StatelessWidget {
+class MessageList extends StatefulWidget {
+  @override
+  _MessageListState createState() => _MessageListState();
+}
+
+class _MessageListState extends State<MessageList> with AutomaticKeepAliveClientMixin {
   final _conversations = List.generate(
     20,
     (index) => Conversation(
@@ -42,7 +47,11 @@ class MessageList extends StatelessWidget {
   );
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scrollbar(
       child: ListView.separated(
         separatorBuilder: (context, index) {

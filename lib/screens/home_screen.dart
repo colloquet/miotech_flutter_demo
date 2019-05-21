@@ -11,7 +11,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _currentBottomTab = 0;
+  int _currentIndex = 0;
+  List<Widget> _tabs = [
+    AMIScreen(),
+    MessageListScreen(),
+    ProfileScreen(),
+  ];
+
+  final pageController = PageController();
+
+  void onTap(int index) {
+    pageController.jumpToPage(index);
+  }
+
+  void onPageChanged(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: MioColors.primary,
         unselectedItemColor: MioColors.secondary,
-        onTap: (int index) {
-          setState(() {
-            _currentBottomTab = index;
-          });
-        },
-        currentIndex: _currentBottomTab,
+        onTap: onTap,
+        currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
             icon: Icon(AmiIcons.ami_logo),
@@ -40,19 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: AnimatedSwitcher(
-        duration: Duration(milliseconds: 100),
-        child: [
-          AMIScreen(),
-          MessageListScreen(),
-          ProfileScreen(),
-        ][_currentBottomTab],
-        transitionBuilder: (widget, animation) {
-          return FadeTransition(
-            opacity: animation,
-            child: widget,
-          );
-        },
+      body: PageView(
+        controller: pageController,
+        onPageChanged: onPageChanged,
+        children: _tabs,
+        physics: NeverScrollableScrollPhysics(),
       ),
     );
   }
