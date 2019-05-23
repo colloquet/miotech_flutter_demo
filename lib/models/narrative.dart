@@ -1,13 +1,4 @@
 class Narrative {
-  String globalId;
-  String eventType;
-  String source;
-  String timestamp;
-  String title;
-  String abstract;
-  String content;
-  double sentimentScore;
-
   Narrative({
     this.globalId,
     this.eventType,
@@ -20,7 +11,7 @@ class Narrative {
   });
 
   factory Narrative.fromJson(Map<String, dynamic> json) {
-    var narrative = json['narrative'];
+    final dynamic narrative = json['narrative'];
     return Narrative(
       globalId: narrative['globalId'],
       eventType: narrative['eventType'],
@@ -32,4 +23,13 @@ class Narrative {
       sentimentScore: narrative['sentimentScore'],
     );
   }
+
+  String globalId;
+  String eventType;
+  String source;
+  String timestamp;
+  String title;
+  String abstract;
+  String content;
+  double sentimentScore;
 }

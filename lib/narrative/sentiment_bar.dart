@@ -12,10 +12,10 @@ class SentimentBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _backgroundColor = narrative.sentimentScore >= 0
+    final Color _backgroundColor = narrative.sentimentScore >= 0
         ? MioColors.green.withOpacity(0.4)
         : MioColors.orange.withOpacity(0.4);
-    final _borderColor =
+    final Color _borderColor =
         narrative.sentimentScore >= 0 ? MioColors.green : MioColors.orange;
     return Row(
       children: <Widget>[
@@ -23,7 +23,7 @@ class SentimentBar extends StatelessWidget {
           'Sentiment',
           style: TextStyle(color: MioColors.secondary),
         ),
-        SizedBox(width: 8.0),
+        const SizedBox(width: 8.0),
         Container(
           height: 10.0,
           width: _width,
@@ -45,7 +45,7 @@ class SentimentBar extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(width: 8.0),
+        const SizedBox(width: 8.0),
         Text(
           narrative.sentimentScore.toStringAsFixed(2).toString(),
           style: TextStyle(color: _borderColor),

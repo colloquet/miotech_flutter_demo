@@ -21,7 +21,8 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   double get maxExtent => math.max(maxHeight, minHeight);
 
   @override
-  Widget build(context, shrinkOffset, overlapsContent) {
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
     return SizedBox.expand(child: child);
   }
 
@@ -34,12 +35,12 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
 }
 
 class PeopleScreen extends StatelessWidget {
-  PeopleScreen(this.people);
+  const PeopleScreen(this.people);
   final People people;
 
   @override
   Widget build(BuildContext context) {
-    final _workExperience = people.workExperiences;
+    final List<dynamic> _workExperience = people.workExperiences;
     return Scaffold(
       appBar: AppBar(
         title: Text(people.name),
@@ -49,7 +50,7 @@ class PeopleScreen extends StatelessWidget {
           slivers: <Widget>[
             SliverToBoxAdapter(
               child: Container(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -57,7 +58,7 @@ class PeopleScreen extends StatelessWidget {
                       people.name,
                       style: TextStyle(fontSize: 24.0),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       people.bio,
                       style: TextStyle(
@@ -79,7 +80,7 @@ class PeopleScreen extends StatelessWidget {
                   child: Material(
                     elevation: 4.0,
                     child: Padding(
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Text(
                         'Work Experiences',
                         style: TextStyle(color: MioColors.secondary),
@@ -93,17 +94,17 @@ class PeopleScreen extends StatelessWidget {
               sliver: SliverList(
                 delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
-                    final _exp = _workExperience[index];
-                    final _isCurrent =
+                    final dynamic _exp = _workExperience[index];
+                    final dynamic _isCurrent =
                         _exp['currentProFlag'] || _exp['currentBoardFlag'];
-                    final _titleColor =
+                    final Color _titleColor =
                         _isCurrent ? MioColors.brand : MioColors.primary;
-                    final _subTitleColor =
+                    final Color _subTitleColor =
                         _isCurrent ? MioColors.primary : MioColors.secondary;
-                    final _borderColor =
+                    final Color _borderColor =
                         _isCurrent ? MioColors.brand : MioColors.secondary;
-                    final _isLast = (index + 1) == _workExperience.length;
-                    final _paddingBottom = _isLast ? 16.0 : 0.0;
+                    final bool _isLast = (index + 1) == _workExperience.length;
+                    final double _paddingBottom = _isLast ? 16.0 : 0.0;
                     return Padding(
                       padding: EdgeInsets.only(
                           top: 16.0,
@@ -116,26 +117,28 @@ class PeopleScreen extends StatelessWidget {
                           gradient: LinearGradient(
                             begin: Alignment.topRight,
                             end: Alignment.bottomLeft,
-                            stops: [0.1, 0.9],
+                            stops: const <double>[0.1, 0.9],
                             colors: _isCurrent
-                                ? [
+                                ? <Color>[
                                     MioColors.brand.withOpacity(0.2),
                                     MioColors.brand.withOpacity(0.2),
                                   ]
-                                : [
+                                : <Color>[
                                     MioColors.fifth,
                                     MioColors.fourth,
                                   ],
                           ),
                         ),
-                        padding: EdgeInsets.symmetric(
-                            vertical: 8.0, horizontal: 24.0),
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 8.0,
+                          horizontal: 24.0,
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(_exp['company'],
                                 style: TextStyle(color: _titleColor)),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 4.0),
                             Text(
                               _exp['functionName'],
                               style: TextStyle(

@@ -4,7 +4,7 @@ import 'package:miotech_flutter_demo/widgets/relationship_list.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/company.dart';
 
-var relationships = [
+List<String> relationships = <String>[
   'Competitor',
   'Shareholder',
   'Investor',
@@ -28,7 +28,8 @@ class CompanyItem extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => CompanyScreen(company)),
+          MaterialPageRoute<dynamic>(
+              builder: (BuildContext context) => CompanyScreen(company)),
         );
       },
       onLongPress: () {
@@ -41,13 +42,13 @@ class CompanyItem extends StatelessWidget {
               child: Wrap(
                 children: <Widget>[
                   ListTile(
-                    leading: Icon(Icons.playlist_add),
-                    title: Text('Add to Monitor Board'),
+                    leading: const Icon(Icons.playlist_add),
+                    title: const Text('Add to Monitor Board'),
                     onTap: () {},
                   ),
                   ListTile(
-                    leading: Icon(Icons.star),
-                    title: Text('Favourite'),
+                    leading: const Icon(Icons.star),
+                    title: const Text('Favourite'),
                     onTap: () {},
                   ),
                 ],
@@ -59,7 +60,7 @@ class CompanyItem extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
@@ -67,14 +68,14 @@ class CompanyItem extends StatelessWidget {
                   company.name,
                   style: TextStyle(fontSize: 18.0),
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 Row(
                   children: <Widget>[
                     Text(
                       company.type,
                       style: TextStyle(color: MioColors.secondary),
                     ),
-                    SizedBox(width: 8.0),
+                    const SizedBox(width: 8.0),
                     Flexible(
                       child: Text(
                         company.ticker,
@@ -83,7 +84,7 @@ class CompanyItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 Text(
                   company.abstract,
                   maxLines: 3,
@@ -94,7 +95,7 @@ class CompanyItem extends StatelessWidget {
             ),
           ),
           RelationshipList(id: company.globalId, relationships: relationships),
-          SizedBox(height: 16.0)
+          const SizedBox(height: 16.0)
         ],
       ),
     );

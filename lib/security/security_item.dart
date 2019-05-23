@@ -41,11 +41,11 @@ class _SecurityItemState extends State<SecurityItem> {
       onTap: () {
         Navigator.push(
             context,
-            MaterialPageRoute(
-                builder: (context) => SecurityScreen(widget.security)));
+            MaterialPageRoute<dynamic>(
+                builder: (BuildContext context) => SecurityScreen(widget.security)));
       },
       child: Container(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           children: <Widget>[
             Expanded(
@@ -57,7 +57,7 @@ class _SecurityItemState extends State<SecurityItem> {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(fontSize: 16.0),
                   ),
-                  SizedBox(height: 4.0),
+                  const SizedBox(height: 4.0),
                   Text(
                     widget.security.ticker,
                     overflow: TextOverflow.ellipsis,
@@ -66,7 +66,7 @@ class _SecurityItemState extends State<SecurityItem> {
                 ],
               ),
             ),
-            SizedBox(width: 16.0),
+            const SizedBox(width: 16.0),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
@@ -75,14 +75,14 @@ class _SecurityItemState extends State<SecurityItem> {
                   textBaseline: TextBaseline.alphabetic,
                   children: <Widget>[
                     Text(widget.security.currency),
-                    SizedBox(width: 4.0),
+                    const SizedBox(width: 4.0),
                     Text(
                       _currentPrice.toString(),
                       style: TextStyle(fontSize: 18.0),
                     ),
                   ],
                 ),
-                SizedBox(height: 4.0),
+                const SizedBox(height: 4.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[

@@ -18,7 +18,7 @@ import 'package:flutter/widgets.dart';
 class AmiIcons {
   AmiIcons._();
 
-  static const _kFontFam = 'AMI';
+  static const String _kFontFam = 'AMI';
 
-  static const IconData ami_logo = const IconData(0xe800, fontFamily: _kFontFam);
+  static const IconData ami_logo = IconData(0xe800, fontFamily: _kFontFam);
 }

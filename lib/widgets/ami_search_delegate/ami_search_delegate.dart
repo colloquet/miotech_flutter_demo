@@ -3,11 +3,11 @@ import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class AmiSearchDelegate extends SearchDelegate<String> {
   final List<String> _data = <String>[
-    "Facebook, Inc.",
-    "Facebook, Inc., Investment Arm",
-    "fbFund, L.P.",
-    "Facebook Global Holdings II, LLC",
-    "Facebook India Online Services Private Limited"
+    'Facebook, Inc.',
+    'Facebook, Inc., Investment Arm',
+    'fbFund, L.P.',
+    'Facebook Global Holdings II, LLC',
+    'Facebook India Online Services Private Limited'
   ];
   final List<String> _history = <String>[
     'facebook',
@@ -47,14 +47,14 @@ class AmiSearchDelegate extends SearchDelegate<String> {
       query: query,
       suggestions: suggestions,
       onSelected: (String suggestion) {
-        this.close(context, suggestion);
+        close(context, suggestion);
       },
     );
   }
 
   @override
   void showResults(BuildContext context) {
-    this.close(context, query);
+    close(context, query);
   }
 
   @override
@@ -65,8 +65,8 @@ class AmiSearchDelegate extends SearchDelegate<String> {
   @override
   List<Widget> buildActions(BuildContext context) {
     return query.isEmpty
-        ? []
-        : [
+        ? <void>[]
+        : <IconButton>[
             IconButton(
               tooltip: 'Clear',
               icon: const Icon(Icons.clear),

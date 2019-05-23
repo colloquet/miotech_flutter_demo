@@ -12,16 +12,16 @@ class SecurityList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
-      builder: (context, model, _) {
+      builder: (BuildContext context, MainModel model, _) {
         return Scrollbar(
           child: ListView.separated(
-            separatorBuilder: (context, index) => Divider(height: 1.0),
+            separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
             itemCount:
                 model.securityData == null ? 0 : model.securityData.length,
             itemBuilder: (BuildContext context, int index) {
-              Security _security = model.securityData[index];
+              final Security _security = model.securityData[index];
               return SecurityItem(
-                  key: ValueKey(_security.globalId), security: _security);
+                  key: ValueKey<String>(_security.globalId), security: _security);
             },
           ),
         );

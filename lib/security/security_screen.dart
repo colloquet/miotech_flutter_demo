@@ -9,25 +9,25 @@ class SecurityScreen extends StatelessWidget {
   SecurityScreen(this.security);
 
   final Security security;
-  final formatter = DateFormat('yyyy-MM-dd HH:mm:ss');
+  final DateFormat formatter = DateFormat('yyyy-MM-dd HH:mm:ss');
 
   @override
   Widget build(BuildContext context) {
-    var _ticker = security.ticker;
-    var _name = security.name;
-    var _lastUpdateTime = security.lastUpdateTime;
-    var _currentPrice = security.currentPrice;
-    var _changeFromPreviousClose = security.changeFromPreviousClose;
-    var _percentChangeFromPreviousClose =
+    final String _ticker = security.ticker;
+    final String _name = security.name;
+    final int _lastUpdateTime = security.lastUpdateTime;
+    final double _currentPrice = security.currentPrice;
+    final double _changeFromPreviousClose = security.changeFromPreviousClose;
+    final double _percentChangeFromPreviousClose =
         security.percentChangeFromPreviousClose;
-    var _previousClose = security.previousClose;
-    var _open = security.open;
-    var _high = security.high;
-    var _low = security.low;
-    var _displayPercentageChange =
+    final double _previousClose = security.previousClose;
+    final double _open = security.open;
+    final double _high = security.high;
+    final double _low = security.low;
+    final String _displayPercentageChange =
         (_percentChangeFromPreviousClose * 100).toStringAsFixed(2).toString();
-    var _isPositive = _changeFromPreviousClose >= 0;
-    var _textColor = _isPositive ? MioColors.green : MioColors.orange;
+    final bool _isPositive = _changeFromPreviousClose >= 0;
+    final Color _textColor = _isPositive ? MioColors.green : MioColors.orange;
 
     return Scaffold(
       appBar: AppBar(
@@ -38,10 +38,10 @@ class SecurityScreen extends StatelessWidget {
           child: SafeArea(
             child: Column(
               children: <Widget>[
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 Container(
                   color: MioColors.base,
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
@@ -49,13 +49,13 @@ class SecurityScreen extends StatelessWidget {
                         _name,
                         style: TextStyle(fontSize: 18.0),
                       ),
-                      SizedBox(height: 8.0),
+                      const SizedBox(height: 8.0),
                       Text(
                         formatter.format(DateTime.fromMillisecondsSinceEpoch(
                             _lastUpdateTime)),
                         style: TextStyle(color: MioColors.secondary),
                       ),
-                      SizedBox(height: 8.0),
+                      const SizedBox(height: 8.0),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: <Widget>[
@@ -68,14 +68,14 @@ class SecurityScreen extends StatelessWidget {
                                   textBaseline: TextBaseline.alphabetic,
                                   children: <Widget>[
                                     Text(security.currency),
-                                    SizedBox(width: 4.0),
+                                    const SizedBox(width: 4.0),
                                     Text(
                                       _currentPrice.toString(),
                                       style: TextStyle(fontSize: 24.0),
                                     ),
                                   ],
                                 ),
-                                SizedBox(height: 4.0),
+                                const SizedBox(height: 4.0),
                                 Row(
                                   children: <Widget>[
                                     Text(
@@ -111,7 +111,7 @@ class SecurityScreen extends StatelessWidget {
                                         .toString()),
                                   ],
                                 ),
-                                SizedBox(height: 4.0),
+                                const SizedBox(height: 4.0),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -127,7 +127,7 @@ class SecurityScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                          SizedBox(width: 16.0),
+                          const SizedBox(width: 16.0),
                           Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -144,7 +144,7 @@ class SecurityScreen extends StatelessWidget {
                                     Text(_high.toStringAsFixed(2).toString()),
                                   ],
                                 ),
-                                SizedBox(height: 4.0),
+                                const SizedBox(height: 4.0),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -165,7 +165,7 @@ class SecurityScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 Container(
                   color: MioColors.base,
                   child: Column(
@@ -188,7 +188,7 @@ class SecurityScreen extends StatelessWidget {
                             length: 6,
                             child: TabBar(
                               unselectedLabelColor: MioColors.secondary,
-                              tabs: [
+                              tabs: const <Tab>[
                                 Tab(text: '1m'),
                                 Tab(text: '3m'),
                                 Tab(text: '6m'),
@@ -201,7 +201,7 @@ class SecurityScreen extends StatelessWidget {
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: SizedBox(
                           height: 300.0,
                           child: MarketSeriesChart.withSampleData(),
@@ -210,9 +210,9 @@ class SecurityScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 SecurityTabs(),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
               ],
             ),
           ),

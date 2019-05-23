@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:photo_view/photo_view.dart';
@@ -7,7 +8,7 @@ import 'package:miotech_flutter_demo/models/conversation.dart';
 import 'package:miotech_flutter_demo/models/message.dart';
 
 class MessageScreen extends StatefulWidget {
-  MessageScreen({this.conversation});
+  const MessageScreen({this.conversation});
   final Conversation conversation;
 
   @override
@@ -15,14 +16,14 @@ class MessageScreen extends StatefulWidget {
 }
 
 class _MessageScreenState extends State<MessageScreen> {
-  final messages = [
+  final List<Message> messages = <Message>[
     Message(
       text: 'Me too!',
       isSelf: false,
       type: 'text',
     ),
     Message(
-      image: AssetImage('assets/bg.jpg'),
+      image: const AssetImage('assets/bg.jpg'),
       isSelf: false,
       type: 'image',
     ),
@@ -45,12 +46,12 @@ class _MessageScreenState extends State<MessageScreen> {
 
   int imageId = 0;
 
-  Future sendImage(source) async {
+  Future<void> sendImage(ImageSource source) async {
     try {
-      final image = await ImagePicker.pickImage(source: source);
+      final File image = await ImagePicker.pickImage(source: source);
 
       if (image != null) {
-        var _message = Message(
+        final Message _message = Message(
           id: imageId++,
           image: FileImage(image),
           isSelf: true,
@@ -65,9 +66,9 @@ class _MessageScreenState extends State<MessageScreen> {
     }
   }
 
-  sendMessage(text) {
+  void sendMessage(String text) {
     if (text.trim() != '') {
-      var _message = Message(
+      final Message _message = Message(
         text: text,
         isSelf: true,
         type: 'text',
@@ -97,9 +98,10 @@ class _MessageScreenState extends State<MessageScreen> {
                 focusNode.unfocus();
               },
               child: ListView(
-                padding: EdgeInsets.symmetric(horizontal: 18.0, vertical: 4.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 18.0, vertical: 4.0),
                 reverse: true,
-                children: messages.map((message) {
+                children: messages.map((Message message) {
                   return MessageItem(
                     message: message,
                   );
@@ -112,7 +114,8 @@ class _MessageScreenState extends State<MessageScreen> {
             padding:
                 EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
+              margin:
+                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
               child: Row(
                 children: <Widget>[
                   GestureDetector(
@@ -126,16 +129,16 @@ class _MessageScreenState extends State<MessageScreen> {
                             child: Wrap(
                               children: <Widget>[
                                 ListTile(
-                                  leading: Icon(Icons.image),
-                                  title: Text('Photo album'),
+                                  leading: const Icon(Icons.image),
+                                  title: const Text('Photo album'),
                                   onTap: () {
                                     sendImage(ImageSource.gallery);
                                     Navigator.pop(context);
                                   },
                                 ),
                                 ListTile(
-                                  leading: Icon(Icons.camera_alt),
-                                  title: Text('Camera'),
+                                  leading: const Icon(Icons.camera_alt),
+                                  title: const Text('Camera'),
                                   onTap: () {
                                     sendImage(ImageSource.camera);
                                     Navigator.pop(context);
@@ -147,7 +150,7 @@ class _MessageScreenState extends State<MessageScreen> {
                         },
                       );
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.add,
                       color: MioColors.secondary,
                       size: 30.0,
@@ -159,7 +162,7 @@ class _MessageScreenState extends State<MessageScreen> {
                         color: MioColors.fifth,
                         borderRadius: BorderRadius.circular(4.0),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -183,7 +186,7 @@ class _MessageScreenState extends State<MessageScreen> {
                     onTap: () {
                       sendMessage(textEditingController.text);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.send,
                       color: MioColors.secondary,
                       size: 28.0,
@@ -232,8 +235,8 @@ class TextMessage extends StatelessWidget {
         color: message.isSelf ? MioColors.primary : MioColors.fifth,
         borderRadius: BorderRadius.circular(4.0),
       ),
-      padding: EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
-      margin: EdgeInsets.symmetric(vertical: 4.0),
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
+      margin: const EdgeInsets.symmetric(vertical: 4.0),
       child: Text(
         message.text,
         style: TextStyle(
@@ -258,8 +261,8 @@ class ImageMessage extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            PageRouteBuilder(
-              pageBuilder: (context, animation, secondAnimation) {
+            PageRouteBuilder<dynamic>(
+              pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondAnimation) {
                 return FadeTransition(
                   opacity: animation,
                   child: PhotoView(
@@ -268,7 +271,7 @@ class ImageMessage extends StatelessWidget {
                     heroTag: 'image-' + message.id.toString(),
                     minScale: PhotoViewComputedScale.contained,
                     maxScale: PhotoViewComputedScale.covered,
-                    onTapUp: (context, detail, value) {
+                    onTapUp: (BuildContext context, TapUpDetails detail, PhotoViewControllerValue value) {
                       Navigator.pop(context);
                     },
                   ),
@@ -282,7 +285,7 @@ class ImageMessage extends StatelessWidget {
             color: MioColors.fifth,
             borderRadius: BorderRadius.circular(4.0),
           ),
-          margin: EdgeInsets.symmetric(vertical: 4.0),
+          margin: const EdgeInsets.symmetric(vertical: 4.0),
           child: SizedBox(
             width: 150.0,
             child: Hero(

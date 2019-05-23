@@ -4,10 +4,7 @@ import 'package:miotech_flutter_demo/widgets/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class BalanceSheetChart extends StatefulWidget {
-  final List<charts.Series> seriesList;
-  final bool animate;
-
-  BalanceSheetChart(this.seriesList, {this.animate});
+  const BalanceSheetChart(this.seriesList, {this.animate});
 
   factory BalanceSheetChart.withSampleData() {
     return BalanceSheetChart(
@@ -16,11 +13,14 @@ class BalanceSheetChart extends StatefulWidget {
     );
   }
 
+  final List<charts.Series<dynamic, dynamic>> seriesList;
+  final bool animate;
+
   @override
   _BalanceSheetChartState createState() => _BalanceSheetChartState();
 
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
-    final data = [
+    final List<OrdinalSales> data = <OrdinalSales>[
       OrdinalSales('2013', 20),
       OrdinalSales('2014', 25),
       OrdinalSales('2015', 35),
@@ -30,7 +30,7 @@ class BalanceSheetChart extends StatefulWidget {
       OrdinalSales('2019', 75),
     ];
 
-    final data1 = [
+    final List<OrdinalSales> data1 = <OrdinalSales>[
       OrdinalSales('2013', 10),
       OrdinalSales('2014', 15),
       OrdinalSales('2015', 25),
@@ -50,7 +50,7 @@ class BalanceSheetChart extends StatefulWidget {
       ),
       charts.Series<OrdinalSales, String>(
         id: 'Sales',
-        colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color(0xb350baf3)),
+        colorFn: (_, __) => charts.ColorUtil.fromDartColor(const Color(0xb350baf3)),
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: data1,
@@ -65,7 +65,7 @@ class _BalanceSheetChartState extends State<BalanceSheetChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 1), () {
+    Future<void>.delayed(Duration(seconds: 1), () {
       setState(() {
         isLoading = false;
       });
@@ -111,8 +111,7 @@ class _BalanceSheetChartState extends State<BalanceSheetChart> {
 }
 
 class OrdinalSales {
+  OrdinalSales(this.year, this.sales);
   final String year;
   final int sales;
-
-  OrdinalSales(this.year, this.sales);
 }

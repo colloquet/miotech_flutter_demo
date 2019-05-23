@@ -8,14 +8,14 @@ import 'package:miotech_flutter_demo/models/company.dart';
 import 'package:miotech_flutter_demo/models/security.dart';
 
 class ExactMatchTopCard extends StatelessWidget {
-  ExactMatchTopCard({this.company, this.security});
+  const ExactMatchTopCard({this.company, this.security});
   final Company company;
   final Security security;
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(12.0),
+      margin: const EdgeInsets.all(12.0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
       ),
@@ -28,9 +28,7 @@ class ExactMatchTopCard extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        CompanyScreen(company)),
+                MaterialPageRoute<dynamic>(builder: (BuildContext context) => CompanyScreen(company)),
               );
             },
             child: Column(
@@ -44,13 +42,13 @@ class ExactMatchTopCard extends StatelessWidget {
                         'Facebook',
                         style: TextStyle(fontSize: 24.0),
                       ),
-                      SizedBox(height: 8.0),
+                      const SizedBox(height: 8.0),
                       Text(
                         'Information Technology | Software and Services | Interactive Media and Services',
                         style: TextStyle(color: MioColors.secondary),
                       ),
-                      SizedBox(height: 8.0),
-                      Text(
+                      const SizedBox(height: 8.0),
+                      const Text(
                         'Facebook, Inc. engages in building products that enable people to connect and share with friends and family through mobile devices, personal computers, and other surfaces. The company helps people discover and learn about what is going on in the world around them; and enables people to share their opinions, ideas, photos and videos, and other activities...',
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
@@ -58,9 +56,9 @@ class ExactMatchTopCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                RelationshipList(
+                const RelationshipList(
                   id: 'exact-relationship',
-                  relationships: [
+                  relationships: <String>[
                     'Competitor',
                     'Shareholder',
                     'Investor',
@@ -71,22 +69,21 @@ class ExactMatchTopCard extends StatelessWidget {
                     'Key executive',
                   ],
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
               ],
             ),
           ),
-          Divider(height: 1),
+          const Divider(height: 1),
           InkWell(
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        SecurityScreen(security)),
+                MaterialPageRoute<dynamic>(
+                    builder: (BuildContext context) => SecurityScreen(security)),
               );
             },
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
@@ -100,7 +97,7 @@ class ExactMatchTopCard extends StatelessWidget {
                           color: MioColors.secondary,
                         ),
                       ),
-                      SizedBox(width: 8.0),
+                      const SizedBox(width: 8.0),
                       Text(
                         'NSQ',
                         style: TextStyle(
@@ -108,7 +105,7 @@ class ExactMatchTopCard extends StatelessWidget {
                           fontSize: 12.0,
                         ),
                       ),
-                      SizedBox(width: 8.0),
+                      const SizedBox(width: 8.0),
                       Text(
                         '2019-04-05 8:00 AM',
                         style: TextStyle(
@@ -118,18 +115,18 @@ class ExactMatchTopCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8.0),
+                  const SizedBox(height: 8.0),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.baseline,
                     textBaseline: TextBaseline.alphabetic,
                     children: <Widget>[
-                      Text('USD'),
-                      SizedBox(width: 4.0),
+                      const Text('USD'),
+                      const SizedBox(width: 4.0),
                       Text(
                         '175.72',
                         style: TextStyle(fontSize: 24.0),
                       ),
-                      SizedBox(width: 8.0),
+                      const SizedBox(width: 8.0),
                       Text(
                         '-0.30',
                         style: TextStyle(color: MioColors.orange),
@@ -140,7 +137,7 @@ class ExactMatchTopCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 8.0),
+                  const SizedBox(height: 8.0),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
@@ -164,7 +161,7 @@ class ExactMatchTopCard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 4.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
@@ -184,7 +181,7 @@ class ExactMatchTopCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(width: 16.0),
+                      const SizedBox(width: 16.0),
                       Flexible(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -205,7 +202,7 @@ class ExactMatchTopCard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 4.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
@@ -225,7 +222,7 @@ class ExactMatchTopCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(width: 16.0),
+                      const SizedBox(width: 16.0),
                       Flexible(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,7 +243,7 @@ class ExactMatchTopCard extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 4.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
@@ -276,22 +273,22 @@ class ExactMatchTopCard extends StatelessWidget {
               ),
             ),
           ),
-          Divider(height: 1),
+          const Divider(height: 1),
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Text('Competitors'),
-                SizedBox(height: 8.0),
+                const Text('Competitors'),
+                const SizedBox(height: 8.0),
                 Row(
                   children: <Widget>[
                     Text('Vivendi SA',
                         style: TextStyle(color: MioColors.brand)),
-                    SizedBox(width: 8.0),
+                    const SizedBox(width: 8.0),
                     Text('Walmart Inc.',
                         style: TextStyle(color: MioColors.brand)),
-                    SizedBox(width: 8.0),
+                    const SizedBox(width: 8.0),
                     Text('EFactor Group Corp.',
                         style: TextStyle(color: MioColors.brand)),
                   ],

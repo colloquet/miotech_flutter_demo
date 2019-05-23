@@ -31,7 +31,7 @@ class _SecurityTabsState extends State<SecurityTabs>
     _tabController.addListener(_handleTabChange);
   }
 
-  _handleTabChange() {
+  void _handleTabChange() {
     setState(() {
       _currentTabIndex = _tabController.index;
     });
@@ -46,13 +46,13 @@ class _SecurityTabsState extends State<SecurityTabs>
           child: TabBar(
             controller: _tabController,
             unselectedLabelColor: MioColors.secondary,
-            tabs: [
+            tabs: const <Tab>[
               Tab(text: 'Financials'),
               Tab(text: 'Events'),
             ],
           ),
         ),
-        SizedBox(height: 8.0),
+        const SizedBox(height: 8.0),
         AnimatedCrossFade(
           duration: Duration(milliseconds: 200),
           firstChild: Column(
@@ -64,7 +64,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                   children: <Widget>[
                     PanelHeader(title: 'Income Statement', color: MioColors.base),
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: SizedBox(
                         height: 200.0,
                         child: IncomeStatementChart.withSampleData(),
@@ -73,7 +73,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                   ],
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Container(
                 color: MioColors.base,
                 child: Column(
@@ -81,7 +81,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                   children: <Widget>[
                     PanelHeader(title: 'Balance Sheet', color: MioColors.base),
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: SizedBox(
                         height: 200.0,
                         child: BalanceSheetChart.withSampleData(),
@@ -90,7 +90,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                   ],
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
               Container(
                 color: MioColors.base,
                 child: Column(
@@ -98,7 +98,7 @@ class _SecurityTabsState extends State<SecurityTabs>
                   children: <Widget>[
                     PanelHeader(title: 'Cashflow Statement', color: MioColors.base),
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: SizedBox(
                         height: 200.0,
                         child: CashflowStatementChart.withSampleData(),
@@ -116,7 +116,7 @@ class _SecurityTabsState extends State<SecurityTabs>
               children: <Widget>[
                 PanelHeader(title: 'Earning History', color: MioColors.base),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: EarningHistoryTable(),
                 ),
               ],

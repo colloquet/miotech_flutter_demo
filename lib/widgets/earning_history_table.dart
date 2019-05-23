@@ -11,15 +11,15 @@ class EarningHistoryTable extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Table(
-        defaultColumnWidth: FixedColumnWidth(100.0),
-        children: [
+        defaultColumnWidth: const FixedColumnWidth(100.0),
+        children: <TableRow>[
           TableRow(
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(color: MioColors.fourth, width: 1),
               ),
             ),
-            children: [
+            children: <Cell>[
               Cell(
                 text: 'Event Type',
                 isHeader: true,
@@ -70,32 +70,32 @@ class EarningHistoryTable extends StatelessWidget {
             decoration: BoxDecoration(
               color: MioColors.background,
             ),
-            children: [
+            children: <Cell>[
               Cell(text: 'Earnings Significantly Beat Consensus'),
               Cell(text: '2', right: true),
               Cell(text: '2013-10-29', right: true),
               Cell(
                 text: '-0.49%',
                 right: true,
-                background: Color(0xff553030),
+                background: const Color(0xff553030),
                 fill: true,
               ),
               Cell(
                 text: '-0.55%',
                 right: true,
-                background: Color(0xff5d3330),
+                background: const Color(0xff5d3330),
                 fill: true,
               ),
               Cell(
                 text: '0.12%',
                 right: true,
-                background: Color(0xff19202d),
+                background: const Color(0xff19202d),
                 fill: true,
               ),
               Cell(
                 text: '1.87%',
                 right: true,
-                background: Color(0xff344333),
+                background: const Color(0xff344333),
                 fill: true,
               ),
               Cell(text: '50%', right: true),
@@ -106,32 +106,32 @@ class EarningHistoryTable extends StatelessWidget {
             decoration: BoxDecoration(
               color: MioColors.base,
             ),
-            children: [
+            children: <Cell>[
               Cell(text: 'Earnings Beat Consensus'),
               Cell(text: '7', right: true),
               Cell(text: '2018-11-02', right: true),
               Cell(
                 text: '0.87%',
                 right: true,
-                background: Color(0xff3e5035),
+                background: const Color(0xff3e5035),
                 fill: true,
               ),
               Cell(
                 text: '0.73%',
                 right: true,
-                background: Color(0xff384834),
+                background: const Color(0xff384834),
                 fill: true,
               ),
               Cell(
                 text: '0.10%',
                 right: true,
-                background: Color(0xff19202d),
+                background: const Color(0xff19202d),
                 fill: true,
               ),
               Cell(
                 text: '2.54%',
                 right: true,
-                background: Color(0xff3e5035),
+                background: const Color(0xff3e5035),
                 fill: true,
               ),
               Cell(text: '85.71%', right: true),
@@ -142,32 +142,32 @@ class EarningHistoryTable extends StatelessWidget {
             decoration: BoxDecoration(
               color: MioColors.background,
             ),
-            children: [
+            children: <Cell>[
               Cell(text: 'Earnings Equal Consensus'),
               Cell(text: '1', right: true),
               Cell(text: '2018-02-02', right: true),
               Cell(
                 text: '0.21%',
                 right: true,
-                background: Color(0xff202a2f),
+                background: const Color(0xff202a2f),
                 fill: true,
               ),
               Cell(
                 text: '0.21%',
                 right: true,
-                background: Color(0xff202a2f),
+                background: const Color(0xff202a2f),
                 fill: true,
               ),
               Cell(
                 text: '-2.38%',
                 right: true,
-                background: Color(0xff492d2f),
+                background: const Color(0xff492d2f),
                 fill: true,
               ),
               Cell(
                 text: '-3.33%',
                 right: true,
-                background: Color(0xff5d3330),
+                background: const Color(0xff5d3330),
                 fill: true,
               ),
               Cell(text: '100.00%', right: true),
@@ -178,7 +178,7 @@ class EarningHistoryTable extends StatelessWidget {
             decoration: BoxDecoration(
               color: MioColors.base,
             ),
-            children: [
+            children: <Cell>[
               Cell(text: 'Earnings Miss Consensus'),
               Cell(text: '0', right: true),
               Cell(text: '-', right: true),
@@ -194,7 +194,7 @@ class EarningHistoryTable extends StatelessWidget {
             decoration: BoxDecoration(
               color: MioColors.background,
             ),
-            children: [
+            children: <Cell>[
               Cell(text: 'Earnings Significantly Miss Consensus'),
               Cell(text: '0', right: true),
               Cell(text: '-', right: true),
@@ -222,15 +222,15 @@ class Cell extends StatelessWidget {
     this.background = Colors.transparent,
   }) : super(key: key);
 
-  final text;
-  final right;
-  final isHeader;
-  final background;
-  final fill;
+  final String text;
+  final bool right;
+  final bool isHeader;
+  final Color background;
+  final bool fill;
 
   @override
   Widget build(BuildContext context) {
-    final _verticalAlignment = isHeader
+    final TableCellVerticalAlignment _verticalAlignment = isHeader
         ? TableCellVerticalAlignment.bottom
         : fill
             ? TableCellVerticalAlignment.fill
@@ -238,7 +238,7 @@ class Cell extends StatelessWidget {
     return TableCell(
       child: Container(
         color: background,
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment:

@@ -14,12 +14,12 @@ class AllList extends StatelessWidget {
     Key key,
     this.onTabChange,
   }) : super(key: key);
-  final onTabChange;
+  final Function onTabChange;
 
   @override
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
-      builder: (context, model, _) {
+      builder: (BuildContext context, MainModel model, _) {
         return Scrollbar(
           child: ListView(
             children: <Widget>[
@@ -31,11 +31,11 @@ class AllList extends StatelessWidget {
                 title: '34,538 Securities',
                 children: <Widget>[
                   SecurityItem(security: model.securityData[0]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   SecurityItem(security: model.securityData[1]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   SecurityItem(security: model.securityData[2]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                 ],
                 onViewMore: () {
                   onTabChange(4);
@@ -45,11 +45,11 @@ class AllList extends StatelessWidget {
                 title: '11,390,040 Companies',
                 children: <Widget>[
                   CompanyItem(company: model.companyData[0]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   CompanyItem(company: model.companyData[1]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   CompanyItem(company: model.companyData[2]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                 ],
                 onViewMore: () {
                   onTabChange(1);
@@ -59,11 +59,11 @@ class AllList extends StatelessWidget {
                 title: '3,457,077 Narratives',
                 children: <Widget>[
                   NarrativeItem(narrative: model.newsData[0]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   NarrativeItem(narrative: model.newsData[1]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   NarrativeItem(narrative: model.newsData[2]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                 ],
                 onViewMore: () {
                   onTabChange(3);
@@ -73,11 +73,11 @@ class AllList extends StatelessWidget {
                 title: '4,952,691 People',
                 children: <Widget>[
                   PeopleItem(people: model.peopleData[0]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   PeopleItem(people: model.peopleData[1]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   PeopleItem(people: model.peopleData[2]),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                 ],
                 onViewMore: () {
                   onTabChange(2);
@@ -99,19 +99,19 @@ class Panel extends StatelessWidget {
     @required this.onViewMore,
   }) : super(key: key);
 
-  final title;
-  final children;
-  final onViewMore;
+  final String title;
+  final List<Widget> children;
+  final Function onViewMore;
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> _combinedChildren = [
+    final List<Widget> _combinedChildren = <Widget>[
       PanelHeader(title: title, color: MioColors.fifth),
       ...children,
       InkWell(
         onTap: onViewMore,
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Text('View more',
               textAlign: TextAlign.center,
               style: TextStyle(color: MioColors.secondary)),
@@ -120,7 +120,7 @@ class Panel extends StatelessWidget {
     ];
 
     return Card(
-      margin: EdgeInsets.all(12.0),
+      margin: const EdgeInsets.all(12.0),
       clipBehavior: Clip.hardEdge,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),

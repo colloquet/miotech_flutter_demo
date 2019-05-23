@@ -5,7 +5,7 @@ import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/models/narrative.dart';
 
 class NarrativeScreen extends StatelessWidget {
-  NarrativeScreen(this.narrative);
+  const NarrativeScreen(this.narrative);
   final Narrative narrative;
 
   @override
@@ -19,7 +19,7 @@ class NarrativeScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: SafeArea(
               child: Container(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -29,7 +29,7 @@ class NarrativeScreen extends StatelessWidget {
                           narrative.eventType,
                           style: TextStyle(color: MioColors.brand),
                         ),
-                        SizedBox(width: 16.0),
+                        const SizedBox(width: 16.0),
                         Expanded(
                           child: Text(
                             narrative.source,
@@ -37,7 +37,7 @@ class NarrativeScreen extends StatelessWidget {
                             overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        SizedBox(width: 16.0),
+                        const SizedBox(width: 16.0),
                         Text(
                           timeago.format(DateTime.fromMillisecondsSinceEpoch(
                               int.parse(narrative.timestamp))),
@@ -45,17 +45,17 @@ class NarrativeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       narrative.title,
                       style: TextStyle(fontSize: 24.0),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     SentimentBar(narrative: narrative),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Container(
                       color: MioColors.fifth,
-                      padding: EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Text(
                         narrative.abstract,
                         style: TextStyle(
@@ -66,7 +66,7 @@ class NarrativeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 16.0),
+                    const SizedBox(height: 16.0),
                     Text(
                       narrative.content.replaceAll('<br>', '\n'),
                       style: TextStyle(

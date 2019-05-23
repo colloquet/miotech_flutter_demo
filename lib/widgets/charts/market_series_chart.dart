@@ -6,10 +6,7 @@ import 'package:miotech_flutter_demo/widgets/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class MarketSeriesChart extends StatefulWidget {
-  final List<charts.Series> seriesList;
-  final bool animate;
-
-  MarketSeriesChart(this.seriesList, {this.animate});
+  const MarketSeriesChart(this.seriesList, {this.animate});
 
   factory MarketSeriesChart.withSampleData() {
     return MarketSeriesChart(
@@ -18,18 +15,21 @@ class MarketSeriesChart extends StatefulWidget {
     );
   }
 
+  final List<dynamic> seriesList;
+  final bool animate;
+
   @override
   _MarketSeriesChartState createState() => _MarketSeriesChartState();
 
   static List<charts.Series<PriceData, DateTime>> _createSampleData() {
-    final _random = Random();
+    final Random _random = Random();
     double randomVolumn() => 10 + 5 * _random.nextDouble();
 
-    final marketSeries = marketSeriesData.skip(150).map((data) {
+    final List<PriceData> marketSeries = marketSeriesData.skip(150).map((List<num> data) {
       return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), data[1]);
     }).toList();
 
-    final volumn = marketSeriesData.skip(150).map((data) {
+    final List<PriceData> volumn = marketSeriesData.skip(150).map((List<num> data) {
       return PriceData(
           DateTime.fromMillisecondsSinceEpoch(data[0]), randomVolumn());
     }).toList();
@@ -60,7 +60,7 @@ class _MarketSeriesChartState extends State<MarketSeriesChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 1), () {
+    Future<void>.delayed(Duration(seconds: 1), () {
       setState(() {
         isLoading = false;
       });
@@ -123,8 +123,7 @@ class _MarketSeriesChartState extends State<MarketSeriesChart> {
 }
 
 class PriceData {
+  PriceData(this.time, this.value);
   final DateTime time;
   final double value;
-
-  PriceData(this.time, this.value);
 }

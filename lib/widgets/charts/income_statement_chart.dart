@@ -5,10 +5,7 @@ import 'package:miotech_flutter_demo/widgets/spinner.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class IncomeStatementChart extends StatefulWidget {
-  final List<charts.Series> seriesList;
-  final bool animate;
-
-  IncomeStatementChart(this.seriesList, {this.animate});
+  const IncomeStatementChart(this.seriesList, {this.animate});
 
   factory IncomeStatementChart.withSampleData() {
     return IncomeStatementChart(
@@ -17,11 +14,14 @@ class IncomeStatementChart extends StatefulWidget {
     );
   }
 
+  final List<dynamic> seriesList;
+  final bool animate;
+
   @override
   _IncomeStatementChartState createState() => _IncomeStatementChartState();
 
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
-    final data = [
+    final List<OrdinalSales> data = <OrdinalSales>[
       OrdinalSales('2013', 20),
       OrdinalSales('2014', 25),
       OrdinalSales('2015', 35),
@@ -49,7 +49,7 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 1), () {
+    Future<void>.delayed(Duration(seconds: 1), () {
       setState(() {
         isLoading = false;
       });
@@ -95,8 +95,7 @@ class _IncomeStatementChartState extends State<IncomeStatementChart> {
 }
 
 class OrdinalSales {
+  OrdinalSales(this.year, this.sales);
   final String year;
   final int sales;
-
-  OrdinalSales(this.year, this.sales);
 }

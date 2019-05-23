@@ -19,11 +19,11 @@ class NarrativeItem extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => NarrativeScreen(narrative)),
+          MaterialPageRoute<dynamic>(builder: (BuildContext context) => NarrativeScreen(narrative)),
         );
       },
       child: Container(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -33,7 +33,7 @@ class NarrativeItem extends StatelessWidget {
                   narrative.eventType,
                   style: TextStyle(color: MioColors.brand),
                 ),
-                SizedBox(width: 16.0),
+                const SizedBox(width: 16.0),
                 Expanded(
                   child: Text(
                     narrative.source,
@@ -41,7 +41,7 @@ class NarrativeItem extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                SizedBox(width: 16.0),
+                const SizedBox(width: 16.0),
                 Text(
                   timeago.format(
                     DateTime.fromMillisecondsSinceEpoch(
@@ -52,21 +52,21 @@ class NarrativeItem extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 8.0),
+            const SizedBox(height: 8.0),
             Text(
               narrative.title,
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(fontSize: 18.0),
             ),
-            SizedBox(height: 8.0),
+            const SizedBox(height: 8.0),
             Text(
               narrative.abstract.replaceAll('\n', ' '),
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: MioColors.secondary.withOpacity(0.6)),
             ),
-            SizedBox(height: 8.0),
+            const SizedBox(height: 8.0),
             SentimentBar(narrative: narrative),
           ],
         ),

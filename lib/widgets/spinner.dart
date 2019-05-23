@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class AnimatedLogo extends AnimatedWidget {
-  // Make the Tweens static because they don't change.
-  static final _opacityTween = Tween<double>(begin: 1, end: 0);
-  static final _sizeTween = Tween<double>(begin: 0, end: 48);
-
-  AnimatedLogo({Key key, Animation<double> animation})
+  const AnimatedLogo({Key key, Animation<double> animation})
       : super(key: key, listenable: animation);
 
+  static final Tween<double> _sizeTween = Tween<double>(begin: 0, end: 48);
+  static final Tween<double> _opacityTween = Tween<double>(begin: 1, end: 0);
+
+  @override
   Widget build(BuildContext context) {
     final Animation<double> animation = listenable;
     return Center(
@@ -28,6 +28,7 @@ class AnimatedLogo extends AnimatedWidget {
 }
 
 class Spinner extends StatefulWidget {
+  @override
   _SpinnerState createState() => _SpinnerState();
 }
 
@@ -50,24 +51,24 @@ class _SpinnerState extends State<Spinner> with TickerProviderStateMixin {
     );
     animation = CurvedAnimation(
       parent: controller,
-      curve: Cubic(0.165, 0.84, 0.44, 1),
+      curve: const Cubic(0.165, 0.84, 0.44, 1),
     );
     animation1 = CurvedAnimation(
       parent: controller1,
-      curve: Cubic(0.165, 0.84, 0.44, 1),
+      curve: const Cubic(0.165, 0.84, 0.44, 1),
     );
     startAnimation();
   }
 
-  startAnimation() async {
+  Future<void> startAnimation() async {
     controller.repeat();
-    await Future.delayed(Duration(milliseconds: 900));
+    await Future<void>.delayed(Duration(milliseconds: 900));
     controller1.repeat();
   }
 
   @override
   Widget build(BuildContext context) => Stack(
-        children: [
+        children: <AnimatedLogo>[
           AnimatedLogo(animation: animation),
           AnimatedLogo(animation: animation1)
         ],

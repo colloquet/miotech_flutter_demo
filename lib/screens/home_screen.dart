@@ -12,13 +12,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-  List<Widget> _tabs = [
+  final List<Widget> _tabs = <Widget>[
     AMIScreen(),
     MessageListScreen(),
     ProfileScreen(),
   ];
 
-  final pageController = PageController();
+  final PageController pageController = PageController();
 
   void onTap(int index) {
     pageController.jumpToPage(index);
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
         unselectedItemColor: MioColors.secondary,
         onTap: onTap,
         currentIndex: _currentIndex,
-        items: [
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(AmiIcons.ami_logo),
             title: Text('AMI'),
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: pageController,
         onPageChanged: onPageChanged,
         children: _tabs,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
       ),
     );
   }

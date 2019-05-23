@@ -15,12 +15,12 @@ List<People> _peopleData;
 List<Narrative> _newsData;
 List<Security> _securityData;
 
-void main() async {
-  await SystemChrome.setPreferredOrientations([
+Future<void> main() async {
+  await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
   ]);
 
-  List<String> mockData = await Future.wait([
+  final List<String> mockData = await Future.wait(<Future<String>>[
     rootBundle.loadString('assets/companies.json'),
     rootBundle.loadString('assets/people.json'),
     rootBundle.loadString('assets/news.json'),
@@ -29,19 +29,19 @@ void main() async {
 
   _companyData = json
       .decode(mockData[0])
-      .map<Company>((json) => Company.fromJson(json))
+      .map<Company>((dynamic json) => Company.fromJson(json))
       .toList();
   _peopleData = json
       .decode(mockData[1])
-      .map<People>((json) => People.fromJson(json))
+      .map<People>((dynamic json) => People.fromJson(json))
       .toList();
   _newsData = json
       .decode(mockData[2])
-      .map<Narrative>((json) => Narrative.fromJson(json))
+      .map<Narrative>((dynamic json) => Narrative.fromJson(json))
       .toList();
   _securityData = json
       .decode(mockData[3])
-      .map<Security>((json) => Security.fromJson(json))
+      .map<Security>((dynamic json) => Security.fromJson(json))
       .toList();
 
   runApp(MiotechDemo());
@@ -51,7 +51,7 @@ class MiotechDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<MainModel>(
-      builder: (context) => MainModel(
+      builder: (BuildContext context) => MainModel(
             companyData: _companyData,
             peopleData: _peopleData,
             newsData: _newsData,
@@ -69,7 +69,7 @@ class MiotechDemo extends StatelessWidget {
           highlightColor: MioColors.fifth,
           indicatorColor: MioColors.brand,
           dividerColor: MioColors.fourth,
-          primaryIconTheme: IconThemeData(
+          primaryIconTheme: const IconThemeData(
             color: MioColors.secondary,
           ),
           textTheme: TextTheme(

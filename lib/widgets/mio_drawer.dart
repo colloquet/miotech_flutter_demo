@@ -3,7 +3,7 @@ import 'package:miotech_flutter_demo/mio_colors.dart';
 import 'package:miotech_flutter_demo/ami_icons.dart';
 
 class MioDrawer extends StatelessWidget {
-  MioDrawer({this.currentTab, this.onChange});
+  const MioDrawer({this.currentTab, this.onChange});
   final String currentTab;
   final Function onChange;
 
@@ -26,7 +26,7 @@ class MioDrawer extends StatelessWidget {
                   height: 64.0,
                   width: 64.0,
                   child: CircleAvatar(
-                    backgroundColor: Color(0xff12918b),
+                    backgroundColor: const Color(0xff12918b),
                     child: Text(
                       'MT',
                       style: TextStyle(
@@ -36,7 +36,7 @@ class MioDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 16.0),
+                const SizedBox(width: 16.0),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -51,9 +51,9 @@ class MioDrawer extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.only(top: 8.0),
+            padding: const EdgeInsets.only(top: 8.0),
             child: Column(
-              children: [
+              children: <DrawerItem>[
                 DrawerItem(
                   isActive: currentTab == 'ami',
                   tabKey: 'ami',
@@ -78,7 +78,7 @@ class MioDrawer extends StatelessWidget {
 }
 
 class DrawerItem extends StatelessWidget {
-  DrawerItem({
+  const DrawerItem({
     this.isActive,
     this.tabKey,
     this.title,
@@ -93,9 +93,9 @@ class DrawerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _primaryColor = Theme.of(context).brightness == Brightness.dark ? MioColors.primary : Colors.black;
+    final Color _primaryColor = Theme.of(context).brightness == Brightness.dark ? MioColors.primary : Colors.black;
     return ListTile(
-      contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
+      contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 24.0),
       title: Text(
         title,
         style: TextStyle(

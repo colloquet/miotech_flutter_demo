@@ -1,10 +1,4 @@
 class People {
-  String globalId;
-  String name;
-  String abstract;
-  String bio;
-  List<dynamic> workExperiences;
-
   People({
     this.globalId,
     this.name,
@@ -14,7 +8,7 @@ class People {
   });
 
   factory People.fromJson(Map<String, dynamic> json) {
-    var people = json['people'];
+    final dynamic people = json['people'];
     return People(
       globalId: people['globalId'],
       name: people['name'],
@@ -23,4 +17,10 @@ class People {
       workExperiences: people['workExperiences'],
     );
   }
+
+  String globalId;
+  String name;
+  String abstract;
+  String bio;
+  List<dynamic> workExperiences;
 }

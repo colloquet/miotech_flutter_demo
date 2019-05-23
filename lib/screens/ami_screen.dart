@@ -26,7 +26,7 @@ class _AMIScreenState extends State<AMIScreen>
     _tabController = TabController(vsync: this, initialIndex: 0, length: 5);
   }
 
-  _handleTabChange(int index) {
+  void _handleTabChange(int index) {
     _tabController.animateTo(index);
   }
 
@@ -61,7 +61,7 @@ class _AMIScreenState extends State<AMIScreen>
           controller: _tabController,
           isScrollable: true,
           unselectedLabelColor: MioColors.secondary,
-          tabs: <Widget>[
+          tabs: const <Tab>[
             Tab(text: 'All'),
             Tab(text: 'Companies'),
             Tab(text: 'People'),

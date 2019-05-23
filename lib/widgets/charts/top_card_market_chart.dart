@@ -4,10 +4,7 @@ import 'package:miotech_flutter_demo/market_series_data.dart';
 import 'package:miotech_flutter_demo/mio_colors.dart';
 
 class TopCardMarketChart extends StatefulWidget {
-  final List<charts.Series> seriesList;
-  final bool animate;
-
-  TopCardMarketChart(this.seriesList, {this.animate});
+  const TopCardMarketChart(this.seriesList, {this.animate});
 
   factory TopCardMarketChart.withSampleData() {
     return TopCardMarketChart(
@@ -16,18 +13,21 @@ class TopCardMarketChart extends StatefulWidget {
     );
   }
 
+  final List<dynamic> seriesList;
+  final bool animate;
+
   @override
   _TopCardMarketChartState createState() => _TopCardMarketChartState();
 
   static List<charts.Series<PriceData, DateTime>> _createSampleData() {
-    final marketSeries = marketSeriesData.take(50).map((data) {
+    final List<PriceData> marketSeries = marketSeriesData.take(50).map((List<num> data) {
       return PriceData(DateTime.fromMillisecondsSinceEpoch(data[0]), data[1]);
     }).toList();
 
     return [
       charts.Series<PriceData, DateTime>(
         id: 'marketSeries',
-        colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color(0xff9FBD6A)),
+        colorFn: (_, __) => charts.ColorUtil.fromDartColor(const Color(0xff9FBD6A)),
         domainFn: (PriceData data, _) => data.time,
         measureFn: (PriceData data, _) => data.value,
         data: marketSeries,
@@ -74,8 +74,7 @@ class _TopCardMarketChartState extends State<TopCardMarketChart> {
 }
 
 class PriceData {
+  PriceData(this.time, this.value);
   final DateTime time;
   final double value;
-
-  PriceData(this.time, this.value);
 }
