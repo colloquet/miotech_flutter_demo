@@ -13,15 +13,13 @@ class CompanyList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
       builder: (BuildContext context, MainModel model, _) {
-        return Scrollbar(
-          child: ListView.separated(
-            separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
-            itemCount: model.companyData == null ? 0 : model.companyData.length,
-            itemBuilder: (BuildContext context, int index) {
-              final Company _company = model.companyData[index];
-              return CompanyItem(key: ValueKey<String>(_company.globalId), company: _company);
-            },
-          ),
+        return ListView.separated(
+          separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
+          itemCount: model.companyData == null ? 0 : model.companyData.length,
+          itemBuilder: (BuildContext context, int index) {
+            final Company _company = model.companyData[index];
+            return CompanyItem(key: ValueKey<String>(_company.globalId), company: _company);
+          },
         );
       },
     );

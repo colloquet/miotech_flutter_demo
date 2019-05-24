@@ -65,7 +65,7 @@ class AmiSearchDelegate extends SearchDelegate<String> {
   @override
   List<Widget> buildActions(BuildContext context) {
     return query.isEmpty
-        ? <void>[]
+        ? <Widget>[]
         : <IconButton>[
             IconButton(
               tooltip: 'Clear',

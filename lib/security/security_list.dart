@@ -13,17 +13,15 @@ class SecurityList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
       builder: (BuildContext context, MainModel model, _) {
-        return Scrollbar(
-          child: ListView.separated(
-            separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
-            itemCount:
-                model.securityData == null ? 0 : model.securityData.length,
-            itemBuilder: (BuildContext context, int index) {
-              final Security _security = model.securityData[index];
-              return SecurityItem(
-                  key: ValueKey<String>(_security.globalId), security: _security);
-            },
-          ),
+        return ListView.separated(
+          separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
+          itemCount:
+              model.securityData == null ? 0 : model.securityData.length,
+          itemBuilder: (BuildContext context, int index) {
+            final Security _security = model.securityData[index];
+            return SecurityItem(
+                key: ValueKey<String>(_security.globalId), security: _security);
+          },
         );
       },
     );

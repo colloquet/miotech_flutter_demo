@@ -13,15 +13,13 @@ class NarrativeList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
       builder: (BuildContext context, MainModel model, _) {
-        return Scrollbar(
-          child: ListView.separated(
-            separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
-            itemCount: model.newsData == null ? 0 : model.newsData.length,
-            itemBuilder: (BuildContext context, int index) {
-              final Narrative _narrative = model.newsData[index];
-              return NarrativeItem(key: ValueKey<String>(_narrative.globalId), narrative: _narrative);
-            },
-          ),
+        return ListView.separated(
+          separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
+          itemCount: model.newsData == null ? 0 : model.newsData.length,
+          itemBuilder: (BuildContext context, int index) {
+            final Narrative _narrative = model.newsData[index];
+            return NarrativeItem(key: ValueKey<String>(_narrative.globalId), narrative: _narrative);
+          },
         );
       },
     );

@@ -13,15 +13,13 @@ class PeopleList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
       builder: (BuildContext context, MainModel model, _) {
-        return Scrollbar(
-          child: ListView.separated(
-            separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
-            itemCount: model.peopleData == null ? 0 : model.peopleData.length,
-            itemBuilder: (BuildContext context, int index) {
-              final People _people = model.peopleData[index];
-              return PeopleItem(key: ValueKey<String>(_people.globalId), people: _people);
-            },
-          ),
+        return ListView.separated(
+          separatorBuilder: (BuildContext context, int index) => const Divider(height: 1.0),
+          itemCount: model.peopleData == null ? 0 : model.peopleData.length,
+          itemBuilder: (BuildContext context, int index) {
+            final People _people = model.peopleData[index];
+            return PeopleItem(key: ValueKey<String>(_people.globalId), people: _people);
+          },
         );
       },
     );
