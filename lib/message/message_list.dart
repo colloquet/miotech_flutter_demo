@@ -34,7 +34,7 @@ class MessageList extends StatefulWidget {
   _MessageListState createState() => _MessageListState();
 }
 
-class _MessageListState extends State<MessageList> with AutomaticKeepAliveClientMixin {
+class _MessageListState extends State<MessageList> {
   final List<Conversation> _conversations = List<Conversation>.generate(
     20,
     (int index) => Conversation(
@@ -47,11 +47,7 @@ class _MessageListState extends State<MessageList> with AutomaticKeepAliveClient
   );
 
   @override
-  bool get wantKeepAlive => true;
-
-  @override
   Widget build(BuildContext context) {
-    super.build(context);
     return ListView.separated(
       separatorBuilder: (BuildContext context, int index) {
         return const Divider(height: 1.0);

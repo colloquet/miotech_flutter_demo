@@ -20,69 +20,71 @@ class AllList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<MainModel>(
       builder: (BuildContext context, MainModel model, _) {
-        return ListView(
-          children: <Widget>[
-            ExactMatchTopCard(
-              company: model.companyData[0],
-              security: model.securityData[0],
-            ),
-            Panel(
-              title: '34,538 Securities',
-              children: <Widget>[
-                SecurityItem(security: model.securityData[0]),
-                const Divider(height: 1),
-                SecurityItem(security: model.securityData[1]),
-                const Divider(height: 1),
-                SecurityItem(security: model.securityData[2]),
-                const Divider(height: 1),
-              ],
-              onViewMore: () {
-                onTabChange(4);
-              },
-            ),
-            Panel(
-              title: '11,390,040 Companies',
-              children: <Widget>[
-                CompanyItem(company: model.companyData[0]),
-                const Divider(height: 1),
-                CompanyItem(company: model.companyData[1]),
-                const Divider(height: 1),
-                CompanyItem(company: model.companyData[2]),
-                const Divider(height: 1),
-              ],
-              onViewMore: () {
-                onTabChange(1);
-              },
-            ),
-            Panel(
-              title: '3,457,077 Narratives',
-              children: <Widget>[
-                NarrativeItem(narrative: model.newsData[0]),
-                const Divider(height: 1),
-                NarrativeItem(narrative: model.newsData[1]),
-                const Divider(height: 1),
-                NarrativeItem(narrative: model.newsData[2]),
-                const Divider(height: 1),
-              ],
-              onViewMore: () {
-                onTabChange(3);
-              },
-            ),
-            Panel(
-              title: '4,952,691 People',
-              children: <Widget>[
-                PeopleItem(people: model.peopleData[0]),
-                const Divider(height: 1),
-                PeopleItem(people: model.peopleData[1]),
-                const Divider(height: 1),
-                PeopleItem(people: model.peopleData[2]),
-                const Divider(height: 1),
-              ],
-              onViewMore: () {
-                onTabChange(2);
-              },
-            ),
-          ],
+        return SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              ExactMatchTopCard(
+                company: model.companyData[0],
+                security: model.securityData[0],
+              ),
+              Panel(
+                title: '34,538 Securities',
+                children: <Widget>[
+                  SecurityItem(security: model.securityData[0]),
+                  const Divider(height: 1),
+                  SecurityItem(security: model.securityData[1]),
+                  const Divider(height: 1),
+                  SecurityItem(security: model.securityData[2]),
+                  const Divider(height: 1),
+                ],
+                onViewMore: () {
+                  onTabChange(4);
+                },
+              ),
+              Panel(
+                title: '11,390,040 Companies',
+                children: <Widget>[
+                  CompanyItem(company: model.companyData[0]),
+                  const Divider(height: 1),
+                  CompanyItem(company: model.companyData[1]),
+                  const Divider(height: 1),
+                  CompanyItem(company: model.companyData[2]),
+                  const Divider(height: 1),
+                ],
+                onViewMore: () {
+                  onTabChange(1);
+                },
+              ),
+              Panel(
+                title: '3,457,077 Narratives',
+                children: <Widget>[
+                  NarrativeItem(narrative: model.newsData[0]),
+                  const Divider(height: 1),
+                  NarrativeItem(narrative: model.newsData[1]),
+                  const Divider(height: 1),
+                  NarrativeItem(narrative: model.newsData[2]),
+                  const Divider(height: 1),
+                ],
+                onViewMore: () {
+                  onTabChange(3);
+                },
+              ),
+              Panel(
+                title: '4,952,691 People',
+                children: <Widget>[
+                  PeopleItem(people: model.peopleData[0]),
+                  const Divider(height: 1),
+                  PeopleItem(people: model.peopleData[1]),
+                  const Divider(height: 1),
+                  PeopleItem(people: model.peopleData[2]),
+                  const Divider(height: 1),
+                ],
+                onViewMore: () {
+                  onTabChange(2);
+                },
+              ),
+            ],
+          ),
         );
       },
     );

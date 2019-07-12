@@ -18,11 +18,13 @@ class Relationship extends StatelessWidget {
           content: Text('You clicked on $type'),
         ));
       },
-      child: Chip(
-        backgroundColor: MioColors.fifth,
-        label: Text(type),
-        padding: const EdgeInsets.all(0.0),
-        labelStyle: TextStyle(color: MioColors.primary),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(16.0)),
+          color: MioColors.fifth,
+        ),
+        child: Center(child: Text(type, style: TextStyle(color: MioColors.primary))),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0),
       ),
     );
   }

@@ -50,16 +50,18 @@ class RelationshipList extends StatelessWidget {
     // return SizedBox(
     //   height: 32.0,
     //   child: ListView.separated(
-    //     padding: EdgeInsets.symmetric(horizontal: 16.0),
-    //     separatorBuilder: (BuildContext context, index) {
-    //       return SizedBox(width: 8.0);
+    //     padding: const EdgeInsets.symmetric(horizontal: 16.0),
+    //     separatorBuilder: (BuildContext context, int index) {
+    //       return const SizedBox(width: 8.0);
     //     },
     //     scrollDirection: Axis.horizontal,
     //     itemCount: relationships.length,
-    //     itemBuilder: (BuildContext context, index) {
-    //       var _relationship = relationships[index];
+    //     itemBuilder: (BuildContext context, int index) {
+    //       final String _relationship = relationships[index];
     //       return Relationship(
-    //           key: ValueKey(_relationship), type: _relationship);
+    //         key: ValueKey<String>(_relationship),
+    //         type: _relationship,
+    //       );
     //     },
     //   ),
     // );

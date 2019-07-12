@@ -13,12 +13,9 @@ class AMIScreen extends StatefulWidget {
 }
 
 class _AMIScreenState extends State<AMIScreen>
-    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   final AmiSearchDelegate _delegate = AmiSearchDelegate();
-
-  @override
-  bool get wantKeepAlive => true;
 
   @override
   void initState() {
@@ -34,7 +31,6 @@ class _AMIScreenState extends State<AMIScreen>
 
   @override
   Widget build(BuildContext context) {
-    super.build(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(_lastQuerySelected == null ? 'AMI' : _lastQuerySelected),
