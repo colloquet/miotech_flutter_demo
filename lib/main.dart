@@ -16,6 +16,7 @@ List<Narrative> _newsData;
 List<Security> _securityData;
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
   ]);

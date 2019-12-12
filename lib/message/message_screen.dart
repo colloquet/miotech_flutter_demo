@@ -262,16 +262,20 @@ class ImageMessage extends StatelessWidget {
           Navigator.push(
             context,
             PageRouteBuilder<dynamic>(
-              pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondAnimation) {
+              pageBuilder: (BuildContext context, Animation<double> animation,
+                  Animation<double> secondAnimation) {
                 return FadeTransition(
                   opacity: animation,
                   child: PhotoView(
-                    transitionOnUserGestures: true,
+                    heroAttributes: PhotoViewHeroAttributes(
+                      tag: 'image-' + message.id.toString(),
+                      transitionOnUserGestures: true,
+                    ),
                     imageProvider: message.image,
-                    heroTag: 'image-' + message.id.toString(),
                     minScale: PhotoViewComputedScale.contained,
                     maxScale: PhotoViewComputedScale.covered,
-                    onTapUp: (BuildContext context, TapUpDetails detail, PhotoViewControllerValue value) {
+                    onTapUp: (BuildContext context, TapUpDetails detail,
+                        PhotoViewControllerValue value) {
                       Navigator.pop(context);
                     },
                   ),
