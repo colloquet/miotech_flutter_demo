@@ -52,7 +52,7 @@ class MiotechDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<MainModel>(
-      builder: (BuildContext context) => MainModel(
+      create: (BuildContext context) => MainModel(
             companyData: _companyData,
             peopleData: _peopleData,
             newsData: _newsData,
